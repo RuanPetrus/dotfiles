@@ -1,8 +1,0 @@
-xorg
-lightdm
-lightdm-gtk-greeter
-alacritty
-i3-gaps
-neovim
-
-
