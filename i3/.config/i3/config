@@ -7,23 +7,25 @@
 # from the generated scheme.
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
 # it fails to get colors from Xresources.
+#set_from_resource $fg i3wm.color7 #f0f0f0
+#set_from_resource $bg i3wm.color2 #f0f0f0
 
-#Dracula Theme
+set $bg #282828
+set $fg #ebdbb2
 
-# class                 border  bground text    indicator child_border
-client.focused          #FF79C6 #6272A4 #F8F8F2 #6272A4   #FF79C6
-client.focused_inactive #F8F8F2 #44475A #F8F8F2 #44475A   #F8F8F2
-client.unfocused        #FF79C6 #282A36 #BFBFBF #282A36   #F8F8F2
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+# class                 border  backgr. text indicator child_border
+client.focused          $fg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
 
-client.background       #F8F8F2
-
-font pango: FiraCode Nerd Font 10
+client.background       $bg
+font pango:Hack Nerd Font 14
 
 # Basic Definitions
 #smart_gaps on
-#smart_borders on
+smart_borders on
 set $inner_gaps 15
 set $outer_gaps 0
 set $mod Mod4
@@ -36,41 +38,27 @@ set $hibernate sudo -A systemctl hibernate
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-#borders
-default_border pixel 2
-default_floating_border pixel 2
-#hide_edge_borders smart
-
-#titlebar
-title_align center
-	
-
-#Gaps
-gaps inner 15
-gaps top -10
-
-
 # #---Gaps---# #
-#for_window [class="^.*"] border pixel 2
-#gaps inner $inner_gaps
-#gaps outer $outer_gaps
+for_window [class="^.*"] border pixel 2
+gaps inner $inner_gaps
+gaps outer $outer_gaps
 
 # #---Bindings---# #
 # My Bindings
 bindsym $mod+Return 		        exec i3-sensible-terminal
 bindsym $mod+w 			            exec $BROWSER
 bindsym $mod+e 			            exec pcmanfm
-bindsym $mod+d                  exec dmenu_run
+bindsym $mod+d                  exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
 bindsym $mod+y 		              exec flameshot gui
-bindsym $mod+m 			            exec i3-sensible-terminal -e ncmpcpp
+bindsym $mod+m 			            exec alacritty -e ncmpcpp
 bindsym $mod+Shift+n 			      exec joplin-desktop
-bindsym $mod+n 			            exec i3-sensible-terminal -e nvim -c VimwikiIndex
-bindsym $mod+c 			            exec i3-sensible-terminal -e calcurse
-bindsym $mod+z			            exec i3-sensible-terminal -e newsboat
-bindsym $mod+r			            exec i3-sensible-terminal -e ranger
+bindsym $mod+n 			            exec alacritty -e nvim -c VimwikiIndex
+bindsym $mod+c 			            exec alacritty -e calcurse
+bindsym $mod+z			            exec alacritty -e newsboat
+bindsym $mod+r			            exec alacritty -e ranger
 
 bindsym $mod+F3 			          exec $HOME/.local/bin/displayselect
-bindsym $mod+F4 			          exec i3-sensible-terminal -e pulsemixer
+bindsym $mod+F4 			          exec alacritty -e pulsemixer
 bindsym $mod+F9 			          exec $HOME/.local/bin/dmenumount
 bindsym $mod+F10 			          exec $HOME/.local/bin/dmenuumount
 
@@ -190,7 +178,7 @@ exec_always --no-startup-id autotiling
 ## Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-exec_always --no-startup-id picom -b & # Compositor
+exec_always --no-startup-id picom -b # Compositor
 exec_always --no-startup-id dunst # Notification
 exec_always --no-startup-id nitrogen --restore # Background
 # Network Manager Applet

@@ -2,15 +2,15 @@
 alias v='nvim'
 alias g='lazygit'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
-alias cfnv='nvim ~/dotfiles/oldconf/nvim/.config/nvim/'
-alias cfi3='nvim ~/dotfiles/oldconf/i3-old/.config/i3/config'
-alias cfzsh='nvim ~/dotfiles/oldconf/zsh/.config/zsh/'
-alias cfal='nvim ~/dotfiles/oldconf/alacritty/.config/alacritty/alacritty.yml'
-alias cfpc='nvim ~/dotfiles/oldconf/picom/.config/picom/picom.conf'
-alias cfza='nvim ~/dotfiles/oldconf/zathura/.config/zathura/zathurarc'
-alias cfx='nvim ~/dotfiles/oldconf/X/.xprofile'
-alias cfpo='nvim ~/dotfiles/oldconf/polybar/.config/polybar'
-alias cfki='nvim ~/dotfiles/oldconf/kitty/.config/kitty'
+alias cfnv='nvim ~/.dotfiles/nvim/.config/nvim/'
+alias cfi3='nvim ~/.dotfiles/i3/.config/i3/config'
+alias cfzsh='nvim ~/.dotfiles/zsh/.config/zsh/'
+alias cfal='nvim ~/.dotfiles/alacritty/.config/alacritty/alacritty.yml'
+alias cfpc='nvim ~/.dotfiles/picom/.config/picom/picom.conf'
+alias cfza='nvim ~/.dotfiles/zathura/.config/zathura/zathurarc'
+alias cfx='nvim ~/.dotfiles/X/.xprofile'
+alias cfpo='nvim ~/.dotfiles/polybar/.config/polybar'
+alias cfki='nvim ~/.dotfiles/kitty/.config/kitty'
 
 
 # Colorize grep output (good for log files)

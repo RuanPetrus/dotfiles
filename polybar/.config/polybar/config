@@ -17,10 +17,10 @@
 ;==========================================================
 
 [colors]
-background = #00000000
-background-alt = #aa282a36
-foreground = #f8f8f2
-foreground-alt = #f8f8f2
+background = #282828
+background-alt = #282828
+foreground = #ebdbb2
+foreground-alt = #ebdbb2
 primary = #ebdbb2
 secondary = #ebdbb2
 alert = #cc241d
@@ -31,29 +31,27 @@ width = 100%
 height = 25
 offset-x = 10%
 offset-y = 10%
-#radius = 10
+radius = 10
 fixed-center = true
-wm-name = i3
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-underline-size = 0
+line-size = 3
+line-color = #f00
 
 border-size = 10
-padding = 0
+border-color = #00000000
+
 padding-left = 0
-padding-right = 3
-#padding-up = 5
+padding-right = 2
 
-module-margin = 0
-module-margin-left = 0
-module-margin-right = 3
+module-margin-left = 2
+module-margin-right = 2
 
-
-font-0 = FiraCode Nerd Font Mono:style=Bold,Regular:size=11;3
-font-1 = FiraCode Nerd Font Mono:style=Bold,Regular:size=11;3
-font-2 = FiraCode Nerd Font Mono:style=Bold,Regular:size=11;3
+font-0 = Hack Nerd Font:pixelsize=10;1
+font-1 = Hack Nerd Font:fontformat=truetype:size=8:antialias=false;0
+font-2 = Hack Nerd Font:pixelsize=10;1
 
 modules-left = i3
 modules-center = mpd pulseaudio
@@ -66,7 +64,7 @@ separator =
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-wm-restack = i3
+;wm-restack = i3
 
 ;override-redirect = true
 
@@ -416,11 +414,11 @@ screenchange-reload = true
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
-;pseudo-transparency = false
+pseudo-transparency = true
 
 [global/wm]
-margin-top = 0
-margin-bottom = 0
+margin-top = 5
+margin-bottom = 5
 
 ; vim:ft=dosini
 

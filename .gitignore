@@ -1,2 +1,5 @@
 
 zsh/.config/zsh/plugins
+
+ncmpcpp/.config/ncmpcpp/error.log
+nvim/.config/nvim/plugin/packer_compiled.lua
