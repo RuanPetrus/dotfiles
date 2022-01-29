@@ -1,0 +1,4 @@
+#define termfont      FiraCode Nerd Font Mono
+#define fontsize  10
+
+#include "./xres/st"
