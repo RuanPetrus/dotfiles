@@ -1,3 +1,4 @@
+#!/bin/sh
 # Don't Randomly Turn off
 xset s off
 xset -dpms
@@ -6,21 +7,21 @@ xset s noblank
 # Speedy keys
 xset r rate 210 40
 
-# Environment variables set everywhere
-export EDITOR="nvim"
-export TERMINAL="kitty"
-export BROWSER="firefox"
-
-# XDG Paths
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CACHE_HOME=$HOME/.cache
-export XDG_DATA_HOME=$HOME/.local/share
-
-# Initialization program
-xbanish & # Hide mouse when typing
-mpd & # Music Background
-flameshot & # Screen shot
+# Keyboard
 setxkbmap br # Keyboard
 setxkbmap -option caps:escape # Keyboard
-export ZDOTDIR=$HOME/.config/zsh # zsh config dir
+
+nitrogen --restore
+
+# Colors
+xrdb $HOME/.dotfiles/X11/.config/X11/Xresources
+
+# Initialization program
+autostart="mpd xbanish dunst flameshot dwmblocks"
+for program in $autostart; do
+	pidof -s "$program" || setsid -f "$program"
+done >/dev/null 2>&1
+
+# Ensure that xrdb has finished running before moving on to start the WM/DE.
+[ -n "$xrdbpid" ] && wait "$xrdbpid"
 

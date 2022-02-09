@@ -4,14 +4,15 @@ alias g='lazygit'
 alias z='zathura'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias cfnv='nvim ~/.dotfiles/nvim/.config/nvim/'
-alias cfi3='nvim ~/.dotfiles/i3-old/.config/i3/config'
+alias cfi3='nvim ~/.dotfiles/i3/.config/i3/config'
 alias cfzsh='nvim ~/.dotfiles/zsh/.config/zsh/'
 alias cfal='nvim ~/.dotfiles/alacritty/.config/alacritty/alacritty.yml'
 alias cfpc='nvim ~/.dotfiles/picom/.config/picom/picom.conf'
 alias cfza='nvim ~/.dotfiles/zathura/.config/zathura/zathurarc'
-alias cfx='nvim ~/.dotfiles/X/.xprofile'
+alias cfx='nvim ~/.dotfiles/X11/.config/X11'
 alias cfpo='nvim ~/.dotfiles/polybar/.config/polybar'
 alias cfki='nvim ~/.dotfiles/kitty/.config/kitty'
+alias cfki='nvim ~/.dotfiles/bin/.local/bin'
 
 
 # Colorize grep output (good for log files)

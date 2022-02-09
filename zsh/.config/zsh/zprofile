@@ -1,0 +1,20 @@
+#!/bin/zsh
+emulate sh -c 'source /etc/profile'
+
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+#export XINITRC="${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinitrc"
+
+unsetopt PROMPT_SP
+# Adds `~/.local/bin` to $PATH
+export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+
+# default variables
+export EDITOR="nvim"
+export TERMINAL="st"
+export BROWSER="firefox"
+export ZDOTDIR=$HOME/.config/zsh # zsh config dir
+
+

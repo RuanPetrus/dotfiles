@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+source $HOME/.config/X11/xprofile
+
+# DWM
+
+while true; do 
+    dwm >dev/null 2>&1
+done

@@ -1,0 +1,36 @@
+#!/bin/sh
+
+## Default
+sudo rsync -urv /home/ruan/Books /mnt/external-drive/
+sudo rsync -urv /home/ruan/dev /mnt/external-drive/
+sudo rsync -urv /home/ruan/Documents /mnt/external-drive/
+sudo rsync -urv /home/ruan/ISO /mnt/external-drive/
+sudo rsync -urv /home/ruan/latex /mnt/external-drive/
+sudo rsync -urv /home/ruan/Music /mnt/external-drive/
+sudo rsync -urv /home/ruan/Notes /mnt/external-drive/
+sudo rsync -urv /home/ruan/Personal /mnt/external-drive/
+sudo rsync -urv /home/ruan/Pictures /mnt/external-drive/
+sudo rsync -urv /home/ruan/RPG /mnt/external-drive/
+sudo rsync -urv /home/ruan/University /mnt/external-drive/
+sudo rsync -urv /home/ruan/Videos /mnt/external-drive/
+sudo rsync -urv /home/ruan/vimwiki /mnt/external-drive/
+
+## Scripts
+sudo rsync -urv /home/ruan/.local/bin /mnt/external-drive/
+
+## Configs
+sudo rsync -urv /home/ruan/.xprofile /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/alacritty /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/calcurse /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/dunst /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/i3 /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/mpd /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/mpv /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/ncmpcpp /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/newsboat /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/nvim /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/picom /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/polybar /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/zathura /mnt/external-drive/
+sudo rsync -urv /home/ruan/.config/zsh /mnt/external-drive/
+
