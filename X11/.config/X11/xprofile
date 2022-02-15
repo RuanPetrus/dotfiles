@@ -17,7 +17,8 @@ nitrogen --restore
 xrdb $HOME/.dotfiles/X11/.config/X11/Xresources
 
 # Initialization program
-autostart="mpd xbanish dunst flameshot dwmblocks"
+autostart="mpd xbanish dunst flameshot dwmblocks xcompmgr"
+#autostart="dunst dwmblocks "
 for program in $autostart; do
 	pidof -s "$program" || setsid -f "$program"
 done >/dev/null 2>&1

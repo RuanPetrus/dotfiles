@@ -5,6 +5,12 @@ source $HOME/.config/X11/xprofile
 
 # DWM
 
-while true; do 
-    dwm >dev/null 2>&1
-done
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
+
+#while true; do 
+#    dwm >dev/null 2>&1
+#done
+
+exec dwm
