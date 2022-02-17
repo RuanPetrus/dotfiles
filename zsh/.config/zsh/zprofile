@@ -11,6 +11,9 @@ unsetopt PROMPT_SP
 # Adds `~/.local/bin` to $PATH
 #export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 
+## Java
+#export _JAVA_AWT_WM_NONREPARENTING=1
+
 # default variables
 export EDITOR="nvim"
 export TERMINAL="st"

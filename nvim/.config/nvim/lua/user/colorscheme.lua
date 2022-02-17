@@ -1,4 +1,4 @@
-local colorscheme = "dracula"
+local colorscheme = "nord"
 
 vim.g.nord_contrast = true
 vim.g.nord_borders = false
