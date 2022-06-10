@@ -8533,3 +8533,14 @@ git pull
 git push
 fc-list | grep Fira | grep Mono
 fc-list | grep Fira
+v dev/git_senha
+ls -la
+cfzsh
+cfx
+cd .dotfiles/zsh
+ls
+cd .config/zsh
+ls
+git add -A
+git commit -m "another mess"
+git push

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+du -a ~/RPG | awk '{$1=""; print $0}' | grep .pdf | fzf | sed "s|~|$HOME|" | xargs -I @@ setsid -f devour xdg-open @@
