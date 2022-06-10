@@ -8489,3 +8489,47 @@ mv 08\ -\ Huawei\ Cloud 08\ -\ Huawei\ Cloud.pdf
 ls
 sudo poweroff
 ls
+v dev/git_senha
+ls
+htop
+vim /etc/pacman.conf
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+cd ArchSetup
+ls
+cat progs.csv
+sc-im progs.csv
+cd .local/src/dwm
+v config.h
+cd ..
+cd st
+ls
+v config.h
+ls
+git add -A
+git commit -m "mess but works"
+cd ..
+cd dwm
+git add _A
+git add -A
+git commit -m "mess but works"
+git push
+git pull
+git pull.rebase true
+git push
+git push
+git pull.rebase false
+git pull
+git config pull.rebase true
+git push
+git pull
+git push
+cd ..
+cd st
+l
+git pull
+git push
+fc-list | grep Fira | grep Mono
+fc-list | grep Fira

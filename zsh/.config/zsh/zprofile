@@ -20,4 +20,3 @@ export TERMINAL="st"
 export BROWSER="firefox"
 export ZDOTDIR=$HOME/.config/zsh # zsh config dir
 
-
