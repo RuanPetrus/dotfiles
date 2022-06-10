@@ -230,6 +230,7 @@ _G.packer_plugins = {
     url = "https://github.com/moll/vim-bbye"
   },
   vimwiki = {
+    config = { '\27LJ\2\nt\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\3\vsyntax\rmarkdown\tpath"$HOME/Documents/notes/vimwiki\bext\b.md\17vimwiki_list\6g\bvim\0' },
     loaded = true,
     path = "/home/ruan/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
@@ -237,6 +238,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: vimwiki
+time([[Config for vimwiki]], true)
+try_loadstring('\27LJ\2\nt\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\3\vsyntax\rmarkdown\tpath"$HOME/Documents/notes/vimwiki\bext\b.md\17vimwiki_list\6g\bvim\0', "config", "vimwiki")
+time([[Config for vimwiki]], false)
 if should_profile then save_profiles() end
 
 end)

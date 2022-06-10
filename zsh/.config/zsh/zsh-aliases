@@ -1,4 +1,5 @@
 #!/bin/sh
+
 alias v='nvim'
 alias g='lazygit'
 alias z='zathura'
@@ -45,4 +46,7 @@ alias m="git checkout master"
 alias s="git checkout stable"
 
 alias ls='ls --color=auto'
+
+# Others
+alias anac='source ~/.local/anaconda3/bin/activate'
 

@@ -13,4 +13,5 @@ source $HOME/.config/X11/xprofile
 #    dwm >dev/null 2>&1
 #done
 
+#exec ~/.config/chadwm/scripts/./autostart
 exec dwm

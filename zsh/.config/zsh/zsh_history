@@ -1,0 +1,8491 @@
+ls
+sudo nvim /etc/pacman.conf
+sudo nvim /etc/pacman.d/mirrorlist-arch
+sudo pacman -Syyy archlinux-walpaper
+sudo pacman -Syyy archlinux-wallpaper
+xcompmgr
+xcompr
+cd ArchSetup
+ls
+sc-im progs.csv
+cd 
+cfx
+ls .local/bin
+ls
+cd .local/bin
+ls
+dmenumount
+mkdir /mnt/external
+sudo dmenumount
+dmenumount
+lsblk
+cd /mnt
+ls
+sudo cp -R * ~/
+cd 
+ls -la
+chown -R ruan:ruan *
+sudo chown -R ruan:ruan *
+ls -la
+ranger
+dmenuumount
+cd .local/bin
+ls
+dmenuumount
+ls
+startx
+sudo reboot
+pamixer
+pulsemixer
+pipewire
+ls
+cd .config
+ls
+cd 
+pulsemixer
+ls
+cd ArchSetup
+ls
+sc-im progs.csv
+cfx
+cfx
+startx
+sudo reboot
+startx
+sudo shutdown now
+sudo reboot
+sudo reboot
+startx
+htop
+htop-git
+neofetch
+sudo pacman -Q | grep htop
+sudo pacman -Q | grep htop
+sudo pacman -Q | grep ht
+sudo pacman -S htop
+sudo pacman -Syyy htop
+sudo pacman -Syyy
+sudo pacman -Syyy
+ls
+v /etc/pacman.conf
+v /etc/pacman.d/mirrorlist
+sudo nvim /etc/pacman.d/mirrorlist
+sudo pacman -Syyy
+sudo nmtui
+ip a
+sudo pacman -Syyy
+sudo pacman -S htop
+htop
+neofetch
+sudo pacman -S neofetch
+neofetch
+v .xinitrc
+cfx
+sudo reboot
+htop
+cfx
+startx
+sudo reboot
+htop
+sudo pacman -R xserver-xorg-input-synaptics
+nvidia-utils
+sudo pacman -Q | grep nvidia
+nvidia-utils
+nvidia
+sudo pacman -S nvidia-settings
+nvidia-settings
+nvidia-settings
+sudo nvim /etc/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf
+cd /etc/X11
+ls
+cd xorg.conf.d
+ls
+timedatectl set-ntp true
+sudo pacman -S openntpd openntpd-runnit
+sudo pacman -S openntpd openntpd-runit
+ntp
+ntp
+sudo ntpd -qg
+sudo hwclock -w
+start
+startx
+ls
+neofetch
+lspci
+lspci -k | grep -A 2 -E "(VGA|3D)"
+nvidia-settings
+sudo pacman -S nvidia-prime
+yay -S glxinfo
+yay -S glxinfo
+prime-run glxinfo | grep "OpenGL renderer"
+sudo pacman -S xf86-video-intel1
+sudo pacman -S xf86-video-intel
+sudo pacman -S mesa
+sudo reboot
+htop
+startx
+neofetch
+sudo reboot
+neofetch
+htop
+cfzsh
+sudo reboot
+telnet gaia.cs.umass.edu 80
+telnet gaia.cs.umass.edu 80
+telnet gaia.cs.umass.edu 80
+telnet gaia.cs.umass.edu 80
+telnet gaia.cs.umass.edu 80
+ls
+mkdir dev
+ls
+cd dev
+ls
+v
+mkdir Network
+cd Network
+l
+sudo pacman -Ss pip
+sudo pacman -S python-pip
+sudo pacman -Syyyu
+sudo pacman -S python-pip
+cd dev/Network
+ls
+v teste.pu
+v teste.py
+pip install flake8
+pip install black
+sudo pacman -S node
+sudo pacman -S npm
+ls
+v teste.py
+v teste.py
+ls
+cd .local/bin
+ls
+cd 
+dmenuumount
+cd .local/bin
+ls
+v teste
+ls
+rm teste
+cd 
+cd .local
+ls
+cd bin
+ls
+cd ..
+ls
+rm -rf bin
+cp ~/.dotfiles/bin/.local/bin .
+cp -r ~/.dotfiles/bin/.local/bin .
+ls
+cd bin
+ls
+cd 
+flake8
+cd .local/bin
+ls
+cd 
+v .zprofile
+cfzsh
+sudo pacman -S wget
+npm install -g neovim
+sudo npm install -g neovim
+sudo pacman -S ripgrep
+sudo pacman -S fd
+python3 -m pip install --user --upgrade pynvim
+telnet
+sudo pacman -S inetutils 
+telnet gaia.cs.umass.edu 80
+v text.txt
+cat /etc/hosts
+cat /etc/host
+cat /etc/hostna,e
+cat /etc/hostname
+sudo pacman -Ss dig
+sudo pacman -S bind
+dig www.cic.unb.br
+ls
+ip -a
+ip a
+cat /etc/hosts
+sudo pacman -S discord
+sudo pacman -S xornalapp
+sudo pacman -Ss xornal
+sudo pacman -S xournalpp
+cd dev/Network
+v teste.py
+v teste.py
+ls
+mv teste.py raw_http_conection.py
+v teste.pu
+v teste.py
+mkdir pages
+v teste.py
+python3 raw_http_conection.py
+v raw_http_conection.py
+ls
+mv teste.py http_client.py
+ls
+v http_server.py
+ls
+python3 http_server.py
+ls
+v http_client.py
+python3 http_server.py
+v http_client.py
+python3 http_server.py
+ls
+cd dev/Network
+ls
+python3 raw_http_conection.py
+python3 http_client.py
+cd 
+ls
+cd dev
+ls
+mkdir TP1
+ls
+cd TP1
+ls
+ls
+ranger
+calcurse
+sudo pacman -S calcurse
+calcurse
+calcurse
+ranger
+ranger
+sudo pacman -S qbittorrent
+ranger
+ranger
+ranger
+ranger
+startx
+poweroff
+sudo poweroff
+calcurse
+ls
+cd Videos
+ls
+cd Experimento02
+ls
+mpv 2.1.mp4
+yay -S teams
+sudo dmenumount
+ls /
+ls /mnt
+mkdir /mnt/external
+sudo mkdir /mnt/external
+sudo dmenumount
+sudo dmenumount
+dmenumount
+cd external
+ls
+cd MIUI
+ls
+cd Gallery
+ls
+cd cloud
+ls
+cd owner
+ls
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+dmenuumount
+dmenumount
+ls
+cd MIUI
+ls
+cd Gallery
+ks
+ls
+cd cloud
+ls
+cd owner
+ls
+cd lcl
+ls
+mpv VID_20220215_155621.mp4
+ls
+cp * ~/Videos/Experimento02
+dmenuumount
+cd 
+ls
+cd Videos/
+ls
+cd Experimento02
+ls
+mpv VID_20220215_155621.mp4
+mv VID_20220215_155621.mp4 2.2.mp4
+mv VID_20220215_160457.mp4 2.3.mp4
+ls
+mpv 2.3.mp4
+ls
+cd 
+ranger
+yay -S oplin-desktop-bin 
+yay -S joplin-desktop-bin 
+sudo pacman -S pcmanfm
+pcmanfm
+pkill all teams
+pkill --all teams
+pkill teams
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+cd .local/src/dwm
+v config.h
+make
+sudo make clean install
+git add -A
+git commit "Add new keybindings"
+git commit -m "Add new keybindings"
+git config --global user.email "xastroboyx11@gmail.com"
+git config --global user.name "Ruan Petrus"
+git commit -m "Add new keybindings"
+git push
+git push
+git push
+cd 
+cd .dotfiles
+ls
+git add -A
+git commit -m "novo setup"
+git push
+cd 
+startx
+ls
+ranger
+cd Books/SI
+ls
+mv The\ 4-Hour\ Workweek,\ Expanded\ and\ Updated\ Expanded\ and\ Updated,\ With\ Over\ 100\ New\ Pages\ of\ Cutting-Edge\ Content.\ by\ Timothy\ Ferriss\ \(z-lib.org\).mobi 'The 4-Hour Workweek.mobi'
+ls
+dmenumount
+cd 
+lsblk
+dmenumount
+sudo powerofff
+sudo poweroff
+ls
+cd dev
+ls
+cd Network
+ls
+dmenumount
+lsblk
+dmenumount
+ls /mnt
+ls /mnt/external
+dmenuumount
+ls
+ls /mnt/external
+ls
+v http_server.py
+python3 http_server.py
+cd dev/Network
+ls
+python3 http_client.py
+python3 http_client.py
+python3 http_client.py
+python3 http_client.py
+python3 http_client.py
+python3 http_client.py
+ls
+cd 
+ls
+v text.txt
+cd dev/Network
+ls
+fzf .
+fzf
+ls
+cd 
+ls
+fzf 
+fzf Books
+man fzf
+fzf -q Books
+fzf -q Books/
+cd .local/bin
+ls
+v bks
+v bks
+du -a ~/Books
+du -a ~/Books | awk '{print $2}'
+du -a ~/Books | awk '{print $2}' | fzf | xargs -r $EDITOR
+du -a ~/Books | awk '{print $2}' | fzf | xargs -r zathura
+man cut
+man awk
+awk -h
+du -a ~/Books | awk -F '{print $2}' | fzf | xargs -r zathura
+du -a ~/Books | awk -F '{print $2}'
+du -a ~/Books | awk -F '{print $2}'
+du -a ~/Books | awk - 'BEGIN{print $2}'
+du -a ~/Books | awk  'BEGIN{print $2}'
+du -a ~/Books | awk 'BEGIN{print $2}'
+du -a ~/Books | colrm 6
+du -a ~/Books |
+du -a ~/Books
+du -a ~/Books | colrm 1
+du -a ~/Books | colrm 2
+du -a ~/Books
+du -a ~/Books | colrm 1234567
+du -a ~/Books | colrm 7
+du -a ~/Books | colrm 2
+du -a ~/Books | colrm 3
+du -a ~/Books | colrm 4
+du -a ~/Books | colrm 5
+man colrm 
+du -a ~/Books | awk '{$1=""; print $0}' 
+du -a ~/Books | awk '{$1=""; print $0}' | fzf | xargs -r zathura
+du -a ~/Books | awk '{$1=""; print $0}' | fzf
+du -a ~/Books | awk '{$1=""; print $0}' | fzf | xargs zathura
+man xargs
+du -a ~/Books | awk '{$1=""; print $0}' | fzf | zathura
+du -a ~/Books | awk '{$1=""; print $0}' | fzf | xargs -I @@ zathura @@
+du -a ~/Books | awk '{$1=""; print $0}' | fzf | xargs -I @@ zathura @@ &
+du -a ~/Books | awk '{$1=""; print $0}' | fzf | xargs -I @@ zathura @@
+du -a ~/Books | awk '{$1=""; print $0}' | fzf | xargs -I @@ zathura @@
+echo "du -a ~/Books | awk '{$1=""; print $0}' | fzf | xargs -I @@ zathura @@" >> bks
+v bks
+v bks
+v bks
+chmod +x bks
+./bks
+ls
+v opout
+./bks
+cat /usr/share/applications/org.pwmt.zathura.desktop
+ls /usr/share/applications/o
+ls /usr/share/applications/
+xdg-mime default org.pwmt.zathura.desktop application/pdf
+bks
+yay -S --noconfirm devour
+cd .local/bin
+ls
+v bks
+cd 
+cd Books
+ls
+cd Hacking
+ls
+devour xdg-open Black\ Hat\ Python,\ 2nd\ Edition\ by\ Justin\ Seitz\ Tim\ Arnold\ \[Justin\ Seitz\]\ \(z-lib.org\).pdf
+bks
+v bk
+cd .local/bin
+ls
+v bks
+bks
+cd 
+ls
+cd latex
+ls
+ls | grep .pdf
+cd .local/bin
+v bks
+bks
+v bks
+bks
+bks
+v bks
+bks
+v bks
+bks
+v bks
+bks
+ls
+cd Books
+ls
+cd 
+sudo pacman -Syyyu
+sudo pacman -Syyyu
+sudo pacman -S ffmpeg
+pkill firefox
+sudo pacman -S firefox
+ffmpeg -v
+ffmpeg --version
+ffmpeg -version
+ffmpeg -version
+ffmpeg --enable-libx264
+ffmpeg --prefix=/usr --enable-libx264
+ffmpeg -configuration --enable-libx264
+yay -S ffmpeg-ful
+yay -S ffmpeg-full
+ffmpeg -version
+sudo pacman -S chromium 
+cd .local/bin
+v bks
+bks
+bks
+sudo pacman -Sc
+sudo pacman -R $(pacman -Qdtq)
+sudo pacman -Su
+chromium
+pacman -Qii ffmpeg 
+sudo pacman -Sy ffmpeg-compat-58
+pkill all firefox
+pkill firefox
+sudo pacman -S dia
+sudo mkdir /usr/local/share/lombok
+sudo wget https://projectlombok.org/downloads/lombok.jar -O /usr/local/share/lombok/lombok.jar
+sudo rm -rf /usr/local/share/lombok
+cd dev/TP1
+ls
+sudo pacman -S jdk-openjdk
+cfnv
+cd dev/TP1
+v teste.java
+cfnv
+v teste.java
+v teste.java
+cd 
+cfnv
+ls
+cd dev/TP1
+ls
+v teste.java
+cfnv
+cfnv
+v teste.java
+v teste.java
+cfnv
+v teste.java
+sudo pacman -S netbeans
+netbeans
+xprop
+xprop
+cd .local/src/dwm
+v config.h
+make
+sudo make clean install
+xprop
+ffmpeg
+ffmpeg -i source.mp4 -codec:v libx264 -profile:v baseline -level 3.0 -preset slow -threads 0 -codec:a aac -b:a 128k -movflags faststart test.mp4
+sudo pacman -Rcns netbeans
+yay -S netbeans-javase
+yay -S netbeans-nightly
+sudo pacman -S netbeans
+netbeans
+startx
+startx
+java -v
+sudo reboot
+java -v
+java --version
+javac
+java -RE
+archlinux-java status
+cd Documents
+cd ..
+cd Downloads
+ls
+unzip System_Rars.zip
+ls
+cd System
+ls
+java -jar Rars14_Custom4.jar
+netbeans
+sudo pacman -S wmname
+wmname LG3D
+wmname -h
+man wmname 
+wmname DWM
+_JAVA_AWT_WM_NONREPARENTING=1 
+cfzsh
+netbenas
+netbeans
+cfzsh
+netbeans
+netbeans
+ls
+cfzsh
+startx
+sudo reboot
+startx
+sudo poweroff
+pkill teams
+teams &
+sudo pacman -Rcns teams
+yay -S teams
+startx
+bks
+pkill teams
+cfzsh
+sudo reboot
+pkill temas
+pkill teams
+pacman -Ss
+pacman -Ss teams
+yay -Ss teams
+sudo pacman -Rcns teams
+yay -S teams
+teams --no-sandbox
+startx
+bks
+cd Documents
+cd ..
+cd Downloads
+ls
+devour zathura lista_1.pdf
+ls
+ls
+devour Prova\ 1.pdf
+ls -la
+devour Prova\ 1.pdf
+sudo devour Prova\ 1.pdf
+devour zathura Prova\ 1.pdf
+rm Prova\ 1.pdf
+rm Prova\ 1.pdf
+ls
+ls
+ls
+mkdir -p ~/dev/Risc-V
+mv System ~/dev/Risc-V
+ls
+rm System_Rars.zip
+ls
+unzip Módulo\ 1.zip
+ls
+cd Módulo\ 1.zip
+ls
+cd Mвdulo\ 1
+ls
+zathura Prova\ 1\ -\ Gabarito.pdf
+zathura Gabarito\ -\ P1.pdf
+zathura Gabarito\ CN-A-2-2020.pdf
+zathura Prova\ 1.pdf
+zathura Prova\ 1.pdf
+zathura Prova\ 1 Gabarito\ CN-A-2-2020.pdf
+pkill teams
+sudo poweroff
+teams --no-sandbox
+sudo vim /etc/pacman.conf
+cd Downloads
+ls
+cd Mвdulo\ 1
+ls
+devour zathura Prova\ 1.pdf
+cd ..
+ls
+devour zathura 1P\ Calculo\ Numerico-\ B-\ 2-2021.pdf
+cd .local/bin
+v bks
+pkill teams
+cd dev
+ls
+htop
+neofetch
+cd Desktop
+cd 
+cd Downloads
+ls
+ls
+v 1bissecção.py
+cfnv
+v 1bissecção.py
+cfx
+cd 
+cd .dotfiles/X11/.config/X11
+ls
+xrdb Xresources
+v dev/git_senha
+cd Downloads
+ls
+ls | grep -vi py
+ls | grep -vi py | rm
+ls | grep -vi py | xargs -I @@ rm -rf @@
+ls
+ls
+v 1bissecção.py
+v 1bissecção.py
+python3 1bissecção.py
+v 1bissecção.py
+python3 1bissecção.py
+python3 1bissecção.py
+v 1bissecção.py
+cd .dotfiles/X11/.config/X11
+ls
+ls
+ls
+cd ..
+cd ..
+cd ..
+cd ..
+cd .dotfiles
+ls
+ls
+git add -A
+git commit -m "blabla"
+git push
+ls
+cd 
+ls
+cd ArchSetup
+ls
+cd ..
+ls
+bks
+cd Pictures
+ls
+cd PrintScreen
+ls
+cd ..
+cd Unixporn
+ls
+cd ..
+ls
+ls
+cd Unixporn
+ls
+cd ..
+ls
+ranger
+ls
+cd PrintScreen
+ls
+cd ..
+cd 
+ls
+lsblk
+lsblk
+ls
+cd Games
+ls
+cd ..
+s
+ls
+ls
+htop
+neofetch
+ls
+cd latex
+ls
+startx
+bks
+sudo poweroff
+man xargs
+man xargs
+sudo pacman -Syyyu discord
+cd latex
+ls
+v latex.pdf
+zathura latex.pdf
+yay -Ss latex
+ls
+v latex.tex
+v latex.tex
+v resume_example.tex
+ls
+cd Downloads
+ls
+mkdir -p ~/University/ISC/modulo1
+mv Aulas_Módulo1.zip ~/University/ISC/modulo1
+cd 
+cd University/ISC/modulo1
+ls
+unzip Aulas_Módulo1.zip
+ls
+rm Aulas_Módulo1.zip
+ls
+teams --no-sandbox
+ping archlinux.org
+ping google.com
+cd Desktop
+cd ..
+cd Downloads
+ls
+mv Gabaritos.zip ~/University/ISC
+cd 
+cd ~/University/ISC
+ls
+unzip Gabaritos.zip
+l
+sls
+ls
+mkdir -p provas-antigas
+ls
+ls | grep .pdf | xargs - m 1 -I @@ mv @@ provas-antigas
+ls | grep .pdf | xargs -m 1 -I @@ mv @@ provas-antigas
+ls | grep .pdf | xargs -M 1 -I @@ mv @@ provas-antigas
+ls | grep .pdf | xargs -n 1 -I @@ mv @@ provas-antigas
+ls
+cd provas-antigas
+ls
+ls
+devour zathura ISCA_Prova1_2019-2_Gab.pdf
+pamixer
+startx
+sudo poweroff
+bks
+startx
+sudo poweroff
+yay -Sy ttf-font-awesome
+fc-list | grep font
+fc-list | grep awesome
+fc-list | grep Awesome
+cd .local/bin/statusbar
+ls
+v sb-battery
+cd .local/src/dwmblocks
+ls
+v config.h
+date "%y"
+date "%Y"
+date "+%Y"
+date "+ [ %Y ]"
+cd .local/src/dwmblocks
+ls
+v config.h
+make
+sudo make clean install
+htop
+cd .local/bin/statusbar
+ls
+v sb-clock
+sb-clock
+v sb-clock
+sb-clock
+v sb-clock
+sb-clock
+v sb-clock
+sb-clock
+v sb-clock
+sb-clock
+v sb-clock
+sb-clock
+v sb-clock
+sb-clock
+v sb-clock
+sb-clock
+ls
+v sb-battery
+sb-battery
+v sb-battery
+sb-battery
+v sb-internet
+v sb-internet
+v sb-internet
+v sb-internet
+ls
+v sb-volume
+v sb-volume
+sb-music
+startx
+startx
+startx
+sudo reboot
+cd .local/bin/statusbar
+ls
+v sb-music
+v sb-mpdup
+chmod +x sb-mpdup
+cd ..
+cd 
+cd .local/src/dwmblocks
+v config.h
+make
+sudo make clean install
+ls
+cd 
+cd .local/bin
+ls
+cd statusbar
+ls
+v sb-music
+./sb-music
+v sb-music
+./sb-music
+v sb-music
+./sb-music
+v sb-music
+./sb-music
+filter() { mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⃯�/g;/\\[playing\\].*/d;/^ERROR/Q" | paste -sd ' ' -;}\
+
+filter() { mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⃯�/g;/\\[playing\\].*/d;/^ERROR/Q" | paste -sd ' ' -;}\
+
+filter()\
+;
+filter() ;\
+\
+
+mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⃯�/g;/\\[playing\\].*/d;/^ERROR/Q" | paste -sd ' ' -;
+mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⃯�/g;/\\[playing\\].*/d;/^ERROR/Q" | paste -sd ' ' -;
+mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⃯�/g;/\\[playing\\].*/d;/^ERROR/Q" | paste -sd ' ' -;
+mpc
+mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⃯�/g;/\\[playing\\].*/d;/^ERROR/Q" | paste -sd '[] ' -;
+mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⃯�/g;/\\[playing\\].*/d;/^ERROR/Q" | paste -sd '[]' -;
+mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⃯�/g;/\\[playing\\].*/d;/^ERROR/Q"
+v teste.sh
+chmod teste.sh
+chmod +x teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+ls
+cd ArchSetup
+ls
+v installer.sh
+startx
+sudo reboot
+cd .local/bin/statusbar
+ls
+v sb-music
+cd .local/bin/statusbar
+ls
+sb-mpdup
+v sb-mpdup
+sb-mpdup
+sb-mpdup
+cd .dotfiles/X11/.config/X11
+ls
+v Xresources
+xrdb Xresources
+v Xresources
+xrdb Xresources
+v Xresources
+xrdb Xresources
+v Xresources
+xrdb Xresources
+cd .dotfiles/X11/.config/X11
+ls
+v Xresources
+xrdb Xresources
+bks
+v .
+cd .dotfiles/X11/.config/X11
+ls
+v Xresources
+xrdb Xresources
+cd .local/src/dwm
+v config.h
+htop
+yay -S lxappearance
+yay -S nordic-theme 
+cd .local/src
+ls
+git clone https://github.com/EliverLara/firefox-nordic-theme && cd firefox-nordic-theme\
+./scripts/install.sh
+cd 
+ls
+ls -la
+cd .mozilla
+ls
+cd firefox
+ls
+cd 3mxuq08h.default-release
+ls
+cd chrome
+ls
+v userChrome.css
+cd 
+cd .dotfiles/X11/.config/X11
+v Xresources
+xrdb Xresources
+cd 
+cd .config/zathura
+ls
+v zathurarc
+bks
+startx
+startx
+sudo reboot
+neofetch
+yay -S yafetch 
+yaf
+yaf
+neofetch
+yaf
+cfzsh
+yay -S papirus-icon-theme
+notify-send -u=low "teste"
+notify-send -u low "teste"
+notify-send -u low "teste"
+cd .config/dunst
+ls
+v dunstrc
+notify-send "teste"
+v dunstrc
+man dunst
+dunst print "Teste"
+dunst -print "Teste"
+man dunst
+dunst
+notify-send "test"
+dunstify "teste"
+dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
+man notify-send
+startx
+cfx
+cd .config/dunst/
+v dunstrc
+mv dunstrc dunstrc-old
+v dunstrc
+v dunstrc
+notify-send "teste"
+notify-send -u low "teste"
+ls
+v dunstrc
+notify-send -u low "teste"
+dunst
+v dunstrc
+notify-send -u low "teste"
+dunst
+notify-send -u low "teste"
+v dunstrc
+notify-send "Teste"
+notify-send "Teste"
+sudo reboot
+notify-send "Teste"
+cfzsh
+cfzsh
+cfzsh
+cd .local/bin
+ls
+mkdir fetch
+cd fetch
+curl https://raw.githubusercontent.com/anhsirk0/fetch-master-6000/master/fm6000.pl --output fm6000
+ls
+chmod +x fm6000
+./fm6000
+./fm6000
+./fm6000 -c magenta
+./fm6000 -c blue
+./fm6000 -c cyan
+./fm6000 -c cyan -w
+./fm6000 -c cyan -d
+./fm6000 -c cyan -dogbert
+./fm6000 -c cyan -dogbert -de DWM
+./fm6000 -c cyan -dogbert -de "DWM"
+./fm6000 -c red -dogbert -de "DWM"
+./fm6000 -c bright_red -dogbert -de "DWM"
+./fm6000 -c bright_red -dogbert -de "DWM" -n
+./fm6000 -c bright_red -dogbert -de "DWM" -n -m 8 -g 8 -l 25
+./fm6000 -c bright_red -dogbert -de "DWM" -n -m 6 -g 8 -l 25
+./fm6000 -c bright_red -dogbert -de "DWM" -n -m 4 -g 8 -l 25
+./fm6000 -c bright_red -dogbert -de "DWM" -n -m 4 -g 6 -l 25
+./fm6000 -c bright_red -dogbert -de "DWM" -n -m 4 -g 8 -l 25
+./fm6000 -c bright_red -dogbert -de "DWM" -n -m 4 -g 8 -l 20
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"\
+
+cfzsh
+zsh
+cd ArchSetup
+ls
+cd ..
+ls
+ls
+cd dev
+ls
+cd ..
+cd .dotfiles
+ls
+cd 
+cd .config
+ls
+cd 
+cd .dotfiles
+ls
+mkdir starship
+cd starship
+ls
+mkdir -p ./.config && touch ./.config/starship.toml
+ls
+cd .config/starship.toml
+v .config/starship.toml
+v .config/starship.toml
+v .config/starship.toml
+cd ..
+cd ..
+cd .dotfiles
+ls
+stow starship
+cd .dotfiles
+v starship/.config/starship.toml
+ls
+v starship/.config/starship.toml
+cd ArchSetup
+cd .dotfiles
+v starship/.config/starship.toml
+yay -S shell-color-scripts
+colorscript random
+cfzsh
+v starship/.config/starship.toml
+cfzsh
+ranger
+ls
+bks
+notify-send "Teste"
+neofetch
+yaf
+nvidia-settings]
+nvidia-settings
+cd
+ls
+cd .local/bin
+ls
+cd statusbar
+ls
+v sb-internet
+v sb-internet
+v sb-internet
+cd .local/share
+ls
+mkdir fonts
+cd fonts
+ls
+mkdir material
+ls
+cp ~/.config/chadwm/fonts/* .
+ls
+ls | grep .
+ls | grep f
+ls | grep f | mv material
+ls | grep f | mv material/
+ls | grep f | xargs mv material
+ls
+mv materialdesignicons-webfont.ttf material
+ls
+mv materialdesignicons-webfont.woff material
+mv materialdesignicons-webfont.woff2 material
+ls
+ls
+mv MaterialIcons-Regular.ttf material
+mv Material.ttf material
+ls
+ls material
+fc-cache -vf
+fc-list | grep Material
+cfx
+fc-list FiraCode
+fc-list | grep FiraCode
+cd .config/chadwm
+ls
+cd scripts
+ls
+v autostart
+ls
+cd ..
+ls
+cd eww
+ls
+cd src
+ls
+cd ..
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cd .dotfiles
+v dunst/.config/dunst/dunstrc
+v dunst/.config/dunst/dunstrc
+xbacklight
+man xbacklight
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+xbacklight -dec 5
+man xbacklight
+xbacklight -inc 5
+xbacklight -inc 5
+xbacklight -inc 5
+xbacklight -inc 5
+xbacklight -inc 5
+xbacklight -inc 5
+xbacklight -inc 5
+xbacklight -inc 5
+xbacklight -inc 5
+imlib2
+xsetroot
+yay -S xorg-apps
+git clone https://github.com/siduck/chadwm --depth 1
+mv chadwm ~/.config
+cd ~/.config/chadwm/chadwm
+ls
+ls
+cd ..
+ls
+cd fonts
+ls
+ls
+cd .
+cd ..
+ls
+cd chadwm
+ls
+cd ..
+ls
+cd scripts
+ls
+v autostart
+v bar.sh
+cd ..
+ls
+cd eww
+ls
+v eww.scss
+cd ..
+ls
+cd chadwm
+ls
+v config.def.h
+ls
+make
+sudo make install
+xbacklight -inc 20
+xbacklight -inc 20
+xbacklight -inc 20
+xbacklight -inc 20
+xbacklight -inc 20
+xbacklight -inc 20
+cfx
+startx
+startx
+startx
+cd .config/chadwm
+ls
+v scripts/autostart
+sudo reboot
+xbacklight -inc 20
+xbacklight -inc 20
+xbacklight -inc 20
+xbacklight -inc 20
+startx
+cd .local/src
+ls
+cd dwm
+sudo make
+sudo make install
+cfx
+sudo reboot
+ls
+cd chadwm
+ls
+cd .config/chadwm
+ls
+cd eww
+ls
+ranger
+ls
+cd ..
+ls
+cp -r eww ../
+cd ..
+ls
+cd 
+cd .local/src
+ls
+git clone https://github.com/elkowar/eww
+cd eww\
+
+cargo build --release
+ls
+cd target
+ls
+cd release
+ls
+./eww deamon
+./eww daemon
+cd .local/src/eww
+ls
+cd cd target/release
+ls
+cd target/release
+ls
+./eww open
+./eww --help
+./eww --restart
+./eww reload
+./eww windows
+./eww open eww
+cd .config/eww
+ls
+eww
+eww
+eww
+eww open eww
+sudo rm -rf /usr/bin/eww
+cd .config/eww
+ls
+cd 
+cd .local/src/eww
+cd target/release
+ls
+./eww close
+./eww --help
+./eww windows
+./eww kill
+ecd 
+cd
+cd .local/src/eww/target/release
+ls
+v eww
+ln -lf /usr/bin/eww ./eww
+sudo ln -sf /usr/bin/eww ./eww
+ls
+ls -lf
+ls -la
+rm eww
+ls
+cd ..
+cd ..
+ls
+cargo build --release
+cd target/release
+ls
+sudo ln -sf ./eww /usr/bin/eww
+ls
+ls
+cd 
+cd .config/chadwm
+ls
+cd chadwm
+ls
+v config.def.h
+ls
+rm config.h
+sudo make install
+/home/ruan/.local/src/eww/target/release/eww open eww
+startx
+startx
+cfx
+cfx
+sudo reboot
+/home/ruan/.local/src/eww/target/release/eww open eww
+cfx
+cd .local/src/dwm
+sudo make install
+startx
+sudo reboot
+ranger
+printf "^c$black^ ^b$green^ CPU"
+v teste.sh
+chmod +x teste.sh
+./teste.sh
+./teste.sh
+print -- $fg_bold[red]enter filename$reset_color
+print -- $bg_bold[red]enter filename$reset_color
+print -- $bg_bold[red] --$fg[green] enter filename$reset_color
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+v teste.sh
+./teste.sh
+./teste.sh
+v teste.sh
+cd .local/bin/statusbar
+ls
+v sb-internet
+v sb-internet
+v sb-volume
+sb-volume
+v sb-volume
+sb-volume
+v sb-volume
+sb-volume
+v sb-volume
+sb-volume
+sb-volume
+v sb-volume
+sb-volume
+cd 
+cd .local/bin/statusbar
+ls
+v sb-internet
+cd 
+cd .local/src/dwmblocks
+ls
+v config.h
+cd 
+cd .local/src/dwm
+ls
+cd patches
+ls
+dmenu_run
+man print
+print -h
+print --help
+ls
+sudo pacman -S rofi 
+yay rofi-dmenu
+yay rofi-dmenu
+rofi
+rofi run
+rofi -show drun
+cd .config
+ls
+dmenu
+dmenu_run
+ls
+cd chadwm
+ls
+cd rofi
+ls
+v config.rasi
+cd themes
+ls
+cd ..
+v config.rasi
+cd ..
+ls
+cp rofi ../
+cp -r rofi ../
+cd ..
+ls
+rofi -show drun
+dmenumount
+dmenumount
+cd ..
+cd .local/src/dwm
+ls
+v config.h
+sudo make install
+rofi show dmeu)run
+rofi show dmenu_run
+rofi show drun
+rofi -show drun
+ls
+ls
+nvim .
+ls
+ls University/CL
+ls University/CL/Slides
+ls Downloads
+cd Documents
+cd Dow
+cd ..
+cd Downloads
+ls
+ranger
+ls
+mv * ~/University/CL/Slides
+bks
+ls
+ls
+ls
+cd 
+ls
+ls -la
+bks
+ls
+cd dev
+ls
+cat git_senha
+ls
+cd 
+ls
+ls
+bks
+cd .local/bin
+ls
+cp bks rpg
+v rpg
+chmod +x rpg
+rpg
+rpg
+startx
+startx
+cd .local/src/dwmblocks
+ls
+v config.h
+cd .local/bin
+cd statusbar
+ls
+v sb-help-icon
+v sb-help-icon
+sudo poweroff
+cd .local/bin/statusbar
+ls
+./sb-music
+startx
+gethostbyname("google.com")
+sh gethostbyname("google.com")
+python3 -m gethostbyname("google.com")
+python3
+nslookup
+nslookup www.mit.edu
+nslookup  �type = NS mit.edu
+nslookup --help
+nslookup -h
+nslookup -help
+bks
+sudo reboot
+reboot
+sudo reboot
+teams --no-sandbox
+pulsemixer
+cd Documents
+startx
+ls
+unzip miflash_unlock-en-5.5.224.24.zip
+ls
+rm -rf *
+sudo reboot
+sudo reboot
+ls
+v t.py
+ls
+python3 t.py
+v t.py
+python3 t.py
+v t.py
+python3 t.py
+v t.py
+python3 t.py
+v t.py
+python3 t.py
+v t.py
+python3 t.py
+v t.py
+python3 t.py
+v t.py
+python3 t.py
+python3 t.py >> datas.txt
+v datas.txt
+python3 t.py >> datas.txt
+v t.py
+python3 t.py >> datas.txt
+python3 t.py > datas.txt
+v datas.txt
+cp t.py a.py
+v a.py
+python3 a.py >> a.txt
+v a.txt
+v datas.txt
+v a.txt
+ls
+v a.txt
+mkdir dev/Mat
+mv a.py dev/Mat
+mv t.py dev/Mat
+ls
+rm a.txt
+rm datas.txt
+ls
+startx
+sudo poweroff
+sudo ntpd -qg\
+
+sudo hwclock -w\
+
+ls
+mpv https://web.microsoftstream.com/video/76acae8e-51e0-4710-b0db-e32fe4745cdc?referrer=https:%2F%2Faprender3.unb.br%2F
+ls
+cd Documents
+cd Dow
+cd 
+cd Downloads
+ls
+ls
+unzip DESTREAMER\ 64-BIT\ BY\ BENGRS.zip
+ls
+cd DESTREAMER\ 64-BIT\ BY\ BENGRS
+ls
+v BENGRS.txt
+cd chromium
+ls
+cd 
+cd Downloads
+rm -rf *
+lsd
+ls
+cd 
+cd dev/UML
+çls
+ls
+cd dev/UML
+ls
+xdg-open Taxis.png
+xdg-mime default sxiv.desktop application/png
+ls
+xdg-open Taxis.png
+xdg-open Taxis.png
+ls
+javac Teste.java 
+java Teste
+javac Teste.java 
+zi
+javac Teste.java 
+javac Teste.java 
+javac Teste.java 
+java Teste
+startx
+xdg-mime default 
+xdg-mime default application/png
+xdg-mime png
+xdg-mime --help
+xdg-mime query png
+xdg-mime query .png
+man xdg-mine
+xdg-mime --manual
+cd dev/UML
+lsa
+ls
+xdg-mime query Taxis.png
+xdg-mime --manual
+xdg-mime query filetype Taxis.png
+xdg-mime default sxiv.desktop image
+xdg-mime query default Taxis.png
+xdg-mime --manual
+xdg-mime query default image
+xdg-mime query default image/png
+xdg-mime default sxiv.desktop image/*
+xdg-mime default sxiv.desktop image/png
+xdg-mime query default image/png
+ls
+xdg-open Taxis.png
+yay -S selectdefaultapplication-git
+ls
+cd ..
+ranger
+ls
+cd dev/TP1
+ls
+mkdir lista3
+cd lista3
+ls
+v Exercicio1.java
+ls
+cd ..
+ls
+v teste.java
+v teste.java
+v Teste.java
+v Teste.java
+vimtutor
+sudo reboot
+sudo ntpd -qg\
+
+sudo hwclock -w\
+
+ranger
+man desown 
+man disown 
+disown
+ranger
+classical_radio
+ranger
+classical_radio
+v .local/bin/classical_radio
+mpv "https://live.musopen.org:8085/streamvbr0" && disown
+mpv "https://live.musopen.org:8085/streamvbr0"& && disown
+mpv "https://live.musopen.org:8085/streamvbr0" |  disown
+mpv "https://live.musopen.org:8085/streamvbr0" && disown
+mpv "https://live.musopen.org:8085/streamvbr0" && disown &
+mpv "https://live.musopen.org:8085/streamvbr0"&
+startx
+sudo poweroff
+htop
+ls
+cd Videos
+ls
+mkdir Experimento03
+dmenumount
+ls
+cd external
+ls
+ranger
+cd DCIM/Camera
+ls
+cp * ~/Videos/Experimento03
+dmenuumount
+cfx
+ls
+cd ArchSetup
+ls
+sc-im progs.csv
+xbanish
+ls
+cd 
+ls
+cd Videos
+ls
+cd Experimento03
+ls
+mpv VID_20220224_110236.mp4
+mv VID_20220224_110236.mp4 2.1.mp4
+ls
+mpv 2.1.mp4
+ls
+mpv VID_20220224_111723.mp4
+mv VID_20220224_111723.mp4 lixo.mp4
+ls
+mpv VID_20220224_111731.mp4
+mv VID_20220224_111731.mp4 2.2.mp4
+ls
+mpv VID_20220224_112809.mp4
+mpv VID_20220224_112809.mp4
+ls
+mv VID_20220224_112809.mp4 2.3.mp4
+ls
+rm lixo.mp4
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+df -h
+htop
+ls
+teams --no-sandbox
+teams --no-sandbox
+pulsemixer
+bks
+cd 
+cd .local/share
+ls
+ls -la
+cd /usr/share/
+ls
+cd applications
+ls
+sudo vim org.pwmt.zathura.desktop
+ls
+sudo vim classical_radio.desktop
+sudo vim classical_radio.desktop
+ls
+cd .local/share
+ls
+mkdir applications
+cd applications
+ls
+v classical_radio.desktop
+cd /usr/share/applications
+ls
+rm classical_radio.desktop
+sudo rm classical_radio.desktop
+ls
+/home/ruan/.local/bin/classical_radio
+v /home/ruan/.local/bin/classical_radio
+man syscall
+man Syscall
+cd /usr/share/applications
+ls
+cd 
+cd .local/share/applications
+ls
+v classical_radio.desktop
+pulsemixer
+python3
+ls
+cd 
+cd dev
+ls
+ls
+mkdir modulo2
+ls
+mv Aulas_Módulo2.zip modulo2/
+ls
+cd modulo2
+ls
+unzip Aulas_Módulo2.zip
+ls
+ls
+ls
+devour zathura ISC_2-1_Arquitetura_a.pdf
+startx
+bks
+sudo poweroff
+bks
+ls
+cd Downloads
+ls
+devour zathura CamScanner\ 02-25-2022\ 15.07.pdf
+ls
+mv CamScanner\ 02-25-2022\ 15.07.pdf Exercicios_Domicialiares01.pdf
+ls
+devour zathura Exercicios_Domicialiares01.pdf
+ls
+mv Exercicios_Domicialiares01.pdf ~/University/A1
+cd 
+bks
+cd 
+cd University/A1
+ls
+mkdir Lista
+mv Exercicios_Domicialiares01.pdf ./Lista
+ls
+ls LI
+ls Lista
+ls
+bks
+rpg
+bks
+ls
+ping https://moodle.mat.unb.br/course/view.php?id=57
+ping https://moodle.mat.unb.br/course/view.php?id=57
+ping archlinux.org
+ping "https://moodle.mat.unb.br/course/view.php?id=57"
+ping "https://moodle.mat.unb.br"
+ping https://moodle.mat.unb.br
+ping moodle.mat.unb.br
+bks
+bks
+startx
+ls
+ls
+cd dev
+ls
+cd UML
+ls
+ls
+dia Taxis.dia
+sudo reboot
+reboot
+sudo reboot
+yay -S stremio 
+ls
+ls
+startx
+poweroff
+sudo poweroff
+cd .dotfiles/X11/.config/X11
+l
+ls
+v Xresources
+xrdb Xresources
+ls
+mkdir ISO
+mv Downloads/antiX-21_386-base.iso ~/ISO
+ls
+ls
+mv Downloads/ventoy-1.0.70-linux.tar.gz ~/.local/src
+ls
+rm mpv-shot0001.jpg
+rm mpv-shot0002.jpg
+ls
+rm teste.sh
+ls
+bks
+ls
+cd .local/src
+ls
+git clone https://github.com/ventoy/Ventoy.git
+ls
+cd Ventoy
+ls
+cd ..
+ls
+rm Ventoy
+rm -rf Ventoy
+ls
+ls
+tar -xvf ventoy-1.0.70-linux.tar.gz
+ls
+cd ventoy-1.0.70
+ls
+lsblk
+lsblk
+ls
+Ventoy2Disk.sh /dev/sdb
+Ventoy2Disk.sh -I /dev/sdb
+sudo Ventoy2Disk.sh -I /dev/sdb
+sudo ./Ventoy2Disk.sh -I /dev/sdb
+ls
+lsblk
+cd 
+lsblk
+dmenumount
+lsblk
+cp ISO/antiX-21_386-base.iso /mnt/external
+ls /mnt/external
+dmenuumount
+lsblk
+cd .local/src
+ls
+ls
+cd ventoy-1.0.70
+ls
+Ventoy2Disk.sh
+sudo ./Ventoy2Disk.sh -Ig /dev/sdb
+lsblk
+sudo ./Ventoy2Disk.sh -Ig /dev/sdb
+sudo ./Ventoy2Disk.sh -I -g /dev/sdb
+sudo ./Ventoy2Disk.sh -I -g /dev/sdb
+sudo ./Ventoy2Disk.sh -I /dev/sdb
+./Ventoy2Disk.sh -I -g /dev/sdb
+./Ventoy2Disk.sh -I -g /dev/sdb
+sudo ./Ventoy2Disk.sh -I -g /dev/sdb
+sudo sh Ventoy2Disk.sh -I -g /dev/sdb
+lsblk
+ls
+ls
+sudo sh ./Ventoy2Disk.sh -g -I /dev/sdb
+lsblk
+dmenuumount
+sudo mkfs.fat /dev/sdb
+lsblk
+sudo reboot
+sudo reboot
+ls
+lsblk
+lsblk
+cd .local/src
+cd ventoy-1.0.70
+ls
+ls
+sudo sh Ventoy2Disk.sh -I -g /dev/sdb
+ls
+lsblk
+sudo pacman -S gparted
+sudo pacman -S gdisk
+gdisk /dev/sdb
+sudo gdisk /dev/sdb
+sudo sh Ventoy2Disk.sh -I -g /dev/sdb
+sudo pacman -S parted
+sudo sh Ventoy2Disk.sh -I -g /dev/sdb
+cd 
+lsblk
+sudo mount /dev/sdb1 /mnt/external
+lsblk
+sudo cp ISO/antiX-21_386-base.iso /mnt/external/
+ls /mnt/external
+sudo umount /mnt/external
+lsblk
+lsblk
+lsblk
+cd .local/src
+cd ventoy-1.0.70
+ls
+sudo sh Ventoy2Disk.sh -I  /dev/sdb
+ls
+sudo mount /dev/sdb1 /mnt/external
+ls /mnt/external
+cd 
+lsblk
+sudo cp ISO/antiX-21_386-base.iso /mnt/external/
+sync
+sudo umount /mnt/external
+lsblk
+pamixer
+v dev/git_senha
+startx
+displayselect
+sudo poweroff
+ls .local/bin
+cd .local/src/dwm
+ls
+v config.h
+make
+sudo make install
+git add -A
+git commit
+git push
+displayselect
+pulsemixer
+ranger
+neofetch
+cd dev
+ls
+cd Risc-V
+ls
+cd System
+ls
+java -jar Rars14_Custom4.jar
+java -jar Rars14_Custom4.jar &
+ls
+cd 
+cd .local/share/applications
+ls
+cp classical_radio.desktop rar.desktop
+v rar.desktop
+ls
+ranger
+cd .local/share/applications
+ls
+v rar.desktop
+ls
+bks
+ranger
+javac Exercicio1.java
+javac Exercicio1.java
+java Exercicio1
+cd dev
+ls
+cd UML
+ls
+sxiv Taxis.png
+cd 
+ls
+cd dev/TP1
+ls
+ls lista3
+cd lista3
+ls
+v Exercicio1.java
+ls
+mpv https://www.youtube.com/watch?v=wZOqU6bG5Is&
+mpv https://youtu.be/wZOqU6bG5Is&
+notify-send "Teste"
+ls
+cd dev
+ls
+git clone https://github.com/RuanPetrus/isc-project.git
+ls
+cd isc-project
+ls
+cd src
+ls
+v main.s
+ls
+cd ~/Documents
+cd ..
+cd Downloads
+ls
+unzip Exemplos.zip
+l
+ls
+v bitmap.s
+ls
+wmname compiz
+cfzsh
+bks
+sudo pacman -Syyy wine
+sudo vim /etc/pacman.conf
+sudo pacman -Syyy wine
+sudo vim /etc/pacman.conf
+sudo pacman -Syyy wine
+ls
+cd Documents
+cd 
+cd Downloads
+ls
+mkdir ~/installationApps
+mv Deeds_Setup_2022_02_18_ver_2_50_200.zip ~/installationApps
+cd 
+cd installationApps
+ls
+wine Deeds_Setup_2022_02_18_ver_2_50_200.zip
+unzip Deeds_Setup_2022_02_18_ver_2_50_200.zip
+ls
+rm Deeds_Setup_2022_02_18_ver_2_50_200.zip
+ls
+wine Deeds_Setup_2022_02_18_ver_2_50_200.exe
+cd 
+ls
+cd .wine
+ls
+cd drive_c
+ls
+cd Program\ Files
+ls
+cd ..
+cd Program\ Files\ \(x86\)
+ls
+cd DeedsSuite
+ls
+wine DeedsDCS.exe
+wine DeedsFSM.exe
+wine DeedsMCE.exe
+pwd
+cd .local/share/applications
+ls
+teams --no-sandbox
+ls
+cd dev
+ls
+man gcc
+cd 
+cd Downloads
+ls
+mpv video.mp4&
+ranger
+cd dev/
+ls
+cd Risc-V
+ls
+mv ~/Downloads/fpgrars-x86_64-unknown-linux-gnu--8-bit-display ~/.local/bin/fpgrars
+cd dev/Risc-V
+ls
+fpgrars helloWord.asm
+sudo fpgrars helloWord.asm
+fpgrars
+fpgrars helloWord.asm
+cd 
+cd .local/bin
+ls
+chmod +x fpgrars
+ls
+cd 
+cd dev/Risc-V
+ls
+fpgrars helloWord.asm
+fpgrars Dobro_Metade.asm
+fpgrars Dobro_Metade.asm
+ls
+cd ..
+ls
+cd isc-project
+ls
+ranger
+cd ..
+ls
+cd Risc-V
+ls
+cd dev/Risc-V
+ls
+cd ..
+ls
+mkdir Risc-V-Biblio
+cd Risc-V-Biblio
+ls
+ls
+ls
+cd ..
+ls
+cd Risc-V
+ls
+cd dev
+ls
+cd isc-project
+ls
+cd src
+ls
+fpgrars main.s
+startx
+sudo poweroff
+ v table.txt
+cat table.txt
+cat table.txt
+cat table.txt
+echo "+---+---+---+---+---+\
+| A | B | > | = | < |\
++---+---+---+---+---+\
+| 0 | 0 | 0 | 1 | 0 |\
++---+---+---+---+---+\
+| 0 | 1 | 0 | 0 | 1 |\
++---+---+---+---+---+\
+| 1 | 0 | 1 | 0 | 0 |\
++---+---+---+---+---+\
+| 1 | 1 | 0 | 1 | 1 |\
++---+---+---+---+---+"
+v table.txt
+cat table.txt
+cd external
+ls
+ranger
+cd MIUI
+ls
+cd Gallery/cloud/owner/lcl
+ls
+ls
+cp * ~/Videos/Experimento04
+ls
+cd Videos
+ls
+mkdir Experimento04
+cd Experimento04
+ls
+ls
+mpv IMG_20220304_105656.jpg
+sxiv IMG_20220304_105656.jpg
+mv IMG_20220304_105656.jpg 2.0.jpg
+ls
+mpv VID_20220304_105303.mp4
+mv VID_20220304_105303.mp4 2.0.mp4
+ls
+sxiv IMG_20220304_110423.jpg
+sxiv 2.0-NumeroParDeNot.jpg
+mv IMG_20220304_110423.jpg 2.0-NumeroParDeNot.jpg
+ls
+sxiv 2.0-NumeroParDeNot.jpg
+ls
+sxiv IMG_20220304_111856.jpg
+mv IMG_20220304_111856.jpg 2.1-XorComPortasNAND.jpg
+sxiv IMG_20220304_120559.jpg
+sxiv IMG_20220304_120559.jpg 2.1-ComparadorDe3Bits.jpg
+mv IMG_20220304_120559.jpg 2.1-ComparadorDe3Bits.jpg
+ls
+sxiv IMG_20220304_122230.jpg
+sxiv IMG_20220304_122230.jpg 2.1-VizualizaçãoDeOndas.jpg
+mv IMG_20220304_122230.jpg 2.1-VizualizaçãoDeOndas.jpg
+sxiv IMG_20220304_134120.jpg
+sxiv IMG_20220304_134120.jpg 2.2-circuitoBlock.jpg
+mv IMG_20220304_134120.jpg 2.2-circuitoBlock.jpg
+ls
+sxiv IMG_20220304_135755.jpg
+sxiv IMG_20220304_135755.jpg 2.1-circuitoCompleto.jpg
+mv IMG_20220304_135755.jpg 2.1-circuitoCompleto.jpg
+sxiv IMG_20220304_140619.jpg
+sxiv IMG_20220304_140619.jpg 2.1-EquaçãoDeOndaCircuitoCompleto.jpg
+mv IMG_20220304_140619.jpg 2.1-EquaçãoDeOndaCircuitoCompleto.jpg
+ls
+mpv VID_20220304_114123.mp4
+mv VID_20220304_114123.mp4 2.1.mp4
+ls
+mpv VID_20220304_133930.mp4
+mpv VID_20220304_133930.mp4 2.2.mp4
+mv VID_20220304_133930.mp4 2.2.mp4
+ls
+mkdir 2.0
+ls
+mv 2.0.jpg 2.0
+mv 2.0.mp4 2.0
+mv 2.0-NumeroParDeNot.jpg 2.0
+ls
+mkdir 2.1
+mv 2.1-circuitoCompleto.jpg 2.1/
+mv 2.1-ComparadorDe3Bits.jpg 2.1/
+mv 2.1-EquaçãoDeOndaCircuitoCompleto.jpg 2.1/
+mv 2.1.mp4 2.1/
+ls
+mv 2.1-VizualizaçãoDeOndas.jpg 2.1
+ls
+mv 2.1-XorComPortasNAND.jpg 2.1
+ls
+mkdir 2.2
+mv 2.2-circuitoBlock.jpg 2.2
+mv 2.2.mp4 2.2
+ls
+cd 2.0
+cd 
+cd 2.2
+cd Videos/Experimento04
+l
+ls
+ranger
+cd Downloads
+ls
+devour mpv video.mp4
+devour mpv video.mp4
+yay -S spotify
+sudo yay -Syyy spotify
+yay -S spotify
+yay -S spotify
+ls
+cd Music
+ls
+mkdir Outros
+cd Outros
+ls
+youtube-dl -x --audio-format mp3 https://youtu.be/YCZqgujSYUs
+ls
+man opendir
+ls
+ls
+mv InversorDeNumero.asm ~/dev/Risc-V
+ls
+rm exemplo.asm
+ls
+cd dev
+ls
+ls
+ls
+mkdir dedup
+cd dedup
+sl
+ls
+v main.c
+v main.c
+make -k
+v Makefile
+make -k
+ls
+./dedup
+v main.c
+cd Downloads
+ls
+mv WhatsApp\ Image\ 2022-03-04\ at\ 17.58.33.jpeg 2.1-tempoDoPulso.jpeg
+sxiv 2.1-tempoDoPulso.jpeg
+make -k
+make -k
+make -k
+make -k
+make -k
+./dedup
+make -k
+./dedup
+make -k
+./dedup
+make -k
+./dedup
+make -k
+make -k
+./dedup
+make -k
+make -k
+./dedup
+make -k
+./dedup
+startx
+sudo poweroff
+sudo pacman -S man-db
+sudo pacman -S man-pages
+man opendir
+ls
+cd dev/dedup
+ls
+v main.c
+mkdir src
+mv main.c src
+ls
+v Makefile
+make -k
+./dedup
+v 
+v .
+v .
+sudo reboot
+sudo ntpd -qg\
+
+sudo hwclock -w\
+
+startx
+sudo poweroff
+starx
+startx
+sudo poweroff
+ls
+cd dev
+l
+ls
+ls
+source .config/X11/xprofile
+cd latex
+ls
+ranger
+v dev/git_senha
+cd Personal
+ls
+sxiv EuProfissional.jpeg
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+cd latex
+ls
+v resume.tex
+ls
+cd dev
+ks
+ls
+ls
+ls
+cd dev
+ls
+mkdir CineMarcus
+cd CineMarcus
+git init
+ls
+git remote add origin https://github.com/RuanPetrus/CineMarcus.git
+git branch -M main
+git push -u origin main
+git commit -m "Ready to Go"
+git add -A
+git commit -m "Ready to Go"
+git push -u origin main
+cd 
+cd dev/isc-project
+ls
+fpgrars src/main.s
+cd 
+cd dev/CineMarcus
+ls
+v CineMarcus.dia
+ls
+v .gitinore
+ls
+ls -la
+v .gitignore
+ls
+git add -A
+git status
+git commit -m "First Class Diagram"
+git push
+ls
+git add -A
+git commit -m "Pessoa -> Person"
+git push
+git push
+ls
+sxiv CineMarcus.png
+rm CineMarcus.dia\~
+sxiv CineMarcus.png
+git add -A
+git commit -m "Pessoa -> Person"
+git push
+ls
+ls
+startx
+sudo poweroff
+yay -S wireshark-qt
+usermod -aG wireshark ruan
+sudo usermod -aG wireshark ruan
+groups
+su
+groups
+wireshark &
+cfzsh
+mv Downloads
+mv Downloads/Lab-1-20212.pdf ~/University/NETWORK
+bks
+echo $SSLKEYLOGFILE
+cat ~/.ssl-log.key
+cat ~/.ssl-log.key
+sudo pacman -S pandoc
+sudo pacman -Syyy pandoc
+ifconfig
+ip a
+ls
+cd Documents
+ls
+v LabRedes1.md
+v LabRedes1.md
+v LabRedes1.md
+ls
+mkdir Uni
+mv LabRedes1.md Uni
+mv LabRedes1.pdf Uni
+ls
+cd 
+ls
+cd Personal
+ls
+v backendRoad.txt
+ls
+ls
+cd 
+ls
+sudo pacman -S texlive-most
+ls
+cd Documents
+ls
+cd Uni
+ls
+sl
+ls
+git clone https://github.com/LukeSmithxyz/md-website-cv.git
+cd md-website-cv
+ls
+v index.html
+v index.md
+v template.tex
+ls
+make
+sudo pacman -S texlive-fontsextra
+make
+yay -S noto-fonts-sc
+sudo pacman -S texlive-lang
+ls
+make
+sudo pacman -S texlive-fontsextra
+make
+yay -S noto-fonts-sc
+make
+ls
+devour zathura index.pdf
+cd latex
+ls
+v resume.tex
+cat ~/.ssl-log.key
+ls -la
+cat ~/.ssl-key.log
+bks
+teams --no-sandbox
+pkill teams
+teams --no-sandbox
+cd Documents
+ls
+cd Uni
+ls
+v LabRedes1.md
+cd 
+ranger
+cd latex
+ls
+v macros.tex
+cd 
+ls
+cd Documents
+ls
+ls
+mkdir Resume
+cd Resume
+ls
+v resume_br.tex
+cd ..
+ls
+cd 
+cd latex
+cd 
+cd 
+cd Documents/Resume
+ls
+v resume_br.tex
+cd latex
+git clone https://github.com/LukeSmithxyz/latex-templates.git
+cd latex-templates
+ls
+v cv.tex
+v dev/git_senha
+ls
+cd dev
+ls
+cd CineMarcus
+ls
+ls
+git pull
+ls
+git add -A
+git commit -m "Add cart in UML"
+git push
+v dev/git_senha
+v dev/git_senha
+cd dev/CineMarcus
+ls
+git pull
+ls
+v .git
+git pull
+rm CineMarcus.dia\~
+ls
+git pull
+ls
+v .gitignore
+git add -A
+git commit -m "update .dia file"
+git push
+cd 
+ranger
+cd dev/CineMarcus
+l
+sls
+ls
+git add -A
+git commit -m "ticket instead of sections"
+git push
+ls
+cd 
+cd Documents/Resume
+ls
+v resume_br.tex
+pkill teams
+ls
+cd dev
+ls
+cd TP1
+ls
+ls
+ls
+ls
+cd 
+ls
+bks
+cd Documents
+ls
+cd Uni
+ls
+v LabRedes1.md
+ls
+sudo -u tor /usr/bin/tor
+tor
+sudo -u tor /usr/bin/tor
+ls
+cd dev
+ls
+mkdir dataAndAlg
+cd dataAndAlg
+ls
+l
+ls
+gcc insertion_sort.c
+gcc insertion_sort.c
+gcc insertion_sort.c
+ls
+a.out
+ls
+gcc insertion_sort.c
+gcc insertion_sort.c
+gcc insertion_sort.c
+a.out
+gcc insertion_sort.c
+a.out
+gcc insertion_sort.c
+a.out
+gcc insertion_sort.c
+a.out
+gcc insertion_sort.c
+gcc hello_world.c
+a.out
+sudo pacman -S tor 
+htop
+ls
+cd Books
+ls
+cd CS
+ls
+mv ~/Downloads/Introduction_to_algorithms-3rd\ Edition.pdf .
+ls
+bks
+bks
+mv ~/Downloads/The\ ANSI\ C\ Programming\ Language\ by\ Brian\ W.\ Kernighan,\ Dennis\ M.\ Ritchie\ \(z-lib.org\).pdf .
+ls
+bks
+cd dev
+ls
+cd dataAndAlg
+ls
+v insertion_sort.c
+cd ..
+ls
+mkdir C
+cd C
+ls
+ls
+v hello_world.c
+startx
+su ruan
+bks
+sudo poweroff
+startx
+startx
+su ruan
+fd
+ranger
+ranger
+javac Teste.java
+java Teste
+javac Teste.java
+java Teste
+javac Teste.java
+javac Teste.java
+javac Teste.java
+ls
+cd installationApps
+ls
+cd ..
+rm -rf installationApps
+ls
+rm table.txt
+ls
+ls -la
+ls
+cd Documents
+ls
+cd ..
+cd ISO
+ls
+cd ..
+ls
+cd Personal
+ls
+cd ..
+ls
+cd Pictures
+ls
+cd 
+ls
+neofetch
+cd dev
+ls
+cd TP1
+ls
+ls
+v Teste.java
+ls
+ls
+cd University
+ls
+cd LCL
+ls
+mkdir experimento 05
+cd experimento
+ls
+cd ..
+ls
+rm 05
+rm -rf 05
+ls
+mv experimento experimento-05
+cd experimento-05
+ls
+v tabela1.txt
+v tabela1.tex
+ls
+v tabela2.txt
+v tabela2.tex
+cat tabela1.txt
+cat tabela1.txt
+cat tabela1.txt
+cat tabela1.txt
+cat tabela1.txt
+v tabela1.txt
+cat tabela1.txt.new
+cat tabela1.txt.new
+cat tabela1.txt.new
+cat tabela1.txt.new
+zi
+cat tabela1.txt.new
+cat tabela1.txt.new
+teams --no-sandbox
+cd Videos/Experimento05
+ls
+cd Experimento03
+ls
+cd ..
+ls
+cd ..
+ls
+cd Experimento03
+ls
+cd ..
+cd Experimento05
+ls
+rm -rf Experimento03
+pkill teams
+ranger
+cd external/MIUI/Gallery/cloud/owner/lcl
+ls
+cp * ~/Videos/Experimento05
+sudo dmenuumount
+ls
+ls
+sxiv .
+cd ..
+ls
+sxiv lcl
+sxiv -h
+man sxiv
+cd 
+ls
+cd Personal
+cd ..
+cd Pictures
+ls
+cd 
+cd Videos/Experimento05
+ls
+sxiv .
+ls
+mpv VID_20220308_155149.mp4
+mv VID_20220308_155149.mp4 2.2.mp4
+mpv VID_20220308_155809.mp4
+mv VID_20220308_155809.mp4 2.5.mp4
+mpv VID_20220308_155435.mp4
+mv VID_20220308_155435.mp4 2.4.mpv
+ls
+sxiv IMG_20220308_160416.jpg
+mv IMG_20220308_160416.jpg circuito_completo.jpg
+ls
+sxiv IMG_20220308_160507.jpg
+mv IMG_20220308_160507.jpg circuito_codificador.jpg
+sxiv IMG_20220308_160534.jpg
+mv IMG_20220308_160534.jpg circuito_decodificador.jpg
+ls
+sxiv IMG_20220308_160629.jpg
+sxiv IMG_20220308_160629.jpg ondas_codificar.jpg
+mv IMG_20220308_160629.jpg ondas_codificar.jpg
+sxiv IMG_20220308_160846.jpg
+mv IMG_20220308_160846.jpg ondas_decodificador.jpg
+ls
+mv ondas_codificar.jpg ondas_codificador.jpg
+ls
+mpv 2.4.mpv
+mv 2.4.mpv 2.4.mp4
+ls
+cd 
+ls
+ranger
+htop
+ls
+cd dev
+ls
+mkdir BugTracker
+cd BugTracker
+ls
+ls
+startx
+sudo poweroff
+sudo pacman -Syyyu
+cfza
+htop
+ls
+ls -la
+ls
+python -m pydoc ftp
+python -m pydoc http
+python -m pydoc -k ftp
+python -m pydoc -b
+ls
+cd dev
+ls
+mkdir teste
+cd teste
+ls
+python -m venv venv
+ls
+source venv/bin/activate
+ls
+pip install sqlalchemy
+python -m pydoc -b
+ls
+cd ..
+ls
+rm -rf teste
+ls
+cd 
+cd .config
+ls
+v starship.toml
+cd ..
+ls
+cd dev
+ls
+mkdir Documentation
+cd Documentation
+ls
+mkdir Python
+cd Python
+ls
+mv ~/Downloads/python-3.10.2-docs-pdf-a4.tar.bz2
+mv ~/Downloads/python-3.10.2-docs-pdf-a4.tar.bz2 .
+ls
+tar -xvf python-3.10.2-docs-pdf-a4.tar.bz2
+ls
+cd docs-pdf
+ls
+devour zathura library.pdf
+devour zathura library.pdf
+devour zathura library.pdf
+ls
+cd ..
+ls
+rm python-3.10.2-docs-pdf-a4.tar.bz2
+mv ~/Downloads/python-3.10.2-docs-text.tar.bz2
+mv ~/Downloads/python-3.10.2-docs-text.tar.bz2 .
+ls
+tar -xvf python-3.10.2-docs-text.tar.bz2
+ls
+cd python-3.10.2-docs-text
+ls
+v .
+cd ..
+ls
+rm python-3.10.2-docs-text.tar.bz2
+mv ~/Downloads/python-3.10.2-docs-text.tar.bz2 .
+ls
+l
+ranger
+python3
+ls
+cd Downloads
+ls
+rm video\(1\).mp4
+ls
+pkill zathura
+ls
+sudo pacman -S zathura-pdf-mupdf
+cd Downloads
+ls
+zathura python-3.10.2-docs.epub
+ls
+rm python-3.10.2-docs.epub
+ls
+bks
+bks
+cd Documents/Uni
+ls
+mv assets/http-version.png .
+ls
+cd .local/bin
+ls
+v compiler
+make
+make
+make
+make
+make
+make
+make
+make
+make
+mak
+make
+make
+make
+make
+make
+make
+sudo pacman -S gimp
+make
+make
+make
+make
+make
+nslookup
+nslookup -help
+nslookup --help
+nslookup --h
+nslookup help
+nslookup www.mit.edu 
+nslookup  �type = NS mit.edu 
+nslookup  �type=NS mit.edu 
+nslookup  �type NS mit.edu 
+ip
+ip a
+ip displaydns
+sudo pacman -S net-tools\
+
+ifconfig
+ifconfig displaydns
+ifconfig\displaydns
+ifconfig/displaydns
+ifconfig -h
+cat /etc/resolv.conf
+ps ax | grep dnsmasq
+ps ax | grep dnsmasq
+cd Documents/Uni/assets
+ls
+devour zathura HTTP-Response.pdf
+cd ..
+ls
+v md-website-cv
+ls
+ifconfig
+ifconfig
+ls
+zathura wireshark_wlan0DHWNI1.pdf
+zathura wireshark_wlan0DHWNI1.pdf
+ls
+cd Documents
+ls
+cd Uni/
+ls
+mkdir assets
+ls
+v LabRedes1.md
+ls
+v Makefile
+make
+v Makefile
+make
+v Makefile
+v md-website-cv
+ls
+make
+zathura LabRedes1.md
+zathura LabRedes1.pdf
+v LabRedes1.md
+v LabRedes1.md
+bks
+ls
+v LabRedes1.md
+v Makefile
+ls
+v LabRedes1.tex
+v LabRedes1.md
+cfnv
+ls
+v LabRedes1.md
+bks
+make
+cd Documents/Uni/
+ls
+v LabRedes1.md
+v LabRedes1.md
+npm install remark
+v LabRedes1.md
+npm uninstall remark
+v LabRedes1.md
+cd Music
+ls
+mkdir Podcast
+ls
+cd Podcast
+ls
+curl https://nerdcast-cdn.jovemnerd.com.br/nerdcast_819_larica_total.mp3
+curl -h
+curl -o larica_total.mp3 https://nerdcast-cdn.jovemnerd.com.br/nerdcast_819_larica_total.mp3
+ls
+cd Music
+ls
+make
+make
+make
+make
+make
+make
+make
+make
+bks
+cat /etc/resolv.conf
+bks
+ls
+cd Documents
+ls
+cd Uni
+ls
+ls
+v LabRedes1.md
+v LabRedes1.md
+cat /etc/resolv.conf
+v LabRedes1.md
+v LabRedes1.md
+ls
+mv md-website-cv ../
+cd ..
+ls
+mv Uni Network
+ls
+cd Network
+ls
+rm -rf node_modules
+ls
+cd ..
+ls
+ls
+cd Network
+ls
+devour zathura LabRedes1.pdf
+ls
+rm LabRedes1.tex
+ls
+cd 
+ls
+cd dev
+ls
+cd TP1
+ls
+ls
+cd lista3
+ls
+v Exercicio1.java
+çs
+ls
+cd dev
+ls
+cd BugTracker
+ls
+cd ..
+ls
+git clone https://github.com/tiangolo/fastapi.git
+cd fastapi
+ls
+v .
+ls
+cd ..
+ls
+cd CineMarcus
+ls
+pip install sqlalchemy
+cd dev/BugTracker
+ls
+source venv/bin/activate
+ls
+uvicorn main:app --reload
+ls
+rm main.py
+ls
+uvicorn sql_app.main:app --reload
+uvicorn sql_app.main:app --reload
+ls
+ranger
+ls -la
+cd sql_app
+ls
+ls -la
+cd ..
+ls
+v sql_app.db
+cd dev/BugTracker
+ls
+python3 -m venv venv
+source venv/bin/activate
+ls
+pip install "fastapi[all]"
+ls
+v main.py
+uvicorn main:app --reload
+v main.py
+mkdir sql_app
+ls
+v main.py
+v main.py
+ls
+v .
+startx
+cd Music/Podcast
+ls
+mpv larica_total.mp3 7
+mpv larica_total.mp3 
+curl -o cross_over10.mp3 https://nerdcast-cdn.jovemnerd.com.br/nerdcast_816_batalha_xovers.mp3
+ls
+mpv -h
+mpv --no-video cross_over10.mp3
+mpv --no-video cross_over10.mp3
+sudo poweroff
+yay -S cowsay
+cowsay "adoro meu desktop"
+cowsay "adoro meu desktop"
+cowsay "adoro meu desktop"
+ramger
+ranger
+v /usr/share/applications/teams.desktop
+sudo v /usr/share/applications/teams.desktop
+sudo vim /usr/share/applications/teams.desktop
+pkill teams
+bks
+cd dev/BugTracker
+ls
+ls
+cd dev
+ls
+cd Risc-V-Biblio
+ls
+v insertion_sort.asm
+cd dev/BugTracker
+ls
+l
+ls
+ls
+cd sql_app
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+v dataAndAlg
+ls
+rm -rf Documentation
+ls
+v dedup
+ls
+cd dedup
+ls
+make
+v .
+make
+ls
+./dedup
+./dedup src
+cd ..
+ls
+dedup/dedup .
+dedup/dedup 
+cd dedup
+ls
+cd ..
+ls
+rm -rf dedup
+git clone https://github.com/tsoding/dedup
+ls
+cd dedup
+ls
+make 
+sudo pacman -S clang
+ls
+make
+ls
+./dedup
+ls
+cd ..
+ls
+dedup/dedup
+dedup/dedup isc-project
+cd isc-project
+../dedup/dedup 
+cd ..
+ls
+ls
+cd dedup
+ls
+v .
+cd 
+ls
+vimtutor
+ls
+cd dev
+mkdir startpage
+ls
+cd startpage
+ls
+ls
+v startpage.html
+v startpage.html
+v startpage.html
+ls
+v startpage.py
+python3 startpage.py
+v startpage.css
+ls
+v startpage.py
+ls
+chmod +x startpage.py
+./startpage.py
+v startpage.css
+./startpage.py
+v startpage.py
+./startpage.py
+v startpage.py
+./startpage.py
+ls
+v teste.html
+ls
+v startpage.html
+v startpage.py
+./startpage.py
+v startpage.py
+./startpage.py
+v startpage.py
+./startpage.py
+ls
+v teste.html
+./startpage.py
+v teste.html
+./startpage.py
+v teste.html
+./startpage.py
+v teste.html
+./startpage.py
+v teste.html
+cd dev/startpage
+ls
+firefox startpage.html
+python3 -m pydoc write()
+cfx
+ls
+python3
+v teste.py
+python3 teste.py
+v teste.py
+python3 teste.py
+./startpage.py
+./startpage.py
+./startpage.py
+./startpage.py
+./startpage.py
+pkill teams
+./startpage.py
+./startpage.py
+./startpage.py
+./startpage.py
+./startpage.py
+./startpage.py
+startx
+sudo poweroff
+cfx
+cd dev/startpage
+ls
+v startpage.py
+./startpage.py
+v startpage.py
+./startpage.py
+v teste.html
+./startpage.py
+v startpage.py
+./startpage.py
+v teste.html
+v startpage.py
+./startpage.py
+ls
+firefox teste.html
+ls
+v startpage.py
+./startpage.py
+v teste.css
+./startpage.py
+v teste.css
+./startpage.py
+v teste.css
+v teste.css
+./startpage.py
+v teste.css
+v teste.css
+v teste.css
+v teste.css
+ls
+v startpage.md
+v startpage.md
+python3 startpage.py
+v startpage.py
+ls
+v startpage.py
+./startpage.py
+ls
+rm teste
+rm teste.css
+rm teste.html 
+ls
+v startpage.py
+python3
+v startpage.css
+./startpage.py
+./startpage.py
+./startpage.py
+cal
+cal
+bks
+startx
+sudo poweroff
+startx
+sudo poweroff
+cd dev/startpage
+ls
+python3
+ls
+v startpage.py
+python3
+python3 parser.py
+python3 parser.py
+cd Downloads
+ls
+mv CamScanner\ 03-11-2022\ 20.00.pdf algebra1.pdf
+ls
+zathura algebra1.pdf
+pcmanfm .
+python -m pydoc -b
+ls
+cd dev/startpage
+ls
+ls
+v parser.py
+v parser.py
+ls
+htop
+ls
+python3 parser.py
+ls
+v parser.py
+python3 parser.py
+v parser.py
+python3 parser.py
+cat startpage.md
+v parser.py
+python3 parser.py
+v parser.py
+python3 parser.py
+v parser.py
+python3 parser.py
+v startpage.md
+python3 parser.py
+v startpage.md
+v startpage.py
+python3 parser.py
+v startpage.md
+v startpage.py
+python3 parser.py
+v startpage.py
+python3 parser.py
+v startpage.py
+python3 parser.py
+v startpage.py
+python3 parser.py
+v startpage.py
+python3 parser.py
+v startpage.md
+ls
+v startpage.py
+ls
+./startpage.py
+v startpage.py
+./startpage.py
+firefox startpage.html
+ls
+v startpage.md
+ls
+./startpage.py
+v startpage.md
+./startpage.py
+firefox startpage.html
+firefox startpage.html
+startx
+sudo reboot
+ranger
+ranger
+lsblk
+lsblk
+cd Videos/Movies
+ls
+cd Bata\ Antes\ de\ Entrar\ \(2015\)\ 5.1\ CH\ Dublado\ 720p\ \(By-LuanHarper\)
+ls
+ls
+ls
+devour mpv Bata\ Antes\ de\ Entrar\ \(2015\)\ 5.1\ CH\ Dublado\ 720p\ \(By-LuanHarper\).mp4
+ls
+mv Bata\ Antes\ de\ Entrar\ \(2015\)\ 5.1\ CH\ Dublado\ 720p\ \(By-LuanHarper\).mp4 'Bata Antes de Entrar (2015) Dublado.mp4'
+ls
+devour mpv Bata\ Antes\ de\ Entrar\ \(2015\)\ Dublado.mp4
+ls
+ls
+cp Bata\ Antes\ de\ Entrar\ \(2015\)\ Dublado.mp4 ~/external/Filmes
+sudo ntpd -qg\
+sudo hwclock -w\
+
+startx
+startx
+sudo poweroff
+v teste
+make
+matrix
+mkae
+make
+matrix
+make
+make
+matrix
+ls
+cat testando.txt
+make
+matrix
+cat testando.txt
+matrix
+make
+matrix
+make
+matrix
+make
+matrix
+make
+matrix
+make
+matrix
+make
+make
+make
+matrix
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+cd dev
+ls
+rm -rf fastapi
+mkdir matrix
+cd matrix
+ls
+ls
+touch matrix
+v matrix
+ls
+v matrix.c
+gcc matrix.c
+ls
+./a.out
+v Makefile
+make
+v Makefile
+make
+v Makefile
+make
+ls
+rm a.out
+ls
+matrix
+v matrix.c
+ls
+v example.txt
+ls
+v matrix.c
+ls
+v testando.txt
+ls
+v matrix.c
+v matrix.c
+wget https://raw.githubusercontent.com/tsoding/sv/master/sv.h
+ls
+v matrix.c
+ls
+cat example.txt
+./matrix example.txt
+v matrix.c
+v example.txt
+./matrix example.txt
+v matrix.c
+mkae
+make
+./matrix example.txt
+v matrix.c
+make
+./matrix example.txt
+v matrix.c
+make
+./matrix example.txt
+v matrix.c
+make
+./matrix example.txt
+v matrix.c
+make
+./matrix example.txt
+v matrix.c
+make
+./matrix example.txt
+./matrix example.txt
+v matrix.c
+make
+./matrix example.txt
+make
+./matrix example.txt
+./matrix example.txt
+./matrix example.txt
+startx
+sudo powerofff
+sudo poweroff
+make
+sudo ntpd -qg\
+sudo hwclock -w\
+
+mkae
+make
+make -h
+matrix -B
+matrix --always-amke
+make
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+./matrix example.txt
+make
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+bks
+ranger
+cd dev/matrix
+ls
+v matrix.c
+v matrix.c
+ls
+make
+v matrix.c
+ls
+v Makefile
+ls
+v matrix.c
+v gauss_jacobi.c
+v table.h
+ls
+v matrix.h
+ls
+cat table.h
+rm table.h
+ls
+mv matrix.h table.h
+ls
+v gauss_jacobi.c
+ls
+v Makefile
+ls
+make
+v gauss_jacobi.c
+make
+gauss_jacobi example.txt
+v gauss_jacobi.c
+gauss_jacobi
+v gauss_jacobi.c
+ls
+rm -rf matrix
+rm matrix.c
+ls
+v gauss_jacobi.c
+make
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+v table.h
+make
+./gauss_jacobi example.txt inicial.txt
+v inicial.txt
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+make
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+ls
+v inicial.txt
+make
+make -B
+v inicial.txt
+make -B
+./gauss_jacobi example.txt inicial.txt
+ls
+v table.h
+make -B
+v table.h
+make -B
+./gauss_jacobi example.txt inicial.txt
+v inicial.txt
+v gauss_jacobi.c
+make
+v example.txt
+v inicial.txt
+./gauss_jacobi example.txt inicial.txt
+v ./gauss_jacobi
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+make
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+cat example.txt
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+cat example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+startx
+sudo poweroff
+cd dev/matrix
+ls
+v gauss_jacobi.c
+make
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+yay -S nerd-fonts-hack 
+cd 
+cfx
+ranger
+ls
+cd .dotfiles/X11/.config/X11
+xrdb Xresources
+cd 
+cd .local/src
+cd st
+make
+sudo make install
+cd ..
+cd dwm
+make
+sudo make install
+v .
+yay -S powerline-fonts-git 
+cfzsh
+cd dev
+yay -S powerline-fonts-git 
+bash
+startx
+sudo reboot
+fc-list | grep Hack
+cd .local/src
+ls
+cd 
+ls
+cfzsh
+ls
+xbanish
+xbanish
+sudo pacman -S xbanish
+yay -S xbanish
+xbanish &
+cfx
+sudo pacman -Syyyu
+sudo pacman -S obs-studio
+nvidia-smi
+startx
+bsk
+bks
+sudo vim /etc/X11/xorg.conf 
+yay -S optimus-manager
+nvidia-smi  
+prime-run obs
+ffmpeg -hwaccel nvdec -y -i file.mkv -c:v nvenc -qp 18 -preset hq -profile:v high -c:a copy out.mkv
+cd Videos
+ls
+uname -a
+pacman -Q | grep nvidia
+lsmod | grep nvidia
+lshw -C video | grep produc
+sudo dmesg | grep i915
+nvidia-settings 
+prime-run obs
+ls -l /dev/nvidia*
+sudo pacman -S cuda
+sudo reboot
+neofetch
+htop
+cd Videos
+ls
+mpv 2022-03-14_12-28-13.mkv
+ls
+rm 2022-03-14_12-28-13.mkv
+cd 
+cd dev/startpage
+ls
+v startpage.html
+v startpage.py
+v startpage.md
+./startpage.py startpage.md
+v startpage.md
+./startpage.py startpage.md
+v startpage.md
+./startpage.py startpage.md
+cd dev/startpage
+v startpage.md
+ranger
+ranger
+cd dev/startpage
+ls
+./startpage.py startpage.md
+cd dev/startpage
+v startpage.md
+ls
+./startpage.py startpage.md
+prime-run obs
+prime-run obs
+make
+make
+make
+make
+make
+make
+make
+ranger
+ranger
+ip a
+ranger
+bks
+cd Videos
+ls
+ls
+ranger
+bks
+ranger
+bks
+ls
+ranger
+bks
+ls
+ls Redes
+rm 2022-03-14_14-29-21.mkv
+ls
+bks
+ranger
+cd dev/startpage
+ls
+v startpage.md
+ls
+startpage.py startpage.md
+cd ..
+ls
+v matrix
+ls
+cd matrix
+ls
+./gauss_jacobi example.txt inicial.txt
+v example.txt
+startx
+sudo pow
+sudo poweroff
+startx
+sudo reboot
+xprop
+xprop
+cd .local/src/dwm
+ls
+ v config.h
+make
+sudo make install
+make
+make
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+python3
+make
+make
+./gauss_jacobi
+make
+./gauss_jacobi
+make
+gauss_jacobi
+python3
+python3
+python3
+python3
+cd dev/matrix
+ls
+v gauss_jacobi.c
+python3 matris.py
+python3 matris.py
+python3 matris.py
+python3 matris.py
+python3 matris.py
+python3 71/180
+python3 -m 71/180
+python3
+cd dev/matrix
+ls
+v gauss_jacobi.c
+ls
+v gauss_jacobi.c
+ls
+make
+v gauss_jacobi.c
+make
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+v gauss_jacobi.c
+v gauss_jacobi.c
+make
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+./gauss_jacobi example.txt inicial.txt
+make
+./gauss_jacobi example.txt inicial.txt
+v gauss_jacobi.c
+make
+./gauss_jacobi example.txt inicial.txt
+man fmaf
+man fm
+man float
+man double
+v gauss_jacobi.c
+make
+make -B
+./gauss_jacobi example.txt inicial.txt
+v Makefile
+make
+make -B
+v Makefile
+make
+make -B
+v Makefile
+make
+make -B
+man fp-model
+v Makefile
+make -B
+gcc -fp-model=precise
+gcc --fp-model=precise
+v Makefile
+make
+make -B
+v Makefile
+make -B
+./gauss_jacobi example.txt inicial.txt
+v Makefile
+ls
+v inicial.txt
+./gauss_jacobi example.txt inicial.txt
+v inicial.txt
+./gauss_jacobi example.txt inicial.txt
+ls
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+ps | grep teams
+ps -h
+ps --help
+ps all | grep teams
+pkill temas
+pkill teams
+ps all | grep teams
+ps all | grep teams
+ps list | grep teams
+ps -list | grep teams
+ps l | grep teams
+bks
+cd University/CN
+ls
+cd ..
+ls
+cd ..
+ls
+ranger
+ls
+cd dev
+ls
+cd NetBeansProjects
+ls
+cd Exercicio6
+ls
+ranger
+ls
+cd src
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+zip Exercicio6 Exercicio6.zip
+zip Exercicio6.zip Exercicio6
+ls
+cp Exercicio6 ~/Downloads
+cp Exercicio6.zip ~/Downloads
+cd 
+cd Downloads
+ls
+rm algebra1.pdf
+rm CIC\ 0229\ -\ CL\ -\ Turmas\ AB\ e\ CD\ 21_2\ -\ Circuitos\ Lógicos\ 15\ -\ 15-03-2022\ 08\ 00\ -\ Carla.png
+ls
+unzip Exercicio6.zip
+ls
+cd Exercicio6
+ls
+cd ..
+ls
+ranger
+cd ..
+zip -h
+ls
+cd dev/NetBeansProjects
+ls
+ls
+rm Exercicio6.zip
+ls
+zip -h
+zip -r Exercicio6/.zip Exercicio6
+ls
+ls
+cd Exercicio6
+ls
+ranger
+zip -r Exercicio6.zip Exercicio6
+cd ..
+zip -r Exercicio6.zip Exercicio6
+ls
+ranger
+cd 
+ls
+unzip Exercicio6.zip
+ls
+ranger
+cd Exercicio6/dist
+ls
+java -jar Exercicio6.jar
+cd 
+ls
+ls
+cd Documents
+cd 
+cd Downloads
+ls
+java -jar Exercicio6.jar
+cd dev
+ls
+cd startpage
+ls
+v startpage.py
+ls
+ls
+cd startpage.py
+v startpage.py
+ls
+mv startpage.py startpage-old.py
+v startpage.py
+ls
+python3 -m venv venv
+ls
+ls
+source venv/bin/activate
+ls
+ls
+pip 
+pip list
+pip install typer
+pip list
+pip install typer[all]
+pip install "typer[all]"
+pip list
+ls
+ls
+v startpage.py
+ls
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+pip install pydantic
+v startpage.py
+cd Downloads
+ls
+rm -rf Exercicio6
+rm -rf Exercicio6.jar
+rm -rf Exercicio6.zip
+ls
+unzip kenney_sokobanpack.zip
+ls
+ranger
+ls
+ranger
+ranger
+cd dev/matrix
+ls
+v example.txt
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+ls
+v matris.py
+ls
+python3 matris.py gauss_seidel
+python3 matris.py gauss_seide
+v matris.py
+python3 matris.py
+python3 matris.py
+python3 matris.py
+python3 matris.py
+python3 matris.py
+python3 matris.py
+python3 matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+v matris.py
+python3 matris.py
+python3 matris.py gauss_seidel
+ls
+ls
+ranger
+ls
+mv example.txt matris.txt
+mv inicial.txt vetor_inicial.txt
+ls
+ls
+cd ..
+ls
+cd startpage
+ls
+pip freeze
+source venv/bin/activate
+ls
+pip freeze > dependencias.txt
+v dependencias.txt
+ls
+pip -h
+pip install -help
+startx
+startx
+sudo poweroff
+javac Exercicio1.java
+javac Exercicio1.java
+javac Exercicio1.java
+javac Exercicio1.java
+java Exercicio1
+javac Exercicio1.java
+java Exercicio1
+javac Exercicio1.java
+java Exercicio1
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+cd dev/TP1
+ls
+mkdir heranca
+cd heranca
+ls
+v Exercicio1.java
+v Exercicio1.java
+v Exercicio1.java
+ls
+v Empresa.java
+ls
+ranger
+ls
+cd ..
+ls
+htop
+bsk
+bks
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+cd dev/gtos
+ls
+v main.c
+git add -A
+git commit -m "Reading Image"
+git push
+cd dev
+ls
+ranger
+cd 
+cd Pictures
+ls
+v road-fighter.bmp
+ls
+cd 
+ls
+cd dev
+ls
+mkdir gtos
+cd gtos
+git init
+ls
+v main.c
+ls
+v Makefile
+l
+git add -A
+git commit -m "Start Ready Go"
+git remote add origin https://github.com/RuanPetrus/gimpBMPtoASM.git
+git push -u origin main
+git push
+git push --set-upstream origin master
+ls
+ls
+v README
+mv README README.md
+v README.md
+git add -A
+git commit -m "Add Readme"
+git push
+ls
+v main.c
+ranger
+v dev/git_senha
+v dev/git_senha
+cd dev/gtos
+hexedit 500x666.bmp
+v main.c
+v main.c
+make
+main 500x666.bmp
+v main.c
+make
+main 500x666.bmp
+ls
+main 18_666.bmp
+main red_square.bmp
+v main.c
+make
+main red_square.bmp
+main 18_666.bmp
+main 500x666.bmp
+v main.c
+make
+v main.c
+main
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+main 1920x1080.bmp
+v main.c
+make
+main 1920x1080.bmp
+v main.c
+make
+main 1920x1080.bmp
+v main.c
+make
+main 1920x1080.bmp
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp >> analize.txt
+v analize.txt
+v main.c
+make
+main 18_666.bmp >> analize.txt
+v analize.txt
+main 18_666.bmp > analize.txt
+v analize.txt
+v main.c
+main 18_666.bmp > analize.txt
+v main.c
+v analize.txt
+v main.c
+make
+main 18_666.bmp > analize.txt
+v analize.txt
+v main.c
+make
+v main.c
+make
+main 18_666.bmp > analize.txt
+v analize.txt
+v main.c
+make
+main 18_666.bmp > analize.txt
+v analize.txt
+v main.c
+ls
+make
+main 18_666.bmp > analize.txt
+v analize.txt
+main red_square.bmp > analize.txt
+v analize.txt
+make
+main red_square.bmp > analize.txt
+v analize.txt
+v analize.txt
+make
+main red_square.bmp > analize.txt
+v analize.txt
+make
+main red_square.bmp > analize.txt
+v analize.txt
+make
+main red_square.bmp > analize.txt
+v analize.txt
+v main.c
+make
+main red_square.bmp > analize.txt
+v analize.txt
+make
+v analize.txt
+make
+ls
+mkdir teste
+ranger
+ranger
+ls
+v .gitignore
+git add -A
+git commit -m "Reading BMP image"
+git push
+cd dev/gtos
+ls
+v main.c
+v main.c
+ls
+make
+main red_square.bmp
+v main.c
+make
+v main.c
+make
+main red_square.bmp
+v main.c
+ls
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+v main.c
+make
+v main.c
+make
+main 18_666.bmp
+main red_square.bmp
+v main.c
+ls
+main 18_666.bmp
+main red_square.bmp
+v main.c
+make
+main red_square.bmp
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+sudo pacman -S hexedit
+hexedit 18_666.bmp
+main 18_666.bmp
+v main.c
+make
+main 18_666.bmp
+main red_square.bmp
+ls
+main 500x666.bmp
+v main.c
+make
+main 500x666.bmp
+v main.c
+v .gitignore
+git add -A
+git commit -m "Broken 2 Bit reader"
+git push
+pkill teams
+cd dev/gtos
+ls
+main teste/red_square.bmp
+cd main.c
+v main.c
+ls
+make
+main teste/red_square.bmp teste/analize.txt
+pkill gimp
+ranger
+ranger
+startx
+ranger
+cd dev/gtos
+ls
+git pull
+ls
+cd ..
+ls
+rm -rf gtos
+git clone https://github.com/RuanPetrus/gimpBMPtoASM.git
+ls
+cd gimpBMPtoASM
+ls
+make
+ls
+main teste/4cores.bmp
+ls
+v image.s
+ls
+main teste/4pixels.bmp
+v image.s
+main teste/4cores.bmp
+v image.s
+v main.c
+make
+v main.c
+make
+v main.c
+make
+main teste/4pixels.bmp
+v main.c
+ls
+make
+main teste/4pixels.bmp
+v main.c
+make
+main teste/4pixels.bmp
+v main.c
+main teste/1pixel.bmp
+v main.c
+ls
+hexedit teste/1pixel.bmp
+v main.c
+make
+main teste/1pixel.bmp
+v main.c
+make
+main teste/1pixel.bmp
+main teste/4pixels.bmp
+hexedit teste/4pixel.bmp
+hexedit teste/4pixels.bmp
+v main.c
+ls
+make
+main teste/1pixel.bmp
+sxiv teste/1pixel.bmp
+v main.c
+make
+main teste/1pixel.bmp
+v main.c
+sudo poweroff
+ranger
+ranger
+ranger
+v dev/git_senha
+v dev/git_senha
+cd dev/gimpBMPtoASM
+ls
+fpgrars render_teste.s
+make
+main teste/320x240.bmp
+fpgrars render_teste.s
+make
+main teste/320x240.bmp
+fpgrars render_teste.s
+fpgrars render_teste.s
+make
+main teste/320x240.bmp
+fpgrars render_teste.s
+main teste/320x240.bmp
+fpgrars render_teste.s
+make
+main teste/320x240.bmp
+fpgrars render_teste.s
+make
+main teste/320x240.bmp
+fpgrars render_teste.s
+v dev/git_senha
+ranger
+v dev/git_senha
+ranger
+ls
+cd dev
+ls
+rm -rf gimpBMPtoASM
+git clone https://github.com/RuanPetrus/gimpBMPtoASM.git
+v gimpBMPtoASM
+ls
+make
+cd gimpBMPtoASM
+make
+main teste/1pixel.bmp
+v main.c
+make
+main teste/1pixel.bmp
+v main.c
+make
+main teste/1pixel.bmp
+main teste/4pixels.bmp
+cd main.c
+ls
+cd ..
+ls
+rm -rf gimpBMPtoASM
+ls
+git clone https://github.com/RuanPetrus/gimpBMPtoASM.git
+ranger
+cd gimpBMPtoASM
+ls
+v BMPtoASM
+v main.c
+make
+main teste/4pixels.bmp
+ranger
+main teste/4x4.bmp
+v main.c
+ls
+ls
+cd teste
+ls
+cd ..
+ls
+v render_teste.s
+fpgrars mai.c
+fpgrars c
+ls
+fpgrars render_teste.s
+v render_teste.s
+fpgrars render_teste.s
+ls
+v main.c
+main teste/4x4.bmp
+make
+main teste/4x4.bmp
+v image.s
+fpgrars render_teste.s
+ls
+v main.c
+main teste/4cores.bmp
+fpgrars render_teste.s
+ls
+main teste/4pixels.bmp
+main teste/4x4.bmp
+fpgrars render_teste.s
+v main.c
+make
+main teste/4x4.bmp
+fpgrars render_teste.s
+ls
+main teste/320x240.bmp
+fpgrars render_teste.s
+ls
+v main.c
+make
+v main.c
+make
+main teste/320x240.bmp
+v main.c
+make
+v main.c
+make
+v main
+v main.c
+make
+v main.c
+ls
+git add -A
+git commit -m "Fixed
+git commit -m "Fixed
+v .gitignore
+rm -rf BMPtoASM
+ls
+git add -A
+git commit -m "fixed"
+git push
+git push
+v main.c
+ls
+cd ..
+ls
+mv gimpBMPtoASM old
+git clone https://github.com/RuanPetrus/gimpBMPtoASM.git
+rm gimpBMPtoASM/main.c
+cp old/main.c gimpBMPtoASM
+cd gimpBMPtoASM
+ls
+git add -A
+git commit -m "fixed"
+git push
+v main.c
+git push
+l
+ls
+v main.c
+git checkout -b ruan
+v main.c
+ls
+v Makefile
+ls
+v main.c
+v Makefile
+ls
+ls
+git add -A
+git commit -m "Add description and README"
+git push
+git push --set-upstream origin ruan
+ls
+v .gitignore
+ls teste
+ls
+cd ..
+ls
+rm -rf BMPtoASM
+ls
+v gimpBMPtoASM
+ls
+rm -rf gimpBMPtoASM
+ls
+git clone https://github.com/RuanPetrus/BMPtoASM.git
+cd BMPtoASM
+ls
+v render_teste.s
+ls
+make
+BMPtoASM
+BMPtoASM Nord.bmp
+ls
+v Nord.data
+v render_teste.s
+fpgrars render_teste.s
+v main.c
+v render_teste.s
+fpgrars render_teste.s
+ls
+mkdir exemplo
+ls
+ranger
+v .gitignore
+ls
+ls example
+cd ..
+cd 
+sxiv RPG
+ranger
+v dev/git_senha
+cfnv
+cd dev/BMPtoASM
+ls
+git add -A
+git status
+git status main.c
+git commit -m "Add example images"
+git push
+ls
+cd 
+cd dev/isc-project
+wc -l
+cd ..
+ls dev/BMPtoASM
+cd dev
+ls
+cd BMPtoASM
+ls
+ls
+BMPtoASM external-content.duckduckgo.com.bmp
+ls
+v external-content.duckduckgo.com.data
+fpgrars render_teste.s
+cd render_teste.s
+v render_teste.s
+fpgrars render_teste.s
+ranger
+cd Documents
+cd Downloads
+cd 
+cd Downloads
+ls
+firefox ISC_Projeto\ \(1\).pdf
+ranger
+cfx
+cd dev
+ls
+cd matrix
+ls
+ls
+ls
+v matris.py
+python3 matris.py gauss_seidel
+python3 matris.py gauss_jacobi
+v matris.py
+python3 matris.py gauss_jacobi 0.1
+v matris.py
+python3 matris.py gauss_jacobi 0.1
+v matris.py
+python3 matris.py gauss_jacobi 0.1
+v matris.py
+python3 matris.py gauss_jacobi 0.1
+v matris.txt
+python3 matris.py gauss_jacobi 0.1
+python3 matris.py gauss_jacobi 0.1
+v matris.txt
+python3 matris.py gauss_jacobi 0.1
+python3 matris.py gauss_jacobi 0.1
+python3 matris.py gauss_jacobi 0.1
+python3 matris.py gauss_seidel 0.1
+v matris.txt
+python3 matris.py gauss_seidel 0.1
+python3 matris.py gauss_seidel 0.01
+v matris.txt
+python3 matris.py gauss_jacobi 0.1
+v matris.txt
+python3 matris.py gauss_seidel 0.1
+v matris.py
+v dev/git_senha
+la
+ls
+unrar BMPtoASM.rar
+unrar e BMPtoASM.rar
+ls
+pkill teams
+ranger
+cd dev/
+ls
+mv matrix gaussJacobiSeidel
+ls
+cd gaussJacobiSeidel
+ls
+mv matris.py gauss.py
+ls
+v gauss.py
+python3 gauss.py
+v gauss.py
+v gauss.py
+gauss_jacobi
+python3 gauss.py
+ls
+v README.md
+python3 gauss.py jacobi 0.01\
+
+v README.md
+ls
+git init
+git add -A
+git commit -m "START, Ready, GO"
+ls
+python3 gauss.py seidel 0.1
+ls
+mv New\ Folder image
+ls
+v README.md
+git add -A
+git commit -m "Add example image"
+git remote add origin https://github.com/RuanPetrus/gaussJacobiSeidel.git
+git push -u origin main
+git push
+git push --set-upstream origin master
+python3 gauss.py jacobi 0.01
+python3 gauss.py seidel 0.01
+ls
+cd .
+cd ..
+ls
+cd BMPtoASM
+ls
+git pull
+ls
+rm external-content.duckduckgo.com.bmp
+rm external-content.duckduckgo.com.data
+ls
+v Makefile
+make
+ls
+ls
+BMPtoASM
+la
+ls
+v main.c
+cd 
+ls
+cd dev
+ls
+cd TP1
+ls
+cd heranca
+ls
+v Empresa.java
+ls
+cd ..
+cd 
+cd de
+cd dev
+ls
+cd gaussJacobiSeidel
+ls
+v matris.txt
+ls
+python3 gauss.py seidel 0.1
+python3 gauss.py jacobi 0.1
+cd dev/TP1/heranca
+ls
+v Empresa.java
+zi
+cd Empresa.java
+v Empresa.java
+v experada.txt
+v minha.txt
+ls
+diff experada.txt minha.txt
+v Empresa.java
+reset
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+java Empresa
+javac Empresa.java
+java Empresa
+javac Empresa.java
+java Empresa
+cd dev
+ls
+cd NetBeansProjects
+ls
+cd Exercicio6
+ls
+cd dist
+ls
+java -jar Exercicio6.jar
+cfx
+ps -e | grep teams
+ps -e | grep discord
+cd dev
+ls
+cd startpage
+ls
+pcmanfm .
+ls
+source venv/bin/activate
+ls
+v startpage.html
+ls
+firefox startpage.html
+ls
+v startpage.py
+python3 startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+ls
+v startpage.mhtml
+firefox startpage.mhtml
+v startpage.mhtml
+python3 startpage.py startpage.md
+v startpage.py
+ls
+python3 startpage.py startpage.md
+ls
+ranger
+ls
+python3 startpage.py 123
+v startpage.py
+python3 startpage.py 123
+python3 startpage.py 123.txt
+python3 startpage.py 123.html
+python3 startpage.py startpage.html
+v startpage.hthtml
+v startpage.md
+python3 startpage.py startpage.html
+v startpage.hthtml
+python3 startpage.py startpage.html
+ls
+rm startpage.hthtml
+python3 startpage.py startpage.html
+ls
+python3 startpage.py
+python3 startpage.py startpage.md
+sudo poweroff
+sudo pacman -Syyyu
+startx
+startx
+sudo pacman -Syyyu
+sudo poweroff
+cd Music
+ls
+ls Outros
+mv Outros 'Dom Omar'
+ls
+bks
+bks
+ranger
+bks
+pkill teams
+bks
+startx
+sudo poweroff
+cd dev
+ls
+cd startpage
+ls
+source venv/bin/activate
+ls
+cd v startpage.py
+v startpage.py
+ls
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.md
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+v startpage.py
+python3 startpage.py startpage.md
+ls
+mv startpage.md links.md
+ls
+rm startpage.html
+python3 startpage.py links.md
+mv links.md teste.alskj
+ls
+python3 startpage.py teste.alskj
+ls
+mv teste.alskj my_bookmarks.md
+ls
+exit
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+cd dev/startpage
+ls
+rm venv
+rm -rf venv
+ls
+v startpage.py
+ls
+rm dependencias.txt
+ls
+v .gitignore
+ls
+rm links.html
+ls
+rm teste.html
+ls
+mkdir example
+cp my_bookmarks.md example/bookmarks.md
+v .
+ls
+python3 startpage.py example/bookmarks.md
+ls
+firefox example/bookmarks.html
+ls
+python3 startpage.py my_bookmarks.md
+v .
+ls
+firefox my_bookmarks.html
+ls
+git init
+git add -A
+git status
+v README.md
+ls
+git add -A
+git status
+curl -o https://raw.githubusercontent.com/RuanPetrus/startpage/main/LICENSE
+curl https://raw.githubusercontent.com/RuanPetrus/startpage/main/LICENSE
+ls
+curl -o LICENSE https://raw.githubusercontent.com/RuanPetrus/startpage/main/LICENSE
+ls
+v LICENSE
+ls
+v LICENSE
+ls
+ls
+git add -A
+git status
+git commit -m "Ready to GO"
+git push 
+git remote add origin https://github.com/RuanPetrus/startpage.git
+git push
+git push --set-upstream origin master
+cd ..
+ls
+cd BMPtoASM
+ls
+git pull
+ls
+cd example
+ls
+gimp RarsImage.png
+ls
+ranger
+ls
+cd ..
+ls
+v .gitignore
+ls
+git add -A
+ls
+git status
+ls
+cp ../startpage/LICENSE .
+ls
+git add -A
+git status
+git commit -m "Add license"
+git push
+cd ..
+ls
+cd gaussJacobiSeidel
+ls
+git pull
+ls
+mv matris.txt matriz.txt
+v gauss.py
+ls
+v README.md
+python3 gauss.py jacobi 0.01
+ls
+git add -A
+git status
+git commit -m "matris -> matriz"
+git push
+ls
+cd ..
+ls
+cd isc-project
+git pull
+ls
+cp ../startpage/LICENSE .
+ls
+git add -A
+git commit -m "Add license"
+git push
+ls
+cd src
+ls
+fpgrars main.s
+ls
+cd ..
+ls
+ls images
+git add -A
+git status
+git commit -m "Add example images"
+git push
+git pull
+git config pull.rebase false
+git pull
+ls
+git add -A
+git status
+git push
+ranger
+cd dev
+ls
+cd C
+ls
+v teste.c
+ps -e | grep firefox
+pkill 11357
+ps -e | grep firefox
+pkill firefox
+ps -e | grep firefox
+pkill 12542
+ps -e | grep firefox
+pkill 12543
+pkill 12544
+pkill 12545
+pkill 12546
+ps -e | grep firefox
+startx
+sudo poweroff
+ps -e | grep teams
+pkill teams
+ps -e | grep teams
+javac SiteDeRelacionamento.java
+zi
+javac SiteDeRelacionamento.java
+java SiteDeRelacionamento
+javac SiteDeRelacionamento.java
+javac UsoContatos.java
+javac UsoContatos.java
+java UsoContatos
+javac UsoContatos.java
+java UsoContatos
+javac UsoContatos.java
+java UsoContatos
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+unzip Verilog.zip
+ls
+ranger
+cd dev/TP1
+ls
+mkdir abstract
+cd abstract
+v SiteDeRelacionamento.java
+mv SiteDeRelacionamento.java UsoContatos.java
+javac UsoContatos.java
+java UsoContatos
+v UsoContatos.java
+v UsoContatos.java
+ls
+cd ..
+cd ..
+ls
+cd verilog
+mkdir verilog
+cd verilog
+ls
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+javac UsoContatos.java
+java UsoContatos.java
+java UsoContatos
+javac UsoContatos.java
+java UsoContatos
+javac UsoContatos.java
+javac UsoContatos.java
+bks
+startx
+sudo poweroff
+v dev/git_senha
+v dev/git_senha
+v dev/git_senha
+cd dev
+ls
+cd gaussJacobiSeidel
+ls
+git pull
+ls
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py
+v interpolacao.py
+python3 interpolacao.py 2 1.4
+v interpolacao.py
+python3 interpolacao.py
+python3 interpolacao.py 2 1.4
+python3 interpolacao.py 2 1.4
+ls
+v README.md
+git add -A
+git status
+git commit -m "Add interpolation method"
+git push
+python3 interpolacao.py 2 1.4
+ls
+v interpolacao.txt
+python3 interpolacao.py 1 1.5
+v interpolacao..py
+v interpolacao.py
+python3 interpolacao.py 1 1.5
+git add -A
+git commit -m "Fixing max_3 error"
+git push
+git pull
+git config pull.rebase false
+git pull
+git add -A
+git commit -m ""
+git push
+cd dev/gaussJacobiSeidel
+ls
+v gauss.py
+cd 
+ranger
+ranger
+startx
+sudo poweroff
+ranger
+bks
+ip a
+startx
+sudo poweroff
+bks
+tar -xvf Quartus-web-13.0.1.232-linux.tar
+ls
+v setup.sh
+ls
+./setup.sh
+sudo ./setup.sh
+startx
+sudo reboot
+ranger
+bks
+cd Documents
+ls
+cd 
+cd Downloads
+ls
+rm -rf *
+ls
+cd 
+cd dev/dataAndAlg
+ls
+v insertion_sort.c
+mv insertion_sort.c sort.c
+ls
+ls
+sudo ntpd -qg\
+sudo hwclock -w\
+
+ranger
+firefox index.html
+v dev
+ls
+v teste.rb
+cd 
+lsa
+git config --global user.name "Ruan Petrus"
+git config --global user.email "xastroboyx11@gmail.com"
+git config --global init.defaultBranch main
+git config --global color.ui auto
+git config --get user.name
+git config --get user.email
+ls -la
+ls .gnupg
+cd ssh
+ssh init
+ssh-keygen
+ranger
+ssh-keygen -t ed25519 -C xastroboyx11@gmail.com
+cd dev
+ls
+v gaussJacobiSeidel
+cd gaussJacobiSeidel
+ls
+v matriz.txt
+ls
+git add -A
+git status
+git commit -m "change matriz.txt"
+git push
+git remote add origin git@github.com:RuanPetrus/gaussJacobiSeidel.git
+git remote set-url origin git@github.com:RuanPetrus/gaussJacobiSeidel.git
+git push
+cd .
+ls
+mkdir html-boilerplate
+cd html-boilerplate
+v index.html
+cat .ssh/id_ed25519.pub
+ssh -T git@github.com
+ranger
+cd dev/gaussJacobiSeidel
+ls
+v matriz.txt vetor_inicial.txt interpolacao.txt
+v matriz.txt vetor_inicial.txt interpolacao.txt
+cd dev/gaussJacobiSeidel
+ls
+rm -rf * html-boilerplate
+ls
+git pull -rebase
+git pull --rebase
+git stash
+git pull --rebase
+ls
+python3 gauss.py jacobi 0.01
+python3 gauss.py seidel 0.01
+python3 interpolacao.py 1 1.5
+ls
+cd ..
+cd gaussJacobiSeidel
+python3 gauss.py jacobi 0.01
+python3 gauss.py seidel 0.01
+python3 interpolacao.py 1 1.5
+python3 interpolacao.py 1 1.5
+python3 interpolacao.py 1 1.5
+python3 interpolacao.py 4 3.3
+python3 gauss.py jacobi 0.1
+python3 gauss.py jacobi 0.1
+python3 gauss.py seidel 0.1
+v .
+python3 gauss.py seidel 0.1
+python3 interpolacao.py 4 3.3
+python3 interpolacao.py 4 3.3
+cd ..
+l
+ls
+pkill teams
+cd dev
+ls
+ranger
+pkill discord
+pkill firefox
+startx
+cd dev/startpage
+ls
+chromium my_bookmarks.html
+cd ..
+cfx
+ls
+sudo poweroff
+startx
+sudo reboot
+sudo ntpd -qg\
+sudo hwclock -w\
+
+startx
+bks
+ranger
+sudo poweroff
+startx
+bks
+sudo poweroff
+startx
+sudo poweroff
+ls
+ranger
+cd University/LCL/experimento-07
+ls
+cat table1.txt
+cat table1.txt
+cat table1.txt
+cd University/LCL/experimento-07
+ls
+v table2.txt
+cat table2.txt
+cat table2.txt
+cd University/LCL/experimento-07
+cat table2.txt
+xset r rate 210 40\
+
+setxkbmap br # Keyboard\
+setxkbmap -option caps:escape # Keyboard\
+
+cd external/MIUI/Gallery/cloud/owner/lcl
+ls
+cfx
+cd external/MIUI/Gallery/cloud/owner/lcl
+mkdir ~/Videos/experimento-07
+cp * ~/Videos/experimento-07
+dmenuumount
+cd Videos/experimento-07/
+bks
+bks
+pkill teams
+bks
+cd dev/isc-project
+ls
+v src
+cd ..
+cd BMPtoASM
+ls
+ v render_teste.s
+v Nord.data
+ v render_teste.s
+ls
+v render_teste.s
+v branco.s
+v Nord.data
+v branco.s
+v Nord.data
+v branco.s
+v render_teste.s
+fpgrars render_teste.s
+v branco.s
+fpgrars render_teste.s
+v branco.s
+fpgrars render_teste.s
+ls
+v main.c
+v render_teste.s
+\:wq
+cd ..
+ls
+v isc-project
+cd isc-project
+ls
+cd src
+fpgrars main.s
+ls
+v poling01.s
+ls
+v sound.s
+fpgrars main.s
+v MACROSv21.s
+fpgrars main.s
+v .
+ls
+v v correlate.s
+startx
+sudo poweroff
+ranger
+ranger
+cd University/LCL/experimento-07
+cat table2.txt
+cat table2.txt
+cat table2.txt
+v table2.txt
+cat table2.txt
+startx
+bks
+sudo poweroff
+sudo nmtui
+bks
+ranger
+cd dev/startpage
+vls
+ls
+v my_bookmarks.md
+python3 startpage.py my_bookmarks.md
+startx
+sudo poweroff
+cd Downloads
+ls
+cd ..
+cd Documents/A1
+ls
+devour zathura algebra1.pdf
+devour zathura algebra2.pdf
+devour zathura algebra1.pdf
+devour zathura algebra3.pdf
+devour zathura algebra1.pdf
+devour zathura algebra2.pdf
+devour zathura algebra1.pdf
+devour zathura algebra1.pdf
+devour zathura algebra2.pdf
+devour zathura algebra3.pdf
+devour zathura algebra1.pdf
+devour zathura algebra2.pdf
+devour zathura Lista02-211010459.pdf
+neofetch
+bks
+startx
+sudo poweroff
+java Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+java Empresa
+javac Empresa.java
+java Empresa
+javac Empresa.java
+java Empresa
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+java Empresa
+javac Empresa.java
+java Empresa
+cd dev/TP1
+ls
+mkdir interface
+cd interface
+v Empresa.java
+v Empresa.java
+javac Empresa.java
+java Empresa
+v Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+javac Empresa.java
+bks
+bks
+startx
+sudo poweroff
+startx
+sudo poweroff
+startx
+sudo poweroff
+ranger
+cd Documents
+ls
+cd ..
+ranger
+ranger
+ranger
+cd Documents
+cd Pessoal
+ls
+rnager
+ranger
+cd ..
+ranger
+ranger
+cd 
+ranger
+startx
+sudo poweroff
+cd external/MIUI/Gallery/cloud/owner/lcl
+ls
+mkdir ~/Videos/Experimento08
+cp * ~/Videos/Experimento08
+ls
+cd dev/startpage
+ls
+v my_bookmarks.md
+python3 startpage.py my_bookmarks.md
+cd dev/isc-project
+ls
+cd ..
+ls
+cd BMPtoASM
+ls
+v render_teste.s
+cd ..
+ls
+ranger
+ls
+cd dev/isc-project
+ls
+cd src
+ls
+fpgrars main.s
+ls
+v main.s
+fpgrars main.s
+ls
+v main.s
+ls
+cd ..
+ls
+ls
+ranger
+cd ..
+cd 
+ranger
+pkill teams
+bks
+startx
+sudo poweroff
+startx
+sudo poweroff
+newsboat
+ranger
+ls
+ls
+sh Anaconda3-2021.11-Linux-x86_64.sh
+conda init
+ipython
+ls
+ls anaconda3/bin
+anaconda
+conda
+conda init
+anaconda-navigator
+zshcf
+cfzsh
+ranger
+source anaconda3/bin/activate
+conda init
+bks
+ranger
+pkill teams
+bks
+conda init
+source anaconda3/bin/activate
+conda init
+ipython
+exit()\
+ls
+ls
+ls
+ipython
+ipython
+startx
+sudo poweroff
+startx
+sudo pacman -Syyyu
+sudo poweroff
+sudo pacman -S emacs
+sudo pacman -Syy emacs
+mkdir .config/emacs
+cd .conda/ema
+cd .config/emacs
+ls
+touch init.el
+cd init.el
+v init.el
+yay -S fira-code
+yay -S ttf-fira-code
+fc-list:: List all installed fonts\
+
+fc-list
+fc-list | grep FiraCode
+fc-list | grep FiraCode
+fc-list | grep FiraCode
+xset r rate 210 40\
+
+setxkbmap br # Keyboard\
+setxkbmap -option caps:escape # Keyboard\
+
+cfx
+ls -la
+cd .emacs.d
+ls
+v init.el
+v init.el
+v init.el
+v init.el
+v init.el
+v init.el
+ranger
+startx
+cd .emacs.d/
+v init.el
+sudo poweroff
+fc-list | grep Cantarell
+ls -la
+cd .emacs.d
+ls
+cd init.el
+v init.el
+fc-list | grep Cantarell
+ls
+cd
+htop
+cd 
+cfzsh
+ls
+ls
+ls
+cd dev/startpage
+ls
+v startpage.py
+ls
+pkill emacs
+ranger
+startx
+sudo poweroff
+v teste.json
+cd dev
+git clone https://github.com/Acucar-tempero-e-tudo-que-ha-de-bom/TP1-Istin.git
+ls
+cd TP1-Istin
+ls
+cd Istin
+ls
+cd src
+ls
+cd istin
+ls
+v .
+bks
+bks
+cd dev/NetBeansProjects
+ls
+cd CineMarcus
+ls
+ls -la
+git status
+rm -rf .git
+ls
+cp * ~/dev/CineMarcus
+cp -r * ~/dev/CineMarcus
+cd 
+cd dev/CineMarcus
+ls
+git add -A
+git status
+git commit -m "Set, Ready GO\
+
+git commit -m "Set, Ready Go"
+git push
+git remote set-url origin git@github.com:RuanPetrus/CineMarcus.git
+git push
+cd dev
+ls
+cd NetBeansProjects
+ks
+ls
+cd CineMarcus
+ls
+cd ..
+ls
+cd Teste
+ls
+git init
+ls
+git add -A
+git status
+git commit -m "Novo repositorio"
+cd ..
+cd ..
+cd TP1-Istin
+ls
+cd Istin
+ls
+cd src
+ls
+ls
+cd 
+cd dev/CineMarcus
+ls
+cd ..
+cd CineMarcus
+git add -A
+git status
+git add -A
+git status
+git commit -m "Adicionado os pacotes"
+git push
+ls
+git checkout -b json
+ls
+git clone https://github.com/stleary/JSON-java.git
+ls
+cd JSON-java
+ls
+cd src
+ls
+cd main
+ls
+ls
+cd ls
+cd java
+ls
+cd org
+ls
+cd json
+ls
+cp * ~/dev/CineMarcus/src/cineMarcus/
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+ls
+rm JSON-java
+rm -rf JSON-java
+cd src/cineMarcus
+ls
+rm Main.java
+ls
+cd ..
+ls
+mkdir org
+cd cineMarcus
+ls
+cp * ../org
+ls
+rm -rf *
+ls
+cd ..
+ls
+cd org
+ls
+cd ..
+ls
+mv org json
+ls
+mkdir org
+mv json org/
+ls
+ls org
+ranger
+startx
+ranger
+cd dev/CineMarcus
+ls
+git add -A
+ls
+git status
+git commit -m "Add new classes"
+git push
+git push --set-upstream origin json
+sudo poweroff
+mv .emacs.d .emacs.d.old
+mkdir .emacs.d
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+.emacs.d/bin/doom install
+ls .conda
+ls .config
+ls -la
+mkdir .config/doom
+cp ~/.emacs.d/init.example.el ~/.config/doom
+cp ~/.emacs.d/core/templates/config.example.el ~/.config/doom
+cp ~/.emacs.d/core/templates/packages.example.el ~/.config/doom
+cd .config/doom
+ls
+mv config.el
+mv config.example.el config.el
+ls
+mv init.example.el init.el
+mv packages.example.el packages.el
+ls
+cd ..
+cd ..
+ls .doom.d
+rm -rf .doom.d
+.emacs.d/bin/doom sync
+ripgrep
+fd
+sudo pacman -S ripgrep
+sudo pacman -S ripgrep
+ripgrep
+sudo pacman -S imagemagick
+ripgrep
+which ripgrep
+cd dev/CineMarcus
+git pull
+cd dev/TP1-Istin
+ls
+cd dev/CineMarcus
+ls
+sxiv CineMarcus.png
+ls
+cd ..
+ls
+cd CineMarcus
+cd src/cineMarcus
+ls
+ranger
+ranger
+cd dev/CineMarcus
+git add -A
+git commit -m "Finish Controller Classes e JSON"
+git push
+git pull
+git branch
+git checkout main
+git add -A
+git status
+git commit -m "netbeans"
+git checkout main
+ls
+ranger
+ls
+git pull
+ranger
+pkill emacs
+bks
+bks
+bks
+startx
+sudo poweroff
+bks
+sudo vim /etc/hosts
+startx
+sudo poweroff
+ranger
+rm -rf .emacs.d
+ls -la
+rm -rf .config/doom
+ls
+ls
+mv .emacs.d.old .emacs.d
+cd .emacs.d
+ls
+cd ,,]
+cd ..
+rm -rf .emacs.d
+cd .config
+ls 
+cd emacs
+ls
+v init.el
+ls
+cp init.el backup.el
+ls
+cd .config/emacs
+ls
+v init.el
+yay -S ttf-iosevka-aile
+fc-list | grep Fira
+fc-list | grep Fira Mono
+fc-list | grep FiraMono
+fc-list | grep Fira | grep Mono
+v my_emacs.el
+cd .config/emacs
+v init.el
+ls
+mv init.el ~/emacs.el
+cd ..
+rm -rf emacs
+cd
+ls
+mv emacs.el my_emacs.el
+ls
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
+~/.emacs.d/bin/doom install
+cd .doom.d
+v packages.el
+mkdir .config/doom
+cp ~/.emacs.d/init.example.el ~/.config/doom/init.el
+cp ~/.emacs.d/core/templates/config.example.el ~/.config/doom/config.el
+cp ~/.emacs.d/core/templates/packages.example.el ~/.config/doom/packages.el
+cd .config/doom
+ls
+v init.el
+v config.el
+~/.emacs.d/bin/doom sync
+ls
+v init.el
+~/.emacs.d/bin/doom sync
+~/.emacs.d/bin/doom sync
+v .config/doom
+~/.emacs.d/bin/doom sync
+cd .config/doom
+ls
+v init.el
+ranger
+rang
+ranger
+cd dev/BMPtoASM
+ls
+v Nord.data render_teste.s
+fpgrars render_teste.s
+v render_teste.s
+fpgrars render_teste.s
+v render_teste.s
+fpgrars render_teste.s
+v render_teste.s
+fpgrars render_teste.s
+v render_teste.s
+v teste.s
+cd 
+cfnv
+v 
+cfnv
+cd novas-notas
+ls
+v contadores.org
+v teste.org
+cd ..
+ls
+ranger
+ranger
+ls
+cp my_emacs.el emacs.el
+v emacs.el
+v Emacs.org
+v Emacs.org
+v emacs.el
+ls
+v init.el
+rm -rf .emacs.d
+rm -rf .doom.d
+rm -rf .config/doom
+mkdir .config/emacs
+mv Emacs.org .config/emacs
+mv init.el .config/emacs
+ranger
+cd novas-notas
+ls
+v emacs_functions.org
+startx
+pkill teams
+sudo poweroff
+cd dev/TP1-Istin
+ls
+ranger
+ls
+cd ..
+ls
+cd startpage
+ls
+ls
+v startpage.py
+cd dev/CineMarcus
+git pull
+git add -A
+git staus
+git status
+git commit -m "Add telas de login e cadastros"
+git push
+ranger
+ls
+ranger
+ranger
+range
+ranger
+cfnv
+cfnv
+cfnv
+cfnv
+cfnv
+ranger
+xprop
+ranger
+cd dev/CineMarcus
+ls
+git add -A
+git commit -m "Tela de Criar Sessoes e criar Filmes"
+git push
+git add -A
+git commit -m "Arrumei o check de idade do cliente"
+git push
+ranger
+startx
+sudo poweroff
+startx
+sudo poweroff
+ipython
+source anaconda3/bin/activate
+ipython
+ipython
+ipython
+bks
+bks
+cd dev/CineMarcus
+ls
+git status
+git pull --rebase
+git stash
+git pull
+git checkout -b ruan
+ls
+git add -A
+git commit -m "Add lista de filmes no Admin"
+git push
+git push --set-upstream origin ruan
+git branch -b "Minhas informações"
+git branch -b "Minhas informações"
+git checout -b "minhasInformacoes"
+git checkout -b "minhasInformacoes"
+ranger
+git checkout main
+cd ..
+ls
+mv CineMarcus CineMarcus-old
+cd CineMarcus-old
+git checkout ana
+cd src
+ls
+ls imagens
+cd ..
+cd ..
+ls
+cp CineMarcus-old CineMarcus
+cp -r CineMarcus-old CineMarcus
+cd CineMarcus
+git checkout main
+cd src
+cd telas
+ls
+rm TelaLogin.java
+rm TelaLogin.form
+ls
+v CadastroDeSessao.form
+pkill java
+ls tp1.txt
+cat tp1.txt
+ls
+cat tp1.txt
+v tp1.txt
+ls
+cd dev/CineMarcus
+git reset --hard HEAD~1git reset --hard HEAD~1
+git reset --hard HEAD~1
+cd 
+cd dev
+rm -rf CineMarcus
+git clone git@github.com:RuanPetrus/CineMarcus.git
+cd CineMarcus
+ls
+cd src
+ls imagens
+cd ..
+ls
+rm sessoes.json
+rm sessoes.json
+ls
+git add -A
+git status
+git add -A
+git commit -m "Juntando todos os commits"
+git push
+ranger
+git pull
+git add -A
+git status
+git commit -m "Salvando sessoes modificadas"
+git push
+git checkout -b "Generating to file"
+git checkout -b "GenerateFile"
+cd dev/CineMarcus
+git add -A
+git status
+git commit -m "Add tela minha info"
+git push
+git push --set-upstream origin telaInformacoes
+git push --set-upstream origin minhasInformacoes
+ls
+git pull
+git checkout ana
+ls
+ls
+cd src
+ls
+ls imagens
+cp imagens/camera.png ../../CineMarcus/src/imagens
+cp imagens/cinema.png ../../CineMarcus/src/imagens
+cd .
+cd ..
+cd src
+ls
+ranger
+cd telas
+ls
+cp TelaLogin.form ~/dev/CineMarcus/src/telas
+cp TelaLogin.java ~/dev/CineMarcus/src/telas
+cd ..
+cd ..
+ls
+git checkout bruno
+git checkout assentos
+git merge ana
+git log
+git reset --hard HEAD~1
+ranger
+cd ..
+cd CineMarcus-old
+cd src
+ls
+ls imagens
+cp imagens/assentoazul.png ~/dev/CineMarcus/src/imagens
+cp imagens/assentolaranja.png ~/dev/CineMarcus/src/imagens
+cp imagens/assentovermelho.png ~/dev/CineMarcus/src/imagens
+cd ..
+cd src/telas
+ls
+cp TelaFilme.java ~/dev/CineMarcus/src/telas
+cp TelaCinema.java ~/dev/CineMarcus/src/telas
+cp TelaMinhaInfo.java ~/dev/CineMarcus/src/telas
+cp TelaFilme.form ~/dev/CineMarcus/src/telas
+cp TelaCinema.form ~/dev/CineMarcus/src/telas
+cp TelaMinhaInfo.form ~/dev/CineMarcus/src/telas
+v PainelDoAdmin.java
+startx
+sudo poweroff
+bks
+bks
+ranger
+bks
+startx
+sudo poweroff
+cd dev/isc-project
+ls
+ranger
+cd 
+bks
+bks
+startx
+sudo poweroff
+startx
+ranger
+sudo poweroff
+unzip The\ Batman\ \(2022\)\ 1080p\ HDRip\ x264\ -\ ProLover\ English.zip
+ls
+ranger
+cd Videos/Movies
+ls
+cd The\ Batman\ \(2022\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
+ls
+devour mpv The.Batman.2022.1080p.WEBRip.x264.AAC5.1-\[YTS.MX\].mp4
+devour mpv The.Batman.2022.1080p.WEBRip.x264.AAC5.1-\[YTS.MX\].mp4
+ls
+cd ..
+cd Legend.2015.1080p.BRRip.x264.AAC-ETRG
+ls
+devour mpv Legend.2015.1080p.BRRip.x264.AAC-ETRG.mp4
+ls
+ranger
+cd ..
+ls
+cd The\ Batman\ \(2022\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
+ls
+ls
+devour mpv The\ Batman.mp4
+devour mpv The\ Batman.mp4
+v tempo_legenda.txt
+cd ..
+cd ..
+cd ..
+ranger
+cd .config
+ls 
+cd mpv
+ls
+v mpv.conf
+cd 
+cd Downloads
+ls
+unzip the_batman_2022_1646103508.zip
+ls
+startx
+sudo poweroff
+cd Videos/Movies
+cd The\ Batman\ \(2022\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
+ls
+cat tempo_legenda.txt
+devour mpv The\ Batman.mp4
+devour mpv The\ Batman.mp4
+devour mpv The\ Batman.mp4
+devour mpv The\ Batman.mp4
+ls
+rm The\ Batman.srt
+ls
+devour mpv The\ Batman.mp4
+cd ..
+cd Legend.2015.1080p.BRRip.x264.AAC-ETRG
+ls
+mv ~/Downloads/Legend.2015.720p.rar .
+ls
+unrar Legend.2015.720p.rar
+ls
+unrar Legend.2015.720p.rar
+unzip Legend.2015.720p.rar
+unrar Legend Legend.2015.720p.rar
+ls
+unrar
+unrar e Legend.2015.720p.rar
+ls
+ranger
+devour mpv Legend.mp4
+bks
+bks
+cd Books/Matematics
+lsa
+ls
+firefox Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf
+firefox Introduction\ to\ Linear\ Algebra\ \(Gilbert\ Strang\)\ .pdf
+ranger
+startx
+sudo poweroff
+startx
+sudo reboot
+sudo ntpd -qg\
+sudo hwclock -w\
+
+startx
+sudo poweroff
+pkill teamss
+pkill teams
+bks
+cd dev/CineMarcus
+ls
+git add -A
+git status
+git commit -m "Sistema de salvar arquivo feito"
+git branch main
+git branch
+git checkout main
+git pull
+git status
+git add -A
+git commit -m "Imagen do filme arrumada"
+git push
+cd dev/CineMarcus
+ls
+git add -A
+git commit -m "arrumando coisas menores"
+git push
+ranger
+ranger
+cd dev/CineMarcus
+git branch
+git checkout GenarateFile
+git checkout GenerateFile
+git push
+git push --set-upstream origin GenerateFile
+git checkout main
+git pull
+git log
+git reset --hard commit 6fbdbc61cca2d151b4427c9559c547a143234047
+git reset --hard 6fbdbc61cca2d151b4427c9559c547a143234047
+git push
+git revert 6fbdbc61cca2d151b4427c9559c547a143234047
+git push
+git push --help
+git push -f
+git add -A
+git staus
+git status
+git checkout -m "merge correto de salvar ingresso"
+git commit -m "merge correto de salvar ingresso"
+git push
+ranger
+git pull
+v .
+cfnv
+v .
+cfnv
+v .
+cfnv
+v ;
+v .
+v .
+ranger
+ranger
+ranger
+startx
+sudo poweroff
+pkill teams
+ranger
+cd dev/CineMarcus/[
+cd dev/CineMarcus/
+git pull --rebase
+git commit
+git stash -A
+git stash
+git pull
+startx
+sudo poweroff
+ranger
+pkill teams
+startx
+sudo poweroff
+ls
+pkill discord
+pkill teams
+startx
+cd Downloads
+ls
+ls | grep -vi py
+ls | grep -vi py | xargs -I @@ rm -rf @@
+ls
+python3 simpson_repetida.py
+pip install numpy
+python3 simpson_repetida.py
+v simpson_repetida.py
+python3 simpson_repetida.py
+v simpson_repetida.py
+v simpson_repetida.py
+python3 simpson_repetida.py
+cd ..
+ranger
+cd dev/isc-project
+ls
+cd src
+ls
+ls
+v sound.s
+sudo poweroff
+cd Downloads
+ls
+rm -rf *
+ls
+ls
+cd 
+ls
+cd dev
+ls
+cd BMPtoASM
+ls
+v main.c
+cd 
+ranger
+startx
+bks
+ls
+ranger
+ls
+bks
+ls
+sudo poweroff
+startx
+sudo poweroff
+bks
+startx
+sudo poweroff
+startx
+sudo poweroff
+bks
+bks
+ranger
+startx
+ifconfig
+ifconfig
+yay -S mininet 
+sudo pacman -Syyy
+yay -S mininet 
+sudo mn -h
+cd dev
+ls
+mkdir Redes
+cd Redes
+ls
+v teste.py
+python3 teste.py
+sudo python3 teste.py
+v teste.py
+sudo python3 teste.py
+ovs-vsctl show
+sudo ovs-vsctl
+sudo ovs-vsctl show
+sudo reboot
+bks
+startx
+cd dev/Redes
+ls
+ls
+sudo python3 teste.py
+ovs-vsctl show
+sudo ovs-vsctl show
+ovs-vsctl -h
+sudo ovs-vsctl show
+sudo python3 teste.py
+ls /etc
+sudo ovs-vsctl show
+yay -S openvswitch
+yay -Ss openvswitch
+sudo pacman -Ss openvswitch
+ovs-ctl start
+sudo ovs-vsctl show
+sudo ovs-vsctl -h
+sudo ovs-vsctl init
+sudo ovs-vsctl init
+sudo pacman -S  virtualbox
+sudo /sbin/vboxreload
+sudo reboot
+startx
+sudo /sbin/vboxreload
+pacman -Qs virtualbox
+sudo virtualbox
+sudo /sbin/vboxconfig
+sudo modprobe vboxdrv
+sudo pacman _Syyu
+sudo pacman -Syyu
+sudo reboot
+virtualbox
+ranger
+cd ISO
+ls
+unzip mininet-2.3.0-210211-ubuntu-20.04.1-legacy-server-amd64-ovf.zip
+pkill discord
+ps -e | grep discord
+ps -e | grep disco
+pkill discord
+startx
+sudo reboot
+ssh -Y -l mininet -p 2222 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 2222 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ssh -Y -l mininet -p 666 localhost
+ls
+ls
+ls
+startx
+sudo poweroff
+ranger
+pkill teams
+bks
+sudo power
+startx
+sudo poweroff
+pkill discord
+ps -e | grep dis
+ps -e
+ps -e | grep Dis
+pkill Discord
+ps -e | grep Dis
+ranger
+pkill Discord
+bks
+ssh -Y -l mininet -p 2222 localhost
+ssh -Y -X -l mininet -p 2222 localhost
+ls
+cd Videos
+ls
+mv 2022-05-04_18-28-30.mkv RedesProjeto02.mkv
+ls
+ls
+cd Videos
+ls
+startx
+sudo poweroff
+unzip lcl_zeptoprocessador-iii-main.zip
+ls
+v README.md
+v Projeto_G46.pdf
+cd Downloads
+ls
+rm -rf *
+ls
+uzip projetos_isc_2021.2_RoadFighter_.zip
+unzip projetos_isc_2021.2_RoadFighter_.zip
+ls
+rm projetos_isc_2021.2_RoadFighter_.zip
+ls
+fpgrars menu.s
+ls
+fpgrars game_.s
+fpgrars joguinho.s
+cd Downloads
+ls
+cd Gabriel_Xisto_Barros
+sl
+ls
+v ROAD_FIGHTER.txt
+cd Downloads
+ls
+rm -rf *
+ls
+unzip lcl_zeptoprocessador-iii-main.zip
+ls
+cd lcl_zeptoprocessador-iii-main
+ls
+cd project
+ls
+cd Circuito\ Deeds
+ls
+python3
+ls
+ls
+cd 
+cd .wine
+ls
+cd drive_c
+ls
+cd LCL
+ls
+cd Projeto
+ls
+cd Programas
+ls
+mkdir testes
+ls
+cd Documents
+cd 
+ranger
+ls
+ls
+v multu.s
+ls
+ls
+cd ..
+ls
+mkdir Mul
+ls
+cp Multu/* Mul
+ls
+cd Mul
+ls
+rm Multu_LSB.drs
+rm Multu_MSB.drs
+ls
+v multu.s
+ls
+mv multu.bin mul.bin
+ls
+mv multu.s mul.s
+ls
+cd ..
+ls
+ls
+cp -R Mul Divu
+ls
+cd Divu
+ls
+rm Mul_LSB.drs
+rm Mul_MSB.drs
+ls
+ls
+v mul.bin
+ls
+cd ..
+ls
+cp -R Divu Div
+ls
+cd Div
+ls
+ls
+rm Divul_LBS.drs
+rm Divul_MBS.drs
+ls
+mv mul.bin div.bin
+ls
+mv mul.s div.s
+ls
+cd ..
+cd Divu
+ls
+mv mul.bin divu.bin
+mv mul.s divu.s
+ls
+cd ..
+cd Div
+ls
+v div.bin
+sudo powe
+startx
+sudo poweroff
+ranger
+cd .wine/drive_c/LCL/Projeto
+ls
+cd Programas
+ls
+cp -R Divu Remu
+ls
+cd Remu
+ls
+mv divu.bin remu.bin
+mv divu.s remu.s
+ls
+v Divul_LBS.drs
+ls
+v remu.s
+ls
+mv Divul_MBS.drs Remu_MBS.drs
+ls
+v remu.bin remu.s
+cd ..
+ls
+mkdir Rem
+cp Remu/* Rem
+cd Rem
+ls
+rm Remu_LBS.drs
+rm Remu_MBS.drs
+ls
+mv remu.bin rem.bin
+mv remu.s rem.s
+ls
+v rem.s
+ls
+cd ..
+ls
+mkdir MDC
+cd MDC
+ls
+v mdc.s
+v mdc.s
+ls
+cd 
+ls
+cd Pictures
+ls
+cd LCL
+ls
+mkdir Projeto
+cd Projeto
+ls
+mkdir Mul
+mv Mul Mult
+mkdir Multu
+mkdir Divu
+mkdir Div
+mkdir Remu
+mkdir Rem
+mkdir MDC
+ls
+ranger
+cd ..
+ls
+mv Projeto Projeto-old
+ls
+cp -R Projeto-old Projeot
+mv Projeot Projeto
+ls
+cd Projeto
+ls
+ls Div
+cd ..
+cd 
+cd .wine/drive_c/LCL
+ls
+mv Projeto Projeto-old
+cp -R Projeto-old Projeto
+ls
+cd Projeto
+ls
+mkdir blocos
+ranger
+cd external/DCIM
+ls
+cd Camera
+ls
+mkdir ~/Videos/Projeto
+cp * ~/Videos/Projeto
+cd 
+ls
+cp -R Projeto Projeto_G08
+ls
+zip -r Projeto_G08 Projeto_G08.zip
+zip -r Projeto_G08 Projeto_G08
+ls
+cp Projeto_G08.zip ../
+ls
+cd ..
+ls
+unzip Projeto_G08.zip
+ls
+ls
+cp Projeto_G08.zip ~/Documents
+cd 
+ls
+cd Documents
+ls
+startx
+sudo reboot
+ls
+mv Machine\ Learning\ Huawei Machine\ Learning\ Huawei.pdf
+mvls
+sudo ntpd -qg\
+sudo hwclock -w\
+
+startx
+bk
+bks
+bks
+ranger
+sudo poweroff
+startx
+bks
+bks
+bks
+sudo poweroff
+source anaconda3/bin/activate
+pip install xgboost
+source anaconda3/bin/activate
+ls
+cd dev
+ls
+mkdir huawei
+ls
+cd huawei
+ls
+jupyter
+pip freeze
+pip freeze | grep tensor
+pip freeze | grep jupy
+pip freeze | grep sklearn
+pip freeze | grep sklear
+pip freeze | grep sk
+pip freeze
+ls
+jupyter notebook
+ls
+cd dev/huawei
+ls
+cd 
+ls
+ls -la
+v .newsboat
+startx
+bks
+bks
+cd 
+cd Downloads
+ls
+rm Calculus.zip
+cd Calculus
+ls
+gzip Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus
+gzip Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf
+ls
+unzip Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf.gz
+ls
+gzip -h
+gzip -d Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf.gz
+ls
+gzip -h
+zip -h
+zip Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus
+zip -F Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus
+zip Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus.pdf
+zip -h2
+zip Calculus.zip Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf
+ranger
+sudo poweroff
+ranger
+cd Downloads
+ls
+zip -r Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus
+ls
+zip -r Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus.zip
+zip Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus.zip
+zip -h
+zip Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus
+mv Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus.pdf
+zip Calculus.pdf Calculus
+ls
+rm Calculus.pdf
+ranger
+ls
+mkdir Calculus
+ls
+mv Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf Calculus
+ls
+zip -r Calculus Calculus
+ls
+startx
+sudo reboot
+sudo ntpd -qg\
+sudo hwclock -w\
+
+unrar e ML-Dataset.rar
+cd dev/huawei
+ls
+jupyter notebook
+source ~/anaconda3/bin/activate
+jupyter notebook
+ls
+ranger
+bks
+bks
+startx
+cd University
+ls
+mkdir 'Probability and Statistics'
+ls
+ls -la
+pcmanfm .
+ls
+cd Probability\ and\ Statistics
+ls
+mkdir MIT-Introduction-To-Probability-And-Statistics
+ls
+cd MIT-Introduction-To-Probability-And-Statistics
+sudo reboot
+sudo ntpd -qg\
+sudo hwclock -w\
+
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+ls
+cd dev
+ls
+mkdir DataScienc
+ls
+mv DataScienc DataScience
+cd DataScience
+ls
+wget https://github.com/wesm/pydata-book/blob/2nd-edition/datasets/bitly_usagov/example.txt
+ls
+mv bilty_data.txt
+mv example.txt bilty_data.txt
+ls
+v bilty_data.txt
+ls
+rm bilty_data.txt
+ls
+wget https://raw.githubusercontent.com/wesm/pydata-book/2nd-edition/datasets/bitly_usagov/example.txt
+ls
+v example.txt
+ls
+source ~/anaconda3/bin/activate
+ls
+mkdir bilty_usagov
+ls
+mv example.txt bilty_usagov
+ls
+cd bilty_usagov
+ls
+v bilty_usagov.py
+python3 bilty_usagov.py
+l
+ls
+v bilty_usagov.py
+startx
+sudo poweroff
+bks
+ls
+ranger
+source ~/anaconda3/bin/activate
+ipython
+ipython
+python3 matplotlib.py
+python3 matplotlib.py
+source ~/anaconda3/bin/activate
+python3 matplotlib.py
+startx
+bks
+sudo reboot
+ranger
+l
+ls
+ls
+cd dev
+ls
+cd DataScience
+ls
+v matplotlib.py
+source ~/anaconda3/bin/activate
+v matplotlib.py
+v matplotlib.py
+mv matplotlib.py teste_matplot.py
+python3 teste_matplot.py
+ls
+sxiv filpath.png
+ls
+rm __pycache__
+rm -rf __pycache__
+ls
+v teste_matplot.py
+python3 teste_matplot.py
+sxiv filpath.png
+v teste_matplot.py
+python3 teste_matplot.py
+sxiv filpath.png
+v teste_matplot.py
+ls
+cd bilty_usagov
+ls
+v bilty_usagov.py
+python3 bilty_usagov.py
+ls
+sxiv figure.png
+ls
+sxiv figure.png
+v bilty_usagov.py
+source ~/anaconda3/bin/activate
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+python3 bilty_usagov.py
+sudo ntpd -qg\
+sudo hwclock -w\
+
+cd dev
+ls
+mkdir tracking_system
+cd tracking_system
+ls
+v ts.py
+python3 ts.py
+ls
+v ts.py
+python3 ts.py
+v ts.py
+python3 ts.py
+v ts.py
+startx
+ls
+cd dev
+ls
+sudo poweroff
+bks
+python3
+python3
+source ~/anaconda3/bin/activate
+v teste.py
+python3 teste.py
+python3 teste.py
+python3 teste.py
+python3 teste.py
+python3 teste.py
+ls
+v teste.py
+cd dev
+ls
+cd startpage
+ls
+source ~/anaconda3/bin/activate
+ipython3
+ipython
+cd ..
+ls
+cd DataScience
+ls
+cd bilty_usagov
+ls
+v bilty_usagov.py
+exit()
+cd 
+exit
+ls
+ranger
+cd University
+ls
+mkdir SI
+ls
+cd SI
+ls
+ls
+mv   sistemas-de-informaoes-gerenciais-11a-ediaopdf-pdf-free.pdf Sistemas de Informações Gerenciais.pdf
+ls
+mv sistemas-de-informaoes-gerenciais-11a-ediaopdf-pdf-free.pdf Sistemas de Informações Gerenciais.pdf
+mv sistemas-de-informaoes-gerenciais-11a-ediaopdf-pdf-free.pdf 'Sistemas de Informações Gerenciais.pdf'
+ls
+python3 roman_to_integer.py
+python3 roman_to_integer.py
+python3 roman_to_integer.py
+cd dev
+mkdir lecode
+cd lecode
+ls
+v roman_to_integer.py
+v integer_to_roman.py
+v find_a_corresponding_node_of_a_binary_tree.py
+cd 
+cfzsh
+startx
+sudo poweroff
+anac
+pip freeze
+pip install tensorflow
+pip freeze | grep ten
+ls
+cd dev
+ls
+mkdir Celphone
+ls
+cd 
+ranger
+cd dev
+ls
+adb
+pacman -Syyu
+sudo pacman -Syyu
+sudo pacman -S adb
+sudo pacman -S android-tools
+mv ~/Downloads/lineage-18.1-20220515-nightly-onclite-signed.zip Celphone
+cd Celphone
+ls
+adb devices
+adb devices
+adb devices
+adb devices
+adb devices
+adb devices
+ls
+adb sideload lineage-18.1-20220515-nightly-onclite-signed.zip
+adb sideload Magisk-v24.3.zip
+adb sideload NanoDroid-patcher-23.1.2.20210117.zip
+adb sideload NanoDroid-patcher-23.1.2.20210117.zip
+adb sideload NanoDroid-patcher-23.1.2.20210117.zip
+adb devices
+adb devices
+adb sideload NanoDroid-patcher-23.1.2.20210117.zip
+mkdir ROM
+ls
+mv lineage-18.1-20220515-nightly-onclite-signed.zip ROM
+ls
+shasum ROM/lineage-18.1-20220515-nightly-onclite-signed.zip
+shasum ROM/lineage-18.1-20220406-microG-onclite.zip
+sha256sum ROM/lineage-18.1-20220406-microG-onclite.zip
+adb sideload ROM/lineage-18.1-20220406-microG-onclite.zip
+ls
+adb sideload Magisk-v24.3.zip
+adb sideload NanoDroid-BromiteWebView-23.1.2.20210117.zip
+adb devices
+adb sideload ROM/lineage-18.1-20220406-microG-onclite.zip
+ls
+ranger
+cd external
+ls
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd external
+ls
+ls
+ls
+ls
+cd 
+cd external
+ls
+ls
+startx
+sudo reboot
+cd .local/src
+ls
+git clone https://github.com/lineageos4microg/update_verifier.git
+cd update_verifier
+ls
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+ls
+cat README.md
+python3 update_verifier.py lineageos4microg_pubkey ~/dev/Celphone/ROM/lineage-18.1-20220406-microG-onclite.zip
+ls external
+ranger
+ls
+ls external
+cd external
+ls
+rm -rf NanoDroid-BromiteWebView-23.1.2.20210117.zip
+ls
+ls
+rm -rf NanoDroid-BromiteWebView-23.1.2.20210117.zip
+ls
+ls
+ls
+ls
+rm -rf NanoDroid-BromiteWebView-23.1.2.20210117.zip
+ls
+ls
+ls
+cd ..
+cd external
+ls
+ls
+cd
+cd external
+ls
+ls
+cd ..
+ls
+ls external
+ls
+cd external
+ls
+ls
+cd 
+rsync -h
+rsync -h | grep -e
+rsync -h | grep "-e"
+rsync -h | grep "\-e"
+rsync -h | grep "\-azv"
+rsync -h | grep "azv"
+rsync -h | grep azv
+cp dev/Celphone/NanoDroid-BromiteWebView-23.1.2.20210117.zip ~/external/
+cp dev/Celphone/NanoDroid-BromiteWebView-23.1.2.20210117.zip ~/external/
+cp dev/Celphone/NanoDroid-BromiteWebView-23.1.2.20210117.zip ~/external/
+cd dev/Celphone
+ls
+ranger
+ssh -p 2222 10.0.0.115
+startx
+sudo poweroff
+ls
+ls
+ls
+cd dev
+ls
+htop
+ls
+ranger
+ls
+cd ..
+ls
+ls
+ipython
+exit
+startx
+sudo pacman -S libvterm
+python -h
+python -v
+python --version
+cd dev
+ls
+cd startpage
+ls
+source venv/bin/activate
+sudo poweroff
+cd dev/lecode
+ls
+v unique_paths2.py
+python3 unique_paths2.py
+v unique_paths2.py
+python3 unique_paths2.py
+python3 unique_paths2.py
+python3 unique_paths2.py
+sudo pacman -S zathura-djvu
+bks
+cd Books/Matematics
+ls
+firefox Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf
+ls
+yay -S tor-browser
+startx
+tor
+sudo tor
+sudo poweroff
+ls
+rm mpv-shot0001.jpg p
+ls
+rm figpath.png 
+ls
+cd Books
+ls
+ls Matematics
+cd 
+bks
+ranger
+python3
+startx
+ls
+cd dev
+ls
+cd huawei
+l
+ls
+source ~/anaconda3/bin/activate
+jupyter notebook
+ls
+jupyter notebook
+sudo poweroff
+xset r rate 210 40\
+
+setxkbmap br # Keyboard\
+setxkbmap -option caps:escape # Keyboard\
+
+sl
+ls
+sudo nmtui
+cfx
+sudo ntpd -qg\
+sudo hwclock -w\
+
+python3 number_of_1_bits.py
+python3 number_of_1_bits.py
+python3 number_of_1_bits.py
+cd dev/lecode
+ls
+v number_of_1_bits.py
+v longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python3 longest_substring_without_repeating.py
+python
+cd dev/huawei
+ls
+source ~/anaconda3/bin/activate
+jupyter notebook
+startx
+sudo poweroff
+startx
+sudo poweroff
+sudo poweroff
+python3 diveded_two_integers.py
+python3 diveded_two_integers.py
+python3 diveded_two_integers.py
+sudo nmtui
+python3 ts.py
+python3 ts.py
+python3 ts.py
+python3 ts.py
+python3 ts.py
+python3
+ls
+ls
+cd dev/lecode
+ls
+v diveded_two_integers.py
+cd ..
+ls
+cd tracking_system
+ls
+v ts.py
+v ncurses.py
+python3 ncurses.py
+v ncurses.py
+wget https://gist.githubusercontent.com/claymcleod/b670285f334acd56ad1c/raw/6c3cc44a2174c22c9c9da0792f72852487f67e96/pycurses.py
+lsa
+ls
+python3 pycurses.py
+python3 pycurses.py
+calcurse
+ls
+ls
+v ts.py
+ls
+v tracking_menu.py
+cd dev
+lks
+ls
+cd tracking_system
+ls
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+python3 tracking_menu.py
+cfzsh
+cd dev
+ls
+mkdir simple_chat_bot
+ls
+cd simple_chat_bot
+ls
+ls
+source ~/anaconda3/bin/activate
+unzip json-file.zip
+anac
+conda activate chatbot
+cd dev/simple_chat_bot
+ls
+ipython
+python
+startx
+anac
+cd dev/simple_chat_bot
+ls
+python
+conda create -n chatbot python=3.6
+activate
+activate chatbot
+conda env list
+conda activate chatbot
+ls
+pip install nltk
+pip install numpy
+pip install tflearn
+pip install tensorflow
+ls
+v main.py
+calcurse
+ranger
+sudo poweroff
+python
+cd dev/simple_chat_bot
+ls
+anac
+conda activate chatbot
+python main.py
+startx
+ls
+rm teste.py
+ls
+cd anaconda3
+ls
+cd 
+ls
+cd dev
+ls
+cd simple_chat_bot
+ls
+v main.py
+sudo poweroff
+cfnvim
+cfnv
+v
+v
+ls
+vim
+ls
+ls -la
+cd vimwiki_html
+ls
+cd ..
+ls
+rm vimwiki_html
+rm -rf vimwiki_html
+ls
+ls
+cd .config
+ls
+mkdir vim
+ls
+cd vim
+ls
+ls
+mkdir autoload
+mkdir backup
+mkdir colors
+mkdir plugged
+ls
+touch vimrc
+cfzsh
+ls
+vim vimrc
+vim vimrc
+cd .config/vim
+ls
+ls user
+cd .config
+cd vim
+ls
+ls user
+cfzsh
+cfzsh
+cd .config/vim
+ls
+vim vimrc
+vim vimrc
+vim vimrc
+ls
+mkdir user
+mv vimrc user/options.vim
+vim vimrc
+vim vimrc
+vim vimrc
+ls
+vim .
+cd user
+curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs \\
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ls
+cd ..
+ls
+v plugged
+ls autoload
+ls
+cd user
+ls
+vim plugins.vim
+cd ..
+vim viminfo
+vim vimrc
+ls user
+vim vimrc
+vim vimrc
+sl
+ls
+cd autoload
+ls
+vim plug.vim
+cd ..
+ls
+cd user
+ls
+v vim_config.vim
+nvim
+vim vim_config.vim
+cd .
+cd ..
+ls
+vim vimrc
+vim vimrc
+vim vimrc
+vim vimrc
+ls
+cd user
+ls
+vim keybindings.vim
+cd ..
+ls
+vim vimrc
+vim vimrc
+vim vimrc
+ls
+mkdir ~/.config/vim/swap
+mkdir ~/.config/vim/undo
+ls
+vim vimrc
+ls
+rm viminfo.tmp.a
+vim viminfo
+rm viminfo
+ls
+vim vimrc
+ls
+vim vimrc
+ls
+ls
+ls -la
+cp .viminfo ~/.config/vim
+ls
+ls
+v .viminfo
+cp .viminfo ~/.config/vim
+cp .viminfo ~/.config/vim
+cd .config/vim/
+v .
+vim .
+vim .
+vim .
+ls
+touch viminfo
+vim vimrc
+ls
+v viminfo
+v vimrc
+vim vimrc
+ls
+v viminfo
+ls
+vim viminfo
+rm viminfo
+ls
+ls
+cd ..
+ls
+cd vim
+ls
+cp ~/.viminfo .
+ls
+ls -la
+mv .viminfo viminfo
+ls
+vim vimrc
+vim viminfo
+ls
+cfzsh
+ls .config
+cd .config/nvim
+ls
+$VIMINIT=~/.config/nvim/init.lua nvim
+~/.config/nvim/init.lua nvim
+vim
+cd .config/vim
+ls
+vim vimrc
+cd 
+ls
+rm .vim
+rm -rf .vim
+ls
+rm .viminfo
+ls
+nvim
+cfzsh
+v .
+$MYVIMRC
+cfzsh
+$MYVIMRC
+v .
+$MYVIMRC
+vim
+cfzsh
+cfzsh
+ls
+mkdir -p ~/Documents/notes/vimwiki
+v .
+ls
+cd .config/vim
+ls
+vim vimrc
+ls
+cd user
+ls
+vim vimwiki.vim
+cd ..
+ls
+vim vimrc
+ls
+vim .
+vim .
+cd user
+ls
+vim autocomands;vim
+vim autocomands.vim
+vim colorscheme.vim
+vim colorscheme.vim
+vim colorscheme.vim
+vim .
+cd .local/src
+ls
+cd dwm
+ls
+v config.h
+sudo make install
+cfzsh
+cfnv
+cd .local/src/dwm
+ls
+v config.h
+sudo make install
+st -e zsh nvim
+st -e zsh nvim
+st -e zsh
+st -e zsh -e nvim
+man zsh
+st -e zsh -c nvim
+man st
+ls
+cd .local/src/dwm
+v config.h
+sudo make install
+st -e zsh -c vim -c VimWiki
+st -e zsh -c "vim -c VimWiki"
+cd .local/src/dwm
+ls
+v config.h
+sudo make install
+vim
+zsh --help
+st -e zsh -c "vim -c VimWiki"
+st -e zsh
+zsh -h
+pkill firefox
+source $HOME/.config/zsh/.zshrc
+st -e zsh -c 'vim -c VimwikiIndex'
+man zsh
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc vim -c VimwikiIndex'
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc'
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc' vim
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc'
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc' vim
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc' nvim
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc vim'
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc' -c vim
+st -e zsh -c source $HOME/.config/zsh/.zshrc
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc' 'vim'
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc', 'vim'
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc', vim
+st -e zsh -c 'source $HOME/.config/zsh/.zshrc' vim
+st -e zsh -c {'source $HOME/.config/zsh/.zshrc', vim}
+st -e zsh -c ls htop
+st -e zsh -c vim
+zsh
+cfzsh
+v
+ls
+cfzsh
+cfzsj
+cfzsh
+cfzsh
+cfnv
+cfnv
+v .config/vim
+v
+cd .local/src/dwm
+v config.h
+sudo make install
+ls
+cd vimwiki
+ls
+v index.wiki
+startx
+startx
+startx
+startx
+startx
+startx
+sudo reboot
+python-gpgme
+sudo pacman -S python-gpgme
+yay -S dropbox
+ls
+dropbox
+urlview
+urlbst
+pacman -Q | grep url
+sudo pacman -S urlview
+ls
+v .config/mailcap
+/usr/bin/notify-send -title "ruan"
+/usr/bin/notify-send -title ruan
+/usr/bin/notify-send -title 1
+/usr/bin/notify-send -h
+/usr/bin/notify-send --help
+/usr/bin/notify-send --help
+ls
+cp -R Books/Matematics Dropbox/Books/Matematics
+mkdir -p Dropbox/Books/Matematics
+cp -R Books/Matematics Dropbox/Books/Matematics
+ls
+cd Dropbox
+ls
+cd Books
+ls
+cd Matematics
+ls
+cd ..
+ls
+cd ..
+yay -S telegram-tg
+tg
+tg
+pacman -Q | grep link
+pacman -Ss urlscan
+sudo pacman -S urlscan
+ls
+ls
+cd ..
+ls
+cd .local/bin
+ls
+v buildNote
+v buildNote
+chmod +x buildNote
+mkdir -p .config/tg
+ls
+cd .config
+cd tg
+ls
+v conf.py
+tg
+ls
+v conf.py
+td
+tg
+pkill dropbox
+tf
+tg
+cd 
+cd Dropbox
+ls
+ls
+cd Notes
+ls
+cd vimwiki
+ls
+cd pdf
+ls
+ls
+ls
+ls
+ls
+zathura index.pdf
+cd Documents/notes/vimwiki
+ls
+buildNote index.md
+buildNote index.md
+cfnv
+cd Dropbox/Notes/vimwiki/pdf
+ls
+ls
+ls
+zathura Linux.pdf
+ls
+zathura Cronograma.pdf
+zathura Cronograma.pdf
+cd .local/bin
+ls
+ls
+sudo pacman -S obsidian
+unzip 2020-06-01-ObsidianWorkflows.zip
+startx
+sudo shutdown now
+startx
+sudo reboot
+bks
+sudo ntpd -qg  \
+sudo hwclock -w  \
+
+htop
+htop
+bks
+bks
+ranger
+bks
+cd dev/Sexto-Andar
+ls
+v .
+v .
+docker
+docker.io
+ls
+pacman -Q | grep docker
+pacman -S docker
+sudo pacman -S docker
+docker ruan
+docker run
+usermod -aG docker ruan
+sudo usermod -aG docker ruan
+sudo docker run -it --rm archlinux bash -c "echo hello world"
+docker run --help
+sudo pacman -S docker-runit
+ln -s /etc/runit/sv/docker /run/runit/service
+sudo ln -s /etc/runit/sv/docker /run/runit/service
+docker run
+sudo docker run
+sudo docker run --help
+docker run -it --rm archlinux bash -c "echo hello world"
+sudo docker run -it --rm archlinux bash -c "echo hello world"
+cd dev
+git clone https://github.com/gss214/Sexto-Andar.git
+sudo docker compose up
+docker compose up
+ls
+cd Sexto-Andar
+ls
+sudo docker compose up
+docker --help
+docker up
+docker --help
+docker-compose up
+sudo pacman -S docker-compose
+sudo pacman -Syy docker-compose
+docker-compose up
+sudo docker-compose up
+cd .local/bin
+ls
+v bks
+cd .local/bin
+v bks
+tg
+tg
+tg
+tg
+range
+ranger
+cd ArchSetup
+ls
+sc-im progs.csv
+ls
+htop
+startx
+sudo poweroff
+bks
+ls
+cd /run/runit/service
+ls
+rm docker
+ls
+rm docker
+sudo rm docker
+ls
+ln -s /etc/runit/sv/docker /run/runit/service
+sudo ln -s /etc/runit/sv/docker /run/runit/service
+ls
+cd vimwiki
+ls
+cd ..
+ls
+rm -rf vimwiki
+ls
+cd Documents/notes
+ls
+ls -la 
+rm vimwiki
+ls
+ls -la vimwiki
+rm vimwiki
+ls
+ls -la
+dropbox --help
+dropbox
+ls
+cd Dropbox
+ls
+cd Notes
+ls
+cd vimwiki
+ls
+man ln
+ls
+ln -s $HOME/Documents/notes/vimwiki ./markdown
+ls
+ls -la
+cd markdown
+ls
+cd ..
+ls
+ls
+rm markdown
+ls
+mv ~/Documents/notes/vimwiki .
+ls
+ln -s vimwiki ~/Documents/notes/
+ln -s ./vimwiki ~/Documents/notes/
+ln -s $HOME/Dropbox/Notes/vimwiki/markdown ~/Documents/notes/vimwiki
+ls
+mv vimwiki markdown
+ls
+ls
+cd ..
+ls
+mv ~/Documents/notes/Main .
+ls
+mv Main obsidian
+ls
+ln -s $HOME/Dropbox/Notes/obsidian ~/Documents/notes/Main
+ls
+ls obsidian
+ls
+ls obsidian
+ls
+cd 
+ls
+ls
+cd Pictures
+ls
+ranger
+mv .cargo /home/ruan/.local/share/cargo
+ls -la
+ls -la
+ls .conda
+mv .conda .config/conda
+mv anaconda3 .config/
+ls
+anac
+v ~/.config/anaconda3/bin/activate
+anac
+v ~/.config/anaconda3/bin/activate
+v ~/.config/anaconda3/etc/profile.d/conda.sh
+anac
+v /home/ruan/.config/anaconda3/bin/conda
+anac
+ipython
+cd .config
+ls
+rm -rf anaconda3
+cd .config
+rm -rf anaconda3
+ls
+cd 
+ls
+cd .local
+ls
+cd src
+ls
+rm ventoy-1.0.70
+rm ventoy-1.0.70-linux.tar.gz
+ls
+cd ..
+ls
+cd    
+ls
+mv .cache .local/cache
+ls -la
+rm -rf .dia
+ls
+ls -la
+v .dropbox
+ls
+ls -la
+rm -rf .ipython
+rm -rf .keras
+rm -rf .jupyter
+ls
+ls -la
+cd .local
+lsa
+ls
+cd
+ls -la
+mkdir -p .config/git
+mv .gitconfig .config/git/config
+ls -la
+rm -rf .netbeans
+ls -la
+mv .gtkrc-2.0 .config/gtk-2.0/gtkrc-2.0
+ls -la
+mkdir -p "$XDG_DATA_HOME"/wineprefixes
+cd .wine
+ls
+cd ..
+ls
+rm .wine
+rm -rf .wine
+ls -la
+ls
+ls .local
+ls
+ls -la
+rm -rf .cache
+cd .config
+ls
+cd conda
+ls
+rm environments.txt
+cd 
+ls
+ls -la
+ls .android
+ls .android
+rm -rf .android
+ls -la
+rm -rf .bash_history
+rm -rf .bash_logout
+rm -rf .bash_profile
+rm -rf .bashrc
+ls -la
+cd .cache
+ls
+cd ..
+cfzsh
+sh Anaconda3-2022.05-Linux-x86_64.sh
+cfzsh
+cfx
+cfzsh
+pkill firefox
+ls -la
+cd .cache
+ls
+cd ..
+ps -e | grep fire
+rm -rf .cache
+ls
+ls -la
+rm -rf .cache
+ls -la
+cfzsh
+ls -la
+cd .cache
+ls
+cd fontconfig
+ls
+cd 
+ls -la
+rm -rf .java
+rm -rf .viminfo
+echo hsts-file \= "$XDG_CACHE_HOME"/wget-hsts >> "$XDG_CONFIG_HOME/wgetrc"
+v "$XDG_CONFIG_HOME/wgetrc"
+rm .wget-hsts
+mkdir -p .config/npm
+v .config/npm/npmrc
+ls -la
+rm -rf .nv
+rm -rf .npm
+gpg2 --homedir "$XDG_DATA_HOME"/gnupg
+mv .gnupg/* "$XDG_DATA_HOME"/gnupg
+mkdir -p "$XDG_DATA_HOME"/gnupg
+mv .gnupg/* "$XDG_DATA_HOME"/gnupg
+rm .gnupg
+rm -rf .gnupg
+gpg2 --homedir "$XDG_DATA_HOME"/gnupg
+ls -la
+rm -rf .rustup
+rm -rf .zsh_history
+v .profile
+rm .profile
+ls -la
+rm -rf .conda
+anac
+ls -la
+cd .local
+ls
+cd ..
+cd .config
+ls
+cd conda
+ls
+cd 
+ls
+exit
+ls -la
+cd Downloads
+ls
+wget https://gist.githubusercontent.com/claymcleod/b670285f334acd56ad1c/raw/6c3cc44a2174c22c9c9da0792f72852487f67e96/pycurses.py
+ls
+cd ..
+ls -la
+rm -rf .stremio-server
+ls
+ls -la
+cd .icons
+ls
+ls default
+cd ..
+ls
+rm -rf .icons
+ls -la
+mkdir "$XAUTHORITY"
+rm -rf "$XAUTHORITY"
+rm -rf .Xauthority
+ls -la
+cfzsh
+reboot
+sudo reboot
+startx
+ls -la
+cfzsh
+cfzsh
+ls
+ls -la
+rm -rf .cache .Xauthority
+ls
+sudo reboot
+ls -la
+cd .dotfiles/zsh/.zprofile
+f .dotfiles/zsh/.zprofile
+v .dotfiles/zsh/.zprofile
+ls -la
+rm -rf workspace
+ls
+ls -la
+mv .ssl-key.log .config/ssl-key-log
+ls -la
+cfzsh
+rm -rf .zsh_history
+ls -la | wc -w
+ls -la | wc -l
+cd dev
+ls
+cd huawei
+l
+ls
+anac
+conda init
+cd 
+ls
+ls -la
+rm .bashrc
+ls
+conda create -n huawei python=3.6
+conda create  �n MindSpore python==3.7.5\
+conda create  �n TensorFlow-CPU python==3.6.5
+conda create  �n MindSpore python==3.7.5
+conda create  �n mindspore python==3.7.5
+conda env create  �n mindspore python==3.7.5
+conda create  �n mindspore python=3.7.5
+conda env create  �n mindspore python=3.7.5
+conda list
+conda init
+htop
+sv stop docker
+sudo sv stop docker
+htop
+cd dev/huawei/example
+anac
+conda activate huawei
+jupyter notebook
+startx
+sudo poweroff
+startx
+neofetch
+sudo reboot
+startx
+rg
+tg
+htop
+ping archlinux.org
+sudo nmtui
+sudo poweroff
+startx
+cd .local/src
+ls
+cd ventoy-1.0.70
+ls
+ls
+lsblk
+Ventoy2Disk.sh -I /dev/sdb
+sudo Ventoy2Disk.sh -I /dev/sdb
+sudo Ventoy2Disk.sh -I /dev/sfb
+sudo sh Ventoy2Disk.sh -I /dev/sfb
+sudo sh Ventoy2Disk.sh -I /dev/sdb
+lsblk
+cd 
+ls
+cd ISO
+ls
+sudo cp artix-base-runit-20220123-x86_64.iso /mnt/external
+lsblk
+cd 
+cd .local/src/ventoy-1.0.70
+sl
+ls
+ls
+lsblk
+Ventoy2Disk.sh -h
+sudo sh Ventoy2Disk.sh -I -g /dev/sdb
+cd 
+cd ISO
+sudo cp artix-base-runit-20220123-x86_64.iso /mnt/external
+sudo poweroff
+startx
+ls /sys/firmware/efi/efivars
+sudo su
+sudo poweroff
+startx
+cd Dropbox
+ls
+cd huawei
+ls
+touch teste
+touch teste2
+rm teste
+rm teste2
+ls
+mv 06\ Atlas\ AI\ Computing\ Platform.pdf '06 - Atlas AI'
+mv 08\ HUAWEI\ CLOUD\ Enterprise\ Intelligence\ Application\ Platform.pdf '08 - Huawei Cloud'
+ls
+mv 06\ -\ Atlas\ AI 06\ -\ Atlas\ AI.pdf
+mv 08\ -\ Huawei\ Cloud 08\ -\ Huawei\ Cloud.pdf
+ls
+sudo poweroff
+ls

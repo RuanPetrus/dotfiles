@@ -83,7 +83,7 @@ vim.cmd[[map <leader>c :w! \| !compiler "<c-r>%"<CR>]]
 vim.cmd[[map <leader>p :!opout <c-r>%<CR><CR>]]
 vim.cmd[[autocmd VimLeave *.tex !texclear %]]
 vim.cmd[[autocmd VimLeave *.java !javaclear %]]
+vim.cmd[[autocmd BufWritePost */vimwiki/* !buildNote %:p]]
 
 -- Getter and Setter
-vim.cmd[[map gtr mawv/ <CR>"ty/ <CR>wvwh"ny/getters<CR>$a<CR><CR><Esc>xxapublic<Esc>"tpa<Esc>"npbiget<Esc>l~ea()<CR>{<CR><Tab>return<Esc>"npa;<CR>}<Esc>=<CR><Esc>/setters<CR>$a<CR><CR><Esc>xxapublic void<Esc>"npbiset<Esc>l~ea(<Esc>"tpa <Esc>"npa)<CR>{<CR><Tab>this.<Esc>"npa=<Esc>"npa;<CR>}<Esc>=<CR>`ak]]
 

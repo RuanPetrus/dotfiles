@@ -1,5 +1,5 @@
 #!/bin/sh
-HISTFILE=~/.zsh_history
+HISTFILE=~/.config/zsh/zsh_history
 setopt appendhistory
 
 # some useful options (man zshoptions)
@@ -64,4 +64,11 @@ bindkey -r "^d"
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 # bindkey '^e' edit-command-line
+#
+#yaf
+$HOME/.local/bin/fetch/fm6000 -c bright_red -dogbert -de "DWM" -n -m 4 -g 8 -l 20
+#colorscript random
+
+
+#eval "$(starship init zsh)"
 

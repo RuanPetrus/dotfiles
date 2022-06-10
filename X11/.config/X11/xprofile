@@ -13,11 +13,14 @@ setxkbmap -option caps:escape # Keyboard
 
 nitrogen --restore
 
+#$HOME/.local/src/eww/target/release/eww daemon
+
 # Colors
 xrdb $HOME/.dotfiles/X11/.config/X11/Xresources
 
 # Initialization program
 autostart="mpd xbanish dunst flameshot dwmblocks xcompmgr"
+#autostart="mpd xbanish dunst flameshot xcompmgr"
 #autostart="dunst dwmblocks "
 for program in $autostart; do
 	pidof -s "$program" || setsid -f "$program"

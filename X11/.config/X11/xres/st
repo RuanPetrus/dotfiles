@@ -2,8 +2,8 @@
 *.st.alpha: 1.0
 
 !! Set a default font and font size as below:
-*.st.font: termfont:pixelsize=fontsize:antialias=true:autohint=true
-*.st.fontalt0: termfont:pixelsize=fontsize:antialias=true:autohint=true
+!! *.st.font: termfont:pixelsize=fontsize:antialias=true:autohint=true
+!! *.st.fontalt0: termfont:pixelsize=fontsize:antialias=true:autohint=true
 
 !! st colors
 /* *.st.color0:  color0 */
@@ -145,26 +145,52 @@
 /* *.st.color15:  #aabac8 */
 /* *.st.background:   #000000 */
 
-/* ! Dracula Xresources palette */
-*.st.foreground: #F8F8F2
-*.st.background: #282A36
-*.st.color0:     #000000
-*.st.color8:     #4D4D4D
-*.st.color1:     #FF5555
-*.st.color9:     #FF6E67
-*.st.color2:     #50FA7B
-*.st.color10:    #5AF78E
-*.st.color3:     #F1FA8C
-*.st.color11:    #F4F99D
-*.st.color4:     #BD93F9
-*.st.color12:    #CAA9FA
-*.st.color5:     #FF79C6
-*.st.color13:    #FF92D0
-*.st.color6:     #8BE9FD
-*.st.color14:    #9AEDFE
-*.st.color7:     #BFBFBF
-*.st.color15:    #E6E6E6
+/* /* ! Dracula Xresources palette */ */
+/* *.st.foreground: #F8F8F2 */
+/* *.st.background: #282A36 */
+/* *.st.color0:     #000000 */
+/* *.st.color8:     #4D4D4D */
+/* *.st.color1:     #FF5555 */
+/* *.st.color9:     #FF6E67 */
+/* *.st.color2:     #50FA7B */
+/* *.st.color10:    #5AF78E */
+/* *.st.color3:     #F1FA8C */
+/* *.st.color11:    #F4F99D */
+/* *.st.color4:     #BD93F9 */
+/* *.st.color12:    #CAA9FA */
+/* *.st.color5:     #FF79C6 */
+/* *.st.color13:    #FF92D0 */
+/* *.st.color6:     #8BE9FD */
+/* *.st.color14:    #9AEDFE */
+/* *.st.color7:     #BFBFBF */
+/* *.st.color15:    #E6E6E6 */
+/**/
+/* /* *.st.background: .color0 */ */
+/* /* *.st.color256: 0#1d2021 */ */
+/* /* *.st.color257: 15#ebdbb2 */ */
 
-/* *.st.background: .color0 */
-/* *.st.color256: 0#1d2021 */
-/* *.st.color257: 15#ebdbb2 */
+/* Nord*/
+
+
+*.st.foreground:   nord4
+*.st.background:   nord0
+*.st.cursorColor:  nord4
+*.st.fading: 35
+*.st.fadeColor: nord3
+
+*.st.color0: nord1
+*.st.color1: nord11
+*.st.color2: nord14
+*.st.color3: nord13
+*.st.color4: nord9
+*.st.color5: nord15
+*.st.color6: nord8
+*.st.color7: nord5
+*.st.color8: nord3
+*.st.color9: nord11
+*.st.color10: nord14
+*.st.color11: nord13
+*.st.color12: nord9
+*.st.color13: nord15
+*.st.color14: nord7
+*.st.color15: nord6

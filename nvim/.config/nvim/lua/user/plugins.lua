@@ -62,8 +62,18 @@ return packer.startup(function(use)
   --use '~/dev/nvcode-color-schemes.vim'
 
   -- VimWiki
-  use 'vimwiki/vimwiki'
-
+  use {
+    'vimwiki/vimwiki',
+    config = function()
+        vim.g.vimwiki_list = {
+            {
+                path = '$HOME/Documents/notes/vimwiki',
+                syntax = 'markdown',
+                ext = '.md',
+            }
+        }
+    end
+}
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -97,7 +107,6 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
