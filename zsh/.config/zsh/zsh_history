@@ -10237,3 +10237,42 @@ sudo pacman -Q | grep wi
 ls
 ls
 sudo reboot
+cd .dotfiles/nvim/.config/nvim
+ls
+cd ..
+ls
+rm -rf nvim
+ls
+ls
+cd .
+cd ..
+cd ..
+ls
+git add -A
+git commit -m "Better nvim config"
+git push
+pulsemixer
+ls
+sudo pacman -Rcns pipewire
+sudo pacman -R pipewire
+sudo pacman -R pipewire
+sudo pacman -R pipewire-jack
+sudo pacman -S pulseaudio
+ls
+ls
+cp -r .config/nvim .dotfiles/nvim/.config
+v dev/git_senha
+cd external/dev
+ls
+ls BMPtoASM
+cd .local/src
+ls
+cd ..
+ls
+cd 
+ls
+ls
+git clone git@github.com:RuanPetrus/dwm.git
+cd dwm
+ls
+mv .git ~/.local/src/dwm
