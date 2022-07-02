@@ -10,6 +10,8 @@ export XDG_DATA_HOME=$HOME/.local/share
 unsetopt PROMPT_SP
 # Adds `~/.local/bin` to $PATH
 #export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+export PATH="$HOME/.local/bin/statusbar":$PATH
+export PATH="$HOME/.local/bin/":$PATH
 
 ## Java
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -19,4 +21,6 @@ export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
 export ZDOTDIR=$HOME/.config/zsh # zsh config dir
+
+startx "$XDG_CONFIG_HOME/X11/xinitrc"
 

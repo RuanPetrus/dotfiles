@@ -5,13 +5,13 @@ source $HOME/.config/X11/xprofile
 
 # DWM
 
-/usr/bin/pipewire &
-/usr/bin/pipewire-pulse &
-/usr/bin/pipewire-media-session &
-
 #while true; do 
 #    dwm >dev/null 2>&1
 #done
 
 #exec ~/.config/chadwm/scripts/./autostart
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/wireplumber &
+
 exec dwm

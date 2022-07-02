@@ -8544,3 +8544,1696 @@ ls
 git add -A
 git commit -m "another mess"
 git push
+v dev/git_senha
+cd .dotfiles
+ls
+git add -A
+git commit -m "mess but working"
+git push
+cd 
+cd .dotfiles
+ls
+stow -h
+ls
+stow *
+ls
+stow dunst
+stow mpd
+cd 
+ls
+ls -la
+cd ArchSetup
+ls
+v installer.sh
+sc-im progs.csv
+rm -rf .dotfiles/bin
+cp -R .local/bin .dotfiles
+cd .dotfiles
+ls
+git add _A
+git add -A
+git status
+git commit -m "add uptade bin"
+git push
+df -h
+dmenu_run
+cd X11/.config/X11
+ls
+xrdb Xresources
+cd 
+cd .config
+ls
+cd rofi
+ls
+cd ..
+ls
+python3 -m http.server
+cd rofi
+ls
+python3 -m http.server
+ls
+sudo pacman -S avahi-runit
+sudo pacman -S openssh openssh-runit
+sudo ln -s /etc/runit/sv/sshd /run/runit/service
+sudo ln -s /etc/runit/sv/avahi-daemon /run/runit/service
+avahi-browse
+avahi-browse -h
+sudo sv status sshd
+sudo sv start sshd
+sudo pacman -S nss-mdns
+sudo vim /etc/nsswitch.conf
+ls
+exit
+# Speedy keys\
+xset r rate 210 40\
+\
+# Keyboard\
+setxkbmap br # Keyboard\
+setxkbmap -option caps:escape # Keyboard\
+
+ping atlantis.local
+ping @atlantis.local
+ping 192.168.1.9
+avahi-discover
+sudo pacman -S python-dbus
+avahi-discover
+sudo sv restart avahi-daemon
+ssh atlantis.local
+avahi-browse -h
+avahi-browse -all
+vim /etc/hosts
+exit
+rsync dwm-6.3.tar.gz @artix.local:~/.local/src
+rsync dwm-6.3.tar.gz @atlantis.local:~/.local/src
+rsync dwm-6.3.tar.gz ruan@atlantis.local:~/.local/src
+cd .local/src/dwm
+v config.h
+ip a
+sudo sv restart sshd
+avahi-browse -all
+avahi-browse -all
+avahi-browse --all
+ssh atlantis.local
+ssh atlantis.local
+avahi-browse bssh
+sudo vim /etc/nsswitch.conf
+cfx
+sudo vim /etc/nsswitch.conf
+sudo vim /etc/nsswitch.conf
+sudo vim /etc/nsswitch.conf
+sudo sv restart sshd
+sudo sv restart avahi-daemon
+ssh atlantis.local
+ls
+cd .config/rofi
+ls
+rsync * ruan@atlantis.local:~/.config/rofi
+rsync * ruan@atlantis.local:~/.config/rofi
+rsync -R * ruan@atlantis.local:~/.config/rofi
+rsync -h
+rsync -h | grep recur
+rsync -r * ruan@atlantis.local:~/.config/rofi
+cd 
+cd Dow
+cd Downloads
+ls
+wget https://dwm.suckless.org/patches/stacker/dwm-stacker-6.2.diff
+ls
+wget https://dwm.suckless.org/patches/vanitygaps/dwm-vanitygaps-20190508-6.2.diff
+ls
+wget https://dwm.suckless.org/patches/swallow/dwm-swallow-20201211-61bb8b2.diff
+wget https://dwm.suckless.org/patches/alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+ls
+wget https://dwm.suckless.org/patches/scratchpads/dwm-scratchpads-20200414-728d397b.diff
+ls
+wget https://dwm.suckless.org/patches/status2d/dwm-status2d-systray-6.3.diff
+ls
+ls
+rsync * ruan@atlantis.local:~/.local/src/dwm/patches
+ls
+ls
+rm -rf *
+ls
+git clone https://git.suckless.org/slstatus
+rsync * ruan@atlantis.local:~/.local/src/
+rsync -r * ruan@atlantis.local:~/.local/src/
+cd 
+cd .local/src/dwm
+v config.h
+rsync config.h ruan@atlantis.local ~/
+rsync config.h ruan@atlantis.local:~/
+ls
+cd ..
+cd 
+cd Downloads
+ls
+rm slstatus
+rm -rf slstatus
+ls
+v solarized.h
+ls
+rsync solarized.h ruan@atlantis.local ~/.local/src/dwm
+rsync solarized.h ruan@atlantis.local:~/.local/src/dwm
+cd 
+cd Pictures
+ls
+cd Wallpaper
+ls
+rsync -r solarized-wallpapers ruan@atlantis.local ~/Pictures/Wallpapers
+rsync -r solarized-wallpapers ruan@atlantis.local:~/Pictures/Wallpapers
+ cd 
+ls
+df Dropbox
+df -h Dropbox
+ls -la 
+du -sf Dropbox
+du -sh Dropbox
+ls
+cfnv
+cd .local/src/dwm
+v config.h
+startx
+sudo poweroff
+tg
+ls
+v calcurse.ical
+ls
+mv calcurse.ical Dropbox/Calendar/
+mkdir -p Dropbox/Calendar
+mv calcurse.ical Dropbox/Calendar/
+calcurse -h
+notify-send "Post save Hook"\
+
+cd .config/calcurse
+ls
+cd hooks
+ls
+v post-save
+ls
+chmod +x post-save
+ls
+ls
+v post-save
+calcurse -h
+calcurse -x
+cd hua
+cd Dropbox
+ls
+cd huawei
+ls
+z 06\ -\ Atlas\ AI.pdf
+pkill teams
+cfnv
+cd dev/scala
+ls
+ranger
+cfnv
+ls
+ranger
+nv
+cfnv
+cfnv
+ls
+cd hello-world-template
+ls
+v build.sbt
+cs
+scala
+scala --version
+curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs
+chmod +x cs
+./cs setup
+ls
+cd dev/scala
+ls
+cd hello-world-template
+ls
+cd src
+ls
+cd main
+ls
+cd scala
+ls
+v Main.scala
+v Main.scala
+v Main.scala
+v Main.scala
+coursier
+cs
+ls
+cfzsh
+metals
+cd dev/scala
+ls
+cd hello-world-template
+ls
+cd src/main
+ls
+cd scala
+ls
+v Main.scala
+cfnv
+scalac teste.scala
+scalac teste.scala
+scala teste
+ls
+scala Hello.class
+scala Hello\$.class
+scala Hello
+startx
+cd dev/scala
+ls
+cd hello-world-template
+ls
+cd src/main
+ls
+cd scala
+ls
+v Main.scala
+ls
+v Main.scala
+v Main.scala
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+v build.sbt
+sbt build
+sbt -h
+ls
+sbt run
+v build.sbt
+ls
+cd ..
+ls
+sbt new scala/scalatest-example.g8
+ls
+cd scalatesttutorial
+sbt test
+ls
+v .
+ls
+cd 
+cd dev/scala
+ls
+mkdir test
+ls
+cd test
+ls
+v teste.scala
+sudo poweroff
+xprop
+startx
+ls
+ls
+sudo touch /etc/runit/sv/docker/down
+sudo touch /etc/runit/sv/bluetoothd/down
+sudo touch /etc/runit/sv/avahi-daemon/down
+sudo touch /etc/runit/sv/sshd
+ls
+sudo sv stop docker
+sudo sv status avahidaemon
+ls /run/runit/service
+sudo sv status avahi-daemon
+sudo sv status sshd
+sudo touch /etc/runit/sv/sshd/down
+ls
+ls /etc/runit/sv
+ls /etc/runit/sv/sshd
+ls
+ls
+cd .local/src/dwm
+ls
+cd ..
+ls
+mv dwm dwm-old
+ls
+ls
+cd dwm
+ls
+v config.h
+sudo make clean install
+cd ..
+ls
+cd slstatus
+ls
+v components
+v config.h
+sudo make clean install
+cfx
+cfzsh
+cd 
+ls
+ls -la
+rm .xinitrc
+ls
+rm cs
+rm config.h
+ls
+cd .local/bin
+cd statusbar
+ls
+v sb-battery
+v sb-clock
+v sb-internet
+cd ..
+ls
+sudo reboot
+ls
+ls
+ls -la
+cfzsh
+sudo reboot
+ls
+ls
+ls -la
+rm .Xauthority
+ls
+cd .local/src/dwm
+ls
+ls
+mkdir themes
+mv solarized.h themes
+ls
+cd themes
+ls
+v nord.h
+cd ..
+ls
+v config.h
+ls
+sudo make clean install
+ls
+v config.h
+sudo make clean install
+v config.h
+sudo make clean install
+sudo reboot
+v .local/src
+cfx
+cd .local/src/dwm
+ls
+cd themes
+ls
+v nord.h
+cd ..
+ls
+sudo make clean install
+startx .config/X11/xinitrc
+startx .config/X11/xinitrc
+sudo reboot
+cfx
+cd .local/src/dwm/themes
+ls
+v nord.h
+cd ..
+v config.h
+sudo make clean install
+sudo reboot
+ls
+cd .local/src/dwm
+ls
+v config.h
+ls
+v themes
+ls
+sudo make install
+sudo reboot
+pkill slstatus
+slstatus
+slstatus
+slstatus
+slstatus&
+cfx
+sudo make install
+sudo make install
+ls
+cd .local/src/slstatus
+ls
+v config.h
+sudo make install
+v config.h
+ls
+cfnv
+cfnv
+cfnv
+cfnv
+ls
+sudo poweroff
+ls
+ls
+ls
+cd dev
+ls
+cd startpage
+ls
+v startpage.py
+cd 
+ls
+cd .mozilla
+ls
+cd firefox
+ls
+cd 3mxuq08h.default-release
+ls
+cd chrome
+ls
+rm -rf *
+ls
+git clone
+git clone https://github.com/mut-ex/minimal-functional-fox.git
+ls
+cd minimal-functional-fox
+ls
+mv * ..
+ks
+ls
+cd ..
+ls
+rm install.sh
+ls
+rm minimal-functional-fox
+rm -rf minimal-functional-fox
+ls
+ls
+v userChrome.css
+sudo pacman -S keepass
+sudo pacman -Ss keepass
+sudo pacman -S keepassxc
+keepassxc
+ps -e | grep keep
+pkill 2939
+ps -e | grep keep
+pkill keepassxc
+ps -e | grep keep
+keepassxc
+keepassxc -h
+ls
+cd .mozilla/firefox
+ls
+cd 3mxuq08h.default-release
+ls
+cd chrome
+ls
+v userChrome.css
+sudo reboot
+cd Videos/Movies
+ls
+ls
+cd .mozilla/firefox
+ls
+cd 3mxuq08h.default-release
+ls
+rsync -r chrome ruan@atlantis.local:~/.mozzila/firefox
+sudo sv start sshd
+sudo sv start avahi-daemon
+rsync -r chrome ruan@atlantis.local:~/.mozzila/firefox
+pwd
+rsync -r chrome ruan@atlantis.local:~/.mozilla/firefox
+pacman -Syyu
+sudo pacman -Syyu
+sudo pacman -Syyu
+ls
+sudo reboot
+sudo pacman -Su
+ls
+sudo pacman -S keepassxc
+keepassxc
+pkill keepassxc
+pkill keepassxc
+keepassxc
+pass
+ls
+ls .cache
+rm -rf .cache
+pkill keepassxc
+ls .cache
+cd .cache
+ls
+rm -rf keepassxc
+ls
+cd ..
+ls
+ls .local/cache
+rm -rf .local/cache/keepassxc
+eu-stack -id -p
+cd .conda
+cd ..
+cd .config
+ls
+rm -rf keepassxc
+cd keepassxc
+ls
+v keepassxc.ini
+ls
+ls
+pkill keepassxc
+ls
+cd .config/X11/
+ls
+xrdb Xresources
+ls
+cd .local/src/st
+ls
+v config.h
+ls
+cfx
+ls
+cd .config/X11
+ls
+v .
+xrdb Xresources
+tg
+sudo poweroff
+sudo poweroff
+tg
+sudo poweroff
+ls
+ls
+cd dev
+ls
+cd Redes
+ls
+cd ..
+ls
+mkdir Recipes
+cd Recipes
+ls
+git init
+ls
+touch README.md
+ls
+v index.html
+ls
+mkdir recipes
+cd recipes
+v anabolic-french-toast.html
+mkdir images
+v anabolic-french-toast.html
+cd ..
+ls
+cd ..
+ls
+ls
+mkdir rp-portfolio
+cd rp-portfolio
+python -m venv venv
+source venv/bin/activate
+ls
+pip install django
+django-admin startproject personal-portfolio
+django-admin startproject personal_portfolio
+ls
+ls personal_portfolio
+mv personal_portfolio/manage.py .
+ls
+ls personal_portfolio
+mv personal_portfolio/personal_portfolio/* personal_portfolio
+ls personal_portfolio
+rm -rf personal_portfolio/personal_portfolio
+ls personal_portfolio
+ls
+python manage.py startapp hello_world
+ls
+v .
+v .
+mkdir hello_world/templates
+v hello_world/templates/hello_world.html
+v .
+v hello_world/urls.py
+v .
+ls
+mkdir personal_portfolio/templates
+v personal_portfolio/templates
+v .
+v .
+v .
+ls
+python manage.py startapp projects
+ls
+v .
+ls
+cd projects
+ls
+v models.py
+cd ..
+ls
+python manage.py makemigrations projects
+ranger
+python manage.py migrate projects
+python manage.py shell
+cd dev/Recipes
+ls
+firefox index.html
+cd ..
+ls
+cd rp-portfolio
+ls
+source venv/bin/activate
+python manage.py runserver
+python manage.py runserver
+python manage.py runserver
+sudo poweroff
+cd dev
+s
+ls
+mkdir tag
+cd tag
+ls
+v isomorfo.py
+python3 isomorfo.py
+v isomorfo.py
+python3 isomorfo.py
+v isomorfo.py
+v isomorfo.py
+python3 isomorfo.py
+v isomorfo.py
+python3 isomorfo.py
+v isomorfo.py
+python3 isomorfo.py
+sudo poweroff
+sudo poweroff
+cd Videos/Movies
+ls
+cd The\ Northman\ \(2022\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
+ls
+ls
+ls Subs
+ls
+ls
+mv Subs Subs-old
+mkdir Subs
+mv the.northman.\(2022\).pob.1cd.\(9122250\).zip Subs
+cd Subs
+ls
+unzip the.northman.\(2022\).pob.1cd.\(9122250\).zip
+ls
+rm the.northman.\(2022\).pob.1cd.\(9122250\).zip
+rm the.northman.\(9122250\).nfo
+ls
+mv The.Northman.2022.1080p.BluRay.H264.AAC-RARBG.srt Portuguese-Brazil.srt
+ls
+cd ..
+mv Subs-old/* Subs
+ls
+cd Subs
+ls
+cd ..
+ls
+mpv The.Northman.2022.1080p.WEBRip.x264.AAC5.1-\[YTS.MX\].mp4
+cd Downloads
+ls
+mv the.northman.\(2022\).pob.1cd.\(9122250\).zip ~/Videos/Movies/The\ Northman\ \(2022\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
+cd 
+cd Videos/Movies
+ls
+cd The\ Northman\ \(2022\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
+ls
+mpv The.Northman.2022.1080p.WEBRip.x264.AAC5.1-\[YTS.MX\].mp4
+sudo poweroff
+pkill firefox
+pkill firefox
+python3 short_encoding_of_words.py
+python3 short_encoding_of_words.py
+python3 short_encoding_of_words.py
+python3 short_encoding_of_words.py
+python3 short_encoding_of_words.py
+python3 hotel.py
+python3 hotel.py
+python3 hotel.py
+python3 hotel.py
+python3 hotel.py
+python3 hotel.py
+python3 maior_valor.py
+python3 maior_valor.py
+python3 maior_valor.py
+python3 maior_valor.py
+python3 maior_valor.py
+ls
+cd dev
+ls
+dc 
+ls
+sudo ntpd -qg  \
+sudo hwclock -w  \
+
+ls
+cd 
+ls
+cd .local
+cd src
+ls
+v .
+cd 
+ls
+cd dev/lecode
+ls
+v short_encoding_of_words.py
+v hotel.py
+v maior_valor.py
+v maior_valor.py
+python3
+sudo poweroff
+tg
+tg -h
+ls
+ls -l
+ls -la
+ls .cache
+cd .cache/tg
+ls
+cd files
+ls
+cd documents
+ls
+ls
+ls
+cd dev
+ls
+ls
+ls
+hto
+htop
+cd ..
+sudo poweroff
+cd Downloads
+ls
+sudo poweroff
+cd dev
+ls
+git clone git@github.com:UnBCIC-TP2/Oberon-Scala.git
+ls
+cd Oberon-Scala
+ls
+ls
+v .
+ls
+tg
+cd .cache/tg
+ls
+cd files
+ls
+cd documents
+ls
+mv CamScanner\ 06-22-2022\ 21.42.pdf Tag03.pdf
+ls
+cd dev
+ls
+cd Oberon-Scala
+ls
+cd src
+ls
+cd main
+ls
+cd scala
+ls
+cd br
+ls
+cd unb
+ls
+cd cic
+ls
+cd oberon
+ls
+v Main.scala
+sudo poweroff
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+python3 Course_Schedule_III.py
+cd dev/lecode
+ls
+v Course_Schedule_III.py
+python Course_Schedule_III.py
+v Course_Schedule_III.py
+ls
+cd dev
+ls
+sl
+ls
+lx
+ls
+rm -rf BugTracker
+rm -rf CineMarcus-old
+ls
+rm -rf NetBeansProjects
+ls
+rm -rf old
+ls
+ls
+ls
+ls
+cd rp-portfolio
+ls
+cd ..
+ls
+cd ..
+ls
+cd Documents
+ls
+cd Resume
+ls
+v resume_br.pdf
+v resume_br.tex
+ls
+v resume_model.tex
+ls
+luatex resume_model.tex
+ls
+luatex.tex
+v luatex.tex
+luatex luatex.tex
+ls
+luatex
+pythontex
+ls
+rm -rf luatex.log
+rm -rf luatex.tex
+ls
+v resume_br.tex
+cd .local/gi
+cd .local/bin
+ls
+v compiler
+latex
+ls
+pdftex
+luatex
+python3
+ls
+sudo poweroff
+tg
+sudo reboot
+cd dev
+lzs
+cd ,,
+cd ..
+cd Documents
+ls
+mkdir Estagioi
+mv Estagioi Estagio
+cd Estagio
+ls
+ls
+mv Curriculo.pdf Currículo.pdf
+ls
+ls
+ls
+ls
+rm Currículo.pdf
+mv Currículo.pdf.pdf Currículo.pdf
+ls
+z Currículo.pdf
+z Currículo.pdf
+z Currículo.pdf
+cd 
+cd dev
+ls
+cd rp-portfolio
+ls
+source venv/bin/activate
+ls
+ls
+manage.py -h
+pactl list cards
+pactl list sources
+pavucontrol
+pw-record --list-targets
+pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:analog-stereo+input:analog-stereo
+ls
+ls
+pacman -Q | grep pipe
+sudo pacman -S pulseaudio
+sudo pacman -Syy pulseaudio
+cfx
+sudo reboot
+pulsemixer
+pulsemixer
+ls
+python3 Cu
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+python3 Construct_Target_Array_With_Multiple_Sums.py
+cd dev/lecode
+ls
+v Construct_Target_Array_With_Multiple_Sums.py
+cd dev/Network
+ls
+python3 http_client.py
+python3 http_client.py
+python3 http_client.py
+ls
+ls
+ls
+v raw_http_conection.py
+python3 raw_http_conection.py
+python3 http_client.py
+python3 raw_http_conection.py
+ls
+ls
+v http_server.py
+sudo poweroff
+ipython
+python
+ls
+cd dev
+ls
+cd ..
+ls
+cd dev
+ls
+mkdir learning
+ls
+mv C learning
+mv Elisp learning
+mv lecode learning
+ls
+cd learning
+ls
+mkdir web
+ls
+cd web
+ls
+libcurl
+ls
+ls
+v http_server.py
+\:wq
+cd ..
+cd .
+cd ..
+cd Network
+ls
+v http_server.py
+ls
+python3 http_server.py
+ls
+ls
+v http_server.py
+python3 http_server.py
+ls
+v http_server.py
+cd .dotfiles/X11/.config/X11
+ls
+v .
+xrdb Xresources
+cd Downloads
+ls
+z ProvaAntigaHUAWEI.pdf
+cd 
+ls
+cd Videos/Movies
+ls
+ls
+cd The\ Batman\ \(2022\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
+cd ..
+ls
+cd The\ Suicide\ Squad\ \(2021\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
+ls
+mpv The.Suicide.Squad.2021.1080p.WEBRip.x264.AAC5.1-\[YTS.MX\].mp4
+cd Videos/Movies
+ls
+cd Peacemaker\ 2022\ S01\ Complete\ 720p\ WEB\ HEVC\ x265\ RMTeam
+ls
+ls
+mv Subs legendas.zip
+mkdir Subs
+mv legendas.zip Subs
+ls
+cd Subs
+ls
+unzip legendas.zip
+ls
+ls
+unzip peacemaker.s01.e02.best.friends.for.never.\(2022\).pob.1cd.\(8945769\).zip
+ls
+unzip peacemaker.s01.e03.better.goff.dead.\(2022\).pob.1cd.\(8945770\).zip
+cd Downloads
+ls
+mv peacemaker.s01.e01.a.whole.new.whirled.\(2022\).pob.1cd.\(8945768\).zip ~/Videos/Movies/Peacemaker\ 2022\ S01\ Complete\ 720p\ WEB\ HEVC\ x265\ RMTeam/Subs
+cd
+cd Videos/Movies/Peacemaker\ 2022\ S01\ Complete\ 720p\ WEB\ HEVC\ x265\ RMTeam
+ls
+mpv peacemaker.2022.s01e01.720p.web.hevc.x265.rmteam.mkv
+ls
+mpv peacemaker.2022.s01e02.720p.web.hevc.x265.rmteam.mkv
+mpv peacemaker.2022.s01e03.720p.web.hevc.x265.rmteam.mkv
+sudo poweroff
+cd Downloads
+ls
+mv ProvaAntigaHUAWEI.pdf ~/
+ls
+rm -rf *
+ls
+cd 
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+l
+ls
+ls
+ls
+z ProvaAntigaHUAWEI.pdf
+cd dev/learning
+cd ..
+ls
+cd learning/lecode
+ls
+v Partitioning_Into_Minimum_Number_Of_Deci-Binary_Numbers.py
+sudo poweroff
+pacman -Syyu
+sudo pacman -Syyu
+sudo reboot
+sudo pacman -Syyu
+sudo reboot
+sudo ntpd -qg  \
+sudo hwclock -w  \
+
+ping archlinux.org
+ping archlinux.org
+ping archlinux.org
+ping archlinux.org
+ping archlinux.org
+ping archlinux.org
+sudo poweroff
+cd dev
+ls
+cd dev
+cd learning/lecode
+ls
+vim Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+vim Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+v Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+cd dev/learning/lecode
+ls
+v Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+cd .local/src
+ls
+git clone git@github.com:neovim/neovim.git
+ls
+cd neovim
+ls
+git checkout
+git branch
+git checkout release-0.7
+git branch list
+git list branch
+ls
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+cd dev/learning/lecode
+ls
+ls
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+python3 Minimum_Deletions_to_Make_Character_Frequencies_Unique.py
+cfnv
+cd 
+ls
+cd .local/src
+ls
+sudo pacman -R neovim
+nvim
+v 
+nivm
+cd .config
+ls
+mv nvim nvim-old
+mkdir nvim
+ls
+cd nvim
+ls
+ls
+touch init.lua
+mkdir -p lua/user
+vim .
+ls
+cd lua
+ls
+cd user
+ls
+ls
+v options.lua
+cd ..
+ls
+cd ..
+ls
+v init.lua
+v init.lua
+ls
+v init.lua
+ls
+v lua/user/keymaps.lua
+v lua/user/keymaps.lua
+v init.lua
+v init.lua
+v lua/user/keymaps.lua
+v lua/user/keymaps.lua
+ls
+ls lua/user
+v lua/user/keymaps.lua
+v lua/user/keymaps.lua
+v lua/user/keymaps.lua
+ls
+v lua/user/plugins.lua
+ls
+v init.lua
+v init.lua
+ls
+ls lua/user
+v init.lua
+ls
+v init.lua
+cd .config/nvim-old
+ls
+v .
+ls
+nvim .
+nvim lua
+cd lua/user
+ls
+v keymaps.lua
+ls
+v plugins.lua
+cd .dotfiles/nvim/.config/nvim
+ls
+cd lua
+ls
+cd user
+ls
+cp colorizer.lua ~/.config/nvim/lua/user
+cp colorscheme.lua ~/.config/nvim/lua/user
+v keymaps.lua
+cd dev/startpage
+ls
+v startpage.py
+v startpage.py
+v startpage.py
+nvim
+v .
+v .
+cd 
+cd dev/learning/lecode
+ls
+v hotel.py
+cd 
+ls
+v teste.py
+v teste.py
+ls
+cd .config/nvim
+ls
+v init.lua
+ls lua/user
+v lua/user/plugins.lua
+v lua/user/plugins.lua
+ls
+ls
+ls lua/user
+v init.lua
+v init.lua
+v lua/user/colorizer.lua
+ls
+cd lua/user
+ls
+rm colorizer.lua
+ls
+v colorscheme.lua
+ls
+v alpha.lua
+ls
+v autocommands.lua
+v autopairs.lua
+ls
+v bufferline.lua
+ls
+v cmp.lua
+ls
+v comment.lua
+v dap.lua
+v gitsigns.lua
+ls
+v illuminated.lua
+v impatient.lua
+v indentline.lua
+v keymaps.lua
+v lualine.lua
+v nvim-tree.lua
+v nvim-tree.lua
+cd ..
+ls
+cd ..
+ls
+v init.lua
+v init.lua
+v lua/user/nvim-tree.lua
+v lua/user/icons.lua
+v init.lua
+v toggleterm.lua
+ls
+v lua/user/toggleterm.lua
+v treesiter.lua
+ls
+mv treesiter.lua lua/user
+v init.lua
+v init.lua
+v lua/user/telescope.lua
+v lua/user/telescope.lua
+ls
+v init.lua
+v init.lua
+v init.lua
+v init.lua
+v init.lua
+ls
+v init.lua
+v init.lua
+v init.lua
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+ls
+mkdir .git
+ls
+v init.lua
+ls
+cd lua/user
+ls
+mkdir lsp
+cd lsp
+v handlers.lua
+vim init.lua
+ls
+v init.lua
+v lsp-installer.lua
+v lsp-signature.lua
+v null-ls.lua
+mkdir settings
+cd settings
+v pyright.lua
+v sumneko_lua.lua
+cd ..
+ls
+v
+v
+v
+v
+v
+v
+v
+v
+v
+nvim
+black
+ls
+nvim
+nvim
+nvim
+nvim .
+cd ..
+cd ..
+cd ..
+ls
+v init.lua
+ls
+nvimn
+nvim
+ls
+sudo poweroff
+ls
+v teste.py
+ls
+v teste.py
+v teste.py
+v teste.py
+v teste.py
+nvim .
+ls
+rm teste.py
+ls
+ls
+v .config/nvim-midlle
+nvim
+cd .config/nvim
+ls
+v init.lua
+v init.lua
+v init.lua
+v init.lua
+v lua/user/options.lua
+v lua/user/options.lua
+v lua/user/options.lua
+v lua/user/options.lua
+v lua/user/options.lua
+v lua/user/options.lua
+sudo pacman -S lazygit
+ls
+v init.lua
+v init.lua
+ls
+cd ..
+ls
+mv nvim nvim-midlle
+git clone https://github.com/LunarVim/nvim-basic-ide.git ~/.config/nvim
+ls
+nvim
+nvim
+nvim
+cd dev/startpage
+ls
+v startpage.py
+v startpage.py
+cd
+cd dev/learning/lecode
+ls
+v Construct_Target_Array_With_Multiple_Sums.py
+sudo poweroff
+ls
+ls
+nvim
+nvim
+sudo poweroff
+ls
+ls
+ls
+cd dev
+ls
+cd .config/nvim
+ls
+v init.lua
+cfnv
+nvim
+sudo ntpd -qg  \
+sudo hwclock -w  \
+]
+sudo ntpd -qg  \
+sudo hwclock -w  \
+
+pkill firefox
+cd dev/startpage
+ls
+v startpage.py
+python3 click_analizer.py
+python3 click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+python3 click_analizer.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtX
+python3 click_analizer2.py soc-dolphins.mtX
+python3 click_analizer2.py soc-dolphins.mtx
+gcc 7.4a7.5e7.8-grafolistaap.c
+ls
+./a.out
+1
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+python3 click_analizer2.py soc-dolphins.mtx
+cd dev/startpage
+ls
+v my_bookmarks.md
+python3 startpage.py my_bookmarks.md
+firefox my_bookmarks.html
+ls
+ls
+ls
+v startpage.py
+ls
+cd 
+ls
+cd mkdir dev/TAG
+mkdir dev/TAG
+mv Downloads/soc-dolphins.zip dev/TAG
+ls
+ cd dev/TAG
+ls
+unzip soc-dolphins.zip
+ls
+rm soc-dolphins.zip
+ls
+v soc-dolphins.mtx
+ls
+firefox readme.html
+mv readme.html sock-dolphins.html
+ls
+v README.md
+ls
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+python3 click_analizer.py soc-dolphins.mtx >> test.txt
+v test.txt
+ls
+ls
+python3 -m venv venv
+source venv/bin/activate
+ls
+pip install scypy
+pip install scipy
+ls
+v click_analizer.py
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx > test.txt
+v test.txt
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+ls
+v teste.txt
+ls
+rm teste.txt
+rm test.txt
+ls
+v click_analizer2.py
+ls
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+python3 click_analizer2.py soc-dolphins.mtx
+v click_analizer2.py
+python3
+alsamixer
+sudo pacman -S alsamixer
+aplay
+arecord
+lspci| grep -i audio
+pavucontrol
+sudo pacman -S pavucontrol
+pavucontrol
+pavucontrol
+arecord -l
+sudo pacman -S arecord
+pacman -S alsa-utils
+sudo pacman -S alsa-utils
+ls
+amixer
+arecord -l
+sudo vim /etc/pulse/default.pa
+pulseaudio -k; pulseaudio -D
+pulseaudio -k; pulseaudio -D
+cd Downloads
+ls
+v 7.4a7.5e7.8-grafolistaap.c
+cd 
+cd dev/TAG
+ls
+v teste.txt
+sudo vim /etc/pulse/default.pa
+pulseaudio -k ; pulseaudio -D
+pacman -Q | grep pipe
+sudo pacman -Rcns pipewire
+ls
+pulseaudio -k ; pulseaudio -D
+pulseaudio -k ; pulseaudio -D
+ls
+sudo pacman -Q | grep pulse
+sudo pacman -Rcns pulseaudio
+sudo pacman -Q | grep pulse
+ sudo pacman -S pipewire\
+
+sudo pacman -S pipewire-alsa
+sudo pacman -S pipewire-alsa
+sudo pacman -Syy pipewire-alsa
+sudo pacman -S pipewire-pulse
+sudo pacman -S pipewire-jack
+ls
+cfx
+sudo reboot
+pulsemixer
+pipewire
+ls
+cfx
+sudo pacman -S pipewire
+sudo pacman -S pipewire-alsa
+sudo pacman -S pipewire-jack
+ls
+sudo reboot
+sudo pacman -S pulsemixer
+pulsemixer
+groups
+root groups
+sudo groups
+ls
+sudo su
+groups
+cat /etc/group
+pacman -Q | grep pulse
+pacman -Q | grep alsa
+pactl info
+ls /etc
+pulsemixer
+pactl info
+sudo pacman -Syyu
+sudo pacman -Syyu
+ls
+sudo reboot
+pulsemixer
+ls
+pulsemixer
+pipewire
+cfzsh
+sudo reboot
+pulsemixer
+ls
+pipewire
+arecord -l
+pactl info
+sudo usermod -a -G audio ruan
+ps ax  | grep pipewire
+sudo pacman -S pipewire-media-session
+sudo pacman -Q | grep wi
+ls
+ls
+sudo reboot
