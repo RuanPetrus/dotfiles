@@ -39,9 +39,4 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 alias m="git checkout master"
 alias s="git checkout stable"
 
-alias ls="exa --icons"
-alias cat="bat --style=auto"
-
-# Others
-alias anac='source ~/.local/anaconda3/bin/activate'
-
+alias l="exa --icons"
