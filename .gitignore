@@ -1,2 +1,6 @@
-
-zsh/.config/zsh/plugins
+zsh/plugins
+zsh/.zcompdump
+nvim/plugin
+nvim/README.md
+nvim/.github
+nvim/.gitignore

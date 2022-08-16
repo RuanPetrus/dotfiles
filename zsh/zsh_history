@@ -10276,3 +10276,4489 @@ git clone git@github.com:RuanPetrus/dwm.git
 cd dwm
 ls
 mv .git ~/.local/src/dwm
+exit
+exit
+ls
+ls
+ls
+nvim .zshrc
+ls
+cd 
+ls
+ls -la
+chsh -s $(which zsh)
+ls
+ls
+ls
+ls
+v .config/zsh
+s
+ls
+sudo apt install build-essential
+ls
+
+ls
+sl
+ls
+ls
+cd dev
+ls
+cd ..
+ls
+cd .local/src
+ls
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k\
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+ls
+ls -la
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
+ls
+cd powerlevel10k
+ls
+ls
+cd 
+ls
+rm -rf powerlevel10k
+ls
+cd .config/zsh
+ls
+v .zshrc
+ls
+ls
+v .zshrc
+ls
+ls -la
+mv .p10k.zsh .config
+v .zshrc
+ls .config
+ls -la .config
+sl
+ls
+v .zshrc
+v .zshrc
+ls
+cd .config/zsh
+ls
+ls plugins
+fd
+fd
+ls
+sudo apt search cargo
+sudo apt search rust
+sudo apt install rust
+sudo apt install cargo
+rustc --version
+cargo
+cd 
+ls
+cargo install bat exa
+ls
+ls
+ls -la
+ls
+ls -la
+cat .zshrc
+v .zshrc
+ls
+ls
+ls -la
+cat .zshrc
+sudo apt install curl
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.0
+v .zshrc
+v .zshrc
+ls
+asdf
+asdf list
+asdf plugin add nodejs
+asdf list
+asdf list-all nodejs
+asdf install nodejs 18.4.0
+asdf list
+ls
+ curl -fsSL https://get.docker.com -o get-docker.sh\
+\
+ sudo sh get-docker.sh\
+
+dockerd-rootless-setuptool.sh install
+sudo dockerd-rootless-setuptool.sh install
+sudo groupadd docker
+sudo usermod -aG docker $USER
+docker run hello-world
+groups
+sudo usermod -aG docker ruan
+groups
+sudo groupadd docker
+sudo usermod -aG docker ruan
+groups
+nvim -c VimWikiIndex
+nvim -c VimwikiIndex
+docker run hello-world
+gnome-terminal -e nvim -c VimwikiIndex
+sudo apt install alacritty
+sudo apt install alacrity
+sudo apt search alacrity
+sudo apt search alacritty
+sudo apt install alacritty
+sudo snap install alacritty
+sudo snap install alacritty --classic
+cd .dotfiles
+ls
+ls
+ls
+branch
+git branch
+git branch list
+git branch
+git checkout xfce4-nord
+ls
+cp -r alacritty/.config/alacritty ~/.config
+ls
+cd 
+cd .config
+ls
+cd alacritty
+ls
+v alacritty.yml
+ls
+v .zshrc
+sudo update-alternatives --config x-terminal-emulator
+alacritty
+sudo snap remove alacritty
+gnome-terminal -h
+gnome-terminal --help-all
+gnome-terminal --command nvim
+gnome-terminal --command nvim-- nvim
+gnome-terminal --command nvim -- nvim
+gnome-terminal --command nvim -- nvim -c VimwikiIndex
+gnome-terminal --command nvim -- "nvim -c VimwikiIndex"
+sudo apt search kitty
+ls
+rm get-docker.sh
+ls
+gnome-terminal --command -- "nvim -c VimwikiIndex"
+gnome-terminal --command "nvim -c VimwikiIndex" --
+gnome-terminal -- command
+gnome-terminal -- nvim
+gnome-terminal -- nvim -c VimwikiIndex
+ls
+ls
+nvim
+ls
+ls
+ls
+nvim
+fd
+cargo install fd
+findgrep
+fd
+ripgrep
+ls
+nvim
+ls
+node
+node --version
+asdf list
+asdf global nodejs 18.4.0
+ls -la
+ls
+bks
+ls
+sudo apt install fd
+sudo apt install fg
+cargo install fd
+cargo install fg
+fg
+ls
+gd
+fd
+ls
+ls
+ls
+alsamixer
+alsamixer
+alsamixer
+alsamixer
+sudo tee /etc/modprobe.d/lenovo-fix.conf <<<'options snd-hda-intel model=inv-dmic'
+sudo reboot
+pip uninstall sqlachemy
+pip freeze
+pip show fastapi
+pip show fastapi["all"]
+pip show "fastapi[all]"
+pip uninstall fastapi
+pip uninstall uvicorn
+alsamixer
+ls
+ls
+ls
+mkdir Work
+cd Work
+ls
+git clone git@github.com:gustavodezan/fastapi-syncrho.git
+ls
+git clone git@github.com:gustavodezan/effective-guacamole.git
+git clone git@github.com:gustavodezan/friendly-computing-machine.git
+ls
+cd fastapi-syncrho
+ls
+ls
+ls
+v main.py
+ls
+cd env
+ls
+cd Include
+ls
+cd ..
+ls
+ls
+ls Scripts
+ls
+ls
+cd ..
+ls
+source env/Scripts/activate
+ls
+ls
+ls
+rm -rf env
+ls
+ls
+ls
+ls
+ls
+v main.py
+python3 --version
+ls
+ls
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee\
+              /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb\
+              https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee\
+              /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt\
+              install ngrok\
+            
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok 
+ngrock
+ngrok
+v main.py
+ls
+python3 -m venv venv
+sudo apt install python3-venv
+python3 -m venv venv
+ls
+pip install "fastapi[all]"
+ls
+v main.py
+lsd
+ls
+source venv/bin/activate
+ls
+ls
+pip freeze
+ls
+pip install "fastapi[all]"
+pip freeze
+sudo apt install libpq-dev
+v .
+lsd
+ls
+cd ..
+ls
+cd effective-guacamole
+ls
+cd ..
+ls
+cd friendly-computing-machine
+ls
+python3 -m venv venv
+source venv/bin/activate
+ls
+cd Work
+ls
+cd friendly-computing-machine
+ls
+source venv/bin/activate
+ls
+rm -rf env
+ls
+source venv/bin/activate
+ls
+who pyhon
+which pythoh
+which python
+pip install Django
+ls
+ls
+source venv/bin/activate
+pip freeze
+ls
+pip install django-cors-headers
+cd Work
+ls
+cd fastapi-syncrho
+ls
+source venv/bin/activate
+ls
+uvicorn main:app --reload
+ls
+pip install sqlalchemy
+uvicorn main:app --reload
+ls
+uvicorn main:app --reload
+ls
+source venv/bin/activate
+pip install sqlalchemy
+uvicorn main:app --reload
+pip freeze
+uvicorn main:app --reload
+pip unistall fastapi
+uvicorn main:app --reload
+pip install psycopg2
+pip install psycopg2
+pip install psycopg2
+ls
+ls
+uvicorn main:app --reload
+pip install bcrypt
+uvicorn main:app --reload
+pip install slack
+uvicorn main:app --reload
+pip install pandas
+uvicorn main:app --reload
+ls
+v .
+rm -rf .vscode
+ls
+ls -la
+cd app
+ls
+cd ..
+ls
+v
+python3
+ls
+pip unistall slack
+pip uninstall slack
+pip install slack_sdk
+uvicorn main:app --reload
+pip install aiohttp
+lsa
+ls
+uvicorn main:app --reload
+ls
+v 
+v .
+v .ls
+ls
+ls
+docker
+systemctl status
+ls
+docker run --name postgres-db -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+docker ps
+uvicorn main:app --reload
+docker ps
+uvicorn main:app --reload
+ls
+psql
+docker ps
+docker exec -it 4396fb1c6748 bash
+uvicorn main:app --reload
+ls
+pip freeze > dependences.txt
+ls
+v dependences.txt
+ls
+mv dependences.txt dependencies.txt
+ls
+git add dependencies.txt
+git commit -m "Add dependencies.txt"
+git config --global user.email "pedraruan12@gmail.com"
+git config --global user.name "Ruan Petrus"
+git commit -m "Add dependencies.txt"
+git push
+pip freeze
+cd ..
+ls
+cd friendly-computing-machine
+ls
+source venv/bin/activate
+pip freeze
+which python
+ls
+python3 -m django --version
+python manage.py runserver
+pip install dotenv
+pip install python-dotenv
+pip freeze
+python manage.py runserver
+pip install channels
+python manage.py runserver
+python manage.py runserver
+pip install oauthlib
+python manage.py runserver
+pip freeze
+pip uninstall oauthlib
+pip install python-oauth2
+python manage.py runserver
+cd dev
+ls
+cd TAG
+ls
+source venv/bin/activate
+ls
+v click_analizer2.py
+shutdown now
+la
+ls
+ls
+cd 
+ls
+sudo nvim /etc/modprobe.d/lenovo-fix.conf
+ls .config/nvim
+ls .config/nvim/lua/user
+ls /etc/nvim
+ls /etc/nvim/lua/user
+sudo nvim /etc/nvim/init.lua
+ls
+ls /etc
+sudo su
+alsamixer
+alsamixer
+sudo nvim /etc/modprobe.d/lenovo-fix.conf
+alsamixer
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+python3 click_analizer.py soc-dolphins.mtx 
+nvim
+cd dev/TAG
+ls
+rm click_analizer.py
+ls
+mv click_analizer2.py click_analizer.py
+ls
+source venv/bin/activate
+v click_analizer.py
+ls
+v README.md
+cat README.md
+cat click_analizer.py
+v README.md
+ls
+pip freeze > dependencies.txt
+cat dependencies.txt
+ls
+ls
+mv dependencies.txt requirements.txt
+pip install -r requirements.txt
+v README.md
+ls
+python3 click_analizer.py soc-dolphins.mtx
+v README.md
+ls
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+ls
+sudo apt install iproute2 jq
+alsamixer
+ls
+ngrok
+cd Work
+ls
+ls
+sudo apt install wine
+ngrok config add-authtoken 2BXCtTmG4mSMG0BIBFwbAzahi3F_2bk2XdwTMTTxEDDRAd3tB
+lsd
+ls
+cd member-area-fast
+source venv/bin/activate
+v .env
+pip install openpyxl
+v .env
+ls
+git status
+git commit -m "Move asana tokens to .env"
+git add -A
+git commit -m "Move asana tokens to .env"
+git push
+cd Work
+ls
+cd member-area-fast
+ls
+source venv/bin/activate
+ls
+ls
+v main.py
+ls
+ngrok
+ngrok http 8000
+ngrok http 8000
+ls
+v README.md
+ls
+git add -A
+git commit -m "Add README"
+git push
+v README.md
+git add -A
+git commit -m "better README"
+git push
+v README.md
+git add -A
+git commit -m "better README2"
+git push
+v main.py
+ls
+ls app
+ls
+cd app
+ls
+cd ..
+python3
+sudo apt install mumble mumble-server\
+sudo systemctl stop mumble-server.service\
+sudo systemctl disable mumble-server.service
+sudo systemctl start avahi-daemon.service
+sudo systemctl status avahi-daemon.service
+ls
+cd .local/src
+ls
+git clone git@github.com:pzmarzly/mic_over_mumble.git
+cd mic_over_mumble
+ls
+ls -la
+./mic_over_mumble
+./mic_over_mumble
+./mic_over_mumble
+./mic_over_mumble
+./mic_over_mumble
+./mic_over_mumble
+./mic_over_mumble
+ls
+cd 
+ls
+ls
+cd Work
+ls
+docker ps
+rm -rf *
+ls
+git clone git@github.com:schiefler-adv/member-area-fast.git
+ls
+cd member-area-fast
+ls
+python3 -m venv venv
+source venv/bin/activate
+ls
+pip install -r dependencies.txt
+ls
+nvim app
+nvim main.py
+docker run --name postgres-db -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+docker ps
+docker status
+ls
+v .env
+ls
+rm -rf env
+v .gitignore
+ls
+mv dependencies.txt requirements.txt
+ls
+v .gitignore
+v .gitignore
+git add -A
+git status
+git remove app/database.py
+lazygit
+lazygit
+sudo apt install lazygit
+git reset app/database.py
+git status
+ls
+git commit -m "Add to gitgore, rename to requirements.txt"
+git push
+ls
+rm -rf __pycache__
+ls
+docker container ls
+ssh -T git@github.com
+git push
+git remote set-url origin git@github.com:schiefler-adv/member-area-fast.git
+git push
+git remote set-url origin https://github.com/schiefler-adv/member-area-fast.git
+git remote set-url origin git@github.com:schiefler-adv/member-area-fast.git
+git push
+docker container ls
+docker ps -a
+docker start 4396fb1c6748
+docker ps
+ls
+v app
+ls
+rm -rf .vscode
+ls
+ls -la
+ls
+cd ma
+v main.py
+ls
+ls -la
+ls
+ls
+ls -la
+lsd
+ls
+ls -la
+v .env
+v .env
+ls
+git pull --rebase
+git stash -A
+git stash
+git pull --rebase
+ls
+ls -la
+ls app
+v .
+ls
+v .env
+uvicorn main:app --reload
+ls
+v .env
+ls
+uvicorn main:app --reload
+ls
+v .env
+ls
+v requirements.txt
+ls
+python3
+ls
+v .env
+ls
+ngrok
+uvicorn main:app --reload
+uvicorn main:app --reload
+ls
+ls
+v .env
+ls
+nvim
+ls
+nvim
+v README.md
+nvim
+v README.md
+v README.md
+ls
+cd Work/member-area-fast
+ls
+source venv/bin/activate
+uvicorn main:app --reload
+docker ps -a
+docker ps -a
+docker start 4396fb1c6748
+docker ps
+uvicorn main:app --reload
+uvicorn main:app --reload
+uvicorn main:app --reload
+ngrok http 8000
+cd .local/src
+ls
+cd mic_over_mumble
+ls
+./mic_over_mumble
+cd dev/startpage
+ls
+v my_bookmarks.md
+python3 startpage.py my_bookmarks.md
+firefox my_bookmarks.html
+git pull --rebase
+git stash
+git status
+v .gitignore
+cd ..
+ls
+cd ..
+cd Work
+ls
+cd member-area-fast
+ls
+git pull --rebase
+git status
+git restore app/model.py
+git pull --rebase
+ls
+ls app
+v main.py
+ls
+source venv/bin/activate
+v main.py
+ls
+ls
+v app
+git status
+git stash
+git pull --rebase
+ls
+git status
+ls
+git checkout -b "improve: better documentation"
+git checkout -b "improve:better documentation"
+git checkout -b "improve:better-documentation"
+git checkout -b "improve/better-documentation"
+ls
+ls
+cd app
+ls
+cd ..
+ls
+v main.py
+v .env
+ls
+git add -A
+git status
+git commit -m "Add doc strings to functions"
+git push
+git push --set-upstream origin improve/better-documentation
+ls
+git checkout -b "bug/fixing-slack-bug"
+ls
+v app
+ls
+git add -A
+git status
+ git commit -m "Slack reponse bug fixed"
+git push
+git push --set-upstream origin bug/fixing-slack-bug
+poweroff now
+shutdown now
+cd dev/TAG
+ls
+source venv/bin/activate
+ls
+python3 click_analizer.py soc-dolphins.mtx
+ls
+python3 click_analizer.py soc-dolphins.mtx > results.txt
+v results.txt
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+cd Work
+ls
+cd member-area-fast
+ls
+git checkout main
+git checkout master
+git branch
+git branch list
+ls
+source venv/bin/activate
+ls
+git pull --rebase
+ls
+uvicorn main:app --reload
+docker start 4396fb1c6748
+uvicorn main:app --reload
+ngrok http 8000
+ngrok http 8000
+shutdown now
+cd .local/src
+ls
+cd mic_over_mumble
+./mic_over_mumble
+ngrok http 8000
+ngrok http 8000
+shutdown now
+ls
+cd Work/member-area-fast
+ls
+git pull --rebase
+source venv/bin/activate
+v .
+cd 
+ls
+v temp.gs
+cd .local/src
+ls
+cd mic_over_mumble
+./mic_over_mumble
+./mic_over_mumble
+ls
+ls
+source venv/bin/activate
+ls
+v click_analizer.py
+ls
+python3 click_analizer.py soc-dolphins.mtx
+v results.txt
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+ls
+v click_analizer.py
+v requirements.txt
+v README.md
+python3 click_analizer.py soc-dolphins.mtx
+ls
+v README.md
+ls
+rm -rf venv
+zsh
+cd dev/TAG
+ls
+python3 click_analizer.py soc-dolphins.mtx
+pip install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+ls
+python3 click_analizer.py soc-dolphins.mtx
+ls
+ls
+python3 click_analizer.py soc-dolphins.mtx > results.txt
+v results.txt
+ls
+rm -rf venv
+ls
+cd ..
+ls
+zip -h 
+zip -r RuanPetus-Projeto01TAG.zip TAG
+ls
+mv RuanPetus-Projeto01TAG.zip ~/Documents
+cd
+cd Documents
+ls
+unzip RuanPetus-Projeto01TAG.zip
+ls
+cd TAG
+ls
+cd ..
+ls
+cd TAG
+ls
+cd ..
+ls
+rm -rf RuanPetus-Projeto01TAG.zip
+cd TAG
+ls
+cd ..
+ls
+mv TAG RuanPetrus-Projeto01TAG
+ls
+zip -r RuanPetus-Projeto01TAG.zip RuanPetrus-Projeto01TAG
+ls
+rm -rf RuanPetrus-Projeto01TAG
+unzip RuanPetus-Projeto01TAG.zip
+ls
+cd RuanPetrus-Projeto01TAG
+ls
+source venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
+ls
+pip install -r requirements.txt
+ls
+python3 click_analizer.py soc-dolphins.mtx
+ls
+cd ..
+ls
+cd RuanPetrus-Projeto01TAG
+ls
+v README.md
+ls
+cd ..
+ls
+ls
+sudo apt update
+sudo add-apt-repository ppa:appimagelauncher-team/stable
+sudo apt install appimagelauncher
+ls
+rm temp.gs
+ls
+htop
+cd .local/src
+cd mic_over_mumble
+./mic_over_mumble
+sudo apt install scala
+scalac matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+scala matchsticks_to_square
+scalac matchsticks_to_square.scala
+scala Solution
+scala Solution
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scala Solution
+scalac matchsticks_to_square.scala
+scala Solution
+cd dev/learning/lecode
+ls
+v matchsticks_to_square.scala
+ls
+scala Solution
+v matchsticks_to_square.scala
+ls
+v temporario.txt
+cd .local/src/mic_over_mumble
+./mic_over_mumble
+./mic_over_mumble
+cd .local/src/mic_over_mumble
+./mic_over_mumble
+scalarpl
+scalap
+scala
+scala
+cd dev/learning/lecode
+ls
+v matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+scalac matchsticks_to_square.scala
+node
+cd .local/src/mic_over_mumble
+./mic_over_mumble
+./mic_over_mumble
+shutdown now
+fc-list | grep Nerd
+kitty list-fonts
+ls
+apt search kitty
+sudo apt install kitty
+sudo apt install alacritty
+sudo apt search alacritty
+ls
+cd .dotfiles
+ls
+cd kitty
+cd .config
+ls
+cd kitty
+ls
+v confbase.conf
+v kitty.conf
+kitty
+ls
+cd ..
+ls
+cp -r kitty ~/.config
+kitty
+ls
+kitty
+ls
+v kitty.conf
+cd .config/kitty
+ls
+v kitty.conf
+v kitty.conf
+ls
+ls
+nvim
+ls
+cd .config/kitty
+v kitty.conf
+cd .local/src/mic_over_mumble
+./mic_over_mumble
+ls
+nvim
+ls
+ls
+cd dev
+ls
+mkdir OAC
+cd OAC
+ls
+git clone git@github.com:G3-OAC/Lab01.git
+ls
+cd Lab01
+ls
+git checkout -b "Frontend"
+ls
+v game.s
+fpgrars 
+ls
+mv ~/Downloads/fpgrars-x86_64-unknown-linux-gnu--8-bit-display .
+ls
+chmod +x fpgrars-x86_64-unknown-linux-gnu--8-bit-display
+ls
+v game.s
+ls
+v game.s
+ls
+mkdir src
+mkdir data
+ls
+mv game.s src
+mv video.s src
+mv Nord.data data
+ls
+mkdir bin
+ls
+mv fpgrars-x86_64-unknown-linux-gnu--8-bit-display bin
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+v .
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+ls
+vim src
+v src
+sudo apt search gimp
+sudo apt install gimp
+ls
+cd images/bmp
+ls
+~/dev/BMPtoASM/BMPtoASM tabuleiroTeste.bmp
+ls
+v tabuleiroTeste.data
+ls
+mv tabuleiroTeste.data ../../data
+ls
+cd ..
+cd ..
+ls
+v .
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+v .
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+ls
+git add -A
+git status
+git commit -m "READY GO
+git commit -m "READY GO"
+git push --set-upstream origin Frontend
+ls
+ls
+cd bin
+ls
+cd ..
+ls data
+cd images
+ls
+cd bmp
+ls
+~/dev/BMPtoASM/BMPtoASM elipseTeste.bmp
+ls
+mv elipseTeste.data ../../data
+cd ../..
+ls
+v .
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+ls
+v src
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+v .
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+v src/game.s
+ls
+ls data
+v src/game.s
+v src/game.s
+v src/game.s
+v src/game.s
+v src/game.s
+v src/game.s
+v src/game.s
+ls
+git add -A
+git status
+git commit -m "Rendering the board matrix"
+git push
+ls
+v src/game.s
+v src/game.s
+ls
+git add -A
+git status
+git commit -m "Player input done"
+git push
+ls
+v src/game.s
+v src/game.s
+ls
+git add -A
+git commit -m "Random input from IA"
+git push
+v src/game.s
+ls
+ls
+v src/game.s
+cd University/OAC/Lab1
+ls
+cd System/Exemplos
+ls
+v .
+cd dev/isc-project
+ls
+v .
+v .
+ls
+cd sprites
+ls
+cd Player
+ls
+cd heroStop
+ls
+cp heroStop1.data ~/dev/OAC/Lab01/data
+cd ..
+ls
+cd ..
+ls
+cd malina
+ls
+cp malina1.data ~/dev/OAC/Lab01/data
+java
+cd
+cd Downloads
+ls
+cd System
+ls
+java -jar Rars15_Custom2.jar
+java -jar Rars15_Custom2.jar
+ls
+sudo apt install default-jre
+java -jar Rars15_Custom2.jar
+java -jar Rars15_Custom2.jar
+java -jar Rars15_Custom2.jar
+java -jar Rars15_Custom2.jar
+java -jar Rars15_Custom2.jar
+java -jar Rars15_Custom2.jar
+java -jar Rars15_Custom2.jar
+java -jar Rars15_Custom2.jar
+ls
+cd ..
+ls
+cd 
+cd Documents
+ls
+mv menu1teste.bmp ~/dev/OAC/Lab01/data
+mv menu2teste.bmp ~/dev/OAC/Lab01/data
+cd 
+cd dev/OAC/Lab01
+ls
+cd data
+ls
+mv menu1teste.bmp ../images/bmp
+mv menu2teste.bmp ../images/bmp
+ls
+cd 
+ls
+cd dev/OAC/Lab01/images
+ls
+cd bmp
+ls
+~/dev/BMPtoASM/BMPtoASM menu1teste.bmp
+~/dev/BMPtoASM/BMPtoASM menu2teste.bmp
+ls
+mv menu1teste.data ../../data
+mv menu2teste.data ../../data
+cd ..
+cd ..
+ls
+v src/game.s
+v src/game.s
+cd dev
+ls
+cd BMPtoASM
+ls
+v render_teste.s
+cd ..
+cd OAC/Lab01
+ls
+./fpgrars-x86_64-unknown-linux-gnu--8-bit-display game.s
+ls
+cd ..
+ls
+ls
+cd 
+cd dev
+ls
+cd isc-project
+ls
+v src
+cd ..
+cd OAC/Lab01
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+cd dev/OAC
+ls
+cd Lab01
+v src/game.s
+git add -A
+git status
+git commit -m "Finish menus"
+git push
+shutdown now
+ls
+htop
+sudo apt install htop
+htop
+ls
+docker
+sudo systemctl status
+sudo systemctl disable docker
+sudo systemctl stop docker
+ls
+ls
+sudo apt install qtyle
+sudo apt install qtile
+ls
+ls
+cd 
+ls
+cd .config
+ls
+ls
+mkdir qtile
+ls
+cd qtile
+ls
+v config.py
+lsd
+ls
+apt list
+apt list | grep x
+apt list | grep x11
+apt list | grep wayland
+apt list | grep libwlroots-dev
+sudo apt install python3-cffi
+sudo apt install xserver-xorg
+pip install --no-cache-dir cairocffi
+sudo apt install libpangocairo-1.0-0
+pip3 install dbus-next
+cd .local/src
+ls
+git clone https://github.com/qtile/qtile.git
+ls
+cd qtile
+ls
+pip install
+pip install
+ls
+pip install
+pip install .
+sudo apt install python3-xcffib
+pip install --no-cache-dir cairocffi
+pip install .
+pip uninstall cairocffi
+sudo apt install python3-cairocffi
+pip install .
+ls
+sud su
+su
+ls
+xprop
+cd .dotfiles
+ls
+ranger
+ls
+ls X
+cd X
+ls
+ls -la
+v .xprofile
+ls
+git checkout dwm-base
+git stash
+git checkout dwm-base
+ls
+ls -la
+ls -la
+cd ..
+ls
+cd X11
+ls
+v .xinitrc
+ls
+v .xinitrc
+sudo apt install nitrogen
+sudo apt install xbanish
+sudo apt install mpd
+ls
+cd ..
+ls
+cd picom
+ls
+cd .config
+ls
+cp -r picom ~/.config
+picom
+sudo apt remove picom
+sudo apt install rofi
+ls
+cd ..
+ls
+cd 
+cd .dotfiles
+ls
+rofi
+rofi run
+rofi -show run
+cd .config/qtile
+ls
+v config.py
+sudo apt install xclick
+sudo apt install xclip
+v autostart.sh
+v config.py
+ls
+chmod +x autostart.sh
+ls
+v config.py
+picom
+sudo apt install picom
+ls
+v config.py
+sudo reboot
+ls
+firefox
+ls
+ls -la
+rm -rf .zshrc
+ls
+v .config/qtile
+ls
+cd .config/qtile
+ls
+v config.py
+cd ..
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+$ZDOTDIR
+ls
+v .zshrc
+ls
+fc-list | grep Nerd
+fc-list | grep NF
+fc-list | grep NF
+fc-list | grep Nerd
+ls
+cd .config/qtile
+ls
+v config.py
+ls
+fc-list | grep NF
+v .config/qtile/config.py
+v .config/qtile/config.py
+cd .config/qtile
+ls
+v config.py
+ls
+ls
+cd 
+cd .local/src
+ls
+git clone https://github.com/alacritty/alacritty.git
+cd alacritty
+ls
+sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 gzip
+cargo build --release
+sudo cp target/release/alacritty /usr/local/bin
+sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg\
+sudo desktop-file-install extra/linux/Alacritty.desktop\
+sudo update-desktop-database
+sudo mkdir -p /usr/local/share/man/man1
+gzip -c extra/alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
+gzip -c extra/alacritty-msg.man | sudo tee /usr/local/share/man/man1/alacritty-msg.1.gz > /dev/null
+ls
+cd .config
+ls
+cd alacritty
+ls
+v alacritty.yml
+v alacritty.yml
+ls
+ls
+cd dev
+ls
+cd ..
+ls
+cd .config/alacritty
+ls
+v alacritty.yml
+ls
+nvim
+nvim
+sudo apt install pip install psutil
+pip install psutil
+cd .config/alacritty
+v alacritty.yml
+v alacritty.yml
+picom
+v .config/qtile
+alacritty -e nvim -c VimwikiIndex
+nvim
+alacritty -e nvim
+alacritty -h
+alacritty -e "nvim"
+alacritty -e "nvim -c VimwikiIndex"
+alacritty -e 'nvim -c VimwikiIndex'
+alacritty -e 'nvim' -c VimwikiIndex
+ls
+ls
+v .config/qtile/config.py
+v .config/qtile/config.py
+v .config/qtile/config.py
+ls
+v temporario.txt
+rm temporario.txt
+ls
+picom
+sudo apt install picom
+picom
+cd .config
+rm -rf picom
+picom
+nvim
+picom&
+cd .config/qtile
+ls
+v autostart.sh
+shutdown now
+nautilus
+cd Downloads
+ls
+rm -rf *
+ls
+ls
+unzip OAC_Provas_Gabs.zip
+ls
+rm -rf OAC_Provas_Gabs.zip
+cd OAC_Provas_Gabs
+ls
+cd .config/qtile
+v config.py
+shutdown now
+cd Work
+ls
+cd member-area-fast
+ls
+git push --rebase
+git pull --rebase
+ls
+v .
+shutdown now
+sudo apt install chromium
+sudo apt install chromiun
+sudo apt search chromium
+snap install chromimum
+sudo snap install chromium
+gnome-screenshot
+screenshot
+gnome-screenshot
+gnome-screenshot
+sudo apt install flameshoot
+sudo apt install flameshot
+flameshot
+sudo reboot
+gnome-session-quit
+shutdown now
+ls
+ls
+cd dev
+ls
+cd OAC
+ls
+ls Lab01
+cd ..
+ls
+cd ..
+ls
+cd Downloads
+ls
+cd ..
+ls
+cd dev
+ls
+ls
+cd ..
+ls
+cd Downloads
+ls
+unzip System.zip
+ls
+mv System ~/dev/OAC
+cd 
+cd dev/OAC
+ls
+cd System
+ls
+rm fpgrars-x86_64-pc-windows-gnu.exe
+ls
+java -jar Rars15_Custom2.jar
+cd dev
+ls
+mkdir game-library
+cd game-library
+ls
+v render.s
+ls
+cp ~/dev/BMPtoASM/Nord.data .
+ls
+mv Nord.data nord.data
+ls
+v render.s
+ls
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+v render.s
+ls
+ls
+v render.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+v render.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+v render.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+v render.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+v render.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+v render.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+v render.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+v render.s
+ls
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display render.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testing.s
+v testing.s
+cd dev
+ls
+cd Risc-V-Biblio
+ls
+cd ..
+ls
+rm -rf Risc-V-Biblio
+ls
+git clone git@github.com:Acucar-tempero-e-tudo-que-ha-de-bom/ProjetoOAC-2021.git
+ls
+cd ProjetoOAC-2021
+ls
+v .
+ls
+ls data
+ls sprites
+cp sprites/mapa.bin ~/dev/game-library
+ls
+v helpers/render.s
+ls
+ls -la
+ls
+ls
+cd 
+ls
+cd dev
+ls
+cd DataScience
+ls
+cd ..
+ls
+rm -rf DataScience
+ls
+rm -rf simple_chat_bot
+rm -rf Sexto-Andar
+ls -la
+rm -rf rp-portfolio
+cd TAG
+ls
+cd ..
+ls
+mv TAG tag/projeto01
+ls
+cd tag
+ls
+cd ..
+ls
+rm -rf TP1-Istin
+ls
+rm -rf tracking_system
+rm -rf UML
+lsa
+ls
+cd 
+cd .config/alacritty
+ls
+v alacritty.yml
+cd .local/src/mic_over_mumble
+ls
+./mic_over_mumble
+alsamixer
+ls
+v dev/learning/lecode/pascal_triangle.py
+s
+ls
+ngrok http 8000
+ls
+ls
+sudo apt install postman
+sudo apt search postman
+snap search postman
+sudo snap install postman
+cd dev
+ls
+cd ..
+ls
+cd Work
+cd member-area-fast
+ls
+v .
+source venv/bin/activate
+uvicorn main:app --reload
+docker ps -a
+docker start 4396fb1c6748
+docker ps
+uvicorn main:app --reload
+v .
+uvicorn main:app --reload
+v .
+ngrok http 8000
+shutdown now
+python3 pascal_triangle.py
+python3 pascal_triangle.py
+v .zshrc
+python3
+cd dev/learning/lecode
+ls
+v pascal_triangle.py
+ls
+ls *.class
+ls *.class | rm
+ls *.class | rm -rf
+ls
+ls *.class | rm
+rm -h
+rm --help
+ls
+xargs -h
+xargs --help
+ls *.class | xargs -n 1 rm
+exa
+exa *.class
+exa *.clas
+ls *.class
+ls
+ls -la
+ls -la
+apt search mysql
+alsamixer
+ls
+sudo nmtui
+alsamixer
+shutdown now
+scalac matchsticks_to_square.scala
+scala Solution
+ls
+scala Solution
+scalac matchsticks_to_square.scala
+scala Solution
+scala Solution
+shutdown now
+ls
+cd dev
+ls
+cd learning/lecode
+ls
+v matchsticks_to_square.scala
+ls
+ls *.class | xargs -n 1 rm
+ls
+ls -la
+ls
+cd ..
+ls
+cd ..
+ls
+ls BMPtoASM
+ls
+ls game-library
+cd tag
+ls
+cd ..
+ls
+cd ..
+ls
+ls Downloads
+poweroff now
+poweroff now
+poweroff now
+poweroff now
+poweroff now
+poweroff now
+poweroff now
+poweroff now
+poweroff now
+poweroff now
+poweroff now
+nvim
+alsamixer
+cd 
+ls
+cd dev/Oberon-Scala
+ls
+v .
+s
+ls
+git pull --rebase
+git branch
+git branch list
+git list branchs
+alsamixer
+lcd
+ls
+v .
+ls
+v .
+ls
+nvim
+ls
+v .
+ls
+sbt
+sudo apt search teams
+sudo snap search teams
+sudo snap install teams
+echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" | sudo tee /etc/apt/sources.list.d/sbt.list\
+echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | sudo tee /etc/apt/sources.list.d/sbt_old.list\
+curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | sudo apt-key add\
+sudo apt-get update\
+sudo apt-get install sbt\
+
+ls
+cd dev/Oberon-Scala
+ls
+sbt test
+ls
+v .
+ls
+sbt compile
+v .
+flameshot
+alsamier
+alsamixer
+cd dev/Oberon-Scala
+ls
+sbt compile
+sbt test
+sbt test
+sbt test
+sbt test
+cd dev/Oberon-Scala
+ls
+sbt compile
+sbt test
+sbt compile
+sbt compile
+sbt compile
+sbt compile
+sbt compile
+sbt compile
+sbt compile
+sbt compile
+scala test
+sbt test
+sbt test
+sbt test
+cd 
+ls
+cd dev/Oberon-Scala
+git branch -r
+ls
+v build.sbt
+ls
+v .
+ls
+ls
+cat README.md
+cd ..
+ls
+cd Downloads
+ls
+nautilus .
+ls
+ls Applications
+ls
+sudo snap install obsidian
+sudo snap search obsidian
+sudo snap search obsidi
+sudo apt search obsidian
+ls Applications
+cd 
+ls
+cd Applications
+ls
+rm Obsidian-0.14.15_5adfb471ecd7bb0de7eb2d25943435b6.AppImage
+ls
+appimagelauncherd
+obsidian
+cd Applications
+ls
+./Obsidian-0.15.6_3ea0b07991695e693fcb058bb76be318.AppImage
+obsdian
+alsamixer
+alsamixer
+sudo apt install networkmanager-applet
+sudo apt install networkManager-applet
+sudo apt search network
+sudo apt search network-manager
+sudo apt install nm-applet
+nm-applet
+ls
+v .config/qtile/autostart.sh
+shutdown now
+alsamixer
+alsamixer
+v .config/alacritty/alacritty.yml
+ls
+alsamixer
+alsamixer
+alsamixer
+ls
+rm blank.pdf
+ls
+cd RPG/Forbidden\ Lands
+ls
+xdg-open Forbidden_Lands_Players_Handbook.pdf
+xdg-open Forbidden_Lands_Players_Handbook.pdf &
+ls
+ls
+cd .dotfiles
+ls
+cd 
+mkdir .config/mpv
+v .config/mpv/mpv.conf
+cd Videos/Movies/Peacemaker\ 2022\ S01\ Complete\ 720p\ WEB\ HEVC\ x265\ RMTeam
+ls
+ls Subs
+sudo apt install mpv
+ls
+mpv peacemaker.2022.s01e04.720p.web.hevc.x265.rmteam.mkv
+mpv peacemaker.2022.s01e05.720p.web.hevc.x265.rmteam.mkv
+mpv peacemaker.2022.s01e06.720p.web.hevc.x265.rmteam.mkv
+mpv peacemaker.2022.s01e07.720p.web.hevc.x265.rmteam.mkv
+mpv peacemaker.2022.s01e08.720p.web.hevc.x265.rmteam.mkv
+ls
+ls Subs
+shutdown now
+cd dev
+ls
+ls scala
+ls
+ls Oberon-Scala
+ls
+scala
+ls
+dc 
+ls
+cd scala
+ls
+cd ..
+ls
+cd Oberon-LS
+mkdir Oberon-LS
+ls
+cd Oberon-LS
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+sbt init
+ls
+rm -rf target
+ls
+v artur.txt
+shutdown now
+xset r rate 210 40\
+
+setxkbmap br\
+setxkbmap -option caps:escape\
+
+cd .config/
+ls
+cd qtile
+ls
+v autostart.sh
+ls
+cd 
+ls
+cd dev
+ls
+cd Oberon-LS
+ls
+nvim
+sbt -h
+sbt create
+ls
+shutdown now
+cd Downloads
+ls
+rm peacemaker*
+ls
+rm -rf peacemaker.s01.e08.its.cow.or.never.\(2022\).pob.1cd.\(8983995\)
+ls
+unzip mautic-features.zip
+ls
+cd mautic-features
+ls
+cd ..
+ls
+mv mautic-features ~/Work
+sudo nvim /etc/php/8.1/cli/php.ini
+ls
+curl https://apt.fury.io/drud/gpg.key | sudo apt-key add -\
+echo "deb https://apt.fury.io/drud/ * *" | sudo tee -a /etc/apt/sources.list.d/ddev.list\
+sudo apt update && sudo apt install -y ddev
+curl https://apt.fury.io/drud/gpg.key | sudo apt-key add -\
+echo "deb https://apt.fury.io/drud/ * *" | sudo tee -a /etc/apt/sources.list.d/ddev.list\
+sudo apt update && sudo apt install -y ddev
+ls /etc/apt/sources.list
+bat /etc/apt/sources.list
+ls /etc/apt/sources.list.d
+sudo rm -rf /etc/apt/sources.list.d/ddev.list
+su 
+ls
+sudo apt install libnss3-tools
+sudo systemctl start docker
+curl https://apt.fury.io/drud/gpg.key | sudo apt-key add -\
+echo "deb https://apt.fury.io/drud/ * *" | sudo tee -a /etc/apt/sources.list.d/ddev.list\
+sudo apt update && sudo apt install -y ddev
+sudo apt update
+sudo nvim /etc/apt/trusted.gpg
+sudo nvim /etc/apt/trusted.gpg\~
+sudo nvim /etc/apt/trusted.gpg
+sudo apt-key list
+curl https://apt.fury.io/drud/gpg.key | sudo apt-key add -\
+echo "deb https://apt.fury.io/drud/ * *" | sudo tee -a /etc/apt/sources.list.d/ddev.list
+sudo apt-key list
+sudo apt-key del - echo "deb https://apt.fury.io/drud/ * *"
+sudo apt-key del - echo "deb https://apt.fury.io/drud/ * *"
+sudo apt-key list
+sudo nvim /etc/apt/sources.list
+sudo apt install composer
+ls
+cd Work
+ls
+cd mautic-features
+ls
+bat README.md
+composer install
+composer update
+ls
+composer --versiom
+composer --version
+sudo apt remove composer
+cd 
+cd .local/src/
+ls
+php
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+sudo php composer-setup.php --version=1.10.26 --install-dir=bin
+sudo php composer-setup.php --version=1.10.26 --install-dir=/bin
+cd 
+cd Work
+ls
+cd mautic-features
+ls
+/usr/bin/composer.phar install
+sudo nvim /etc/php/8.1/cli/php.ini
+ls
+php --version
+ls
+v composer.json
+ls
+v composer.json
+sudo apt-key list
+sudo apt-key del ctb=0a
+ls /etc/apt/trusted.gpg.d
+ls
+sudo rm -rf /etc/apt/trusted.gpg
+sudo apt-key list
+lsd
+sudo apt update
+sudo rm -rf /etc/apt/sources.list.d/ddev.list
+sudo rm -rf /etc/apt/sources.list.d/sbt.list
+sudo rm -rf /etc/apt/sources.list.d/sbt_old.list
+sudo apt update
+apt clean
+sudo apt clean
+sudo apt update
+sudo apt clean
+apt-get clean
+sudo apt-get clean
+sudo apt-get update
+sudo apt-key list
+ls /var/lib/apt/lists
+sudo apt install ddev
+sudo apt update
+ls /etc/apt
+sudo systemctl start docker
+curl -LO https://raw.githubusercontent.com/drud/ddev/master/scripts/install_ddev.sh && bash install_ddev.sh\
+
+ddev --version
+ls
+cd Work
+ls
+cd mautic-features/
+ls
+cd ..
+ls
+rm -rf mautic-features
+git clone git@github.com:mautic/mautic.git
+ls
+cd mautic
+ls
+ddev start
+ddev stop
+htop
+python3
+python3 find_first_and_last_postion_in_sorted_array.py
+python3 find_first_and_last_postion_in_sorted_array.py
+python3 find_first_and_last_postion_in_sorted_array.py
+cd dev/learning/lecode
+ls
+v find_first_and_last_postion_in_sorted_array.py
+ls
+xprop
+v .config/qtile/config.py
+ls
+cd dev
+ls
+cd OAC
+ls
+cd Lab01
+ls
+git pull --rebase
+ls
+git branch -r
+git checkout ai
+ls
+ls
+git pull --rebase
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+cd University/OAC/Lab1
+ls
+cd System
+ls
+cd Exemplos
+ls
+cd ..
+ls
+cd Exemplos
+ls
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display testeECALLv21_fpgrars.s
+v testeECALLv21_fpgrars.s
+java -jar Rars15_Custom2.jar
+cd University/OAC/Lab1
+ls
+cd System
+ls
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+~/dev/OAC/Lab01/bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display teste.s
+ls
+ls
+cd .config/alacritty
+ls
+v alacritty.yml
+cd 
+ls
+cd .local/src
+ls
+cd 
+ls
+cd University/OAC
+ls
+cd Lab1
+ls
+cd System
+ls
+v MACROSv21.s
+v SYSTEMv21.s
+lsd
+ls
+v teste.s
+cd 
+cd dev/OAC/Lab01/
+ls
+cd bin
+cd ..
+ls
+cd images
+ls
+cd gimp
+ls
+ls *.bmp
+ls *.bmp | mv ../bmp
+ls
+ls
+mv *.bmp ../bmp
+ls
+cd ..
+ls
+cd bmp
+ls
+cd ..
+ls
+cd ..
+ls
+git pull
+ls
+cd images
+ls
+cd ..
+ls
+cd data
+ls
+rm -rf *
+ls
+cd ..
+ls
+cd images
+ls
+cd bmp
+ls
+~/dev/BMPtoASM/BMPtoASM Board.bmp
+~/dev/BMPtoASM/BMPtoASM MenuDificuldades.bmp
+~/dev/BMPtoASM/BMPtoASM MenuEmpatou.bmp
+~/dev/BMPtoASM/BMPtoASM MenuGanhou.bmp
+~/dev/BMPtoASM/BMPtoASM MenuPerdeu.bmp
+~/dev/BMPtoASM/BMPtoASM MenuSimbolos.bmp
+ls
+mv *.data ../../data
+ls
+cd ..
+cd ..
+ls
+cd data
+ls
+cd ..
+ls
+v .
+git pull
+cd ..
+ls
+git pull
+cd Lab01
+ls
+git pull
+v .
+git pull
+v .
+v .
+ls
+v .
+v .
+git pull --merge
+git pull
+ls
+ls data
+cd images
+ls
+mv xAnimation ../data
+ls
+cd ..
+ls data
+v .
+cd images
+ls
+mv oAnimation ../data
+cd ..
+v .
+ls
+git add -A
+git status
+git commit -m "Quase pronto"
+git push
+cd images
+ls
+rm ../data/Board.data
+ls
+cd bmp
+ls
+~/dev/BMPtoASM/BMPtoASM Board.bmp
+mv Board.data ../../data
+cd ..
+cd ..
+v .
+cd dev/OAC/Lab01/
+ls
+v .
+ls
+git commit -m "Menus de vitoria derrota e empate"
+git add -A
+git commit -m "Menus de vitoria derrota e empate"
+git push
+cd dev
+ls
+cd isc-project
+ls
+v .
+ls
+cd 
+ls
+cd University/OAC/Lab1
+ls
+cd System
+ls
+v SYSTEMv21.s
+cd 
+cd dev/OAC/Lab01
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+ls
+cp ~/University/OAC/Lab1/System/MACROSv21.s .
+cp ~/University/OAC/Lab1/System/SYSTEMv21.s .
+ls
+mv MACROSv21.s src
+mv SYSTEMv21.s src
+ls
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+ls
+ls
+ls
+ls
+cd 
+ls
+cd University/OAC/Lab1
+ls
+cd System
+ls
+v teste.s
+ls
+ls
+cd 
+cd Desktop
+ls
+~/dev/BMPtoASM/BMPtoASM velha.bmp
+ls
+alsamixer
+shutdown now
+ls
+rm install_ddev.sh
+ls
+rm -rf PlanoDeAtividades_assinado_original.pdf
+ls
+cd dev
+ls
+cd Oberon-LS
+ls
+ls
+rm target
+rm -rf target
+lws
+ls
+ls
+cd 
+ls
+nvim
+ls
+cd .local/bin
+ls
+cd ..
+ls
+cd ..
+ls
+ls Dropbox
+ls
+cd Documents
+ls
+cd notes
+ls -la
+cd 
+ls
+cd Dropbox
+ls
+cd Notes
+ls
+cd vimwiki
+ls
+cd markdown
+ls
+rm Pacman.pdf
+ls
+cd 
+ls
+xprop
+cd Documents/notes
+ls
+cd vimwiki
+ls
+cd vimwiki
+ls
+cd vimwiki
+ls
+cd vimwiki
+ls
+cd vimwiki
+ls
+cd ..
+cd .
+cd ..
+cd ..
+cd ..
+ls
+rm -rf vimwiki
+ls
+cd 
+ls
+cd Books
+ls
+cd Matematics
+ls
+xdg-open Calculus,\ Vol.\ 1\ One-Variable\ Calculus,\ with\ an\ Introduction\ to\ Linear\ Algebra\ \(Tom\ M.\ Apostol\)\ .pdf
+xprop
+xpop
+xprop
+v .config/qtile/config.py
+ls
+cd dev
+ls
+cd dataAndAlg
+cd ..
+ls
+cd learning
+ls
+cd ..
+ls
+mkdir dataScience
+cd dataScience
+ls
+python3 -m venv venv
+source venv/bin/activate
+ls
+pip install ipython
+ls
+pip install jupyter-notebook
+pip install notebook
+pip install numpy
+ls
+mkdir linearAlgebra
+ls
+v .gitignore
+ls
+git init
+ls
+git init
+ls
+jupyter notebook
+ls
+ls linearAlgebra
+git status
+git add -A
+git status
+git commit -m "Some linear algebra problems"
+git remote add origin git@github.com:RuanPetrus/dataScience.git\
+git branch -M main\
+git push -u origin main
+ls
+v .gitignore
+ls
+jupyter notebook
+ls
+git add -A
+git status
+v .gitignore
+git add -A
+git status
+git restore *
+git status
+git restore linearAlgebra/.ipynb_checkpoints/Problem\ set\ 1-checkpoint.ipynb
+ls
+git status
+git restore --staged linearAlgebra/.ipynb_checkpoints/Problem\ set\ 1-checkpoint.ipynb
+git status
+v .gitignore
+git add _A
+git add -A
+git status
+v .gitignore
+ls
+git status
+git add -A
+git commit -m "Add some references"
+git push
+ssh
+cd dev/dataScience
+ls
+source venv/bin/activate
+ipython
+alsamixer
+ssh -h
+ssh --help
+pass
+pass
+pass
+ls
+pass
+pas
+calcurse
+sudo apt install calcurse
+calcurse
+cd Desktop
+ls
+rm -rf *
+ls
+ls
+cd landpages
+ls
+ls Obrigado\!_files
+ls
+firefox Obrigado\!.html
+ls
+mkdir outras
+ls
+cd outras
+ls
+firefox Schiefler\ Advocacia\ conte\ com\ uma\ equipe\ de\ advogados\ competentes,\ dedicados\ e\ com\ atuação\ em\ todo\ o\ Brasil.html
+ls
+ls
+mkdir outras
+ls outras
+ls
+cd outras
+ls
+mkdir outras
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+ls LP\ Orçamento\ -\ Ads
+mkdir LP Orçamento - E-mail
+ls
+ls
+ls
+ls
+flameshot
+cd dev/OAC/Lab01
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+cd dev/OAC/Lab01
+ls
+git pull
+v .
+v .
+shutdown now
+ls
+alsamixer
+ls
+cd Work
+ls
+cd Transicao
+ls
+ls Formularios
+ls landpages
+ls
+ls
+cd landpages
+ls
+cd ..
+ls
+cd Formularios
+ls
+ls
+cd Work/
+ls
+cd Transicao/Formularios
+ls
+cd Guia\ de\ licitações\ -\ W.02\ -\ form
+ls
+v guia-de-licitacoes-w-02-form-158de8abbe3e52493e0b.html
+cd 
+cd dev
+ls
+git clone git@github.com:mautic/mautic.git]
+git clone git@github.com:mautic/mautic.git
+cd 
+cd Downloads
+ls
+unzip mautic-4.3\(1\).zip
+unzip mautic-4.3.zip
+ls
+rm -rf mautic-4.dMV3ksQM.3\(1\).zip.part
+rm -rf mautic-4.tV2HYr_V.3.zip.part
+lls
+ls
+rm -rf *
+ls
+ls
+mv 1645560944477Schiefler\ Advocacia.\ Guia\ das\ Modalidades\ de\ Licitação.pdf ~/Work/Transicao/Formularios/Guia\ de\ licitações\ -\ W.02\ -\ form
+calcurse
+v .config/qtile/config.py
+cd dev
+ls
+cd dataScience
+ls
+source venv/bin/activate
+ls
+jupyter notebook
+shutdown now
+ls
+cd 
+ls
+cd dev/OAC
+cd Lab01
+ls
+git pull --rebase
+git stash
+git pull --rebase
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+ls
+cd ..
+ls
+cd 
+ls
+cd dev/OAC
+ls
+cd System
+ls
+java -jar Rars15_Custom2.jar
+cd ..
+ls
+cd Lab01
+ls
+git pull --rebase
+git stash
+git pull --rebase
+ls
+git status
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+ls
+ls bin
+ls
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+bin/fpgrars-x86_64-unknown-linux-gnu--8-bit-display src/game.s
+cd 
+cd dev/learning/lecode
+ls
+v Flatten_Binary_Tree_to_Linked_List.py
+ls
+cd ..
+ls
+ls
+emacs
+cd dev/dataScience
+source venv/bin/activate
+ipython
+ls
+git add -A
+git status
+git commit -m "Finish problem set 1"
+ls
+v README.md
+git add -A
+git status
+git commit -m "Add README"
+git push
+ls
+cd linearAlgebra
+ls
+wget http://web.mit.edu/18.06/www/Fall18/1806/psets/pset2.ipynb
+ls
+mv Problem\ set\ 1.ipynb pset1.ipynb
+ls
+cd dev
+ls
+cd Oberon-Scala
+ls
+v .
+v .
+ v temp
+ls
+v .
+cd ..
+ls
+mkdir tp2
+cd tp2
+ls
+ls
+git clone https://github.com/UnBCIC-TP2/Oberon-Scala/commit/96a26e90471379cf43e7e026a0b3a7780eb7a057
+cd ..
+cd Oberon-Scala
+ls
+cd src
+ls
+cd main
+ks
+ls
+cd antlr4
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+v temp
+ls
+git stash
+git pull --rebase
+ls
+git status
+rm src/test/resources/simple/arrayInitialization.oberon
+git statys
+git status
+rm temp
+ls
+git stash
+git status
+ls
+v .
+ls
+v src/test/resources/stmts/generalArrayInitializationAssignment.oberon
+v src/test/scala/br/unb/cic/oberon/parser/ParserTest.scala
+ls
+nvim
+ls
+fg
+fg .java
+fg java
+find java
+find .java
+find . .java
+ls
+cd project
+ls
+cd target
+ls
+cd streams
+ls
+v .
+ls
+cd ..
+cd ..
+cd ..
+ls
+cd target
+ls
+find .
+ls
+cd ..
+ls
+v .
+ls
+git checkout -b "ArrayInitialization"
+git add -A
+git status
+git commit -m "Add parser to array initialization for arrays and tests"
+git push
+git push --set-upstream origin ArrayInitialization
+ls
+cd dev/tp2
+ls
+ls
+cd ..
+ls
+cd Oberon-Scala
+ls
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt compile
+sbt test
+sbt test
+cd src/test/resources
+ls
+cd stmts
+ls
+pwd
+cd ..
+cd ..
+cd ..
+cd ..
+scala test
+ls
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+ls
+ls src
+ls
+cd src
+ls
+cd main
+ls
+ls antlr4
+sbt compile
+ls
+cd ..
+cd ..
+ls
+sbt compile
+sbt compile
+sbt compile
+sbt compile
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt tes
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+sbt test
+cd ..
+ls
+mv Oberon-Scala Oberon-Scala-old
+ls
+git clone git@github.com:Grupo01-TP2/Oberon-Scala.git
+ls
+ls
+cd Oberon-Scala
+ls
+git status
+git branch -r
+ls
+git rm -rf src/
+ls
+cp -r ../Oberon-Scala-old/src .
+ls
+git add -A
+git status
+git commit -m "Add parser to array initialization for arrays and test"
+ls
+git checkout -b "ArrayInitialization"
+git staus
+git status
+git push
+git push --set-upstream origin ArrayInitialization
+ls
+cd ..
+ls
+rm -rf Oberon-Scala-old
+ls
+rm -rf tp2
+ls
+cd 
+ls
+ls
+cd Work
+ls
+cd Transicao
+ls
+cd landpages
+ls
+cd LP\ Orçamento\ -\ Ads
+ls
+v .
+cd ..
+ls
+cd LP\ Orçamento\ -\ Site\ \(Canonical\)
+ls
+v 
+v Schiefler\ Advocacia\ conte\ com\ uma\ equipe\ de\ advogados\ competentes,\ dedicados\ e\ com\ atuação\ em\ todo\ o\ Brasil.html
+ls
+ls
+firefox Schiefler\ Advocacia\ conte\ com\ uma\ equipe\ de\ advogados\ competentes,\ dedicados\ e\ com\ atuação\ em\ todo\ o\ Brasil.html
+calcurse
+alsamixer
+v .
+v .
+ls
+cd 
+cd Downloads
+ls
+mv aurora.zip ../
+rm -rf *
+mv ../aurora.zip .
+ls
+unzip aurora.zip
+ls
+rm aurora.zip
+ls
+bat README.md
+ls
+v .
+v .
+ls
+firefox html/email.html.twig
+v html
+ls
+cd html
+ls
+cp email.html.twig email.html
+firefox email.html
+v .
+ls
+v email.html
+v email.html
+ls
+ls
+ls
+ls
+ls
+sl
+ls
+v layout_emails.html
+ls
+rm layout_emails.html
+rm layout_emails.html
+ls
+cd Work
+ls
+mkdir template_email
+cd template_email
+ls
+ls
+v config.json
+chromium html/email.html
+chromium html/email.html
+v .
+v .
+mkdir css
+v .
+ls
+rm -rf assets
+ls
+rm thumbnail.png
+ls
+git init
+ls
+git add -A
+git commit -m "Anitial set up"
+git branch -M main\
+git remote add origin git@github.com:schiefler-adv/email-template.git\
+git push -u origin main
+v README.md
+git add -A
+git commit -m "Add readme"
+git push
+cd Work/Transicao/email
+ls
+cd e-mail\ de\ artigo\ 17-03
+ls
+firefox Ã�\ possível\ vender\ imóvel\ em\ inventÃ�rio\ .html
+cd 
+ls
+cd dev
+ls
+cd learning
+ls
+cd web
+ls
+cd ..
+ls
+cd ..
+ls
+cd Recipes
+ls
+v index.html
+cd Work
+ls
+cd template_email
+ls
+v .
+chromium html/email.html
+v .
+shutdown now
+ls
+cd Work
+ls
+cd template_email
+ls
+firefox html/email.html
+chromium html/email.html
+v .
+ls
+ls
+cd html
+ls
+rm base.html.twig
+ls
+rm email.html.twig
+ls
+rm MauticFormBundle
+rm message.html.twig
+ls
+rm -rf MauticFormBundle
+ls
+cd ..
+ls
+mkdir schiefler-email
+ls
+mv config.json schiefler-email
+ls
+v README.md
+ls
+cd schiefler-email
+ls
+ls
+mkdir assets
+ls
+mkdir html
+ls
+cd html
+ls
+v base.html.twig
+ls
+ls
+cp ../../html/email.html .
+ls
+v email.html
+ls
+mv email.html email.html.twig
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd css
+cd ..
+ls
+cp -r css schiefler-email/assets
+cp images -r schiefler-email/assets
+ls
+ls
+zip -r schiefler-email.zip schiefler-email
+ls
+ls
+cd schiefler-email
+ls
+cd ..
+ls
+cp schiefler-email.zip ../
+cd ..
+ls
+unzip schiefler-email.zip
+ls
+ls
+rm schiefler-email.zip
+ls
+cd schiefler-email
+ls
+ls
+zip -r schiefler-email.zip *
+ls
+ls
+cd ..
+ls
+ls -la
+ls
+cd template_email
+ls
+cd ..
+ls
+rm -rf schiefler-email
+ls
+cd template_email
+ls
+rm schiefler-email.zip
+ls
+cd schiefler-email
+ls
+zip -r schiefler-email.zip *
+ls
+ls
+rm schiefler-email.zip
+ls
+ls
+cd html
+ls
+cd ..
+v config.json
+ls
+zip -r schiefler-email.zip *
+ls
+ls
+cp schiefler-email.zip ~/
+ls
+mv schiefler-email.zip schieflerEmail.zip
+ls
+ls
+rm schieflerEmail.zip
+ls
+cd ..
+ls
+ls
+ls
+ls schiefler-email
+ls
+git add -A
+git commit -m "Theme in plaing html"
+git push
+ls
+cd schiefler-email
+ls
+ls
+cd html
+ls
+v message.html.twig
+ls
+zip -r schiefler-email.zip *
+ls
+mv schiefler-email.zip ~/Work
+cd Work
+ls
+cd template_email
+ls
+cd images
+ls
+mv \$rvbuyxgxo7k.png schiefler-logo.png
+ls
+mv \$znhpadv5ej.png content-image.png
+ls
+ls
+mv \$dp01kvwxemp.png link-livro.png
+ls
+ls
+mv \$sld6kcf81pm.png confira-tambem.png
+ls
+ls
+mv \$cdre8imtlce.png solicite-um-atendimento.png
+ls
+mv \$ieskstumjb.png autor.png
+ls
+mv \$lry7bcz0q9.png icon-site.png
+mv \$2cbrtlylfmb.png icon-wpp.png
+mv \$k4rytab55x.png icon-instagram.png
+mv \$c35rxm7via8.png icon-facebook.png
+mv \$weg74m7szle.png icon-linkedin.png
+ls
+cd 
+ls
+cd Downloads
+ls
+cd html
+ls
+v base.html.twig
+v base.html.twig
+ls
+v email.html.twig
+ls
+cd MauticFormBundle
+ls
+cd Builder
+ls
+v style.html.twig
+ls
+cd ..
+ls
+cd ..
+ls
+cp -r MauticFormBundle ~/Work/template_email/schiefler-email/html
+ls
+cd ..
+ls
+cp thumbnail.png ~/Work/template_email/schiefler-email
+ls
+cd 
+ls
+mv schiefler-email.zip Desktop
+ls
+cd Desktop
+ls
+unzip schiefler-email.zip
+ls
+ls assets
+ls html
+ls
+ls
+cd ..
+ls
+cd Downloads
+ls
+cd ha
+cd html
+ls
+v message.html.twig
+cp message.html.twig ~/Work/template_email/schiefler-email/html
+cd Desktop
+ls
+mv schieflerEmail.zip ../
+rm -rf *
+mv ../schieflerEmail.zip .
+ls
+unzip schieflerEmail.zip
+ls
+ls
+cd 
+ls
+cd Downloads
+ls
+ls
+ls
+ls
+mv brienz.zip ../
+ls
+rm -rf *
+ls
+ls
+mv ../brienz.zip .
+ls
+unzip brienz.zip
+ls
+v config.json
+ls
+cd html
+ls
+v email.mjml.twig
+ls
+cd Work
+ls
+unzip schiefler-email.zip
+ls
+rm schiefler-email.zip y
+ls
+rm base.html.twig
+rm *.twig
+ls
+cd template_email
+ls
+cd schiefler-email
+ls
+ls html
+ls
+zip -r schieflerEmail.zip *
+ls
+mv schieflerEmail.zip ~/Desktop
+ls
+v config.json
+ls
+ls
+zip -r schieflerEmail.zip *
+ls
+ls
+lsa
+ls
+rm schieflerEmail.zip
+ls
+cd ..
+ls
+git add -A
+git status
+git commit -m "Theme installing on mautic"
+git push
+ls
+cd dev
+cd 
+python3 Find_and_Replace_Pattern.py
+python3 Find_and_Replace_Pattern.py
+python3
+cd dev
+cd learning/lecode
+ls
+v Find_and_Replace_Pattern.py
+ls
+python3 Find_and_Replace_Pattern.py
+v Find_and_Replace_Pattern.py
+ls
+ls
+cd ..
+ls
+mkdir lecode/ leetcode
+ls
+rm leetcode
+mv lecode/* leetcode
+ls
+ls lecode
+rm -rf lecode
+ls
+ls leetcode
+cd leetcode
+ls
+git init
+git add -A
+git commit -m "Some leetcode problems"
+git branch -M main\
+git remote add origin git@github.com:RuanPetrus/leetcode.git\
+git push -u origin main
+ls
+ls
+cd 
+ls
+ls
+cd .config
+ls
+ls
+nvim
+ls
+sudo apt install luarocks
+ls
+ls
+ls
+cd nvim
+ls
+v init.lua
+alsamixer
+shutdown now
+calcurse
+alsamixer
+ls
+cd dev
+ls
+cd dataScience
+ls
+source venv/bin/activate
+jupyter notebook
+shutdown now
+cd dev/dataScience
+ls
+v README.md
+poweroff now
+shutdown now
+shutdown now
+cd Downloads
+ls
+v html
+ls
+rm -rf *
+ls
+ls
+unzip trulypersonal.zip
+ls
+rm -rf trulypersonal.zip
+ls
+v html
+ls
+v html
+ls
+rm config.json
+rm -rf html
+ls
+rm thumbnail.png
+ls
+unzip blank.zip
+ls
+v html
+ls
+v html
+v html
+ls
+rm -rf *
+ls
+cd Work
+ls
+cd folhas-de-rosto
+ls
+source venv/bin/activate
+ls
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+ls
+touch teste.docx
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+xprop
+cd Work
+ls
+cd folhas-de-rosto
+ls
+source venv/bin/activate
+ls
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+v main.py
+mv main.py application.py
+v application.py
+ls
+cd Downloads
+ls
+v .
+ls
+cd 
+ls
+cd Work
+ls
+cd template_email
+ls
+git pull --rebase
+ls
+v .
+v .
+ls
+cd schiefler-email
+ls
+zip -r schieflerEmail.zip *
+ls
+mv schieflerEmail.zip ~/Desktop
+ls
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd Work
+lws
+ls
+ls
+ls
+git https://github.com/schiefler-adv/folhas-de-rosto
+git clone https://github.com/schiefler-adv/folhas-de-rosto
+ls
+v teste.py
+python3 teste.py
+python3
+python3 -m tkinter
+ls
+git clone git@github.com:schiefler-adv/folhas-de-rosto.git
+ls
+rm teste.py
+ls
+cd folhas-de-rosto
+ls
+python3 -m venv venv
+ls
+ls
+git checkout -b "frontend"
+ls
+v .gitignore
+ls
+source venv/bin/activate
+pip install tkinter
+python3 --version
+python -m tkinte
+python -m tkinter
+sudo apt-get install python3-tk
+python -m tkinter
+ls
+rm main.py
+ls
+v main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+python3 main.py
+ls
+git add -A
+git status
+v .gitignore
+git status
+git add -A
+git status
+git restore --staged teste.docx
+ls
+git status
+git commit -m "Simple ui"
+git push
+git push --set-upstream origin frontend
+git push --set-upstream origin frontend
+python3 main.py
+git add -A
+git status
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+ls
+touch teste1.docx
+python3 application.py
+python3 application.py
+ls
+git add -A
+git status
+git commit -m "New UI more modular em more functions"
+git push
+v .config/qtile/config.py
+calcurse
+sudo apt install code
+sudo apt search code
+sudo apt search code | grep code
+sudo snap install code
+sudo snap install code --classic
+ls
+cd dev
+ls
+cd ..
+v .config/alacritty/alacritty.yml
+shutdown now
+cd /tmp
+ls
+v temp.js
+cd 
+cd Work
+ls
+cd template_email
+ls
+cd css
+ls
+v style.css
+cd .config/alacritty
+v alacritty.yml
+cd 
+ls
+ls
+cd dev/OAC
+ls
+cd Lab01
+ls
+git status
+git pull --rebase
+ls
+git branch -r
+ls
+git status
+git branch
+git branch -r
+ls
+cd 
+ls
+cd Work
+ls
+cd folhas-de-rosto
+ls
+ls
+source venv/bin/activate
+v application.py
+cd Work/folhas-de-rosto
+ls
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+python3 application.py
+git add -A
+git commit -m "Add new fields to front-end (tamanho fonte, espacamento linhas, linhas antes do titulo)"
+git push
+shutdown now
+shutdown now
+ls
+cd Downloads
+ls
+mv LOGO.xbm ~/Work/folhas-de-rosto
+cd Work/folhas-de-rosto
+source venv/bin/activate
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+ls
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+git add -A
+git status
+v .gitignore
+git restore --staged merged_pdf/combined_file.pdf
+git status
+git add -A
+git status
+git commit -m "Add a refresh button"
+git push
+git push --set-upstream origin feat/refreshButton
+git push --set-upstream origin feat/refreshButton
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+git add -A
+git staus
+git status
+git commit -m "Change button layout and add theme"
+git push
+python3 application.pyw
+python3 application.pyw
+sudo apt install libreoffice
+libreoffic
+/bin/libreoffice
+python3 application.pyw
+python3 application.pyw
+ls
+cd merged_pdf
+ls
+xdg-open combined_file.pdf
+cd ..
+ls
+python3 application.pyw
+git add -A
+git status
+git commit -m "Support for docx in linux"
+git push
+git push --set-upstream origin feat/docxinlinux
+ls
+ls
+python3 application.pyw
+python3 application.pyw
+cd 
+cd dev/learning/leetcode
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+python3 Mirror_Reflection.py
+cd dev/learning/leetcode
+ls
+v Mirror_Reflection.py
+ipython
+v Mirror_Reflection.py
+ls
+cd 
+ls
+cd dev/tag
+ls
+v isomorfo.py
+ls
+cd projeto01
+ls
+v click_analizer.py
+source venv/bin/activate
+ls
+cd ..
+ls
+cd projeto01
+ls
+v click_analizer.py
+python3 click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+v click_analizer.py
+python3 click_analizer.py soc-dolphins.mtx
+ls
+ls
+cd 
+ls
+cd Work/folhas-de-rosto
+ls
+ls
+git pull --rebase
+ls
+git branch -r
+ls
+git branch main
+git checkout main
+ls
+ls
+git pull --rebase
+ls
+ls
+ls
+v application.pyw
+ls
+v application.pyw
+python3 application.pyw
+source venv/bin/activate
+ls
+v .gitignore
+ls
+git pull --rebase
+ls
+git pull
+git branch
+git branch -r
+git checkout origin/release/ubuntu
+ls
+source venv/bin/activate
+pip install -r requirements.txt
+pip freeze
+ls
+bat requirements.txt
+pip install altgraph
+pip install colorama
+pip install docx2pdf
+pip install docxcompose
+bat requirements.txt
+pip install Pillow
+pip install PyPDF2
+pip install python-docx
+pip install pyinstaller
+ls
+python3 application.pyw
+v application.pyw
+python3 application.pyw
+pwd
+ls
+pyinstaller application.spec
+ls
+ls dist
+dist/application
+v application.pyw
+python3 application.pyw
+ls
+python3 application.pyw
+v application.pyw
+python3 application.pyw
+ls
+pyinstaller application.spec
+v application.spec
+pyinstaller application.spec
+ls
+v application.spec
+pyinstaller application.spec
+ls
+dist/application
+ls
+ls
+ls
+v .gitignore
+ls
+rm requirements.txt
+ls
+pip freeze > requirements.txt
+ls
+bat requirements.txt
+ls
+v .gitignore
+git add -A
+git status
+ls
+v .gitignore
+ls
+git status
+git restore teste.dockx
+git restore teste.docx
+git restore teste1.docx
+git status
+git restore --staged teste.docx
+git restore --staged teste1.docx
+git status
+git branch
+git commit -m "Linux realease"
+git push
+ls
+ls
+cd 
+ls
+cd Work
+ls
+cd member-area-fast
+ls
+source venv/bin/activate
+ls
+v .
+ls
+ls
+cd ..
+ls
+cd folhas-de-rosto
+ls
+git branch -r
+git checkout -b "feat/refreshButton"
+ks
+ls
+v application.pyw
+source venv/bin/activate
+v application.pyw
+ls
+pip freeze
+abiworld
+ls
+git checkout -b "feat/docxinlinux"
+ls
+v application.pyw
+ls
+pyinstaller application.spec
+ls
+ls
+ls
+v application.pyw
+cd 
+cd dev
+ls
+cd learning/leetcode
+ls
+v Mirror_Reflection.py
+flameshot
+python3
+cd .jupyter
+ls
+cd nbconfig
+ls
+cd ..
+ls
+ls -la
+ls nbconfig
+cd ..
+ls
+v ~/.jupyter/custom/custom.js
+cd dev/dataScience
+ls
+source venv/bin/activate
+pip install jupyterthemes\
+
+pip install --upgrade jupyterthemes
+v ~/.config/alacritty/alacritty.yml
+ls
+v ~/.jupyter/custom/custom.js
+cd 
+ls
+rm -rf .jupyter
+ls
+ls -la
+cd Downloads
+ls
+bash Miniconda3-py39_4.12.0-Linux-x86_64.sh
+cd 
+v .config/zsh/.zshrc
+conda config --set auto_activate_base false
+conda init
+ls
+cd dev
+ls
+cd dataScience
+ls
+ls
+source venv/bin/activate
+# Create required directory in case (optional)\
+mkdir -p $(jupyter --data-dir)/nbextensions\
+# Clone the repository\
+cd $(jupyter --data-dir)/nbextensions\
+git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding\
+# Activate the extension\
+jupyter nbextension enable vim_binding/vim_binding
+mkdir ~/.jupyter/custom
+ls
+cd ..
+ls
+cd nbextensions
+ls
+cd vim_binding
+ls
+cd 
+ls
+cd dev/dataScience
+source venv/bin/activate
+jupyter notebook
+jupyter notebook
+ls
+ls
+rm -rf venv
+ls
+cd 
+conda create  �n learning python==latest
+conda create  �n learning
+conda show
+conda list
+conda create  �n learning
+conda create  �n learn
+conda env create  �n learning
+conda env create  �-name learning
+conda env create learning --name
+ls
+cd miniconda3
+ls
+cd envs
+ls
+conda create -n learning
+conda activate learning
+cd 
+conda list
+conda install -h
+conda install jupyter
+conda list
+conda activate base
+conda list
+conda activate learning
+ls
+conda install -c conda-forge jupyter_contrib_nbextensions
+ls -la
+ls miniconda3
+ls
+cd miniconda3
+ls
+cd envs
+ls
+cd learning
+ls
+ls -la
+cd 
+ls
+cd dev/dataScience
+ls
+jupyter notebook
+jupyter notebook -h
+jupyter notebook
+# install jupyterthemes\
+conda install -c conda-forge jupyterthemes\
+\
+# update to latest version\
+conda update jupyterthemes
+jupyter notebook
+jt -t gruvboxd -T -N -kl
+jupyter notebook
+jt -t gruvboxd -T -N -kl
+jt -f "meslo"
+jupyter notebook
+jupyter notebook
+conda install "nbconvert=5.6.1"
+conda install "nbconvert<6"
+conda list
+jupyter notebook
+conda install nbconvert
+conda update -n base -c defaults conda
+conda update -n learning
+conda update -n learning -c defaults conda
+ls
+jupyter notebook
+conda install nbconvert
+jt -f "meslo"
+jt -t gruvboxd -T -N -kl
+jt -t gruvboxd -vim -T -N -kl
+jupyter notebook
+jt -f "meslo"
+jt -t gruvboxd -vim -T -N -kl
+jupyter notebook
+shutdown now
+xprop
+v .config/qtile/config.py
+xprop
+v .config/qtile/config.py
+cd Work
+ls
+cd folhas-de-rosto
+ls
+git checkout -b "feat/multipleDocuments"
+ls
+v .
+source venv/bin/activate
+v .
+ls
+mkdir app
+mv application.pyw app
+mv masterWindow.py app
+mv file_merger.py app
+mv CombineWindow.py
+mv CombineWindow.py app
+ls
+cd app
+ls
+mv CombineWindow.py combineWindow.py
+ls
+touch __init__.py
+ls
+v application.pyw
+ls
+v application.pyw
+python3 application.pyw
+ls
+cd ..
+ls
+git add -A
+git commit -m "Add new window"
+git push
+git push --set-upstream origin feat/multipleDocuments
+htop
+cd Work/folhas-de-rosto
+source venv/bin/activate
+python3 application.pyw
+ls
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python23
+python3
+xprop
+v .config/qtile/config.py
+cd Work/folhas-de-rosto
+source venv/bin/activate
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 app/application.pyw
+ls
+cd app
+ls
+ls
+python3 application.pyw
+ls
+mkdir window
+ls
+mv combineWindow.py window
+mv masterWindow.py window
+ls
+mv window windows
+ls
+touch windows/__init__.py
+ls
+v application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+python3 application.pyw
+ls
+ls
+ls
+cd ..
+ls
+cd app
+ls
+v application.pyw
+ls
+ls
+git pull --rebase
+ls
+v application.pyw
+cd Work/folhas-de-rosto
+source venv/bin/activate
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+python3 app/application.pyw
+git status
+git add -A
+git commit -m "Edit button"
+git push
+python3 app/application.pyw
+python3 app/application.pyw
+cd Work/folhas-de-rosto
+ls
+source venv/bin/activate
+python3 app/application.pyw
+v app
+python3 app/application.pyw
+v app
+python3 app/application.pyw
+v app
+python3 app/application.pyw
+python3 app/application.pyw
+cd dev/Oberon-Scala
+ls
+sbt build
+sbt compile
+sbt compile
+sbt compile
+sbt compile
+sbt test
+sbt compile
+sbt compile
+sbt test
+sbt compile
+sbt compile
+sbt compile
+sbt test
+sbt test
+ls
+git add -A
+git status
+git commit -m "Change values to arrayList and clear gramatic"
+git checkout -b "feat/ArrayInitialization/Parser"
+git push
+git push --set-upstream origin feat/ArrayInitialization/Parser
+cd 
+ls
+conda activate learning
+ipython
+cd dev/dataScience
+ls
+bat README.md
+sudo reboot
+cd dev/
+ls
+cd Oberon-Scala
+ls
+git pull --rebase
+ls
+git branch -r
+git checkout ArrayInitialization-(expression-modification-only)
+git checkout "ArrayInitialization-(expression-modification-only)"
+ls
+v src
+cd 
+ls
+cd dev
+ls
+ls
+cd dataScience
+ls
+conda activate learning
+ls
+jupyter notebook
+ls
+ls
+ls
+cd dev
+cd 
+cd Desktop
+ls
+curl -L -o elm.gz https://github.com/elm/compiler/releases/download/0.19.1/binary-for-linux-64-bit.gz
+gunzip elm.gz
+chmod +x elm
+sudo mv elm /usr/local/bin/\
+
+ls
+cd dev
+ls
+ls
+mkdir elm
+cd elm
+ls
+elm init
+ls
+v .
+ls
+cd src
+v Main.elm
+ls
+cd ..
+v src/Main.elm
+v src/Main.elm
+ls
+mv src/Main.elm src/Counter.elm
+v src/TextReverse.elm
+cd dev/elm
+ls
+elm make src/Main.elm
+elm make src/Main.elm
+elm make src/Main.elm
+elm make src/Main.elm
+ls
+firefox index.html
+ls elm-stuff
+ls
+v index.html
+elm make src/Main.elm
+elm make src/Main.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+elm make src/TextReverse.elm
+reboot
+cd dev
+ls
+cd learning/leetcode
+ls
+v Count_Vowels_Permutation.py
+shutdown now
+shutdown now
+shutdown now
+shutdown now
+shutdown now
+cd dev/Oberon-Scala
+ls

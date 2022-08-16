@@ -1,0 +1,22 @@
+#!/bin/sh
+# HISTFILE="$XDG_DATA_HOME"/zsh/history
+HISTSIZE=1000000
+SAVEHIST=1000000
+export PATH="$HOME/.local/bin/":$PATH
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/share/go/bin:$PATH
+export GOPATH=$HOME/.local/share/go
+export PATH="$PATH:./node_modules/.bin"
+export PATH="$BINPATH:/$PATH"
+export PATH="$PATH:/home/ruan/.local/share/coursier/bin"
+
+export SSLKEYLOGFILE=~/.config/ssl-key.log
+
+export ZDOTDIR=$HOME/.config/zsh
+
+XDG_DATA_HOME="$HOME/.local/share"
+XDG_CACHE_HOME="$HOME/.local/cache"
+XDG_CONFIG_HOME="$HOME/.config"
+
