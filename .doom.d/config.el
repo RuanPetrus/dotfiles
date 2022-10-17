@@ -148,3 +148,27 @@
         :desc "New capture entry" "c" #'my/denote-capture
         :desc "Add  new link" "i" #' denote-link-or-create
        ))
+
+(defcustom my-default-image-directory
+  "~/Documents/org/resources/"
+  "Default directory for images for org link insertion."
+  :type 'string
+  :group 'image-org-link-insertion)
+
+(defcustom my-image-extensions
+  '("png" "jpg" "jpeg" "tiff")
+  "List of image extensions allowed for org link insertion."
+  :type '(repeat string)
+  :group 'image-org-link-insertion)
+
+(defun insert-image-org-link (img)
+  "Insert an org image link, choosing the file with completion
+and starting from `my-default-image-directory'."
+  (interactive
+   (list (read-file-name
+          "Image: " my-default-image-directory nil t nil
+          (lambda (name)
+            (or (directory-name-p name)
+                (member (file-name-extension name)
+                        my-image-extensions))))))
+  (insert (format "[[%s]]" img)))
