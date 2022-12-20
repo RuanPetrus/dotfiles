@@ -1,5 +1,10 @@
-#ASDF
+# Haskell
+For haskell i use ghcup
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+```
 
+# ASDF
 ## Installing
 Dowload with YAY
 ```sh
@@ -18,14 +23,18 @@ echo "source /opt/asdf-vm/asdf.sh" >> ~/.zshrc
 `asdf global nodejs 17.4.0` uses nodejs 17.4.0 as global node  
 `asdf local nodejs 17.4.0` per project  
 
-
-## Languages
+# Python
+I use asdf to manage python
 ```sh
 asdf plugin add python
-asdf plugin add rust
+asdf install python 3.10.8
+asdf global python 3.10.8
+```
+
+# NodeJs
+I use asdf to manage node
+```sh
 asdf plugin add nodejs
-asdf plugin add java
-asdf plugin add scala
-asdf plugin add golang
-asdf plugin add lua
+asdf install nodejs 18.4.0
+asdf global nodejs 18.4.0
 ```

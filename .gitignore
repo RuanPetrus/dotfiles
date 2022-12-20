@@ -1,6 +1,6 @@
-zsh/plugins
-zsh/.zcompdump
+*zsh/plugins
+*zsh/.zcompdump
 nvim/plugin
-nvim/README.md
-nvim/.github
-nvim/.gitignore
+*nvim/README.md
+*nvim/.github
+*nvim/.gitignore

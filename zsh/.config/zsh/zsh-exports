@@ -1,0 +1,29 @@
+#!/bin/sh
+HISTSIZE=1000000
+SAVEHIST=1000000
+
+#Defaults
+export EDITOR="nvim"
+export BROWSER="firefox"
+
+export PATH="$HOME/.local/bin/":$PATH
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/share/go/bin:$PATH
+export GOPATH=$HOME/.local/share/go
+export PATH="$PATH:./node_modules/.bin"
+export PATH="$BINPATH:/$PATH"
+export PATH="$PATH:/home/ruan/.local/share/coursier/bin"
+
+## SSH keyring
+export SSH_AUTH_SOCK="/run/user/$(id -u)/gcr/ssh"
+
+## Cleaning home folder
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+export LESSHISTFILE="$XDG_CACHE_HOME/less/history"
+export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
