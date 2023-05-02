@@ -49,4 +49,21 @@
 
 (evil-collection-init)
 
+
+;; My keybindings
+(evil-set-leader 'normal (kbd "SPC"))
+
+;; Window navigation
+(evil-define-key 'normal 'global
+  (kbd "C-h") 'evil-window-left
+  (kbd "C-l") 'evil-window-right
+  (kbd "C-k") 'evil-window-up
+  (kbd "C-j") 'evil-window-down
+
+  (kbd "<leader>wh") 'evil-window-left
+  (kbd "<leader>wl") 'evil-window-right
+  (kbd "<leader>wk") 'evil-window-up
+  (kbd "<leader>wj") 'evil-window-down)
+
+
 (provide 'user-keybindings)
