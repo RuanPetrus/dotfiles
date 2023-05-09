@@ -59,11 +59,37 @@
   (kbd "C-l") 'evil-window-right
   (kbd "C-k") 'evil-window-up
   (kbd "C-j") 'evil-window-down
+  (kbd "C-w c") 'evil-window-delete
 
   (kbd "<leader>wh") 'evil-window-left
   (kbd "<leader>wl") 'evil-window-right
   (kbd "<leader>wk") 'evil-window-up
-  (kbd "<leader>wj") 'evil-window-down)
+  (kbd "<leader>wj") 'evil-window-down
+  (kbd "<leader>wc") 'evil-window-delete
+)
 
+;; Buffer navigation
+(evil-define-key 'normal 'global
+  (kbd "H") 'previous-buffer
+  (kbd "L") 'next-buffer
+
+  (kbd "<leader>bi") 'ibuffer
+)
+
+;; Search
+(evil-define-key 'normal 'global
+  (kbd "<leader>sh") 'evil-ex-nohighlight
+)
+
+(defun goto-config-file () 
+  "Goto user config file"
+  (interactive)
+  (find-file config-file))
+
+;; File navigation
+(evil-define-key 'normal 'global
+  (kbd "<leader>ff") 'find-file
+  (kbd "<leader>fp") 'goto-config-file
+)
 
 (provide 'user-keybindings)

@@ -19,11 +19,22 @@
 
 
 ;; Default directories
-(defvar user-config-var-directory (expand-file-name "var/" user-emacs-directory))
-(defvar user-config-etc-directory (expand-file-name "etc/" user-emacs-directory))
+(defvar user-config-var-directory    (expand-file-name "var/" user-emacs-directory))
+(defvar user-config-etc-directory    (expand-file-name "etc/" user-emacs-directory))
+(defvar user-config-backup-directory (expand-file-name "backup/"  user-emacs-directory))
 
 (mkdir user-config-var-directory t)
 (mkdir user-config-etc-directory t)
+(mkdir user-config-backup-directory t)
+
+;; Write backups to backup directory
+(setq backup-directory-alist `(("." . ,user-config-backup-directory))
+      backup-by-copying      t  ; Don't de-link hard links
+      version-control        t  ; Use version numbers on backups
+      delete-old-versions    t  ; Automatically delete excess backups:
+      kept-new-versions      20 ; how many of the newest versions to keep
+      kept-old-versions      5) ; and how many of the old
+
 
 (load custom-file t)
 
