@@ -1,0 +1,65 @@
+snippet Mint Mint
+	struct Mint {
+		using ull = unsigned long long;
+		ull val;
+		template <typename T>
+		constexpr Mint(T x) noexcept : val(x < 0    ? x % MOD + MOD
+										 : x >= MOD ? x % MOD
+										 :            x) {}
+
+		constexpr Mint & operator+() noexcept { return *this; }
+		constexpr Mint operator-() noexcept { return Mint(MOD-val); }
+
+		constexpr Mint & operator+=(const Mint &rhs) noexcept {
+			if ((val += rhs.val) >= MOD) val -= MOD;
+			return *this;
+		}
+		constexpr Mint & operator-=(const Mint &rhs) noexcept {
+			if ((val -= rhs.val) >= MOD) val += MOD;
+			return *this;
+		}
+		constexpr Mint & operator*=(const Mint &rhs) noexcept {
+			val = static_cast<__int128>(val) * rhs.val % MOD;
+			return *this;
+		}
+		constexpr Mint operator+(const Mint &rhs) const noexcept { return Mint(*this) += rhs; }
+		constexpr Mint operator-(const Mint &rhs) const noexcept { return Mint(*this) -= rhs; }
+		constexpr Mint operator*(const Mint &rhs) const noexcept { return Mint(*this) *= rhs; }
+
+		// log(MOD)
+		constexpr Mint & operator/=(const Mint &rhs) noexcept { return *this *= rhs.inv(); }
+		// log(MOD)
+		constexpr Mint operator/(const Mint &rhs) const noexcept { return Mint(*this) /= rhs; }
+		// log(n)
+		constexpr Mint pow(ull n) const noexcept {
+			Mint ret(1), mul(val);
+			while (n) {
+			  if (n % 2) ret *= mul;
+			  mul *= mul;
+			  n >>= 1;
+			}
+			return ret;
+		}
+		// log(MOD). MOD must be prime.
+		constexpr Mint inv() const noexcept { return pow(MOD - 2); }
+	};
+
+snippet Combinatorics Combinatorics
+	struct Combinatorics {
+		vector<Mint> fac, ifac;
+		Combinatorics(int n) : fac(n, Mint(0)), ifac(n, Mint(0)) {
+			fac[0] = Mint(1);
+			rep(i, 1, n) fac[i] = fac[i-1] * Mint(i);
+
+			ifac[n-1] = fac[n-1].inv();
+			irep(i, n-2, 0) ifac[i] = ifac[i+1] * Mint(i+1);
+		}
+		Mint choose(int n, int k) {
+			if (n < k) return Mint(0);
+			if (k < 0) return Mint(0);
+			return fac[n] * ifac[k] * ifac[n-k];
+		}
+		Mint perm(int n, int k) {
+			return fac[n] * ifac[n-k];
+		}
+	};

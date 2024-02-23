@@ -1,0 +1,42 @@
+snippet comp Competitive Programming Template
+	#include <bits/stdc++.h>
+
+	using namespace std;
+
+	#define endl '\n'
+	#define pb push_back
+	#define eb emplace_back
+	#define all(x) begin(x), end(x)
+	#define debug(x) cout << #x << ": " << (x) << endl
+	#define rep(i, a, b) for (int i = a; i < (int)(b); i++)
+	#define irep(i, a, b) for (int i = a; i >= (int)(b); i--)
+	
+	#define inbounds(x, l, r) ((l) <= (x) && (x) <= (r))
+	#define L0(res...) [&](){ return res; }
+	#define L1(res...) [&](auto const & x){ return res; }
+	#define L2(res...) [&](auto const & x, auto const& y){ return res; }
+	#define sz(x) (int)x.size()
+
+	template<class T> inline void chmin(T & a, const T b){ if (a > b) a = b; }
+	template<class T> inline void chmax(T & a, const T b){ if (a < b) a = b; }
+
+	typedef pair<int, int> pii;
+	typedef vector<int> vi;
+	typedef long long ll;
+	typedef long double ld;
+
+	const ll oo = 0x3f3f3f3f3f3f3f3f;
+
+	void solve() {
+		${0}
+	}
+
+	int32_t main() {
+		ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+		int t = 1;
+		// cin >> t;
+		for (int i = 0; i < t; i++) {
+			solve();
+		}
+		return 0;
+	}

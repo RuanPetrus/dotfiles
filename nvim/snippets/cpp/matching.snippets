@@ -1,0 +1,166 @@
+snippet OnlineMatching OnlineMatching
+	struct OnlineMatching {
+		int n = 0, m = 0;
+		vector<int> vis, match, dist;
+		vector<vector<int>> g;
+		vector<int> last;
+		int t = 0;
+
+		OnlineMatching(int n_, int m_) : n(n_), m(m_),
+			vis(n, 0), match(m, -1), dist(n, n+5), g(n), last(n, -1)
+			{}
+
+		void add(int a, int b) {
+			g[a].pb(b);
+		}
+
+		bool kuhn(int a) {
+			vis[a] = t;
+			for(const int b: g[a]) {
+				int c = match[b];
+				if (c == -1) {
+					match[b] = a;
+					return true;
+				}
+				if (last[c] != t || (dist[a] + 1 < dist[c])) 
+					dist[c] = dist[a] + 1, last[c] = t;
+			}
+			for (const int b: g[a]) {
+				int c = match[b];
+				if (dist[a] + 1 == dist[c] && vis[c] != t && kuhn(c)) {
+					match[b] = a;
+					return true;
+				}
+			}
+			return false;
+		}
+		bool can_match(int a) {
+			t++;
+			last[a] = t;
+			dist[a] = 0;
+			return kuhn(a);
+		}
+	};
+
+snippet mcmf Min cost Max flow
+
+	#include <bits/extc++.h> /// include-line, keep-include
+
+	struct MCMF {
+		struct edge {
+			int from, to, rev;
+			ll cap, cost, flow;
+		};
+		int n;
+		vector<vector<edge>> ed;
+		vi seen;
+		vector<ll> dist, pi;
+		vector<edge*> par;
+
+		MCMF(int n) : n(n), ed(n), seen(n), dist(n), pi(n), par(n) {}
+
+		void addEdge(int from, int to, ll cap, ll cost) {
+			if (from == to) return;
+			ed[from].push_back(edge{ from,to,sz(ed[to]),cap,cost,0 });
+			ed[to].push_back(edge{ to,from,sz(ed[from])-1,0,-cost,0 });
+		}
+
+		void path(int s) {
+			fill(all(seen), 0);
+			fill(all(dist), oo);
+			dist[s] = 0; ll di;
+
+			__gnu_pbds::priority_queue<pair<ll, int>> q;
+			vector<decltype(q)::point_iterator> its(n);
+			q.push({ 0, s });
+
+			while (!q.empty()) {
+				s = q.top().second; q.pop();
+				seen[s] = 1; di = dist[s] + pi[s];
+				for (edge& e : ed[s]) if (!seen[e.to]) {
+					ll val = di - pi[e.to] + e.cost;
+					if (e.cap - e.flow > 0 && val < dist[e.to]) {
+						dist[e.to] = val;
+						par[e.to] = &e;
+						if (its[e.to] == q.end())
+							its[e.to] = q.push({ -dist[e.to], e.to });
+						else
+							q.modify(its[e.to], { -dist[e.to], e.to });
+					}
+				}
+			}
+			rep(i,0,n) pi[i] = min(pi[i] + dist[i], oo);
+		}
+
+		pair<ll, ll> maxflow(int s, int t) {
+			ll totflow = 0, totcost = 0;
+			while (path(s), seen[t]) {
+				ll fl = oo;
+				for (edge* x = par[t]; x; x = par[x->from])
+					fl = min(fl, x->cap - x->flow);
+
+				totflow += fl;
+				for (edge* x = par[t]; x; x = par[x->from]) {
+					x->flow += fl;
+					ed[x->to][x->rev].flow -= fl;
+				}
+			}
+			rep(i,0,n) for(edge& e : ed[i]) totcost += e.cost * e.flow;
+			return {totflow, totcost/2};
+		}
+
+		// If some costs can be negative, call this before maxflow:
+		void setpi(int s) { // (otherwise, leave this out)
+			fill(all(pi), oo); pi[s] = 0;
+			int it = n, ch = 1; ll v;
+			while (ch-- && it--)
+				rep(i,0,n) if (pi[i] != oo)
+				  for (edge& e : ed[i]) if (e.cap)
+					  if ((v = pi[i] + e.cost) < pi[e.to])
+						  pi[e.to] = v, ch = 1;
+			assert(it >= 0); // negative cost cycle
+		}
+	};
+
+snippet dinic Dinic Algorithm
+	struct Dinic {
+		struct Edge {
+			int to, rev;
+			ll cap, flow;
+		};
+		vi lvl, nxt, q;
+		vector<vector<Edge>> adj;
+		Dinic(int n) : lvl(n), nxt(n), q(n), adj(n) {}
+		void addEdge(int a, int b, ll cap) {
+			adj[a].pb({b, sz(adj[b]), cap, 0ll});
+			adj[b].pb({a, sz(adj[a]) - 1, 0ll, 0ll});
+		}
+		ll dfs(int a, int t, ll f) {
+			if (a == t || !f) return f;
+			for (int& i = nxt[a]; i < sz(adj[a]); i++) {
+				Edge& e = adj[a][i];
+				if (lvl[a] + 1 == lvl[e.to])
+					if (ll p = dfs(e.to, t, min(f, e.cap - e.flow))) {
+						e.flow += p, adj[e.to][e.rev].flow -= p;
+						return p;
+					}
+			}
+			return 0;
+		}
+		ll maxflow(int s, int t) {
+			ll flow = 0; q[0] = s;
+			rep(L, 0, 31) do { // 'int L=30' maybe faster for random data
+				lvl = nxt = vi(sz(q));
+				int qi = 0, qe = lvl[s] = 1;
+				while (qi < qe && !lvl[t]) {
+					int a = q[qi++];
+					for (Edge & e : adj[a])
+						if (!lvl[e.to] && (e.cap - e.flow) >> (30-L))
+							q[qe++] = e.to, lvl[e.to] = lvl[a] + 1;
+				}
+				while (ll p = dfs(s, t, oo)) flow += p;
+			} while (lvl[t]);
+			return flow;
+		}
+		bool leftOfMinCut(int a) { return lvl[a] != 0; }
+	};
