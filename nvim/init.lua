@@ -26,7 +26,7 @@ require('lazy').setup({
     lazy = false,
     config = function() 
 	    require("gruvbox").setup({
-		    transparent_mode = true,
+		    -- transparent_mode = true,
 		    constrast = "soft",
 	    })
 
@@ -64,6 +64,35 @@ require('lazy').setup({
     },
     build = ':TSUpdate',
   },
+
+  -- Competitive Programming
+  {
+    'xeluxee/competitest.nvim',
+    dependencies = 'MunifTanjim/nui.nvim',
+    cmd = {"CompetiTest"},
+    keys = {
+      { "<leader>cc" , "<cmd>CompetiTest run<cr>", desc = "CompetiTest run"},
+    },
+    config = function() require('competitest').setup({
+      popup_ui = {
+	total_width = 1,
+	total_height = 1,
+      },
+      runner_ui = {
+	viewer = {
+	  width = 1,
+	  height = 1,
+	},
+      },
+      received_problems_path = "$(CWD)/$(JAVA_TASK_CLASS).$(FEXT)",
+      received_contests_problems_path = "$(JAVA_TASK_CLASS).$(FEXT)",
+      compile_command = {
+	cpp = { exec = "g++", args = { "-Wall", "-Wextra", "-std=c++20", 
+	                               "-ggdb", "-fsanitize=address,undefined", 
+	                               "$(FNAME)", "-o", "$(FNOEXT)" } },
+      },
+    }) end,
+  } 
 }, {})
 
 -- [[ Configure Treesitter ]]
@@ -82,7 +111,6 @@ end, 0)
 vim.opt.backup = false                          -- creates a backup file
 vim.opt.cmdheight = 1                           -- more space in the neovim command line for displaying messages
 vim.opt.conceallevel = 0                        -- so that `` is visible in markdown files
-vim.opt.fileencoding = "utf-8"                  -- the encoding written to a file
 vim.opt.hlsearch = true                         -- highlight all matches on previous search pattern
 vim.opt.ignorecase = true                       -- ignore case in search patterns
 vim.opt.mouse = "a"                             -- allow the mouse to be used in neovim

@@ -1,0 +1,168 @@
+snippet Solution Thoughts about solution
+	/*
+		Solution:	
+		
+		$0
+	*/
+
+snippet Allocator Bump Allocator
+	// Either globally or in a single class:
+	char buf[450 << 20];
+	size_t buf_ind = sizeof buf;
+
+	template<typename T>
+	T * alloc() {
+		size_t s = sizeof(T);
+		assert(s < buf_ind);
+		return (T*)&buf[buf_ind -= s];
+	}
+
+
+snippet SqrtDecomp Sqrt Decomp
+	struct SqrtDecomp {
+		using K = map<ll, int>;
+		using T = map<ll, int>;
+		int n, sz, n_block;
+		vector<T> v;
+		vector<int> id;
+		vector<K> block;
+
+		SqrtDecomp(const vector<T> & x): n(x.size()), v(x), id(n) {
+			sz = 1;
+			while((sz+1) * (sz+1) <= n) sz++;
+			n_block = (n + sz - 1) / sz; // ceil(n, sz)
+			block = vector<K>(n_block);
+
+			rep(i, 0, n) id[i] = i / sz;
+		}
+
+		void update(int l, int r, ll info, bool remove = false) { // Update [l, r)
+			int lx = l, rx = r;
+
+			while((id[lx] * sz != lx) && lx < rx) {
+				// Update single
+				if (!remove) v[lx][info]++;
+				else v[lx][info]--;
+
+				// cout << "lx: " << lx << endl;
+				lx++;
+			}
+			if (lx >= rx) return;
+
+			int bid = id[lx];
+			while((bid + 1) * sz <= rx) {
+				// update block
+				if (!remove) block[bid][info]++;
+				else block[bid][info]--;
+
+				// cout << "bid: " << bid << endl;
+
+				bid++;
+			}
+			lx = bid * sz;
+			while(lx < rx) {
+				//update single
+				if (!remove) v[lx][info]++;
+				else  v[lx][info]--;
+				// cout << "lx: " << lx << endl;
+				lx++;
+			}
+		}
+
+		ll query(int idx) {
+			while(prev(v[idx].end())->second == 0) 
+				v[idx].erase(prev(v[idx].end()));
+
+			ll ans = prev(v[idx].end())->first;
+
+			int bid = id[idx];
+			while(block[bid].size() > 0 && prev(block[bid].end())->second == 0) 
+				block[bid].erase(prev(block[bid].end()));
+
+			if (block[bid].size() > 0) {
+				chmax(ans, prev(block[bid].end())->first);
+			}
+			return ans;
+		}
+	};
+
+snippet TwoSat TwoSat
+	struct TwoSat{
+		int n;
+		vector<vector<int>> g, gi;
+		vector<bool> vis;
+		vector<int> vars, comp;
+		vector<int> top;
+		TwoSat(int _n) 
+			: n(_n), g(2*n), gi(2*n), vis(2*n), vars(n, -1), comp(2*n)
+		{}
+
+		int neg(int a) {
+			if (a >= n) return a-n;
+			return a + n;
+		}
+
+		void add_or(int a, int b) {
+			g[neg(a)].eb(b);
+			g[neg(b)].eb(a);
+
+			gi[b].eb(neg(a));
+			gi[a].eb(neg(b));
+		}
+
+		void add_imp(int a, int b) {
+			add_or(neg(a), b);
+		}
+
+		void add_either(int a, int b) {
+			add_or(a, b);
+			add_or(neg(a), neg(b));
+		}
+
+		void dfs(int a) {
+			vis[a] = true;
+			for (auto b: g[a]) if (!vis[b]) dfs(b);
+			top.eb(a);
+		}
+
+		void idfs(int a, int c){
+			vis[a] = true;
+			comp[a] = c;
+			for (auto b: gi[a]) if (!vis[b]) idfs(b, c);
+		}
+
+		bool sat() {
+			int c = 0;
+			rep(a, 0, 2*n) if (!vis[a]) dfs(a);
+
+			fill(all(vis), 0);
+			reverse(all(top));
+			for(int a : top) if (!vis[a]) idfs(a, c++);
+
+			for(int a: top){
+				if (comp[a] == comp[neg(a)]) return false;
+
+				bool is_neg = a >= n;
+				if (is_neg) a = neg(a);
+
+				if (vars[a] == -1) vars[a] = is_neg;
+			}
+
+			return true;
+		}
+	};
+
+snippet OrderedSet ordered_set
+	#include <bits/extc++.h>
+	// or
+	#include <ext/pb_ds/assoc_container.hpp>
+	#include <ext/pb_ds/tree_policy.hpp>
+
+	using namespace __gnu_pbds; // or pb_ds;
+	template<typename T, typename B = null_type>
+	using ordered_set = tree<T, B, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
+	// order_of_key(k)  : Number of items strictly smaller than k
+	// find_by_order(k) : K-th element in a set (counting from zero)
+
+	// to swap two sets, use a.swap(b);
