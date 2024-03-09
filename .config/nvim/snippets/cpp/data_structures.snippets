@@ -1,0 +1,16 @@
+snippet Psum Psum
+	template<typename S>
+	struct Psum {
+		vector<S> v;
+
+		Psum() {}
+
+		Psum(vector<S> a): v(a.size() + 1) {
+			int n = a.size();
+			rep(i, 0, n) v[i+1] = v[i] + a[i];
+		}
+
+		S query(int l, int r) {  // [l, r)
+			return v[r] - v[l];
+		}
+	};

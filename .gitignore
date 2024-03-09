@@ -1,6 +1,1 @@
-zsh/plugins
-zsh/.zcompdump
-nvim/plugin
-nvim/README.md
-nvim/.github
-nvim/.gitignore
+.config/nvim/lazy-lock.json
