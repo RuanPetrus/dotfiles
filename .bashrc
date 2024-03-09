@@ -27,7 +27,7 @@ export HISTFILE="${XDG_STATE_HOME}"/bash/history
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export LESSHISTFILE="$XDG_STATE_HOME"/less/history
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
-export PYTHONSTARTUP="$XDG_CONFIG_HOME"/pythonrc
+export PYTHONSTARTUP="$XDG_CONFIG_HOME"/pythonrc.py
 
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias nvidia-settings=nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings
