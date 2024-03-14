@@ -108,7 +108,7 @@ require('lazy').setup({
       received_problems_path = "$(CWD)/$(JAVA_TASK_CLASS).$(FEXT)",
       received_contests_problems_path = "$(JAVA_TASK_CLASS).$(FEXT)",
       compile_command = {
-	cpp = { exec = "g++", args = { "-Wall", "-Wextra", "-std=c++20", 
+	cpp = { exec = "g++", args = { "-Wall", "-Wextra", "-std=c++17", 
 	                               "-ggdb", "-fsanitize=address,undefined", 
 	                               "$(FNAME)", "-o", "$(FNOEXT)" } },
       },
