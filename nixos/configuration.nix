@@ -9,16 +9,18 @@
     [ 
       ./hardware-configuration.nix
       ./packages.nix
+
       ./modules/bootloader.nix
+      ./modules/env.nix
+      ./modules/gnome.nix
+      ./modules/home-manager.nix
+      ./modules/kernel.nix
       ./modules/networking.nix
       ./modules/nvidia.nix
       ./modules/services.nix
       ./modules/sound.nix
       ./modules/user.nix
       ./modules/x11.nix
-      ./modules/gnome.nix
-      ./modules/home-manager.nix
-      ./modules/kernel.nix
     ];
   networking.hostName = hostname;
   time.timeZone = "America/Sao_Paulo";
