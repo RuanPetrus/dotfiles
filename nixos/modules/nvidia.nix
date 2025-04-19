@@ -40,6 +40,10 @@
   # Make sure to use the correct Bus ID values for your system
   # Can be found by running `sudo lshw -c display`
   hardware.nvidia.prime = {
+  	offload = {
+	  enable = true;
+	  enableOffloadCmd = true;
+        };
 	intelBusId = "PCI:0:2:0";
 	nvidiaBusId = "PCI:1:0:0";
   };

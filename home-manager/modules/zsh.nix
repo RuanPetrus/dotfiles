@@ -8,6 +8,9 @@
     shellAliases = {
         r = "ranger";
         v = "nvim";
+
+	build-nixos = "sudo nixos-rebuild switch --flake ~/dotfiles";
+	build-home-manager = "home-manager switch --flake ~/dotfiles";
     };
 
     history.size = 10000;

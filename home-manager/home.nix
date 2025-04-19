@@ -3,6 +3,7 @@
     ./home-packages.nix
     ./modules/zsh.nix
     ./modules/git.nix
+    ./modules/alacritty.nix
   ];
 
   home = {
