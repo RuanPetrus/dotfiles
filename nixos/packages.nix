@@ -8,6 +8,17 @@
      neovim 
      stremio
      home-manager
+     xclip
+
+     # Build tools
+	 gcc
+	 gnumake
+	 ninja
+	 cmake
+	 linux
+	 autoconf
+	 pkg-config
+	 automake
   ];
 }
 

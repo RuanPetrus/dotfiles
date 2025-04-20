@@ -21,6 +21,5 @@
     wget
     yt-dlp
     zip
-
   ];
 }

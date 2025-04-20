@@ -1,15 +1,26 @@
-{ homeStateVersion, user, ... }: {
+{
+  homeStateVersion,
+  user,
+  ...
+}: {
   imports = [
     ./home-packages.nix
     ./modules/zsh.nix
     ./modules/git.nix
     ./modules/alacritty.nix
+    ./modules/neovim.nix
+    ./modules/stylix.nix
   ];
 
   home = {
     username = user;
     homeDirectory = "/home/${user}";
     stateVersion = homeStateVersion;
+  };
+
+  xsession = {
+    enable = true;
+    initExtra = "xset r rate 210 40";
   };
 
   home.sessionVariables = {
