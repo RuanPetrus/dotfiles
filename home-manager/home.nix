@@ -10,6 +10,8 @@
     ./modules/alacritty.nix
     ./modules/neovim.nix
     ./modules/stylix.nix
+    ./modules/rofi.nix
+    # ./modules/awesome.nix
   ];
 
   home = {
@@ -20,7 +22,10 @@
 
   xsession = {
     enable = true;
-    initExtra = "xset r rate 210 40";
+    initExtra = ''
+      xset r rate 210 40
+      bar.sh
+    '';
   };
 
   home.sessionVariables = {
@@ -36,6 +41,10 @@
   xdg.configFile = {
     nvim = {
       source = ../nvim;
+      recursive = true;
+    };
+    nixpkgs = {
+      source = ../nixpkgs;
       recursive = true;
     };
   };

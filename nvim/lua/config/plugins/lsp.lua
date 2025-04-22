@@ -13,6 +13,13 @@ return {
 					},
 				},
 			},
+			-- Setup null-ls with `black`
+			{
+				"jose-elias-alvarez/null-ls.nvim",
+				-- opts = function()
+				-- 	return require "config.plugins.null-ls"
+				-- end,
+			},
 			{ -- optional blink completion source for require statements and module annotations
 				"saghen/blink.cmp",
 				build = "nix run .#build-plugin",
@@ -84,6 +91,16 @@ return {
 						},
 						formatting = {
 							command = { "alejandra" },
+						},
+					},
+				},
+			})
+			require("lspconfig").pyright.setup({
+				capabilities = capabilities,
+				settings = {
+					python = {
+						formatting = {
+							command = { "black" },
 						},
 					},
 				},
