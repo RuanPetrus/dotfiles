@@ -5,7 +5,7 @@
         dwm = super.dwm.overrideAttrs (oldattrs: {
           src = fetchGit {
             url = "https://github.com/RuanPetrus/dwm";
-            rev = "c90242bbb584d697cd45b338fc728dfeb3523d17";
+            rev = "0556ce94114738c75b730405539acd5011c61c90";
           };
         });
       })

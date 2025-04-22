@@ -18,5 +18,8 @@
     autoconf
     pkg-config
     automake
+
+    alsa-utils
+    pavucontrol
   ];
 }

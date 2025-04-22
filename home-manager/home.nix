@@ -33,7 +33,7 @@
   };
 
   home.file = {
-    ${builtins.getEnv "XDG_BIN_HOME"} = {
+    ".local/bin" = {
       source = ../bin;
       recursive = true;
     };
