@@ -24,7 +24,7 @@
     enable = true;
     initExtra = ''
       xset r rate 210 40
-      bar.sh
+      bar.sh &
     '';
   };
 
