@@ -25,9 +25,11 @@
     ./modules/user.nix
     ./modules/x11.nix
   ];
-  systemd.sleep.extraConfig = ''
-    AllowSuspend=no AllowHibernation=no AllowHybridSleep=no AllowSuspendThenHibernate=no
-  '';
+  systemd.services."systemd-suspend" = {
+    serviceConfig = {
+      Environment = ''"SYSTEMD_SLEEP_FREEZE_USER_SESSIONS=false"'';
+    };
+  };
   networking.hostName = hostname;
   time.timeZone = "America/Sao_Paulo";
   i18n.defaultLocale = "en_US.UTF-8";
