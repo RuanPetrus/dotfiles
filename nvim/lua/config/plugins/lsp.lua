@@ -23,7 +23,9 @@ return {
 			{ -- optional blink completion source for require statements and module annotations
 				"saghen/blink.cmp",
 				build = "nix run .#build-plugin",
-				dependencies = { 'L3MON4D3/LuaSnip', version = 'v2.*' },
+				dependencies = {
+					{ 'L3MON4D3/LuaSnip', version = 'v2.*' },
+				},
 				opts = {
 					snippets = { preset = 'luasnip' },
 					keymap = {

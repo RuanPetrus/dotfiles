@@ -22,6 +22,11 @@ return {
 					cwd = "~/dotfiles"
 				}
 			end)
+			vim.keymap.set("n", "<space>fn", function()
+				require("telescope.builtin").find_files {
+					cwd = "~/Documents/notes"
+				}
+			end)
 		end
 	}
 }

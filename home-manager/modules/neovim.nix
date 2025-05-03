@@ -14,6 +14,8 @@
       nixd
       gcc
       gnumake
+      obsidian # Note taking
+
       vimPlugins.nvim-treesitter-parsers.lua
       vimPlugins.nvim-treesitter-parsers.luadoc
       vimPlugins.nvim-treesitter-parsers.vim
@@ -24,6 +26,9 @@
       vimPlugins.nvim-treesitter-parsers.cpp
       vimPlugins.nvim-treesitter-parsers.python
       vimPlugins.nvim-treesitter-parsers.cuda
+
+      vimPlugins.nvim-treesitter-parsers.markdown
+      vimPlugins.nvim-treesitter-parsers.markdown_inline
     ];
   };
 

@@ -21,5 +21,7 @@
 
     alsa-utils
     pavucontrol
+
+    dmenu
   ];
 }

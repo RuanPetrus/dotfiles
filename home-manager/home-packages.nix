@@ -6,6 +6,8 @@
     mpv
     pavucontrol
     teams-for-linux
+    discord
+    obsidian
 
     # CLI utils
     bc
@@ -21,5 +23,8 @@
     wget
     yt-dlp
     zip
+
+    # Programming
+    python311
   ];
 }
