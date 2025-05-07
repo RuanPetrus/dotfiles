@@ -3,6 +3,7 @@
 
   home.packages = with pkgs; [
     # Desktop apps
+    chromium
     mpv
     pavucontrol
     teams-for-linux

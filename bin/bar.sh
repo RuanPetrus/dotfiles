@@ -93,6 +93,7 @@ volume() {
 	return
 }
 
+# echo "$(battery) $(volume) $(cpu) $(mem) $(wlan) $(clock) $(day)"
 while true; do
 
   [ $interval = 0 ] || [ $(($interval % 3600)) = 0 ]

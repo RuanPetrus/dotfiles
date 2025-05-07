@@ -18,5 +18,6 @@
 
     # TODO: zsh prompt depends on git
     initExtra = builtins.readFile ../../zsh/prompt;
+    completionInit = builtins.readFile ../../zsh/completion;
   };
 }
