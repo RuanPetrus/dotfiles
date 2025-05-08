@@ -25,21 +25,25 @@ cpu() {
   printf "^c$white^ ^b$grey^ $cpu_val"
 }
 
-apt_pkg_updates() {
-  #updates=$({ timeout 20 doas xbps-install -un 2>/dev/null || true; } | wc -l) # void
-  # updates=$({ timeout 20 checkupdates 2>/dev/null || true; } | wc -l) # arch
-  updates=$({ timeout 20 aptitude search '~U' 2>/dev/null || true; } | wc -l)  # apt (ubuntu, debian etc)
-
-  if [ -z "$updates" ]; then
-    printf "  ^c$green^    Fully Updated"
-  else
-    printf "  ^c$green^    $updates"" updates"
-  fi
-}
-
 battery() {
-  get_capacity="$(cat /sys/class/power_supply/BAT0/capacity)"
-  printf "^c$blue^   $get_capacity"
+	for battery in /sys/class/power_supply/BAT?*; do
+		# If non-first battery, print a space separator.
+		[ -n "${capacity+x}" ] && printf " "
+		# Sets up the status and capacity
+		case "$(cat "$battery/status" 2>&1)" in
+			"Full") status="⚡" ;;
+			"Discharging") status="🔋" ;;
+			"Charging") status="🔌" ;;
+			"Not charging") status="🛑" ;;
+			"Unknown") status="♻️" ;;
+			*) exit 1 ;;
+		esac
+		capacity="$(cat "$battery/capacity" 2>&1)"
+		# Will make a warn variable if discharging and low
+		[ "$status" = "🔋" ] && [ "$capacity" -le 25 ] && warn="❗"
+		# Prints the info
+		printf "^c$blue^ %s %s%d%%" "$status" "$warn" "$capacity"; unset warn
+	done
 }
 
 brightness() {
@@ -53,10 +57,19 @@ mem() {
 }
 
 wlan() {
-	case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
-	up) printf "^c$black^ ^b$blue^ 󰤨  ^d^%s" "^c$blue^ Connected" ;;
-	down) printf "^c$black^ ^b$blue^ 󰤭  ^d^%s " " ^c$blue^ Disconnected" ;;
-	esac
+	# Wifi
+	if [ "$(cat /sys/class/net/w*/operstate 2>/dev/null)" = 'up' ] ; then
+		wifiicon="$(awk '/^\s*w/ { print "󰖩", int($3 * 100 / 70) "% " }' /proc/net/wireless)"
+	elif [ "$(cat /sys/class/net/w*/operstate 2>/dev/null)" = 'down' ] ; then
+		[ "$(cat /sys/class/net/w*/flags 2>/dev/null)" = '0x1003' ] && wifiicon="📡 " || wifiicon="❌ "
+	fi
+
+	# Ethernet
+	[ "$(cat /sys/class/net/e*/operstate 2>/dev/null)" = 'up' ] && ethericon="🌐" || ethericon="❎"
+
+	[ "$(cat /sys/class/net/e*/operstate 2>/dev/null)" = 'up' ] && neticon=$ethericon|| neticon=$wifiicon
+
+	printf "^c$black^^b$blue^ %s%s%s" "$neticon"
 }
 
 clock() {
@@ -69,28 +82,22 @@ day() {
 }
 
 
-# volume() {
-# 	vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
-# # If muted, print 🔇 and exit.
-# 	[ "$vol" != "${vol%\[MUTED\]}" ] && printf "^c$red 🔇" && return
-# 
-# 	vol="${vol#Volume: }"
-# 	vol="$(printf "%.0f" "$(split "$vol" ".")")"
-# 
-# 	case 1 in
-# 		$((vol >= 70)) ) icon="🔊" ;;
-# 		$((vol >= 30)) ) icon="🔉" ;;
-# 		$((vol >= 1)) ) icon="🔈" ;;
-# 		* ) printf "^c$red 🔇" && return ;;
-# 	esac
-# 
-# 	printf "^c$red $icon$vol%%"
-# }
-
 volume() {
-	volumeval=$(amixer sget Master | awk -F"[][]" '/Left:/ { print $2 }')
-	printf "^c$red^ 🔊 $volumeval%"
-	return
+	vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
+	# If muted, print 🔇 and exit.
+	[ "$vol" != "${vol%\[MUTED\]}" ] && printf "^c$red^ 🔇" && return
+
+	vol="${vol#Volume: }"
+	vol="$(printf "%.0f" "$(split "$vol" ".")")"
+
+	case 1 in
+		$((vol >= 70)) ) icon="🔊" ;;
+		$((vol >= 30)) ) icon="🔉" ;;
+		$((vol >= 1)) ) icon="🔈" ;;
+		* ) printf "^c$red^ 🔇" && return ;;
+	esac
+
+	printf "^c$red^ $icon $vol%%"
 }
 
 # echo "$(battery) $(volume) $(cpu) $(mem) $(wlan) $(clock) $(day)"
@@ -99,5 +106,6 @@ while true; do
   [ $interval = 0 ] || [ $(($interval % 3600)) = 0 ]
   interval=$((interval + 1))
 
+  # echo "$(battery) $(cpu) $(mem) $(wlan) $(clock) $(day)"
   sleep 1 && xsetroot -name "$(battery) $(volume) $(cpu) $(mem) $(wlan) $(clock) $(day)"
 done
