@@ -14,9 +14,14 @@ return {
 		},
 		config = function()
 			-- Snippets
+			-- require("luasnip.loaders.from_snipmate").lazy_load(
+			-- 	{
+			-- 		path = { "~/.config/nvim/snippets" }
+			-- 	}
+			-- )
 			require("luasnip.loaders.from_snipmate").lazy_load(
 				{
-					path = { "~/.config/nvim/snippets" }
+					paths = { "~/dev/wiki/build/snippets", "~/.config/nvim/snippets" }
 				}
 			)
 			-- Cmp
@@ -38,14 +43,14 @@ return {
 						behavior = cmp.ConfirmBehavior.Replace,
 						select = true,
 					},
-					['<C-j>'] = cmp.mapping(function(fallback)
+					['<C-n>'] = cmp.mapping(function(fallback)
 						if cmp.visible() then
 							cmp.select_next_item()
 						else
 							cmp.complete()
 						end
 					end, { 'i', 's' }),
-					['<C-k>'] = cmp.mapping(function(fallback)
+					['<C-p>'] = cmp.mapping(function(fallback)
 						if cmp.visible() then
 							cmp.select_prev_item()
 						else

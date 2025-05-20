@@ -17,17 +17,30 @@ return {
 
 		-- see below for full list of optional dependencies 👇
 	},
-	opts = {
-		workspaces = {
-			{
-				name = "notes",
-				path = "~/Documents/notes",
+	keys = {
+		{ "<leader>nf", "<cmd>ObsidianQuickSwitch<cr>", desc = "Open notes vault" },
+	},
+	config = function()
+		require("obsidian").setup({
+			workspaces = {
+				{
+					name = "notes",
+					path = "~/Documents/notes",
+				},
 			},
-		},
-		-- see below for full list of options 👇
-	},
-	completion = {
-		blink = true,
-		min_chars = 2,
-	},
+			completion = {
+				nvim_cmp = true,
+				min_chars = 2,
+			},
+			mappings = {
+				-- Smart action depending on context, either follow link or toggle checkbox.
+				["<cr>"] = {
+					action = function()
+						return require("obsidian").util.smart_action()
+					end,
+					opts = { buffer = true, expr = true },
+				}
+			},
+		})
+	end,
 }

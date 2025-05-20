@@ -9,10 +9,10 @@ return {
 		config = function()
 			require 'nvim-treesitter.configs'.setup {
 				modules = {},
-				sync_install = false,
+				sync_install = true,
 				auto_install = false,
 				ignore_install = {},
-				ensure_installed = {},
+				ensure_installed = { "lua", "luadoc", "vim", "vimdoc", "query", "c", "cpp", "python", "cuda", "nix", "bash", "markdown", "markdown_inline" },
 				highlight = {
 					enable = true,
 					additional_vim_regex_highlighting = true,
