@@ -26,6 +26,8 @@
     targets = {
       neovim.enable = false;
       rofi.enable = true;
+      xresources.enable = true;
+      feh.enable = true;
     };
 
     cursor = {

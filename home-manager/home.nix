@@ -23,8 +23,9 @@
   xsession = {
     enable = true;
     initExtra = ''
-      xset r rate 210 40
-      bar.sh& 2> /dev/null
+         xset r rate 210 40
+         bar.sh& 2> /dev/null
+      sh ~/.fehbg&
     '';
   };
 

@@ -9,6 +9,7 @@
     teams-for-linux
     discord
     obsidian
+    feh
 
     # CLI utils
     bc
