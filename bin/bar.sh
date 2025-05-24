@@ -9,7 +9,8 @@ interval=0
 SCRIPT=$(readlink -f "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 THEMESPATH="$SCRIPTPATH/bar_themes"
-. "$THEMESPATH/gruvchad.sh"
+# . "$THEMESPATH/gruvchad.sh"
+. "$THEMESPATH/xresources.sh"
 
 split() {
 	# For ommiting the . without calling and external program.
@@ -22,7 +23,7 @@ cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
   printf "^c$black^ ^b$green^ CPU"
-  printf "^c$white^ ^b$grey^ $cpu_val"
+  printf "^c$black^ ^b$grey^ $cpu_val"
 }
 
 battery() {
@@ -52,7 +53,7 @@ brightness() {
 }
 
 mem() {
-  printf "^c$blue^^b$black^  "
+  printf "^c$blue^^b$black^ "
   printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 }
 
