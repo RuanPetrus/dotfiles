@@ -27,6 +27,7 @@
     zip
 
     # Programming
+    texliveFull
     python311
   ];
 }
