@@ -11,7 +11,12 @@
     ./modules/neovim.nix
     ./modules/stylix.nix
     ./modules/rofi.nix
+    ./modules/dunst.nix
     # ./modules/awesome.nix
+  ];
+
+  nixpkgs.overlays = [
+    (import ./modules/dmenu-overlay.nix)
   ];
 
   home = {

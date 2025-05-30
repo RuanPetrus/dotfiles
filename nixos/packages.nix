@@ -6,7 +6,6 @@
   environment.systemPackages = with pkgs; [
     git
     neovim
-    stremio
     home-manager
     xclip
     # Build tools
@@ -21,7 +20,5 @@
 
     alsa-utils
     pavucontrol
-
-    dmenu
   ];
 }

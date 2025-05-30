@@ -28,6 +28,7 @@
       rofi.enable = true;
       xresources.enable = true;
       feh.enable = true;
+      dunst.enable = true;
     };
 
     cursor = {
