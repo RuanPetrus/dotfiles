@@ -35,7 +35,7 @@ battery() {
 			"Full") status="⚡" ;;
 			"Discharging") status="🔋" ;;
 			"Charging") status="🔌" ;;
-			"Not charging") status="🛑" ;;
+			"Not charging") status="⚡" ;;
 			"Unknown") status="♻️" ;;
 			*) exit 1 ;;
 		esac
@@ -98,10 +98,10 @@ volume() {
 	vol="$(printf "%.0f" "$(split "$vol" ".")")"
 
 	case 1 in
-		$((vol >= 70)) ) icon="🔊" ;;
-		$((vol >= 30)) ) icon="🔉" ;;
-		$((vol >= 1)) ) icon="🔈" ;;
-		* ) printf "^c$red^ 🔇" && return ;;
+		$((vol >= 70)) ) icon="" ;;
+		$((vol >= 30)) ) icon="" ;;
+		$((vol >= 1)) ) icon="" ;;
+		* ) printf "^c$red^ 󰖁" && return ;;
 	esac
 
 	printf "^c$red^ $icon $vol%%"

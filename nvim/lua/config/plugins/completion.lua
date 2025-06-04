@@ -14,11 +14,6 @@ return {
 		},
 		config = function()
 			-- Snippets
-			-- require("luasnip.loaders.from_snipmate").lazy_load(
-			-- 	{
-			-- 		path = { "~/.config/nvim/snippets" }
-			-- 	}
-			-- )
 			require("luasnip.loaders.from_snipmate").lazy_load(
 				{
 					paths = { "~/dev/wiki/build/snippets", "~/.config/nvim/snippets" }

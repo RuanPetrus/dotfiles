@@ -16,6 +16,7 @@
     obsidian
     feh
     flameshot
+    ferdium
 
     # CLI utils
     bc
@@ -35,5 +36,9 @@
     # Programming
     texliveFull
     python311
+    ghc
+
+    # Neospace
+    slack
   ];
 }
