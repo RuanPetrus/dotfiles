@@ -32,13 +32,18 @@
     wget
     yt-dlp
     zip
+    ncftp
 
     # Programming
     texliveFull
     python311
     ghc
+    graphviz
 
     # Neospace
     slack
+
+    # Rust
+    rustup
   ];
 }

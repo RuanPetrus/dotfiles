@@ -25,11 +25,13 @@
     ./modules/user.nix
     ./modules/x11.nix
   ];
+  nix.settings.trusted-users = ["root" "ruan"];
   systemd.services."systemd-suspend" = {
     serviceConfig = {
       Environment = ''"SYSTEMD_SLEEP_FREEZE_USER_SESSIONS=false"'';
     };
   };
+  nix.settings.download-buffer-size = 1024 * 1024 * 1024;
   networking.hostName = hostname;
   time.timeZone = "America/Sao_Paulo";
   i18n.defaultLocale = "en_US.UTF-8";
