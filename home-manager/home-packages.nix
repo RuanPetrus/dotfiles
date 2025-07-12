@@ -45,5 +45,7 @@
 
     # Rust
     rustup
+
+    emacs
   ];
 }
