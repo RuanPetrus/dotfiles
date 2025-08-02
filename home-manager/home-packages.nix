@@ -17,6 +17,8 @@
     feh
     flameshot
     ferdium
+    gimp
+    calibre
 
     # CLI utils
     bc
@@ -47,5 +49,9 @@
     rustup
 
     emacs
+    arandr
+
+    tftp-hpa
+    tcpdump
   ];
 }
