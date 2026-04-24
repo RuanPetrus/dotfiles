@@ -19,18 +19,46 @@
   (setq initial-scratch-message nil)
 
   ;; Line numbers
+  (setq display-line-numbers-type 'relative)
   (global-display-line-numbers-mode 1)
 
   :config
-  (setq major-mode-remap-alist
-        '((c-mode          . c-ts-mode)
-          (c++-mode        . c++-ts-mode)
-          (python-mode     . python-ts-mode)))
-  (setq treesit-language-source-alist
-      '((c "https://github.com/tree-sitter/tree-sitter-c" "v0.21.4")
-        (cpp "https://github.com/tree-sitter/tree-sitter-cpp" "v0.22.3")
-        (python "https://github.com/tree-sitter/tree-sitter-python" "v0.23.6")))
+  ;; Tree sitter is to much of a hasle to use, depends to much on the sytem, tree-sitter-version, emacs version.
+  ;; (setq major-mode-remap-alist
+        ;; '((c-mode          . c-ts-mode)
+          ;; (c++-mode        . c++-ts-mode)
+          ;; (python-mode     . python-ts-mode)))
 
+  ;; Abi 14
+  ;; (setq treesit-language-source-alist
+      ;; '((c "https://github.com/tree-sitter/tree-sitter-c" "v0.21.4")
+        ;; (cpp "https://github.com/tree-sitter/tree-sitter-cpp" "v0.22.3")
+        ;; (cuda "https://github.com/tree-sitter-grammars/tree-sitter-cuda" "v0.21.1")
+  ;; (python "https://github.com/tree-sitter/tree-sitter-python" "v0.23.6")))
+  
+  ;; (add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-ts-mode))
+  ;; (add-to-list 'auto-mode-alist '("\\.cuh\\'" . c++-ts-mode))
+
+  ;; Theme
+  (setq modus-themes-italic-constructs t
+        modus-themes-bold-constructs t
+        modus-themes-region '(bg-only no-extend))
+  (setq modus-themes-region '(bg-only)
+      modus-themes-paren-match '(bold intense)
+      modus-themes-prompts '(bold intense)
+      modus-themes-completions '((matches . (extrabold))
+                                 (selection . (semibold accented))))
+
+  (mapc #'disable-theme custom-enabled-themes)
+  (load-theme 'modus-operandi-tinted t)
+  (set-face-attribute 'fixed-pitch nil
+                      :font "DejaVu Sans Mono"
+                      :height 200)
+  
+  (set-face-attribute 'variable-pitch nil
+                      :font "DejaVu Sans"
+                      :height 200)
+  
   (setq create-lockfiles nil)
 
   ;; Make emacs not save files in weird places
@@ -81,11 +109,12 @@
    '("b n" . next-buffer)
    '("b s" . save-some-buffers)
    
+   '("w q" . delete-window)
    '("w h" . windmove-left)
    '("w l" . windmove-right)
    '("w j" . windmove-down)
    '("w k" . windmove-up)
-   '("w k" . split-window-horizontally)
+   '("w w" . split-window-horizontally)
    
    '("t t" . vterm)
    
@@ -194,19 +223,22 @@
   (global-corfu-mode 1))
 
 (use-package completion-preview
-  :hook (prog-mode . completion-preview-mode)
-  :config
-  (with-eval-after-load 'completion-preview
-    (define-key completion-preview-active-mode-map (kbd "C-n") #'completion-preview-next-candidate)
-    (define-key completion-preview-active-mode-map (kbd "C-p") #'completion-preview-prev-candidate)))
+  :hook (prog-mode . completion-preview-mode))
 
 (defun my-c-setup ()
-  (setq-local c-ts-mode-indent-offset 4
+  (c-set-style "k&r")
+  (setq-local c-basic-offset 4
               tab-width 4
-              indent-tabs-mode t))
+              indent-tabs-mode t)
+  ;; Make backspace/delete handle tabs properly
+  (c-toggle-auto-newline -1)
+  (c-toggle-hungry-state 1))
 
-(use-package c++-ts-mode
-  :hook (c++-ts-mode . my-c-setup))
+(use-package cc-mode
+  :ensure nil
+  :hook ((c-mode . my-c-setup)
+         (c++-mode . my-c-setup)))
 
-(use-package c-ts-mode
-  :hook (c-ts-mode . my-c-setup))
+;; CUDA files open as C++
+(add-to-list 'auto-mode-alist '("\\.cu\\'"  . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.cuh\\'" . c++-mode))
