@@ -42,8 +42,23 @@
         "video"
         "render"
       ];
+      prowlarr.extraGroups = [ "media" ];
+      ruan.extraGroups = [ "media" ];
+      seerr.extraGroups = [ "media" ];
     };
   };
+
+  systemd.tmpfiles.rules = [
+    "d /data 2775 root media - -"
+    "a+ /data - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
+    "a+ /data/games - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
+    "a+ /data/Library - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
+    "a+ /data/media - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
+    "d /data/media/.state 2770 root media - -"
+    "d /data/media/.state/nixarr 2770 root media - -"
+    "a+ /data/media/library - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
+    "a+ /data/media/torrents - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
+  ];
 
   services = {
     samba = {

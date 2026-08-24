@@ -9,19 +9,16 @@
       shell = pkgs.zsh;
       uid = 1000;
       isNormalUser = true;
-      extraGroups = [ 
-          "wheel" 
-          "users" 
-          "input" 
-	  "data"
-          "media"
+      extraGroups = [
+        "wheel"
+        "users"
+        "input"
       ];
     };
     groups = {
       ruan = {
         gid = 1000;
       };
-      data = {};
     };
   };
 	security.sudo.extraRules = [
