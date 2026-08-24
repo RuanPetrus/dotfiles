@@ -1,5 +1,9 @@
 {
   inputs = {
+    home-manager = {
+      url = "github:nix-community/home-manager/release-26.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable-small";
     nixarr.url = "github:nix-media-server/nixarr";
@@ -27,6 +31,7 @@
 
       modules = [
         ./modules/machines/abiss-watcher
+        inputs.home-manager.nixosModules.home-manager
         inputs.sops-nix.nixosModules.sops
       ];
     };

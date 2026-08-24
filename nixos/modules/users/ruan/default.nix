@@ -4,6 +4,14 @@
 }:
 {
   nix.settings.trusted-users = [ "ruan" ];
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    backupFileExtension = "hm-backup";
+    users.ruan = import ./home.nix;
+  };
+
   users = {
     users.ruan = {
       shell = pkgs.zsh;

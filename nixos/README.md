@@ -25,12 +25,36 @@ containers, and shared ACLs for access to `/data`.
     │   ├── homepage-dashboard.nix
     │   └── media.nix
     ├── system/default.nix
-    └── users/ruan/default.nix
+    └── users/ruan/
+        ├── default.nix
+        └── home.nix
 ```
 
 The host module is the composition point. Reusable system and service settings
 should stay outside `modules/machines/abiss-watcher` unless they depend on this
 machine's hardware, addresses, or secrets.
+
+## Home Manager
+
+Home Manager is integrated as a NixOS module and manages `ruan`'s user-level
+configuration. System account settings remain in
+`modules/users/ruan/default.nix`; programs and dotfiles owned by the user belong
+in `modules/users/ruan/home.nix`.
+
+Git is currently managed by Home Manager with:
+
+- Name: `RuanPetrus`
+- Email: `xastroboyx11@gmail.com`
+- Safe repository: `/srv/palworld-server`
+
+Home Manager generates `~/.config/git/config`. Do not edit that symlink
+directly; change `programs.git.settings` in `home.nix` and rebuild the system.
+The previous unmanaged configuration is preserved at
+`~/.gitconfig.pre-home-manager` and can be removed after confirming the managed
+configuration is correct.
+
+As with the NixOS state version, do not update `home.stateVersion` as part of a
+normal package update.
 
 ## Building the system
 
