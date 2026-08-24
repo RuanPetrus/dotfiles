@@ -1,0 +1,31 @@
+{
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable-small";
+    nixarr.url = "github:nix-media-server/nixarr";
+    opencode.url = "github:anomalyco/opencode";
+  };
+
+  outputs = inputs@{
+    self,
+    nixpkgs,
+    nixarr,
+    ...
+  }:
+  let
+    system = "x86_64-linux";
+  in {
+    nixosConfigurations.abiss-watcher = nixpkgs.lib.nixosSystem {
+      inherit system;
+
+      specialArgs = {
+        inherit inputs;
+      };
+
+      modules = [
+        ./modules/machines/abiss-watcher
+        nixarr.nixosModules.default
+      ];
+    };
+  };
+}
