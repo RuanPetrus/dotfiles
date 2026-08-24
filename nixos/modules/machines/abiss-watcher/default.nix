@@ -3,9 +3,12 @@
   ...
 }:
 {
+  _module.args.lanAddress = "192.168.15.3";
+
   imports = [
     ./hardware-configuration.nix
     ./networking.nix
+    ./secrets.nix
     ../../services/docker.nix
     ../../services/homepage-dashboard.nix
     ../../services/media.nix

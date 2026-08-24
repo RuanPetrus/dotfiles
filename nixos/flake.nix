@@ -4,6 +4,10 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable-small";
     nixarr.url = "github:nix-media-server/nixarr";
     opencode.url = "github:anomalyco/opencode";
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{
@@ -23,6 +27,7 @@
 
       modules = [
         ./modules/machines/abiss-watcher
+        inputs.sops-nix.nixosModules.sops
       ];
     };
   };

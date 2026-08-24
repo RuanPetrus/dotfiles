@@ -1,7 +1,11 @@
 {
+  lanAddress,
+  ...
+}:
+{
   services.homepage-dashboard = {
     enable = true;
-    allowedHosts = "localhost:8082,127.0.0.1:8082,192.168.15.3:8082";
+    allowedHosts = "localhost:8082,127.0.0.1:8082,${lanAddress}:8082";
 
     settings = {
       HOST = "0.0.0.0";
@@ -32,19 +36,19 @@
           {
             Jellyfin = {
               description = "Movie and TV Shows player";
-              href = "http://192.168.15.3:8096";
+              href = "http://${lanAddress}:8096";
             };
           }
           {
             Portainer = {
               description = "Docker management";
-              href = "https://192.168.15.3:9443";
+              href = "https://${lanAddress}:9443";
             };
           }
           {
             Calibre = {
               description = "Calibre";
-              href = "http://192.168.15.3:8080";
+              href = "http://${lanAddress}:8080";
             };
           }
         ];
@@ -54,7 +58,7 @@
           {
             Transmission = {
               description = "Transmission";
-              href = "http://192.168.15.3:9091";
+              href = "http://${lanAddress}:9091";
             };
           }
         ];
@@ -64,31 +68,31 @@
           {
             Jelyseer = {
               description = "JelySeer";
-              href = "http://192.168.15.3:5055";
+              href = "http://${lanAddress}:5055";
             };
           }
           {
             Radarr = {
               description = "Radarr";
-              href = "http://192.168.15.3:7878";
+              href = "http://${lanAddress}:7878";
             };
           }
           {
             Sonarr = {
               description = "Sonarr";
-              href = "http://192.168.15.3:8989";
+              href = "http://${lanAddress}:8989";
             };
           }
           {
             Bazarr = {
               description = "Bazarr";
-              href = "http://192.168.15.3:6767";
+              href = "http://${lanAddress}:6767";
             };
           }
           {
             Prowlarr = {
               description = "Prowlarr";
-              href = "http://192.168.15.3:9696";
+              href = "http://${lanAddress}:9696";
             };
           }
         ];
