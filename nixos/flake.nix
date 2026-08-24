@@ -9,7 +9,6 @@
   outputs = inputs@{
     self,
     nixpkgs,
-    nixarr,
     ...
   }:
   let
@@ -24,7 +23,6 @@
 
       modules = [
         ./modules/machines/abiss-watcher
-        nixarr.nixosModules.default
       ];
     };
   };
