@@ -1,0 +1,22 @@
+#!/bin/sh
+
+file=$1
+mime=$(file --brief --mime-type "$file")
+
+case $mime in
+  text/* | */json | */javascript | */xml)
+    bat --color=always --style=numbers --line-range=:500 "$file"
+    ;;
+  image/*)
+    chafa --format=symbols --size="${LF_WIDTH}x${LF_HEIGHT}" "$file"
+    ;;
+  application/pdf)
+    pdftotext "$file" - | bat --color=always --style=plain --line-range=:500
+    ;;
+  application/zip | application/x-tar | application/x-7z-compressed | application/x-rar)
+    bsdtar -tf "$file" | bat --color=always --style=plain
+    ;;
+  *)
+    file --brief "$file"
+    ;;
+esac

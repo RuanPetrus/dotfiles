@@ -12,6 +12,9 @@ in
     wrapperFeatures.gtk = true;
     extraPackages = with pkgs; [
       brightnessctl
+      bat
+      chafa
+      file
       foot
       firefox
       fuzzel
@@ -21,10 +24,16 @@ in
       playerctl
       polkit_gnome
       slurp
+      stress-ng
       swayidle
       swaylock
       waybar
       wl-clipboard
+      glmark2
+      lm_sensors
+      lf
+      libarchive
+      poppler-utils
     ];
   };
 

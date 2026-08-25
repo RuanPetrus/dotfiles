@@ -1,0 +1,13 @@
+set preview true
+set previewer ~/.config/lf/preview
+set shell sh
+set shellflag -c
+set hidden true
+set drawbox true
+set icons true
+set number true
+set relativenumber true
+
+map gh cd ~
+map gd cd ~/dotfiles
+map <c-f> $foot -D "$PWD"

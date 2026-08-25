@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "left",
-  "width": 28,
+  "width": 22,
   "margin": "2 0 2 2",
   "spacing": 2,
   "modules-left": ["clock", "tray"],
