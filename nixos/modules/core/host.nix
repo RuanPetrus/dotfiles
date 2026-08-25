@@ -14,13 +14,15 @@ in
     };
 
     lanAddress = lib.mkOption {
-      type = lib.types.str;
-      description = "LAN address used by services and local clients.";
+      type = lib.types.nullOr lib.types.str;
+      default = null;
+      description = "Optional LAN address used by server services and local clients.";
     };
 
     dataRoot = lib.mkOption {
-      type = lib.types.str;
-      description = "Root directory for persistent shared data.";
+      type = lib.types.nullOr lib.types.str;
+      default = null;
+      description = "Optional root directory for persistent shared data.";
     };
 
     primaryUser = lib.mkOption {
@@ -52,7 +54,7 @@ in
 
     assertions = [
       {
-        assertion = lib.hasPrefix "/" cfg.dataRoot;
+        assertion = cfg.dataRoot == null || lib.hasPrefix "/" cfg.dataRoot;
         message = "dotfiles.host.dataRoot must be an absolute path";
       }
     ];

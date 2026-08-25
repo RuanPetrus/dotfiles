@@ -18,6 +18,8 @@ services, and shared ACLs for access to `/data`.
     ├── core/
     │   ├── host.nix
     │   └── shared-storage.nix
+    ├── desktops/
+    │   └── sway.nix
     ├── machines/abiss-watcher/
     │   ├── default.nix
     │   ├── hardware-configuration.nix
@@ -34,8 +36,10 @@ services, and shared ACLs for access to `/data`.
     │   └── tailscale.nix
     ├── system/default.nix
     └── users/ruan/
+        ├── desktop.nix
         ├── default.nix
-        └── home.nix
+        ├── home.nix
+        └── server.nix
 ```
 
 The host module is the composition point. It imports the reusable modules and
@@ -89,8 +93,9 @@ sharing SSH host private keys. Validate it with
 
 Home Manager is integrated as a NixOS module and manages `ruan`'s user-level
 configuration. System account settings remain in
-`modules/users/ruan/default.nix`; programs and dotfiles owned by the user belong
-in `modules/users/ruan/home.nix`.
+`modules/users/ruan/default.nix`. Shared programs and dotfiles belong in
+`modules/users/ruan/home.nix`; `server.nix` and `desktop.nix` contain explicit
+host-role additions selected by each machine module.
 
 Git is currently managed by Home Manager with:
 

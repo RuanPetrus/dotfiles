@@ -33,6 +33,8 @@
     ];
   };
 
+  home-manager.users.ruan.imports = [ ../../users/ruan/server.nix ];
+
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     loader.systemd-boot.enable = true;
