@@ -13,6 +13,7 @@ in
     extraPackages = with pkgs; [
       brightnessctl
       foot
+      firefox
       fuzzel
       grim
       mako

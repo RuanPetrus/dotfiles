@@ -12,6 +12,8 @@ services, and shared ACLs for access to `/data`.
 ├── flake.nix
 ├── flake.lock
 ├── .sops.yaml
+├── docs/
+│   └── new-machine.md
 ├── secrets/
 │   └── abiss-watcher.yaml
 └── modules/
@@ -99,6 +101,10 @@ Generate and review that machine's `hardware-configuration.nix` on the target
 hardware. Give each host its own SOPS file and age recipient rather than
 sharing SSH host private keys. Validate it with
 `nix flake check --no-build "path:$PWD"` before installation.
+
+For a complete first-install procedure, including automatic hardware detection,
+SOPS host-key bootstrapping, Disko, and `nixos-anywhere`, see
+[`docs/new-machine.md`](docs/new-machine.md).
 
 ## Home Manager
 
