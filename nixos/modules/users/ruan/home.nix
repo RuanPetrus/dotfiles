@@ -20,11 +20,22 @@
       gcc
       ripgrep
       rust-analyzer
+      tree-sitter
     ];
   };
 
-  xdg.configFile."nvim".source =
-    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/nvim";
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    initContent = ''
+      source "${config.home.homeDirectory}/dotfiles/config/zsh/init.zsh"
+    '';
+  };
+
+  xdg.configFile."nvim/init.lua".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/nvim/init.lua";
 
   xdg.configFile."ncmpcpp/config".text = ''
     mpd_host = "${osConfig.dotfiles.host.lanAddress}"

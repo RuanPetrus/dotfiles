@@ -4,3 +4,5 @@ nvim/plugin
 nvim/README.md
 nvim/.github
 nvim/.gitignore
+result
+result-*
