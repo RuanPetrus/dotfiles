@@ -9,6 +9,8 @@
     gnupg.sshKeyPaths = [ ];
 
     secrets.ruan-password-hash.neededForUsers = true;
+    secrets.restic-password.mode = "0400";
+    secrets.rclone-config.mode = "0400";
   };
 
   users = {

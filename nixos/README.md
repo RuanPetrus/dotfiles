@@ -21,9 +21,13 @@ containers, and shared ACLs for access to `/data`.
     │   ├── networking.nix
     │   └── secrets.nix
     ├── services/
+    │   ├── backup.nix
     │   ├── docker.nix
     │   ├── homepage-dashboard.nix
-    │   └── media.nix
+    │   ├── media.nix
+    │   ├── mpd.nix
+    │   ├── syncthing.nix
+    │   └── tailscale.nix
     ├── system/default.nix
     └── users/ruan/
         ├── default.nix
@@ -130,10 +134,14 @@ reserved in the router or update `lanAddress` if the address changes.
 | Transmission | `http://192.168.15.3:9091` | Nixarr and settings-sync |
 | Calibre server | `http://192.168.15.3:8080` | Declarative |
 | Samba | TCP `139`, `445`; UDP `137`, `138` | Declarative service; account password is manual |
+| Syncthing | `http://192.168.15.3:8384`; TCP/UDP `22000`; UDP `21027` | Declarative service; pairing is manual |
 | SSH | TCP `22` | Declarative |
 | Docker | Local daemon | Declarative daemon; containers are separate |
 | Portainer | `https://192.168.15.3:9443` | Referenced only; Docker-managed |
 | Recyclarr | No web UI | Declarative daily synchronization |
+| Restic documents backup | No web UI | Declarative daily encrypted Dropbox backup |
+| MPD | TCP `6600`; stream `http://192.168.15.3:8000` | Declarative shared music queue |
+| Tailscale | UDP `41641` | Declarative daemon; account enrollment is manual |
 
 Transmission also exposes TCP and UDP `51413` for peers. UDP `8211` is open
 for the externally managed Palworld server. Portainer and Palworld are not
@@ -190,6 +198,68 @@ The following settings are not fully managed by the current Nixarr modules:
 Application state survives rebuilds under `/data/media/.state/nixarr`. A NixOS
 rebuild does not reset settings that remain manual.
 
+## Syncthing
+
+Syncthing runs as the dedicated `syncthing` system user with primary group
+`media`. Its default shared data directory is `/data/syncthing`. Transfer,
+local-discovery, and administration ports are open to the LAN. Browse to
+`http://192.168.15.3:8384` to exchange device IDs, add remote devices, and
+configure folders. Devices and folders are intentionally not overridden by
+NixOS, so UI changes survive rebuilds.
+
+Do not forward port `8384` to the internet. Configure a GUI username and
+password before allowing access from any untrusted network.
+
+The recommended general-purpose folder path is `/data/syncthing`. Syncthing
+also has group access to the shared media trees, but do not synchronize
+`/data/media/.state/nixarr` because it contains live databases and secrets.
+
+Useful commands:
+
+```bash
+systemctl status syncthing
+journalctl -u syncthing --no-pager -n 100
+```
+
+## MPD
+
+MPD indexes `/data/media/library/music` and provides one shared playback queue
+on the LAN. Configure an MPD client with server `192.168.15.3` and port `6600`,
+then listen to the 192 kbps MP3 stream at:
+
+```text
+http://192.168.15.3:8000
+```
+
+The control and stream ports are not authenticated and must not be forwarded
+to the internet. Suitable clients include M.A.L.P. on Android and Cantata or
+ncmpcpp on Linux. Refresh the library and inspect the service with:
+
+```bash
+mpc --host 192.168.15.3 update
+mpc --host 192.168.15.3 status
+systemctl status mpd
+journalctl -u mpd --no-pager -n 100
+```
+
+## Tailscale
+
+Tailscale provides private remote access without forwarding service ports on
+the router. After the first rebuild, enroll the server interactively and
+advertise only its existing LAN address:
+
+```bash
+sudo tailscale up \
+  --accept-dns=false \
+  --hostname=abiss-watcher \
+  --advertise-routes=192.168.15.3/32
+```
+
+Approve the advertised route in the Tailscale administration console. Linux
+clients must run `sudo tailscale set --accept-routes=true`; Android accepts
+approved subnet routes automatically. This keeps existing service URLs working
+remotely without exposing the rest of the home network.
+
 ## Storage and permissions
 
 Important paths:
@@ -200,7 +270,9 @@ Important paths:
 | `/data/media/torrents` | Transmission downloads |
 | `/data/media/.state/nixarr` | Private application databases and API keys |
 | `/data/Library` | Calibre library |
+| `/data/documents` | Documents backed up to Dropbox with Restic |
 | `/data/games` | Shared game data |
+| `/data/syncthing` | General Syncthing data |
 
 Shared content uses the `media` group, setgid directories, and default POSIX
 ACLs. This allows `ruan`, Samba, Jellyfin, Calibre, Transmission, and the Arr
@@ -326,6 +398,44 @@ the keys on `secrets/abiss-watcher.yaml` while an existing identity is
 available. Verify decryption before removing an old recipient.
 
 ## Backups
+
+`modules/services/backup.nix` backs up `/data/documents` to the encrypted Restic
+repository at `dropbox:backups/abiss-watcher/documents`. Dropbox receives only
+Restic's encrypted repository data; document contents and names are not visible
+there. The backup runs daily around `03:00`, keeps 7 daily, 5 weekly, 12 monthly,
+and 3 yearly snapshots, and checks 5 percent of repository data after each run.
+
+The Restic password and rclone configuration are stored in
+`secrets/abiss-watcher.yaml` and materialized as root-only files by SOPS. Keep an
+independent copy of the Restic password in a password manager. The encrypted
+repository cannot be restored without it.
+
+Display the password for transfer to the password manager without creating
+another plaintext file:
+
+```bash
+sudo cat /run/secrets/restic-password
+```
+
+Useful commands:
+
+```bash
+systemctl status restic-backups-documents.timer
+sudo systemctl start restic-backups-documents.service
+sudo journalctl -u restic-backups-documents.service --no-pager -n 100
+sudo restic-documents snapshots
+```
+
+Restore the latest snapshot to a temporary directory before replacing live
+files:
+
+```bash
+sudo mkdir -p /tmp/restic-restore
+sudo restic-documents restore latest --target /tmp/restic-restore
+```
+
+The generated `restic-documents` wrapper supplies the repository, password,
+and rclone configuration declared by NixOS.
 
 At minimum, back up:
 

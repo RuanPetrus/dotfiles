@@ -51,6 +51,12 @@
               href = "http://${lanAddress}:8080";
             };
           }
+          {
+            Syncthing = {
+              description = "File synchronization";
+              href = "http://${lanAddress}:8384";
+            };
+          }
         ];
       }
       {
@@ -81,6 +87,12 @@
             Sonarr = {
               description = "Sonarr";
               href = "http://${lanAddress}:8989";
+            };
+          }
+          {
+            Lidarr = {
+              description = "Lidarr";
+              href = "http://${lanAddress}:8686";
             };
           }
           {
