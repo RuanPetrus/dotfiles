@@ -20,6 +20,10 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
 }
+input type:keyboard {
+    xkb_layout us,br
+    xkb_variant ,abnt2
+}
 
 exec mako
 exec_always --no-startup-id sh /home/ruan/dotfiles/config/sway/restart-waybar
@@ -54,7 +58,7 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+space focus mode_toggle
+bindsym $mod+space input type:keyboard xkb_switch_layout next
 
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
