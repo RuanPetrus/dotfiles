@@ -52,6 +52,10 @@
     enableZshIntegration = true;
   };
 
+  programs.tmux = {
+    enable = true;
+  };
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -64,6 +68,8 @@
 
   xdg.configFile."nvim/init.lua".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/nvim/init.lua";
+  xdg.configFile."tmux/tmux.conf".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/tmux/tmux.conf";
 
   programs.git = {
     enable = true;

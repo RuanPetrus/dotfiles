@@ -30,6 +30,7 @@ in
       stress-ng
       swayidle
       swaylock
+      thunar
       waybar
       wl-clipboard
       zathura
