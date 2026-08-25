@@ -1,9 +1,12 @@
 { config, ... }:
+let
+  host = config.dotfiles.host;
+in
 {
   services.restic.backups.documents = {
     initialize = true;
-    repository = "rclone:dropbox:backups/abiss-watcher/documents";
-    paths = [ "/data/documents" ];
+    repository = "rclone:dropbox:backups/${host.name}/documents";
+    paths = [ "${host.dataRoot}/documents" ];
     passwordFile = config.sops.secrets.restic-password.path;
     rcloneConfigFile = config.sops.secrets.rclone-config.path;
 
@@ -23,6 +26,6 @@
   };
 
   systemd.tmpfiles.rules = [
-    "d /data/documents 2770 ruan media - -"
+    "d ${host.dataRoot}/documents 2770 ${host.primaryUser} ${host.mediaGroup} - -"
   ];
 }

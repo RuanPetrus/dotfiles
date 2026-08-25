@@ -1,14 +1,19 @@
 {
+  config,
   inputs,
   ...
 }:
+let
+  host = config.dotfiles.host;
+  mediaDir = "${host.dataRoot}/media";
+in
 {
   imports = [ inputs.nixarr.nixosModules.default ];
 
   nixarr = {
     enable = true;
-    mediaDir = "/data/media";
-    stateDir = "/data/media/.state/nixarr";
+    inherit mediaDir;
+    stateDir = "${mediaDir}/.state/nixarr";
 
     jellyfin.enable = true;
     transmission.enable = true;
@@ -160,30 +165,21 @@
     allowedUDPPorts = [ 51413 ];
   };
 
-  users = {
-    groups.media = { };
-    users = {
-      jellyfin.extraGroups = [
-        "video"
-        "render"
-      ];
-      prowlarr.extraGroups = [ "media" ];
-      recyclarr.extraGroups = [ "media" ];
-      ruan.extraGroups = [ "media" ];
-      seerr.extraGroups = [ "media" ];
-    };
+  users.users = {
+    jellyfin.extraGroups = host.accelerationGroups;
+    prowlarr.extraGroups = [ host.mediaGroup ];
+    recyclarr.extraGroups = [ host.mediaGroup ];
+    seerr.extraGroups = [ host.mediaGroup ];
   };
 
   systemd.tmpfiles.rules = [
-    "d /data 2775 root media - -"
-    "a+ /data - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
-    "a+ /data/games - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
-    "a+ /data/Library - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
-    "a+ /data/media - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
-    "d /data/media/.state 2770 root media - -"
-    "d /data/media/.state/nixarr 2770 root media - -"
-    "a+ /data/media/library - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
-    "a+ /data/media/torrents - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
+    "a+ ${host.dataRoot}/games - - - - g:${host.mediaGroup}:rwx,m::rwx,d:g:${host.mediaGroup}:rwx,d:m::rwx"
+    "a+ ${host.dataRoot}/Library - - - - g:${host.mediaGroup}:rwx,m::rwx,d:g:${host.mediaGroup}:rwx,d:m::rwx"
+    "a+ ${mediaDir} - - - - g:${host.mediaGroup}:rwx,m::rwx,d:g:${host.mediaGroup}:rwx,d:m::rwx"
+    "d ${mediaDir}/.state 2770 root ${host.mediaGroup} - -"
+    "d ${mediaDir}/.state/nixarr 2770 root ${host.mediaGroup} - -"
+    "a+ ${mediaDir}/library - - - - g:${host.mediaGroup}:rwx,m::rwx,d:g:${host.mediaGroup}:rwx,d:m::rwx"
+    "a+ ${mediaDir}/torrents - - - - g:${host.mediaGroup}:rwx,m::rwx,d:g:${host.mediaGroup}:rwx,d:m::rwx"
   ];
 
   services = {
@@ -202,12 +198,12 @@
         };
 
         data = {
-          path = "/data";
+          path = host.dataRoot;
           browseable = "yes";
           "read only" = "no";
           "guest ok" = "no";
-          "valid users" = "ruan";
-          "force group" = "media";
+          "valid users" = host.primaryUser;
+          "force group" = host.mediaGroup;
           "create mask" = "0664";
           "directory mask" = "2775";
           "force create mode" = "0660";
@@ -219,18 +215,18 @@
           browseable = "yes";
           "read only" = "no";
           "guest ok" = "no";
-          "valid users" = "ruan";
+          "valid users" = host.primaryUser;
         };
       };
     };
 
     calibre-server = {
       enable = true;
-      libraries = [ "/data/Library" ];
+      libraries = [ "${host.dataRoot}/Library" ];
       host = "0.0.0.0";
       port = 8080;
       openFirewall = true;
-      group = "media";
+      group = host.mediaGroup;
     };
   };
 }

@@ -14,26 +14,37 @@
     };
   };
 
-  outputs = inputs@{
-    self,
-    nixpkgs,
-    ...
-  }:
-  let
-    system = "x86_64-linux";
-  in {
-    nixosConfigurations.abiss-watcher = nixpkgs.lib.nixosSystem {
-      inherit system;
+  outputs =
+    inputs@{
+      self,
+      nixpkgs,
+      ...
+    }:
+    let
+      mkHost =
+        {
+          modules,
+          system ? "x86_64-linux",
+        }:
+        nixpkgs.lib.nixosSystem {
+          inherit system;
 
-      specialArgs = {
-        inherit inputs;
+          specialArgs = {
+            inherit inputs;
+          };
+
+          modules = [
+            inputs.home-manager.nixosModules.home-manager
+            inputs.sops-nix.nixosModules.sops
+          ]
+          ++ modules;
+        };
+    in
+    {
+      lib = { inherit mkHost; };
+
+      nixosConfigurations.abiss-watcher = mkHost {
+        modules = [ ./modules/machines/abiss-watcher ];
       };
-
-      modules = [
-        ./modules/machines/abiss-watcher
-        inputs.home-manager.nixosModules.home-manager
-        inputs.sops-nix.nixosModules.sops
-      ];
     };
-  };
 }

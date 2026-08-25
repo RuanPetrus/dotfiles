@@ -1,15 +1,18 @@
 {
-  lanAddress,
+  config,
   ...
 }:
+let
+  host = config.dotfiles.host;
+in
 {
   services.syncthing = {
     enable = true;
     openDefaultPorts = true;
     user = "syncthing";
-    group = "media";
-    dataDir = "/data/syncthing";
-    guiAddress = "${lanAddress}:8384";
+    group = host.mediaGroup;
+    dataDir = "${host.dataRoot}/syncthing";
+    guiAddress = "${host.lanAddress}:8384";
 
     # Devices and folders are paired through the UI and must survive rebuilds.
     overrideDevices = false;
@@ -21,7 +24,7 @@
   users.users.syncthing.homeMode = "2770";
 
   systemd.tmpfiles.rules = [
-    "d /data/syncthing 2770 syncthing media - -"
-    "a+ /data/syncthing - - - - g:media:rwx,m::rwx,d:g:media:rwx,d:m::rwx"
+    "d ${host.dataRoot}/syncthing 2770 syncthing ${host.mediaGroup} - -"
+    "a+ ${host.dataRoot}/syncthing - - - - g:${host.mediaGroup}:rwx,m::rwx,d:g:${host.mediaGroup}:rwx,d:m::rwx"
   ];
 }

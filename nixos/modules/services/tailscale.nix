@@ -1,3 +1,7 @@
+{ config, ... }:
+let
+  host = config.dotfiles.host;
+in
 {
   services.tailscale = {
     enable = true;
@@ -5,8 +9,8 @@
     useRoutingFeatures = "server";
     extraSetFlags = [
       "--accept-dns=false"
-      "--advertise-routes=192.168.15.3/32"
-      "--hostname=abiss-watcher"
+      "--advertise-routes=${host.lanAddress}/32"
+      "--hostname=${host.name}"
     ];
   };
 }

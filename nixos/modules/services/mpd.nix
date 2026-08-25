@@ -1,15 +1,18 @@
 {
-  lanAddress,
+  config,
   pkgs,
   ...
 }:
+let
+  host = config.dotfiles.host;
+in
 {
   services.mpd = {
     enable = true;
     openFirewall = false;
     settings = {
-      music_directory = "/data/media/library/music";
-      bind_to_address = lanAddress;
+      music_directory = "${host.dataRoot}/media/library/music";
+      bind_to_address = host.lanAddress;
       port = 6600;
       auto_update = true;
       replaygain = "album";
@@ -19,7 +22,7 @@
           type = "httpd";
           name = "LAN MP3 stream";
           encoder = "lame";
-          bind_to_address = lanAddress;
+          bind_to_address = host.lanAddress;
           port = 8000;
           bitrate = 192;
           format = "44100:16:2";
@@ -30,7 +33,7 @@
     };
   };
 
-  users.users.mpd.extraGroups = [ "media" ];
+  users.users.mpd.extraGroups = [ host.mediaGroup ];
 
   environment.systemPackages = [ pkgs.mpc ];
 

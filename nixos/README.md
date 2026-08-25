@@ -2,8 +2,8 @@
 
 This directory contains the flake-based NixOS configuration for
 `abiss-watcher`, an `x86_64-linux` media server. The host uses Nixarr for the
-media stack, SOPS for encrypted secrets, Docker for manually managed
-containers, and shared ACLs for access to `/data`.
+media stack, SOPS for encrypted secrets, declarative native and Docker
+services, and shared ACLs for access to `/data`.
 
 ## Repository layout
 
@@ -15,6 +15,9 @@ containers, and shared ACLs for access to `/data`.
 ├── secrets/
 │   └── abiss-watcher.yaml
 └── modules/
+    ├── core/
+    │   ├── host.nix
+    │   └── shared-storage.nix
     ├── machines/abiss-watcher/
     │   ├── default.nix
     │   ├── hardware-configuration.nix
@@ -24,6 +27,7 @@ containers, and shared ACLs for access to `/data`.
     │   ├── backup.nix
     │   ├── docker.nix
     │   ├── homepage-dashboard.nix
+    │   ├── immich.nix
     │   ├── media.nix
     │   ├── mpd.nix
     │   ├── syncthing.nix
@@ -34,9 +38,52 @@ containers, and shared ACLs for access to `/data`.
         └── home.nix
 ```
 
-The host module is the composition point. Reusable system and service settings
-should stay outside `modules/machines/abiss-watcher` unless they depend on this
-machine's hardware, addresses, or secrets.
+The host module is the composition point. It imports the reusable modules and
+sets the typed `dotfiles.host` options consumed by them. Machine hardware,
+network policy, secrets, and the selected service set stay under
+`modules/machines/<hostname>`.
+
+## Adding A Host
+
+Create `modules/machines/<hostname>/default.nix` and set the machine facts:
+
+```nix
+{
+  imports = [
+    ./hardware-configuration.nix
+    ./networking.nix
+    ./secrets.nix
+    ../../core/host.nix
+    ../../core/shared-storage.nix
+    ../../system
+    ../../users/<user>
+    # Import only the service modules this host should run.
+  ];
+
+  dotfiles.host = {
+    name = "<hostname>";
+    lanAddress = "192.168.1.10";
+    dataRoot = "/data";
+    primaryUser = "<user>";
+    accelerationDevices = [ ];
+    accelerationGroups = [ ];
+  };
+}
+```
+
+Add the host to `flake.nix` through the shared constructor:
+
+```nix
+nixosConfigurations.<hostname> = mkHost {
+  system = "x86_64-linux"; # Optional; this is the default.
+  modules = [ ./modules/machines/<hostname> ];
+};
+```
+
+Generate and review that machine's `hardware-configuration.nix` on the target
+hardware. Give each host its own SOPS file and age recipient rather than
+sharing SSH host private keys. Validate it with
+`nix flake check --no-build "path:$PWD"` before installation.
 
 ## Home Manager
 
@@ -105,7 +152,7 @@ Do not change `system.stateVersion` as part of a normal package update.
 ## Host assumptions
 
 - Hostname: `abiss-watcher`
-- LAN address: `192.168.15.3`, defined once as `lanAddress` in
+- LAN address: `192.168.15.3`, defined once as `dotfiles.host.lanAddress` in
   `modules/machines/abiss-watcher/default.nix`
 - Time zone: `America/Sao_Paulo`
 - Boot loader: systemd-boot
@@ -115,9 +162,10 @@ Do not change `system.stateVersion` as part of a normal package update.
 - Root filesystem, boot filesystem, swap, and `/data` are declared in
   `hardware-configuration.nix` by UUID.
 
-The `lanAddress` value is used by Homepage links and allowed-host settings, but
-a static address is not declared by this repository. Keep the DHCP lease
-reserved in the router or update `lanAddress` if the address changes.
+The LAN address is used by service listeners, Homepage links, MPD clients, and
+the Tailscale advertised route, but a static address is not declared by this
+repository. Keep the DHCP lease reserved in the router or update the host
+option if the address changes.
 
 ## Services
 
@@ -133,20 +181,20 @@ reserved in the router or update `lanAddress` if the address changes.
 | Prowlarr | `http://192.168.15.3:9696` | Nixarr and settings-sync |
 | Transmission | `http://192.168.15.3:9091` | Nixarr and settings-sync |
 | Calibre server | `http://192.168.15.3:8080` | Declarative |
+| Immich | `http://192.168.15.3:2283` | Declarative native NixOS service |
 | Samba | TCP `139`, `445`; UDP `137`, `138` | Declarative service; account password is manual |
 | Syncthing | `http://192.168.15.3:8384`; TCP/UDP `22000`; UDP `21027` | Declarative service; pairing is manual |
 | SSH | TCP `22` | Declarative |
 | Docker | Local daemon | Declarative daemon; containers are separate |
-| Portainer | `https://192.168.15.3:9443` | Referenced only; Docker-managed |
+| Portainer | `https://192.168.15.3:9443` | Declarative OCI container |
 | Recyclarr | No web UI | Declarative daily synchronization |
 | Restic documents backup | No web UI | Declarative daily encrypted Dropbox backup |
 | MPD | TCP `6600`; stream `http://192.168.15.3:8000` | Declarative shared music queue |
 | Tailscale | UDP `41641` | Declarative daemon; account enrollment is manual |
 
 Transmission also exposes TCP and UDP `51413` for peers. UDP `8211` is open
-for the externally managed Palworld server. Portainer and Palworld are not
-deployed by this NixOS configuration; only their ports, dashboard link, or
-Samba path are present.
+for the externally managed Palworld server. Palworld is not deployed by this
+NixOS configuration; only its port and Samba path are present.
 
 ## Media automation
 
@@ -193,7 +241,7 @@ The following settings are not fully managed by the current Nixarr modules:
 - Add and monitor titles in Sonarr, Radarr, and Lidarr.
 - Set up a Samba password with `sudo smbpasswd -a ruan`. The Unix password and
   Samba password database are separate.
-- Deploy and maintain Portainer and Palworld separately if they are required.
+- Deploy and maintain Palworld separately if it is required.
 
 Application state survives rebuilds under `/data/media/.state/nixarr`. A NixOS
 rebuild does not reset settings that remain manual.
@@ -446,7 +494,9 @@ At minimum, back up:
 - `/data/media/library`, `/data/media/torrents`, and `/data/Library` according
   to the desired media retention policy.
 - `/var/lib/samba/private` if the Samba account database must be preserved.
-- State for manually managed Docker containers, Portainer, and Palworld.
+- Docker volume `portainer_portainer_data` and `/data/immich` according to the
+  desired retention policy; neither is included in the Restic documents backup.
+- State for manually managed Docker containers and Palworld.
 
 The encrypted SOPS file without its private age identity is not recoverable.
 

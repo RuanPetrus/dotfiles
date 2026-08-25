@@ -1,11 +1,33 @@
-{ pkgs, ... }:
+{
+  config,
+  osConfig,
+  pkgs,
+  ...
+}:
 {
   home.stateVersion = "25.11";
 
   home.packages = [ pkgs.ncmpcpp ];
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    withPython3 = false;
+    withRuby = false;
+    extraPackages = with pkgs; [
+      basedpyright
+      clang-tools
+      gcc
+      ripgrep
+      rust-analyzer
+    ];
+  };
+
+  xdg.configFile."nvim".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/nvim";
+
   xdg.configFile."ncmpcpp/config".text = ''
-    mpd_host = "192.168.15.3"
+    mpd_host = "${osConfig.dotfiles.host.lanAddress}"
     mpd_port = "6600"
 
     user_interface = "alternative"

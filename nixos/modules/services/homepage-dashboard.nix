@@ -1,7 +1,10 @@
 {
-  lanAddress,
+  config,
   ...
 }:
+let
+  lanAddress = config.dotfiles.host.lanAddress;
+in
 {
   services.homepage-dashboard = {
     enable = true;
@@ -43,6 +46,12 @@
             Portainer = {
               description = "Docker management";
               href = "https://${lanAddress}:9443";
+            };
+          }
+          {
+            Immich = {
+              description = "Photo and video library";
+              href = "http://${lanAddress}:2283";
             };
           }
           {
