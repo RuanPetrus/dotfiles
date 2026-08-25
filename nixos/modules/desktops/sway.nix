@@ -14,13 +14,16 @@ in
       brightnessctl
       bat
       chafa
+      cifs-utils
       file
       foot
       firefox
       fuzzel
       grim
       mako
+      mpv
       networkmanagerapplet
+      sxiv
       playerctl
       polkit_gnome
       slurp
@@ -29,6 +32,7 @@ in
       swaylock
       waybar
       wl-clipboard
+      zathura
       glmark2
       lm_sensors
       lf
