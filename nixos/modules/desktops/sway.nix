@@ -48,6 +48,11 @@ in
   networking.networkmanager.enable = true;
   fonts.packages = [ pkgs.nerd-fonts.symbols-only ];
   hardware.graphics.enable = true;
+  qt = {
+    enable = true;
+    platformTheme = "gtk2";
+    style = "adwaita-dark";
+  };
   security = {
     polkit.enable = true;
     rtkit.enable = true;
