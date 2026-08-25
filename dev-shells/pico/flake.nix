@@ -10,7 +10,6 @@
     in {
       devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
-          # Normal development tools
           clang-tools
           cmake
           gdb
@@ -18,23 +17,18 @@
           ninja
           pkg-config
 
-          # Raspberry Pi Pico
+          python3
+
           pico-sdk
           picotool
-
-          # ARM Cortex-M cross compiler
           gcc-arm-embedded
 
-          # Useful for USB/debugging
           libusb1
           openocd
         ];
 
         shellHook = ''
           export PICO_SDK_PATH=${pkgs.pico-sdk}/lib/pico-sdk
-
-          echo "Pico SDK: $PICO_SDK_PATH"
-          echo "ARM GCC:  $(arm-none-eabi-gcc --version | head -n1)"
         '';
       };
     };
