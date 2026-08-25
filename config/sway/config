@@ -22,7 +22,7 @@ input type:touchpad {
 }
 
 exec mako
-exec waybar
+exec_always --no-startup-id sh /home/ruan/dotfiles/config/sway/restart-waybar
 exec nm-applet --indicator
 exec /run/current-system/sw/libexec/polkit-gnome-authentication-agent-1
 exec swayidle -w \

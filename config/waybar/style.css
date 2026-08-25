@@ -2,7 +2,7 @@
   border: none;
   border-radius: 0;
   font-family: sans-serif, "Symbols Nerd Font Mono";
-  font-size: 12px;
+  font-size: 10px;
   min-height: 0;
 }
 
@@ -24,12 +24,12 @@ window#waybar {
 }
 
 #workspaces {
-  margin-left: 6px;
-  padding: 0 4px;
+  margin-top: 6px;
+  padding: 0 2px;
 }
 
 #workspaces button {
-  padding: 0 8px;
+  padding: 0 4px;
   margin: 4px 2px;
   border-radius: 4px;
   color: #a89984;
@@ -49,7 +49,7 @@ window#waybar {
   background: #cc241d;
   color: #fbf1c7;
   padding: 0 10px;
-  margin-left: 6px;
+  margin-top: 6px;
 }
 
 #clock {
@@ -62,7 +62,7 @@ window#waybar {
 #network,
 #battery,
 #tray {
-  padding: 0 8px;
+  padding: 0 4px;
 }
 
 #pulseaudio {
@@ -77,8 +77,12 @@ window#waybar {
   color: #d3869b;
 }
 
+#battery.charging {
+  color: #b8bb26;
+}
+
 #tray {
-  margin-right: 6px;
+  margin-bottom: 6px;
 }
 
 #battery.warning {
@@ -88,4 +92,40 @@ window#waybar {
 #battery.critical,
 #network.disconnected {
   color: #fb4934;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background: #282828;
+  border-radius: 7px;
+  padding: 6px 0;
+}
+
+#workspaces,
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#tray {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+#workspaces {
+  margin: 2px 0;
+}
+
+#workspaces button {
+  margin: 2px 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#battery {
+  margin: 4px 0;
 }

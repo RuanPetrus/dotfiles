@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for pid in $(pgrep -f '^waybar$'); do
+    kill "$pid"
+done
+
+exec waybar
