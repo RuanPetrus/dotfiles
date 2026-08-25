@@ -1,8 +1,23 @@
 # night-crawler bootstrap
 
 `night-crawler` is intentionally not a flake output yet. The reusable Sway
-desktop and `ruan` desktop profile are ready, but an installable host still
-needs configuration generated from the laptop itself.
+desktop, generated hardware scan, graphics policy, and Disko layout are ready.
+An installable host still needs its SOPS identity, login secret, and final host
+composition.
+
+## Detected Hardware
+
+- Model: Dell Inspiron 15 3530
+- Boot mode: UEFI
+- CPU platform: Intel Raptor Lake-P
+- Integrated GPU: Intel Iris Xe at `PCI:0:2:0`
+- Discrete GPU: NVIDIA GeForce MX550 at `PCI:1:0:0`
+- Internal disk: 512 GB SK hynix BC901 NVMe
+
+`hardware-configuration.nix` contains only generated detection. `graphics.nix`
+uses Intel as the primary GPU and NVIDIA PRIME offload with fine-grained power
+management, while `../../hardware/intel-graphics.nix` provides Intel media and
+compute support.
 
 ## Disk Layout
 
@@ -27,14 +42,11 @@ lsblk -e7 -o NAME,PATH,SIZE,MODEL,SERIAL,TRAN,TYPE,MOUNTPOINTS
 
 ## Required Inputs
 
-1. Generate `hardware-configuration.nix` without filesystem declarations on
-   the laptop and place it in this directory; Disko owns filesystems and swap.
-2. Identify whether the graphics hardware is Intel, AMD, NVIDIA, or hybrid.
-3. Create a host-specific SSH host key and convert its public key with
+1. Create a host-specific SSH host key and convert its public key with
    `ssh-to-age`.
-4. Add that age recipient to `.sops.yaml` for
+2. Add that age recipient to `.sops.yaml` for
    `secrets/night-crawler.yaml`.
-5. Store `ruan-password-hash` in that encrypted file and add a local
+3. Store `ruan-password-hash` in that encrypted file and add a local
    `secrets.nix` module modeled after the server host.
 
 The future host composition should import:
@@ -43,10 +55,12 @@ The future host composition should import:
 {
   imports = [
     ./disk-config.nix
+    ./graphics.nix
     ./hardware-configuration.nix
     ./secrets.nix
     ../../core/host.nix
     ../../desktops/sway.nix
+    ../../hardware/intel-graphics.nix
     ../../system
     ../../users/ruan
   ];

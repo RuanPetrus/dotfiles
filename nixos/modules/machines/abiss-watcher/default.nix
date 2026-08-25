@@ -7,8 +7,10 @@
     ./hardware-configuration.nix
     ./networking.nix
     ./secrets.nix
+    ./storage.nix
     ../../core/host.nix
     ../../core/shared-storage.nix
+    ../../hardware/intel-graphics.nix
     ../../services/backup.nix
     ../../services/docker.nix
     ../../services/homepage-dashboard.nix

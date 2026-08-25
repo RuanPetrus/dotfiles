@@ -51,5 +51,9 @@
       nixosConfigurations.abiss-watcher = mkHost {
         modules = [ ./modules/machines/abiss-watcher ];
       };
+
+      nixosConfigurations.night-crawler = mkHost {
+        modules = [ ./modules/machines/night-crawler ];
+      };
     };
 }

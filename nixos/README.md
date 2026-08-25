@@ -20,11 +20,17 @@ services, and shared ACLs for access to `/data`.
     │   └── shared-storage.nix
     ├── desktops/
     │   └── sway.nix
+    ├── hardware/
+    │   └── intel-graphics.nix
     ├── machines/abiss-watcher/
     │   ├── default.nix
     │   ├── hardware-configuration.nix
     │   ├── networking.nix
-    │   └── secrets.nix
+    │   ├── secrets.nix
+    │   └── storage.nix
+    ├── machines/night-crawler/
+    │   ├── disk-config.nix
+    │   └── README.md
     ├── services/
     │   ├── backup.nix
     │   ├── docker.nix
@@ -46,6 +52,11 @@ The host module is the composition point. It imports the reusable modules and
 sets the typed `dotfiles.host` options consumed by them. Machine hardware,
 network policy, secrets, and the selected service set stay under
 `modules/machines/<hostname>`.
+
+Generated `hardware-configuration.nix` files contain only detected boot and
+device facts. Reusable driver policy belongs under `modules/hardware`, while
+manually managed host mounts belong in that machine's `storage.nix` or Disko
+declaration.
 
 ## Adding A Host
 

@@ -3,3 +3,8 @@ creation_rules:
     key_groups:
       - age:
           - age1yg9zfys6ulvkw99hta2l7s7prr58dqdne6wryme6g4ay7qjp9ejs70pdmf
+  - path_regex: secrets/night-crawler\.yaml$
+    key_groups:
+      - age:
+          - age1yg9zfys6ulvkw99hta2l7s7prr58dqdne6wryme6g4ay7qjp9ejs70pdmf
+          - age1aun2g2xzeqwxtcmn9wjfu89j4xckn7yp20lplffd6m4ptp96aavqd8u66l
