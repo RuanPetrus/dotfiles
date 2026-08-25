@@ -1,8 +1,8 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 28,
-  "spacing": 8,
+  "height": 36,
+  "spacing": 6,
   "modules-left": ["sway/workspaces", "sway/mode"],
   "modules-center": ["clock"],
   "modules-right": ["pulseaudio", "network", "battery", "tray"],
@@ -14,13 +14,13 @@
     "format": "{:%a %d %b  %H:%M}"
   },
   "pulseaudio": {
-    "format": "VOL {volume}%",
-    "format-muted": "MUTED"
+    "format": "󰕾 {volume}%",
+    "format-muted": "󰖁 Muted"
   },
   "network": {
-    "format-wifi": "{essid} {signalStrength}%",
-    "format-ethernet": "ETH",
-    "format-disconnected": "OFFLINE",
+    "format-wifi": "󰖩 {essid} {signalStrength}%",
+    "format-ethernet": "󰈀 Ethernet",
+    "format-disconnected": "󰖪 Offline",
     "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
   },
   "battery": {
@@ -28,8 +28,9 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "BAT {capacity}%",
-    "format-charging": "BAT +{capacity}%"
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁽", "󰁿", "󰂀", "󰁹"]
   },
   "tray": {
     "spacing": 8

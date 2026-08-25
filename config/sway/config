@@ -8,8 +8,9 @@ set $right l
 set $term foot
 set $menu fuzzel
 
-font pango:sans 10
+font pango:sans 8
 floating_modifier $mod normal
+workspace_layout tabbed
 default_border pixel 2
 gaps inner 6
 gaps outer 3
@@ -32,7 +33,7 @@ exec swayidle -w \
 
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit Sway?' -b 'Exit' 'swaymsg exit'
 bindsym $mod+Shift+l exec swaylock -f -c 1d2021

@@ -46,6 +46,7 @@ in
   };
 
   networking.networkmanager.enable = true;
+  fonts.packages = [ pkgs.nerd-fonts.symbols-only ];
   hardware.graphics.enable = true;
   security = {
     polkit.enable = true;

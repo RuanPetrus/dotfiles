@@ -1,18 +1,37 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: sans-serif;
+  font-family: sans-serif, "Symbols Nerd Font Mono";
   font-size: 12px;
   min-height: 0;
 }
 
 window#waybar {
-  background: #1d2021;
+  background: transparent;
   color: #ebdbb2;
 }
 
+#workspaces,
+#mode,
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#tray {
+  background: #282828;
+  margin: 4px 0;
+  border-radius: 7px;
+}
+
+#workspaces {
+  margin-left: 6px;
+  padding: 0 4px;
+}
+
 #workspaces button {
-  padding: 0 9px;
+  padding: 0 8px;
+  margin: 4px 2px;
+  border-radius: 4px;
   color: #a89984;
 }
 
@@ -21,18 +40,45 @@ window#waybar {
   color: #fbf1c7;
 }
 
+#workspaces button:hover {
+  background: #3c3836;
+  color: #ebdbb2;
+}
+
 #mode {
   background: #cc241d;
   color: #fbf1c7;
   padding: 0 10px;
+  margin-left: 6px;
 }
 
-#clock,
+#clock {
+  background: #3c3836;
+  color: #d5c4a1;
+  padding: 0 12px;
+}
+
 #pulseaudio,
 #network,
 #battery,
 #tray {
   padding: 0 8px;
+}
+
+#pulseaudio {
+  color: #83a598;
+}
+
+#network {
+  color: #b8bb26;
+}
+
+#battery {
+  color: #d3869b;
+}
+
+#tray {
+  margin-right: 6px;
 }
 
 #battery.warning {
