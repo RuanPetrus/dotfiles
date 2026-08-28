@@ -44,6 +44,7 @@ in
 
   services = {
     dbus.enable = true;
+    gvfs.enable = true;
     greetd = {
       enable = true;
       settings.default_session = {
