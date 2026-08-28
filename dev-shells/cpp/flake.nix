@@ -18,6 +18,7 @@
           git
           ninja
           pkg-config
+		  python3
         ];
       };
     };
