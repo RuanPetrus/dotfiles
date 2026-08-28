@@ -13,6 +13,7 @@
           clang-tools
           cmake
           gcc
+          gcc-arm-embedded
           gdb
           git
           ninja
