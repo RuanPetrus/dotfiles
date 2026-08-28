@@ -1,0 +1,26 @@
+#!/bin/sh
+
+choice=$(printf 'Lock\nSuspend\nLog out\nReboot\nShut down\n' |
+    fuzzel --dmenu --prompt='Power: ') || exit 0
+
+case "$choice" in
+    'Lock')
+        exec swaylock -f -c 1d2021
+        ;;
+    'Suspend')
+        exec systemctl suspend
+        ;;
+    'Log out')
+        exec swaynag -t warning -m 'Exit Sway?' -b 'Exit' 'swaymsg exit'
+        ;;
+    'Reboot'|'Shut down')
+        confirmation=$(printf 'Cancel\n%s\n' "$choice" |
+            fuzzel --dmenu --prompt="Confirm: ") || exit 0
+        [ "$confirmation" = "$choice" ] || exit 0
+
+        if [ "$choice" = 'Reboot' ]; then
+            exec systemctl reboot
+        fi
+        exec systemctl poweroff
+        ;;
+esac
