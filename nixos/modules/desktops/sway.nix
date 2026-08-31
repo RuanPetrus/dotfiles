@@ -76,7 +76,13 @@ in
 
   xdg.portal = {
     enable = true;
-    wlr.enable = true;
+    wlr = {
+      enable = true;
+      settings.screencast = {
+        chooser_type = "dmenu";
+        chooser_cmd = "${pkgs.fuzzel}/bin/fuzzel --dmenu";
+      };
+    };
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
