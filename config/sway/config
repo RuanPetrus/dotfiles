@@ -15,7 +15,6 @@ default_border pixel 2
 gaps inner 6
 gaps outer 3
 
-output * bg #1d2021 solid_color
 input type:touchpad {
     tap enabled
     natural_scroll enabled
@@ -26,6 +25,8 @@ input type:keyboard {
 }
 
 exec mako
+exec sh /home/ruan/dotfiles/config/sway/battery-notifier
+exec sh /home/ruan/dotfiles/config/sway/random-wallpaper
 exec_always --no-startup-id sh /home/ruan/dotfiles/config/sway/restart-waybar
 exec nm-applet --indicator
 exec /run/current-system/sw/libexec/polkit-gnome-authentication-agent-1

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+wallpaper=$(find "$HOME/Pictures/wallpapers" -type f \
+    \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) \
+    | shuf -n 1)
+
+if [ -n "$wallpaper" ]; then
+    swaymsg output '*' bg "$wallpaper" fill
+fi

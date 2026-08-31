@@ -1,0 +1,31 @@
+#!/bin/sh
+
+threshold=15
+notified=false
+
+while true; do
+    battery=
+    for candidate in /sys/class/power_supply/BAT*; do
+        if [ -r "$candidate/capacity" ] && [ -r "$candidate/status" ]; then
+            battery=$candidate
+            break
+        fi
+    done
+
+    if [ -n "$battery" ]; then
+        IFS= read -r capacity < "$battery/capacity"
+        IFS= read -r status < "$battery/status"
+
+        if [ "$status" = "Discharging" ] && [ "$capacity" -le "$threshold" ]; then
+            if [ "$notified" = false ]; then
+                notify-send --app-name=Battery --urgency=critical --expire-time=0 \
+                    "Battery low" "$capacity% remaining. Connect the charger."
+                notified=true
+            fi
+        elif [ "$status" != "Discharging" ]; then
+            notified=false
+        fi
+    fi
+
+    sleep 60
+done

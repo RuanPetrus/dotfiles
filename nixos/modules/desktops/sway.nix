@@ -29,6 +29,7 @@ in
       slurp
       stress-ng
       swayidle
+      swaybg
       swaylock
       thunar
       waybar
@@ -38,6 +39,7 @@ in
       lm_sensors
       lf
       libarchive
+      libnotify
       poppler-utils
     ];
   };
