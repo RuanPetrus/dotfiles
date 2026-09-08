@@ -54,6 +54,7 @@ bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+Right move right
 
 bindsym $mod+b splith
+bindsym $mod+Shift+b exec sh /home/ruan/dotfiles/config/sway/random-wallpaper
 bindsym $mod+v splitv
 bindsym $mod+f fullscreen
 bindsym $mod+s layout stacking

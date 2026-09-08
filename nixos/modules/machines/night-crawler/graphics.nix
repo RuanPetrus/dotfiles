@@ -5,6 +5,7 @@
     builtins.elem (lib.getName package) [
       "nvidia-settings"
       "nvidia-x11"
+      "obsidian"
     ];
 
   services.xserver.videoDrivers = [ "nvidia" ];

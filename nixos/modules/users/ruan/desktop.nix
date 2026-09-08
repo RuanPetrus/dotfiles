@@ -1,9 +1,15 @@
-{ config, ... }:
+{
+  config,
+  pkgs,
+  ...
+}:
 let
   dotfiles = "${config.home.homeDirectory}/dotfiles/config";
   link = path: config.lib.file.mkOutOfStoreSymlink "${dotfiles}/${path}";
 in
 {
+  home.packages = [ pkgs.obsidian ];
+
   xdg.configFile = {
     "foot/foot.ini".source = link "foot/foot.ini";
     "fuzzel/fuzzel.ini".source = link "fuzzel/fuzzel.ini";
