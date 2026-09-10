@@ -16,6 +16,7 @@
           gcc-arm-embedded
           gdb
           git
+          libGL
           libxkbcommon
           ninja
           pkg-config
