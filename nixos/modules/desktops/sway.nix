@@ -32,6 +32,7 @@ in
       swaybg
       swaylock
       thunar
+      tor-browser
       waybar
       wl-clipboard
       zathura

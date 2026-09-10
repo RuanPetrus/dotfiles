@@ -5,7 +5,13 @@
     age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
     gnupg.sshKeyPaths = [ ];
 
-    secrets.ruan-password-hash.neededForUsers = true;
+    secrets = {
+      ruan-password-hash.neededForUsers = true;
+      samba-credentials = {
+        mode = "0400";
+        restartUnits = [ "mnt-nas.mount" ];
+      };
+    };
   };
 
   users = {

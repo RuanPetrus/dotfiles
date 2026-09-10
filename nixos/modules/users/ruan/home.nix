@@ -6,6 +6,12 @@
 {
   home.stateVersion = "25.11";
 
+  home.packages = with pkgs; [
+    lz4
+    p7zip
+    unzip
+  ];
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -37,6 +43,7 @@
     syntaxHighlighting.enable = true;
     initContent = ''
       source "${config.home.homeDirectory}/dotfiles/config/zsh/init.zsh"
+      source "${config.home.homeDirectory}/dotfiles/config/shell/functions.sh"
     '';
   };
 
