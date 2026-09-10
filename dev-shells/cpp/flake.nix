@@ -28,6 +28,11 @@
 
         shellHook = ''
           source "$HOME/dotfiles/config/shell/functions.sh"
+          export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath (with pkgs; [
+            libglvnd
+            libxkbcommon
+            wayland
+          ])}:/run/opengl-driver/lib"
         '';
       };
     };
