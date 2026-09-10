@@ -16,10 +16,18 @@
           gcc-arm-embedded
           gdb
           git
+          libxkbcommon
           ninja
           pkg-config
-		  python3
+          python3
+          wayland
+          wayland-protocols
+          wayland-scanner
         ];
+
+        shellHook = ''
+          source "$HOME/dotfiles/config/shell/functions.sh"
+        '';
       };
     };
 }

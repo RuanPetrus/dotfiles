@@ -1,28 +1,23 @@
 {
   description = "Raspberry Pi Pico C/C++ development shell";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+  inputs = {
+    cpp.url = "path:../cpp";
+    cpp.inputs.nixpkgs.follows = "nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+  };
 
-  outputs = { nixpkgs, ... }:
+  outputs = { cpp, nixpkgs, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       devShells.${system}.default = pkgs.mkShell {
+        inputsFrom = [ cpp.devShells.${system}.default ];
+
         packages = with pkgs; [
-          clang-tools
-          cmake
-          gdb
-          git
-          ninja
-          pkg-config
-
-          python3
-
           pico-sdk
           picotool
-          gcc-arm-embedded
-
           libusb1
           openocd
         ];

@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "cpp": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "../cpp",
+        "type": "path"
+      },
+      "original": {
+        "path": "../cpp",
+        "type": "path"
+      },
+      "parent": []
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1787640266,
@@ -18,6 +34,7 @@
     },
     "root": {
       "inputs": {
+        "cpp": "cpp",
         "nixpkgs": "nixpkgs"
       }
     }
