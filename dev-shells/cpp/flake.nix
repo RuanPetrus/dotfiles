@@ -16,6 +16,7 @@
           gcc-arm-embedded
           gdb
           git
+          libffi
           libGL
           libxkbcommon
           ninja
