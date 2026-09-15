@@ -24,6 +24,7 @@
       ripgrep
       rust-analyzer
       tree-sitter
+	  zip
     ];
   };
 
