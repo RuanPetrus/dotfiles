@@ -10,6 +10,7 @@
     lz4
     p7zip
     unzip
+    zip
   ];
 
   programs.neovim = {
@@ -24,7 +25,6 @@
       ripgrep
       rust-analyzer
       tree-sitter
-	  zip
     ];
   };
 

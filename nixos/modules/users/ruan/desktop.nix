@@ -8,7 +8,10 @@ let
   link = path: config.lib.file.mkOutOfStoreSymlink "${dotfiles}/${path}";
 in
 {
-  home.packages = [ pkgs.obsidian ];
+  home.packages = with pkgs; [
+    discord
+    obsidian
+  ];
 
   gtk = {
     enable = true;
