@@ -8,6 +8,7 @@
     ./networking.nix
     ./secrets.nix
     ./storage.nix
+    ./wake-on-lan.nix
     ../../core/host.nix
     ../../core/shared-storage.nix
     ../../hardware/intel-graphics.nix

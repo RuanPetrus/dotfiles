@@ -55,5 +55,9 @@
       nixosConfigurations.night-crawler = mkHost {
         modules = [ ./modules/machines/night-crawler ];
       };
+
+      nixosConfigurations.nameless-king = mkHost {
+        modules = [ ./modules/machines/nameless-king ];
+      };
     };
 }

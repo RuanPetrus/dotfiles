@@ -1,5 +1,6 @@
 {
   config,
+  pkgs,
   ...
 }:
 let
@@ -65,6 +66,7 @@ in
   ];
 
   home-manager.users.ruan.imports = [ ../../users/ruan/desktop.nix ];
+  home-manager.users.ruan.home.packages = [ pkgs.moonlight-qt ];
 
   boot.loader = {
     systemd-boot.enable = true;

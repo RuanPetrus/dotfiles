@@ -8,3 +8,8 @@ creation_rules:
       - age:
           - age1yg9zfys6ulvkw99hta2l7s7prr58dqdne6wryme6g4ay7qjp9ejs70pdmf
           - age1aun2g2xzeqwxtcmn9wjfu89j4xckn7yp20lplffd6m4ptp96aavqd8u66l
+  - path_regex: secrets/nameless-king\.yaml$
+    key_groups:
+      - age:
+          - age1yg9zfys6ulvkw99hta2l7s7prr58dqdne6wryme6g4ay7qjp9ejs70pdmf
+          - age12fd2hazlm9vjrn4wwy7zeruhl7dqp6t6mpm0n0wk0pt02a0eqq9snxzu9q
