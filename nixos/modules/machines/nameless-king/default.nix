@@ -24,7 +24,20 @@
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcvoAMzd8FNuszc0ysuXmmtNx3NN1X3/66rvORK8qnZ xastroboyx11@gmail.com"
   ];
 
-  home-manager.users.ruan.imports = [ ../../users/ruan/desktop.nix ];
+  home-manager.users.ruan =
+    { lib, pkgs, ... }:
+    {
+      imports = [ ../../users/ruan/desktop.nix ];
+
+      home.activation.disablePlasmaAutoSuspend = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+        ${pkgs.kdePackages.kconfig}/bin/kwriteconfig6 \
+          --file powerdevilrc \
+          --group AC \
+          --group SuspendAndShutdown \
+          --key AutoSuspendAction \
+          0
+      '';
+    };
 
   boot.loader = {
     systemd-boot.enable = true;
