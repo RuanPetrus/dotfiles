@@ -25,6 +25,7 @@
       ripgrep
       rust-analyzer
       tree-sitter
+	  vulkan-tools
     ];
   };
 
