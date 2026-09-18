@@ -9,6 +9,7 @@
     ./sunshine.nix
     ../../core/host.nix
     ../../desktops/plasma.nix
+    ../../services/tailscale-client.nix
     ../../system
     ../../users/ruan
   ];

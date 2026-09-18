@@ -16,6 +16,7 @@ in
     ../../core/host.nix
     ../../desktops/sway.nix
     ../../hardware/intel-graphics.nix
+    ../../services/tailscale-client.nix
     ../../system
     ../../users/ruan
   ];

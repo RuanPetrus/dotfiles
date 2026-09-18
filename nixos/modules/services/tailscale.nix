@@ -3,14 +3,10 @@ let
   host = config.dotfiles.host;
 in
 {
+  imports = [ ./tailscale-client.nix ];
+
   services.tailscale = {
-    enable = true;
-    openFirewall = true;
     useRoutingFeatures = "server";
-    extraSetFlags = [
-      "--accept-dns=false"
-      "--advertise-routes=${host.lanAddress}/32"
-      "--hostname=${host.name}"
-    ];
+    extraSetFlags = [ "--advertise-routes=${host.lanAddress}/32" ];
   };
 }
