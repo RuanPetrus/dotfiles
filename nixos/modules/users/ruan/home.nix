@@ -11,6 +11,7 @@
     p7zip
     unzip
     zip
+	vulkan-tools
   ];
 
   programs.neovim = {
@@ -25,7 +26,6 @@
       ripgrep
       rust-analyzer
       tree-sitter
-	  vulkan-tools
     ];
   };
 

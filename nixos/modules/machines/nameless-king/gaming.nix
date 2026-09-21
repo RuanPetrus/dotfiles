@@ -13,6 +13,7 @@
     steam = {
       enable = true;
       extraCompatPackages = [ pkgs.proton-ge-bin ];
+      extraPackages = [ pkgs.libcxx ];
       localNetworkGameTransfers.openFirewall = true;
       protontricks.enable = true;
     };
