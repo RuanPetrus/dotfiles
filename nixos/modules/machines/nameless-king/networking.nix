@@ -1,4 +1,6 @@
 {
+  networking.firewall.allowedUDPPorts = [ 34197 ];
+
   networking.networkmanager.ensureProfiles.profiles.nameless-king-wired = {
     connection = {
       id = "nameless-king-wired";

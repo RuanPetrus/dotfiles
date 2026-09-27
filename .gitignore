@@ -6,3 +6,4 @@ nvim/.github
 nvim/.gitignore
 result
 result-*
+.venv/
