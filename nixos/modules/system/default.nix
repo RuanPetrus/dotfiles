@@ -12,6 +12,14 @@
   time.timeZone = "America/Sao_Paulo";
   i18n.defaultLocale = "en_US.UTF-8";
 
+  networking = {
+    nameservers = [
+      "1.1.1.1"
+      "1.0.0.1"
+    ];
+    networkmanager.dns = "none";
+  };
+
   environment.systemPackages = with pkgs; [
     git
     tmux

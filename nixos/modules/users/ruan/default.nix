@@ -8,7 +8,9 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    backupFileExtension = "hm-backup";
+    backupCommand = pkgs.writeShellScript "home-manager-backup" ''
+      ${pkgs.coreutils}/bin/mv -- "$1" "$1.hm-backup.$(${pkgs.coreutils}/bin/date +%s%N)"
+    '';
     users.ruan = import ./home.nix;
   };
 
