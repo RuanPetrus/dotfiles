@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "username": "system-manager",
+  "model": "openai/gpt-5.6-sol",
+  "small_model": "openai/gpt-5.6-sol",
+  "default_agent": "machine-manager",
+  "enabled_providers": ["openai"],
+  "share": "disabled",
+  "autoupdate": false,
+  "permission": "allow",
+  "server": {
+    "hostname": "192.168.15.3",
+    "port": 4096
+  }
+}

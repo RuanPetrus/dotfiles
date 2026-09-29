@@ -66,6 +66,12 @@ in
               href = "http://${lanAddress}:8384";
             };
           }
+          {
+            OpenCode = {
+              description = "AI machine management";
+              href = "http://${lanAddress}:4096";
+            };
+          }
         ];
       }
       {

@@ -18,6 +18,7 @@
     ../../services/immich.nix
     ../../services/media.nix
     ../../services/mpd.nix
+    ../../services/opencode.nix
     ../../services/syncthing.nix
     ../../services/tailscale.nix
     ../../system

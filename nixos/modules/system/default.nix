@@ -40,4 +40,8 @@
     enable = true;
     settings.PasswordAuthentication = true;
   };
+
+  users.users.ruan.openssh.authorizedKeys.keys = [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKZLaiIK3Q+dwdxPCYGAWspqzATww2fRPqGglLJoi6uX opencode-machine-manager@abiss-watcher"
+  ];
 }
