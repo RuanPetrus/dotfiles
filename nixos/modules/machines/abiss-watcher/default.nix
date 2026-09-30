@@ -27,7 +27,7 @@
 
   dotfiles.host = {
     name = "abiss-watcher";
-    lanAddress = "192.168.15.3";
+    lanAddress = "192.168.0.10";
     dataRoot = "/data";
     primaryUser = "ruan";
     accelerationDevices = [ "/dev/dri/renderD128" ];

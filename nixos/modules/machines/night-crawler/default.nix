@@ -23,11 +23,12 @@ in
 
   dotfiles.host = {
     name = "night-crawler";
+    lanAddress = "192.168.0.12";
     primaryUser = "ruan";
   };
 
   fileSystems."/mnt/nas" = {
-    device = "//192.168.15.3/data";
+    device = "//192.168.0.10/data";
     fsType = "cifs";
     options = [
       "credentials=${config.sops.secrets.samba-credentials.path}"

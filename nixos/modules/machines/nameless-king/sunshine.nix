@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
   services = {
     sunshine = {
@@ -8,7 +8,7 @@
       package = pkgs.sunshine.override { cudaSupport = true; };
       settings = {
         capture = "kwin";
-        csrf_allowed_origins = "https://192.168.15.4:47990";
+        csrf_allowed_origins = "https://${config.dotfiles.host.lanAddress}:47990";
         encoder = "nvenc";
       };
     };

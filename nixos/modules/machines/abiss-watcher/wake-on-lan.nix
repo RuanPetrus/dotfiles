@@ -14,7 +14,7 @@ in
         {
           Sunshine = {
             description = "Game streaming host";
-            href = "https://192.168.15.4:47990";
+            href = "https://192.168.0.11:47990";
             icon = "sunshine.png";
           };
         }
@@ -45,7 +45,7 @@ in
       done
 
       if [[ "$request" == "GET /wake "* ]]; then
-        ${lib.getExe pkgs.wakeonlan} -i 192.168.15.255 30:56:0f:00:63:6f >&2
+        ${lib.getExe pkgs.wakeonlan} -i 192.168.0.255 30:56:0f:00:63:6f >&2
         printf 'HTTP/1.1 303 See Other\r\nLocation: http://${dashboardAddress}:8082/\r\nConnection: close\r\n\r\n'
       else
         printf 'HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 0\r\n\r\n'

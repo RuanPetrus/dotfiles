@@ -36,7 +36,7 @@ let
   '';
   startScript = pkgs.writeShellScript "opencode-start" ''
     cd ${stateDir}/workspace/dotfiles
-    exec ${lib.getExe opencode} web --hostname 192.168.15.3 --port 4096
+    exec ${lib.getExe opencode} web --hostname ${config.dotfiles.host.lanAddress} --port 4096
   '';
   deployAbiss = pkgs.writeShellScriptBin "opencode-deploy-abiss" ''
     set -eu

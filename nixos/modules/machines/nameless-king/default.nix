@@ -17,7 +17,7 @@
 
   dotfiles.host = {
     name = "nameless-king";
-    lanAddress = "192.168.15.4";
+    lanAddress = "192.168.0.11";
     primaryUser = "ruan";
   };
 

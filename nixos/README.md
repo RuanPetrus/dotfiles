@@ -79,7 +79,7 @@ Create `modules/machines/<hostname>/default.nix` and set the machine facts:
 
   dotfiles.host = {
     name = "<hostname>";
-    lanAddress = "192.168.1.10";
+    lanAddress = "192.168.0.20";
     dataRoot = "/data";
     primaryUser = "<user>";
     accelerationDevices = [ ];
@@ -174,44 +174,71 @@ Do not change `system.stateVersion` as part of a normal package update.
 ## Host assumptions
 
 - Hostname: `abiss-watcher`
-- LAN address: `192.168.15.3`, defined once as `dotfiles.host.lanAddress` in
+- LAN address: `192.168.0.10`, defined once as `dotfiles.host.lanAddress` in
   `modules/machines/abiss-watcher/default.nix`
 - Time zone: `America/Sao_Paulo`
 - Boot loader: systemd-boot
 - Kernel: latest kernel available from the pinned Nixpkgs
 - Network management: NetworkManager
-- DNS servers: `1.1.1.1` and `8.8.8.8`
+- DNS servers: `1.1.1.1` and `1.0.0.1`
 - Root filesystem, boot filesystem, swap, and `/data` are declared in
   `hardware-configuration.nix` by UUID.
 
-The LAN address is used by service listeners, Homepage links, MPD clients, and
-the Tailscale advertised route, but a static address is not declared by this
-repository. Keep the DHCP lease reserved in the router or update the host
-option if the address changes.
+The LAN address is used by the static NetworkManager profile, service
+listeners, Homepage links, MPD clients, and the Tailscale advertised route.
+Update the host option and any cross-machine references together if the
+address changes.
+
+## LAN allocation
+
+The LAN uses `192.168.0.0/24`. Infrastructure and machines that need stable
+addresses use host-configured static addresses below the DHCP pool.
+
+| Address or range | Purpose |
+| --- | --- |
+| `192.168.0.0` | Network address |
+| `192.168.0.1` | Router and default gateway |
+| `192.168.0.2-192.168.0.10` | Network infrastructure, including access points and infrastructure servers |
+| `192.168.0.11-192.168.0.99` | Other machines with static addresses |
+| `192.168.0.100-192.168.0.254` | Router-managed DHCP pool |
+| `192.168.0.255` | Broadcast address |
+
+Current static assignments:
+
+| Host | Address | Role |
+| --- | --- | --- |
+| Router | `192.168.0.1` | Internet gateway |
+| `abiss-watcher` | `192.168.0.10` | Infrastructure server |
+| `nameless-king` | `192.168.0.11` | Desktop and game-streaming host |
+| `night-crawler` | `192.168.0.12` | Laptop on the home Wi-Fi networks |
+
+Night Crawler's saved `marombinhas` and `marombinhas_5G` NetworkManager
+profiles use its static address. Profiles for other Wi-Fi networks continue to
+use DHCP.
 
 ## Services
 
 | Service | LAN URL or port | Management |
 | --- | --- | --- |
-| Homepage | `http://192.168.15.3:8082` | Declarative |
-| Jellyfin | `http://192.168.15.3:8096` | Nixarr; libraries are manual |
-| Seerr | `http://192.168.15.3:5055` | Nixarr; integrations are manual |
-| Radarr | `http://192.168.15.3:7878` | Nixarr and settings-sync |
-| Sonarr | `http://192.168.15.3:8989` | Nixarr and settings-sync |
-| Lidarr | `http://192.168.15.3:8686` | Nixarr; some setup is manual |
-| Bazarr | `http://192.168.15.3:6767` | Nixarr and settings-sync |
-| Prowlarr | `http://192.168.15.3:9696` | Nixarr and settings-sync |
-| Transmission | `http://192.168.15.3:9091` | Nixarr and settings-sync |
-| Calibre server | `http://192.168.15.3:8080` | Declarative |
-| Immich | `http://192.168.15.3:2283` | Declarative native NixOS service |
+| Homepage | `http://192.168.0.10:8082` | Declarative |
+| Jellyfin | `http://192.168.0.10:8096` | Nixarr; libraries are manual |
+| Seerr | `http://192.168.0.10:5055` | Nixarr; integrations are manual |
+| Radarr | `http://192.168.0.10:7878` | Nixarr and settings-sync |
+| Sonarr | `http://192.168.0.10:8989` | Nixarr and settings-sync |
+| Lidarr | `http://192.168.0.10:8686` | Nixarr; some setup is manual |
+| Bazarr | `http://192.168.0.10:6767` | Nixarr and settings-sync |
+| Prowlarr | `http://192.168.0.10:9696` | Nixarr and settings-sync |
+| Transmission | `http://192.168.0.10:9091` | Nixarr and settings-sync |
+| Calibre server | `http://192.168.0.10:8080` | Declarative |
+| Immich | `http://192.168.0.10:2283` | Declarative native NixOS service |
 | Samba | TCP `139`, `445`; UDP `137`, `138` | Declarative service; account password is manual |
-| Syncthing | `http://192.168.15.3:8384`; TCP/UDP `22000`; UDP `21027` | Declarative service; pairing is manual |
+| Syncthing | `http://192.168.0.10:8384`; TCP/UDP `22000`; UDP `21027` | Declarative service; pairing is manual |
 | SSH | TCP `22` | Declarative |
 | Docker | Local daemon | Declarative daemon; containers are separate |
-| Portainer | `https://192.168.15.3:9443` | Declarative OCI container |
+| Portainer | `https://192.168.0.10:9443` | Declarative OCI container |
 | Recyclarr | No web UI | Declarative daily synchronization |
 | Restic documents backup | No web UI | Declarative daily encrypted Dropbox backup |
-| MPD | TCP `6600`; stream `http://192.168.15.3:8000` | Declarative shared music queue |
+| MPD | TCP `6600`; stream `http://192.168.0.10:8000` | Declarative shared music queue |
 | Tailscale | UDP `41641` | Declarative daemon; account enrollment is manual |
 
 Transmission also exposes TCP and UDP `51413` for peers. UDP `8211` is open
@@ -273,7 +300,7 @@ rebuild does not reset settings that remain manual.
 Syncthing runs as the dedicated `syncthing` system user with primary group
 `media`. Its default shared data directory is `/data/syncthing`. Transfer,
 local-discovery, and administration ports are open to the LAN. Browse to
-`http://192.168.15.3:8384` to exchange device IDs, add remote devices, and
+`http://192.168.0.10:8384` to exchange device IDs, add remote devices, and
 configure folders. Devices and folders are intentionally not overridden by
 NixOS, so UI changes survive rebuilds.
 
@@ -294,11 +321,11 @@ journalctl -u syncthing --no-pager -n 100
 ## MPD
 
 MPD indexes `/data/media/library/music` and provides one shared playback queue
-on the LAN. Configure an MPD client with server `192.168.15.3` and port `6600`,
+on the LAN. Configure an MPD client with server `192.168.0.10` and port `6600`,
 then listen to the 192 kbps MP3 stream at:
 
 ```text
-http://192.168.15.3:8000
+http://192.168.0.10:8000
 ```
 
 The control and stream ports are not authenticated and must not be forwarded
@@ -306,8 +333,8 @@ to the internet. Suitable clients include M.A.L.P. on Android and Cantata or
 ncmpcpp on Linux. Refresh the library and inspect the service with:
 
 ```bash
-mpc --host 192.168.15.3 update
-mpc --host 192.168.15.3 status
+mpc --host 192.168.0.10 update
+mpc --host 192.168.0.10 status
 systemctl status mpd
 journalctl -u mpd --no-pager -n 100
 ```
@@ -322,7 +349,7 @@ advertise only its existing LAN address:
 sudo tailscale up \
   --accept-dns=false \
   --hostname=abiss-watcher \
-  --advertise-routes=192.168.15.3/32
+  --advertise-routes=192.168.0.10/32
 ```
 
 Approve the advertised route in the Tailscale administration console. Linux
