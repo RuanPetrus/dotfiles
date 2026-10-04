@@ -216,6 +216,168 @@ Night Crawler's saved `marombinhas` and `marombinhas_5G` NetworkManager
 profiles use its static address. Profiles for other Wi-Fi networks continue to
 use DHCP.
 
+## Planned router architecture
+
+The router now runs as an autostarting microvm.nix QEMU virtual machine on
+`abiss-watcher`. This keeps the router configuration isolated from the media
+and storage services while dedicated router hardware is unavailable. It
+remains a separate `nixosConfigurations.router` host so it can later move to
+dedicated hardware without being disentangled from `abiss-watcher`.
+
+The router VM and the `abiss-watcher` host will still share a physical failure
+domain. A host reboot, hardware failure, or power loss will interrupt both the
+server and Internet access. Virtualization provides network and configuration
+isolation, not router redundancy.
+
+### Physical and virtual topology
+
+The Dell `0H092P` Intel PRO/1000 VT quad-port Gigabit PCIe adapter is passed
+through as a complete IOMMU group to the router VM. The existing onboard
+interface remains owned by the NixOS host and provides its LAN and management
+connection.
+
+```text
+ISP 1 (PPPoE) ───── NIC port 1 ─┐
+                                 │
+ISP 2 (DHCP) ────── NIC port 2 ─┼── NixOS router VM
+                                 │        │
+LAN switch ───────── NIC port 3 ─┘        │
+                                          │ routing, firewall and DNS
+LAN switch ───── onboard NIC ── abiss-watcher host
+
+NIC port 4: spare, recovery link, separate network, or additional LAN port
+```
+
+Use an external Ethernet switch for machines and access points. Bridging two
+router ports is possible, but the NIC and router VM are not intended to replace
+a dedicated switch. The router VM will use `192.168.0.1`; `abiss-watcher` will
+remain at `192.168.0.10` through its onboard interface.
+
+Do not connect either ISP until PCI passthrough, interface identity, firewall
+policy, and physical port ordering have been verified. The interface order
+reported by Linux may not match the order printed on the card.
+
+When the NIC is installed, verify it before changing the live network:
+
+```bash
+lspci -nnk
+ip -brief link
+find /sys/kernel/iommu_groups/ -type l
+```
+
+Confirm that all four ports use the expected Intel driver, identify their PCI
+device IDs, and verify that the complete card has a safe IOMMU group. Enable
+Intel VT-d/IOMMU in firmware and the host kernel. Do not use an ACS override as
+a security boundary. The full-height card also needs a suitable PCIe slot and
+case bracket.
+
+### Router software stack
+
+The planned NixOS router is composed from standard Linux services:
+
+| Responsibility | Planned component |
+| --- | --- |
+| Physical links, LAN bridge, DHCP WAN, routes and IPv6 | `systemd-networkd` |
+| PPPoE session | `services.pppd` |
+| Stateful firewall, forwarding, NAT and connection marks | nftables |
+| WAN health checks, failover and optional weighted routing | FireHOL `link-balancer` only |
+| LAN DHCP | dnsmasq or Kea |
+| DNS filtering and local records | AdGuard Home |
+| Recursive DNS and DNSSEC validation | Unbound |
+| Traffic shaping and bufferbloat control | CAKE with `tc` and IFB devices |
+| Runtime credentials | `sops-nix` |
+| Remote administration | Tailscale or WireGuard |
+
+FireHOL's full firewall is not planned. Its `link-balancer` executable manages
+multi-WAN routes through `iproute2`, while nftables remains the sole owner of
+the router firewall and NAT policy. Avoid mixing the generated NixOS firewall,
+`networking.nat`, a full FireHOL firewall, and a custom ruleset without an
+explicit division of ownership. The standard `networking.nat` module models a
+single external interface and is not sufficient for this dual-WAN design.
+
+DNS traffic will follow this path:
+
+```text
+LAN clients → AdGuard Home :53 → Unbound on loopback → authoritative DNS
+```
+
+AdGuard Home provides filtering, local records, statistics, and its management
+UI. Unbound performs recursive resolution, caching, and DNSSEC validation.
+Only AdGuard Home should listen on LAN port 53; Unbound should listen on a
+different loopback-only port. DNS and DHCP services must bind only to LAN
+interfaces, and management interfaces must never be reachable from either WAN.
+
+### Dual-WAN policy
+
+Start with failover instead of load balancing:
+
+- PPPoE is the primary WAN.
+- DHCP is the backup WAN.
+- Health checks must test multiple Internet destinations through each WAN, not
+  only carrier state or the ISP gateway.
+- Failure and recovery thresholds must prevent route flapping.
+- Existing connections will normally fail when changing ISP because the
+  public source address changes.
+
+After failover is stable, weighted per-connection load balancing can be added.
+It distributes separate connections between providers; it does not combine
+both links into one faster connection. nftables connection marks and separate
+routing tables must preserve the selected WAN for return traffic. Inbound port
+forwarding and replies received through the backup WAN require the same
+symmetric-routing treatment.
+
+Implement IPv4 first. Dual-provider IPv6 requires source-policy routing and
+careful delegated-prefix and router-advertisement lifetime handling. It cannot
+provide transparent failover between unrelated ISP prefixes, so initial IPv6
+service should use one provider until IPv4 behavior is proven.
+
+### Traffic shaping
+
+Configure CAKE independently for each WAN because bandwidth and encapsulation
+overhead differ. Upload shaping is attached to the WAN interface; download
+shaping uses an IFB interface. PPPoE normally uses an MTU of `1492` and needs
+appropriate overhead accounting and, where required, TCP MSS handling.
+
+The CAKE rate should be slightly below measured sustained throughput so queues
+form on the router instead of in the modem or ISP network. Because `ppp0` is
+recreated after a PPPoE reconnect, a `pppd` or systemd hook must restore its
+CAKE configuration. Accurate rates and overhead values must be calibrated on
+the real links rather than assumed in VM tests.
+
+### Deployment and recovery
+
+Develop the router as an independent flake host and test it with isolated WAN,
+router, and LAN client VMs before connecting physical providers. Tests should
+cover DHCP, DNS, NAT, default-deny WAN access, PPPoE, failover in both
+directions, recovery, firewall reloads, and loss of each upstream.
+
+Use this implementation order:
+
+1. Validate the NIC, IOMMU group, PCI passthrough, and VM autostart.
+2. Configure the LAN and DHCP WAN in an isolated test network.
+3. Add PPPoE with credentials supplied by `sops-nix` at runtime.
+4. Add the nftables firewall and IPv4 NAT.
+5. Prove basic primary/backup routing, then add Internet-aware health checks.
+6. Add LAN DHCP, AdGuard Home, and Unbound.
+7. Measure both links and configure CAKE.
+8. Add weighted load balancing and IPv6 only after the simpler design is
+   stable.
+
+The initial independent router host is now implemented under
+`modules/machines/router` and exported as `nixosConfigurations.router`. It
+provides the isolated-test baseline through LAN DHCP/DNS and IPv4 NAT; see the
+[router host README](modules/machines/router/README.md) for interface defaults,
+PPPoE activation, and the hardware-dependent work that remains.
+
+`nixos-rebuild build` and `dry-activate` do not interrupt routing. Activating a
+generation may restart only the services whose definitions changed, but PPPoE,
+interface, route, passthrough, or VM changes can interrupt Internet access.
+Router VM or hypervisor reboots cause a complete outage. Use local console
+access and a timed automatic rollback that restores the last confirmed
+generation unless the new generation is explicitly accepted. Validate
+nftables syntax before activation and retain the old physical router as a
+rollback path during initial deployment.
+
 ## Services
 
 | Service | LAN URL or port | Management |

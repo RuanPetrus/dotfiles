@@ -8,6 +8,10 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    microvm = {
+      url = "github:microvm-nix/microvm.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable-small";
     nixarr.url = "github:nix-media-server/nixarr";
@@ -58,6 +62,13 @@
 
       nixosConfigurations.nameless-king = mkHost {
         modules = [ ./modules/machines/nameless-king ];
+      };
+
+      nixosConfigurations.router = mkHost {
+        modules = [
+          inputs.microvm.nixosModules.microvm
+          ./modules/machines/router
+        ];
       };
     };
 }

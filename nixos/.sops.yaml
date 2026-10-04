@@ -13,3 +13,8 @@ creation_rules:
       - age:
           - age1yg9zfys6ulvkw99hta2l7s7prr58dqdne6wryme6g4ay7qjp9ejs70pdmf
           - age12fd2hazlm9vjrn4wwy7zeruhl7dqp6t6mpm0n0wk0pt02a0eqq9snxzu9q
+  - path_regex: secrets/router\.yaml$
+    key_groups:
+      - age:
+          - age1yg9zfys6ulvkw99hta2l7s7prr58dqdne6wryme6g4ay7qjp9ejs70pdmf
+          - age1fcp425qrw9c8ca6zqt8q38yn7chkvucfa0kz0g3je93a79t2yywqehx5u2

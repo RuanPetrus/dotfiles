@@ -46,6 +46,7 @@ let
       --collect \
       --no-block \
       --property=WorkingDirectory=${stateDir}/workspace/dotfiles/nixos \
+      --setenv=PATH=/run/current-system/sw/bin \
       ${lib.getExe pkgs.nixos-rebuild} switch \
       --flake path:${stateDir}/workspace/dotfiles/nixos#abiss-watcher
   '';

@@ -6,6 +6,7 @@
   imports = [
     ./hardware-configuration.nix
     ./networking.nix
+    ./router-vm.nix
     ./secrets.nix
     ./storage.nix
     ./wake-on-lan.nix
@@ -41,6 +42,10 @@
 
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
+    kernelParams = [
+      "intel_iommu=on"
+      "iommu=pt"
+    ];
     loader.systemd-boot.enable = true;
   };
 
