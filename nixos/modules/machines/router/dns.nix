@@ -29,15 +29,42 @@ in
       dns = {
         bind_hosts = [ lanAddress ];
         port = 53;
+        allowed_clients = [ "192.168.0.0/24" ];
         upstream_dns = [ "127.0.0.1:5335" ];
+        fallback_dns = [ ];
         bootstrap_dns = [
           "1.1.1.1"
           "1.0.0.1"
         ];
+        cache_size = 16777216;
+        cache_optimistic = true;
+        ratelimit = 100;
+        refuse_any = true;
+        use_private_ptr_resolvers = false;
+        local_ptr_upstreams = [ ];
       };
       filtering = {
         protection_enabled = true;
         filtering_enabled = true;
+        blocking_mode = "default";
+        filters_update_interval = 24;
+      };
+      filters = [
+        {
+          enabled = true;
+          url = "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt";
+          name = "AdGuard DNS filter";
+          id = 1;
+        }
+      ];
+      querylog = {
+        enabled = true;
+        file_enabled = true;
+        interval = "168h";
+      };
+      statistics = {
+        enabled = true;
+        interval = "168h";
       };
     };
   };

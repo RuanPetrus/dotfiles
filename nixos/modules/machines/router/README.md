@@ -64,7 +64,11 @@ sudo systemctl restart microvm@router
 
 AdGuard Home administration will be available at
 `http://192.168.0.1:3000` after LAN cutover. Create its administrator
-credentials before treating the LAN as trusted.
+credentials before treating the LAN as trusted. Nix enforces LAN-only DNS
+clients, Unbound as the only normal upstream, the AdGuard DNS filter, and seven
+days of query and statistics history. Settings remain mutable so administrator
+credentials and UI preferences persist, but declarative values in `dns.nix`
+take precedence whenever the service restarts.
 
 ## PPPoE
 
