@@ -16,6 +16,7 @@ in
     ../../core/host.nix
     ../../desktops/sway.nix
     ../../hardware/intel-graphics.nix
+    ../../services/docker.nix
     ../../services/tailscale-client.nix
     ../../system
     ../../users/ruan
@@ -26,6 +27,8 @@ in
     lanAddress = "192.168.0.12";
     primaryUser = "ruan";
   };
+
+  users.users.ruan.extraGroups = [ "docker" ];
 
   systemd.services.configure-home-wifi = {
     description = "Configure the marombinhas home Wi-Fi profile";

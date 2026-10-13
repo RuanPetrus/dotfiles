@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
   imports = [
     ./disk-config.nix
@@ -10,6 +10,7 @@
     ./sunshine.nix
     ../../core/host.nix
     ../../desktops/plasma.nix
+    ../../services/docker.nix
     ../../services/tailscale-client.nix
     ../../system
     ../../users/ruan
@@ -24,11 +25,27 @@
   users.users.ruan.openssh.authorizedKeys.keys = [
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcvoAMzd8FNuszc0ysuXmmtNx3NN1X3/66rvORK8qnZ xastroboyx11@gmail.com"
   ];
+  users.users.ruan.extraGroups = [ "docker" ];
+
+  programs.gnupg.agent.enableSSHSupport = lib.mkForce false;
+  programs.ssh.startAgent = true;
 
   home-manager.users.ruan =
     { lib, pkgs, ... }:
     {
       imports = [ ../../users/ruan/desktop.nix ];
+
+      programs.ssh = {
+        enable = true;
+        enableDefaultConfig = false;
+        settings."github.com" = {
+          HostName = "github.com";
+          User = "git";
+          IdentityFile = "~/.ssh/id_ruan";
+          IdentitiesOnly = true;
+          AddKeysToAgent = true;
+        };
+      };
 
       home.activation.disablePlasmaAutoSuspend = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
         ${pkgs.kdePackages.kconfig}/bin/kwriteconfig6 \

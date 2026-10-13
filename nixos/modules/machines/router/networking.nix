@@ -39,8 +39,9 @@ in
             type filter hook forward priority filter; policy drop;
 
             ct state invalid drop
-            ct state { established, related } accept
+            iifname "${pppInterface}" tcp flags syn tcp option maxseg size set 1452
             oifname "${pppInterface}" tcp flags syn tcp option maxseg size set rt mtu
+            ct state { established, related } accept
             iifname "${cfg.lanInterface}" oifname { "${pppInterface}", "${cfg.dhcpWanInterface}" } accept
           }
         }

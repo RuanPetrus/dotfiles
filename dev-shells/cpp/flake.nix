@@ -25,6 +25,7 @@
           wayland
           wayland-protocols
           wayland-scanner
+		  libxcb
         ];
 
         shellHook = ''
