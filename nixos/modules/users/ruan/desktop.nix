@@ -9,8 +9,11 @@ let
 in
 {
   home.packages = with pkgs; [
+    chromium
     discord
     obsidian
+    stoat-desktop
+    wl-clipboard
   ];
 
   gtk = {

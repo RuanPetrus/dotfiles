@@ -2,12 +2,12 @@
   config,
   inputs,
   lib,
+  opencodePackage,
   pkgs,
   ...
 }:
 let
   nixosSource = ../..;
-  opencode = inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default;
   stateDir = "/var/lib/opencode";
   sshConfig = pkgs.writeText "opencode-ssh-config" ''
     Host abiss-watcher
@@ -36,7 +36,7 @@ let
   '';
   startScript = pkgs.writeShellScript "opencode-start" ''
     cd ${stateDir}/workspace/dotfiles
-    exec ${lib.getExe opencode} web --hostname ${config.dotfiles.host.lanAddress} --port 4096
+    exec ${lib.getExe opencodePackage} web --hostname ${config.dotfiles.host.lanAddress} --port 4096
   '';
   deployAbiss = pkgs.writeShellScriptBin "opencode-deploy-abiss" ''
     set -eu

@@ -53,6 +53,8 @@
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/nvim/init.lua";
   xdg.configFile."tmux/tmux.conf".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/tmux/tmux.conf";
+  xdg.configFile."opencode/cli.json".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/opencode/cli.json";
 
   programs.git = {
     enable = true;

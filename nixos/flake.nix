@@ -34,11 +34,18 @@
           modules,
           system ? "x86_64-linux",
         }:
+        let
+          opencodePackage = inputs.opencode.packages.${system}.default.overrideAttrs (_: {
+            # Upstream's filtered source omits script/native-arch.ts, which the
+            # 2.0.28 CLI build imports.
+            src = inputs.opencode;
+          });
+        in
         nixpkgs.lib.nixosSystem {
           inherit system;
 
           specialArgs = {
-            inherit inputs;
+            inherit inputs opencodePackage;
           };
 
           modules = [

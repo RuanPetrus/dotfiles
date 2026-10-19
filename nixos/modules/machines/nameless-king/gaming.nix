@@ -8,6 +8,7 @@
 
     gamescope = {
       enable = true;
+      capSysNice = true;
     };
 
     steam = {

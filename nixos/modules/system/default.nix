@@ -1,5 +1,5 @@
 {
-  inputs,
+  opencodePackage,
   pkgs,
   ...
 }:
@@ -23,7 +23,7 @@
     tmux
     vim
     wget
-    inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default
+    opencodePackage
   ];
 
   programs = {
