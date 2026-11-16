@@ -63,6 +63,10 @@
         modules = [ ./modules/machines/abiss-watcher ];
       };
 
+      nixosConfigurations.dark-lurker = mkHost {
+        modules = [ ./modules/machines/dark-lurker ];
+      };
+
       nixosConfigurations.night-crawler = mkHost {
         modules = [ ./modules/machines/night-crawler ];
       };

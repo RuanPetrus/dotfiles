@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="700"/>
+    <region id="ModuleSettings">
+        <node id="root">
+            <children>
+                <node id="ModOrder">
+                    <children>
+                        <node id="Module">
+                            <attribute id="UUID" type="guid" value="fa49db03-caa7-49c8-7c76-e6c38b60267a"/>
+                        </node>
+                        <node id="Module">
+                            <attribute id="UUID" type="guid" value="e6f0c417-36f9-42d6-9617-fd7fe2efd626"/>
+                        </node>
+                    </children>
+                </node>
+                <node id="Mods">
+                    <children>
+                        <node id="ModuleShortDesc">
+                            <attribute id="Folder" type="LSString" value="GustavX"/>
+                            <attribute id="MD5" type="LSString" value=""/>
+                            <attribute id="Name" type="LSString" value="GustavX"/>
+                            <attribute id="PublishHandle" type="uint64" value="0"/>
+                            <attribute id="UUID" type="guid" value="cb555efe-2d9e-131f-8195-a89329d218ea"/>
+                            <attribute id="Version64" type="int64" value="36028797018963968"/>
+                        </node>
+                        <node id="ModuleShortDesc">
+                            <attribute id="Folder" type="LSString" value="AdvancedTTSpells"/>
+                            <attribute id="MD5" type="LSString" value="565e1efcfda9cb7e870253f8ca3d0b23"/>
+                            <attribute id="Name" type="LSString" value="AdvancedTTSpells"/>
+                            <attribute id="PublishHandle" type="uint64" value="0"/>
+                            <attribute id="UUID" type="guid" value="fa49db03-caa7-49c8-7c76-e6c38b60267a"/>
+                            <attribute id="Version64" type="int64" value="36169553834672130"/>
+                        </node>
+                        <node id="ModuleShortDesc">
+                            <attribute id="Folder" type="LSString" value="CombatMod"/>
+                            <attribute id="MD5" type="LSString" value="d9197a301ec389f51cd85da95e634175"/>
+                            <attribute id="Name" type="LSString" value="Trials of Tav - Reloaded"/>
+                            <attribute id="PublishHandle" type="uint64" value="0"/>
+                            <attribute id="UUID" type="guid" value="e6f0c417-36f9-42d6-9617-fd7fe2efd626"/>
+                            <attribute id="Version64" type="int64" value="72479817240412160"/>
+                        </node>
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

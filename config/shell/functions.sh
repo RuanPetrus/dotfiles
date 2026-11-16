@@ -114,3 +114,41 @@ extract() {
 
   return "$result"
 }
+
+# Switch BG3 between the unmodded and Trials of Tav load orders.
+_bg3_profile() {
+  if [ "$#" -ne 1 ]; then
+    printf 'Usage: _bg3_profile normal|trials\n' >&2
+    return 2
+  fi
+
+  if pgrep -x bg3 >/dev/null 2>&1; then
+    printf 'BG3 is running. Exit the game before switching profiles.\n' >&2
+    return 1
+  fi
+
+  local source="$HOME/dotfiles/config/bg3/modsettings-$1.lsx"
+  local destination="$HOME/.local/share/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public/modsettings.lsx"
+  local temporary="${destination}.switching"
+
+  if [ ! -f "$source" ]; then
+    printf 'Unknown BG3 profile: %s\n' "$1" >&2
+    return 2
+  fi
+
+  if ! cp -- "$source" "$temporary" || ! mv -- "$temporary" "$destination"; then
+    rm -f -- "$temporary"
+    printf 'Could not activate the BG3 %s profile.\n' "$1" >&2
+    return 1
+  fi
+
+  printf 'BG3 profile: %s\n' "$1"
+}
+
+bg3-normal() {
+  _bg3_profile normal
+}
+
+bg3-trials() {
+  _bg3_profile trials
+}
