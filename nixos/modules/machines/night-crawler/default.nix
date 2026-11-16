@@ -30,6 +30,14 @@ in
 
   users.users.ruan.extraGroups = [ "docker" ];
 
+  programs.steam = {
+    enable = true;
+    extraCompatPackages = [ pkgs.proton-ge-bin ];
+    extraPackages = [ pkgs.libcxx ];
+    localNetworkGameTransfers.openFirewall = true;
+    protontricks.enable = true;
+  };
+
   systemd.services.configure-home-wifi = {
     description = "Configure the marombinhas home Wi-Fi profile";
     after = [ "NetworkManager.service" ];

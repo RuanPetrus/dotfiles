@@ -70,6 +70,16 @@ days of query and statistics history. Settings remain mutable so administrator
 credentials and UI preferences persist, but declarative values in `dns.nix`
 take precedence whenever the service restarts.
 
+## LAN status dashboard
+
+Homepage's Network section links to AdGuard Home and the read-only router status
+page at `http://192.168.0.1:8084`. Its `status.json` endpoint feeds Homepage's
+active-link and PPPoE/DHCP health indicators. Status is collected every ten
+seconds; the page also shows both WAN addresses and the collection timestamp.
+Health comes from the existing failover monitor, not just Ethernet carrier.
+Missing or more than two-minute-old health reports are shown as unknown.
+The web server is unprivileged and the firewall allows this port only from LAN.
+
 ## PPPoE
 
 PPPoE credentials are encrypted in `secrets/router.yaml`. sops-nix renders a

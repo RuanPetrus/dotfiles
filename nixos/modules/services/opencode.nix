@@ -86,7 +86,7 @@ in
     };
   };
 
-  networking.firewall.interfaces.enp4s0.allowedTCPPorts = [ 4096 ];
+  networking.firewall.interfaces.enp8s0.allowedTCPPorts = [ 4096 ];
 
   systemd.services.opencode = {
     description = "OpenCode machine management web interface";

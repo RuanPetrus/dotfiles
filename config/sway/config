@@ -11,6 +11,8 @@ set $menu fuzzel
 font pango:sans 8
 floating_modifier $mod normal
 workspace_layout tabbed
+# Keep fullscreen games and applications from triggering idle locking.
+for_window [all] inhibit_idle fullscreen
 default_border pixel 2
 gaps inner 6
 gaps outer 3

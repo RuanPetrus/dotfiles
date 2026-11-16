@@ -32,7 +32,7 @@ in
             iifname "${cfg.managementInterface}" tcp dport 22 accept
             iifname "${cfg.lanInterface}" udp sport 68 udp dport 67 accept
             iifname "${cfg.lanInterface}" ip saddr 192.168.0.0/24 udp dport 53 accept
-            iifname "${cfg.lanInterface}" ip saddr 192.168.0.0/24 tcp dport { 22, 53, 3000 } accept
+            iifname "${cfg.lanInterface}" ip saddr 192.168.0.0/24 tcp dport { 22, 53, 3000, 8084 } accept
           }
 
           chain forward {

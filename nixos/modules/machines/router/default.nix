@@ -10,6 +10,7 @@
     ./link-balancer.nix
     ./networking.nix
     ./secrets.nix
+    ./status.nix
     ../../core/host.nix
   ];
 

@@ -35,6 +35,60 @@ in
 
     services = [
       {
+        Network = [
+          {
+            "Router status" = {
+              icon = "mdi-router-network";
+              href = "http://192.168.0.1:8084";
+              description = "Active provider and PPPoE / DHCP link health";
+              widget = {
+                type = "customapi";
+                url = "http://192.168.0.1:8084/status.json";
+                refreshInterval = 10000;
+                mappings = [
+                  {
+                    field = "active";
+                    label = "Active link";
+                    format = "text";
+                  }
+                  {
+                    field = "pppoe.status";
+                    label = "PPPoE";
+                    format = "text";
+                  }
+                  {
+                    field = "dhcp.status";
+                    label = "DHCP";
+                    format = "text";
+                  }
+                ];
+              };
+            };
+          }
+          {
+            "AdGuard Home" = {
+              icon = "adguard-home.png";
+              href = "http://192.168.0.1:3000";
+              description = "Router DNS filtering and query logs";
+            };
+          }
+          {
+            "TP-Link AP (.106)" = {
+              icon = "mdi-access-point";
+              href = "http://192.168.0.106";
+              description = "TP-Link access point administration";
+            };
+          }
+          {
+            "TP-Link AP (.2)" = {
+              icon = "mdi-access-point";
+              href = "http://192.168.0.2";
+              description = "TP-Link access point administration";
+            };
+          }
+        ];
+      }
+      {
         Services = [
           {
             Jellyfin = {
